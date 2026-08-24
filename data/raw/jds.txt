@@ -1,0 +1,82 @@
+# Raw JD sentences collected from ITviec / TopCV / VietnamWorks
+# Format: 1 sentence per line. Copy verbatim (giu nguyen van ban goc).
+# Goal: 30 sentences, diverse skills (languages, frameworks, DB, DevOps, ML, soft skills)
+#
+# Source log: ghi lai nguon moi cau/bom de tranh trung lap
+#   vd: [ITviec] Python Developer - Company X
+
+=== SENTENCES ===
+
+[ITviec] AI Software Engineer - MB Bank
+Thành thạo ít nhất 1 ngôn ngữ Backend: Ưu tiên Python, Go, C/C++
+Phát triển các dịch vụ AI dưới dạng Microservices (FastAPI/Flask/Django hoặc Java/Go services).
+Triển khai hệ thống AI production-ready với Docker/Kubernetes.
+Thành thạo một trong các hệ quản trị cơ sở dữ liệu: PostgreSQL, MongoDB...
+Hiểu rõ API design (RESTful/gRPC), bảo mật và tối ưu hiệu năng hệ thống.
+Thành thạo Git/GitFlow
+Có kinh nghiệm với: LLM Agents (GPT, Gemini, Claude...), LangChain / LangGraph/ ADK, Autogen, RAG pipelines, Vector Database(Milvus, pgvector...).
+Thành thạo Git/GitFlow
+Có kiến thức, Kỹ thuật xử lý dữ liệu: NLP, Computer Vision, Speech, Video Understanding
+Hiểu biết kiến trúc mô hình: CNN, RNN, Transformer, Attention, GNN…
+
+[ITviec] Agentic Engineer - MB Bank
+Thiết kế và phát triển các hệ thống Backend tích hợp AI/LLM Agents.
+Xây dựng các Agentic Workflow, A: Planning – Tool Use – Memory – Execution.
+Phát triển các dịch vụ AI dưới dạng Microservices (FastAPI/Flask/Django hoặc Java/Go services).
+Tích hợp các mô hình AI vào hệ thống sản phẩm qua REST/gRPC APIs.
+Triển khai hệ thống AI production-ready với Docker/Kubernetes.
+Nghiên cứu và ứng dụng các kỹ thuật mới: RAG, Function Calling, Multi-agent systems, Reinforcement Learning Agents.
+Thành thạo ít nhất 1 ngôn ngữ Backend: Ưu tiên Python, Go, C/C++
+Có kinh nghiệm thiết kế hệ thống Microservice Architecture.
+Thành thạo một trong các hệ quản trị cơ sở dữ liệu:PostgreSQL, MongoDB...
+Hiểu rõ API design (RESTful/gRPC), bảo mật và tối ưu hiệu năng hệ thống.
+Có kinh nghiệm với: LLM Agents (GPT, Gemini, Claude...), LangChain / LangGraph/ ADK, Autogen, RAG pipelines, Vector Database(Milvus, pgvector...). Tool-use Agents (Function Calling), Memory + Planning + Multi-step reasoning systems
+Thành thạo Git/GitFlow
+Có kinh nghiệm: Docker, Kubernetes...
+Hiểu biết về AI Safety, Guardrails, Model Monitoring.
+Có kiến thức, Kỹ thuật xử lý dữ liệu:NLP, Computer Vision, Speech, Video Understanding
+Hiểu biết kiến trúc mô hình: CNN, RNN, Transformer, Attention, GNN…
+
+[TopCV] Chuyên Viên IT - Lập Trình & Phát Triển Phần Mềm Nội Bộ - Công ty cổ phần An Pha Kim
+Phát triển, xây dựng và cải tiến các phần mềm/ứng dụng nội bộ phục vụ hoạt động của Công ty.
+Quản lý, vận hành và tối ưu các phần mềm, hệ thống hiện có.
+Phân tích nhu cầu từ các phòng ban, đề xuất giải pháp công nghệ phù hợp nhằm tự động hóa và nâng cao hiệu quả công việc.
+Tham gia thiết kế, phát triển, kiểm thử và triển khai các tính năng mới.
+Xử lý, khắc phục các lỗi phát sinh liên quan đến phần mềm và hệ thống.
+Quản lý dữ liệu, phân quyền người dùng và đảm bảo tính ổn định, bảo mật của hệ thống.
+Phối hợp với các phòng/ban để tiếp nhận yêu cầu, hướng dẫn sử dụng và cải tiến phần mềm theo nhu cầu thực tế.
+Chủ động nghiên cứu, đề xuất các giải pháp công nghệ mới nhằm nâng cao hiệu suất quản lý và vận hành.
+
+[TopCV] Data Analyst (Domain Logistics) - CÔNG TY CỔ PHẦN GIAO HÀNG TIẾT KIỆM
+Phát triển và vận hành hệ thống báo cáo, rà soát & tối ưu các báo cáo theo yêu cầu;
+Xây dựng Data Mart đáp ứng các bài toán dữ liệu;
+Phân tích dữ liệu liên quan đến chất lượng sản phẩm nội bộ, từ đó đưa ra các insight và đề xuất các phương án nâng cao chất lượng sản phẩm;
+Theo dõi và đảm bảo tính chính xác, nhất quán của dữ liệu dùng trong báo cáo và hệ thống;
+Phối hợp với các bộ phận nghiệp vụ (sản phẩm, vận hành...) để khai thác và tối ưu dữ liệu.
+SQL & Cơ sở dữ liệu: Thành thạo truy vấn, tổng hợp, xử lý dữ liệu, tối ưu hóa dữ liệu phân tán;
+Xử lý Dữ liệu Real-time & CDC: Am hiểu và có kinh nghiệm làm việc với dữ liệu CDC;
+Lập trình & ETL Pipeline: Sử dụng Python, dbt và Apache Airflow để xây dựng, tự động hóa và quản lý các luồng xử lý/biến đổi dữ liệu;
+Bảo mật & Quy trình: Nắm vững quy trình phân tích, làm sạch, kiểm thử dữ liệu, bảo mật dữ liệu nhạy cảm (PII/Sensitive Data);
+Trực quan hóa: Thành thạo Power BI, Excel nâng cao;
+Tư duy: Có tư duy phản biện, kỹ năng giải quyết vấn đề và kết nối tốt với các phòng ban liên quan, khả năng làm việc độc lập cao;
+Domain E-logistics: Có kiến thức/hiểu biết về mảng E-logistics (chuỗi cung ứng thương mại điện tử, chặng cuối, kho bãi), am hiểu thuật toán tối ưu quãng đường, chi phí là một lợi thế;
+
+[TopCV] Middle BackEnd (Java/Spring) - Edufit
+Tham gia tài liệu hóa API, luồng xử lý và các giải pháp kỹ thuật cần thiết để hỗ trợ vận hành, bảo trì và phát triển sản phẩm lâu dài.
+Theo dõi và tối ưu hiệu năng, độ ổn định, khả năng mở rộng của Backend; chủ động phát hiện các điểm nghẽn và đề xuất cải tiến.
+Tham gia nghiên cứu, tích hợp và phát triển các tính năng sử dụng AI/LLM API; đảm bảo việc tích hợp phù hợp với yêu cầu sản phẩm và tiêu chuẩn kỹ thuật.
+Phối hợp chặt chẽ với Frontend, QA, DevOps, Product/BA trong quá trình phát triển, tích hợp, kiểm thử và đưa tính năng vào vận hành.
+Tích hợp và sử dụng các thành phần như Redis, Message Broker, Docker nhằm hỗ trợ caching, xử lý bất đồng bộ, tích hợp service và triển khai hệ thống.
+Phân tích, xử lý và khắc phục Production Bug; phối hợp với QA/DevOps và các bên liên quan để xác định nguyên nhân và triển khai phương án xử lý phù hợp.
+Tham gia Code Review, trao đổi kỹ thuật với các thành viên trong team và đề xuất giải pháp cải thiện chất lượng, tính ổn định của hệ thống.
+Xây dựng Unit Test / Integration Test cho các chức năng; chủ động kiểm tra chất lượng code trước khi đưa lên môi trường tích hợp/production.
+Thiết kế và xử lý dữ liệu với PostgreSQL/SQL, JPA/Hibernate; tối ưu truy vấn, transaction và mapping dữ liệu khi cần thiết.
+Phát triển, duy trì và tối ưu REST API / Backend Service sử dụng Java và Spring Boot; đảm bảo code rõ ràng, dễ bảo trì và tuân thủ coding convention.
+Phân tích yêu cầu từ Product/BA và tham gia đề xuất giải pháp Backend phù hợp với nghiệp vụ, khả năng mở rộng và hiệu năng của hệ thống.
+Thành thạo Java, Spring Boot và REST API.
+Có kinh nghiệm với PostgreSQL/SQL, JPA/Hibernate.
+Có kinh nghiệm Unit Test / Integration Test, Code Review và xử lý lỗi Production.
+Có tư duy tốt về thiết kế Backend Service, xử lý dữ liệu và tối ưu hiệu năng.
+Có kinh nghiệm thực tế với AI/LLM API là lợi thế/định hướng quan trọng của vị trí.
+Biết Redis, Message Broker, Docker là lợi thế.
+Tư duy logic, chủ động, trách nhiệm, khả năng phối hợp tốt và tinh thần Ownership.
