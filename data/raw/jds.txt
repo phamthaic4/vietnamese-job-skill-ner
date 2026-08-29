@@ -80,3 +80,18 @@ Có tư duy tốt về thiết kế Backend Service, xử lý dữ liệu và t�
 Có kinh nghiệm thực tế với AI/LLM API là lợi thế/định hướng quan trọng của vị trí.
 Biết Redis, Message Broker, Docker là lợi thế.
 Tư duy logic, chủ động, trách nhiệm, khả năng phối hợp tốt và tinh thần Ownership.
+
+[Facebook] CV - Go/DevOps Engineer (anonymized, CV lines)
+Programming Languages: Go (Golang), SQL, Bash, Python, C/C++ (basic)
+DevOps & Infrastructure: Docker, Multi-stage builds, Distroless, Linux (Debian, Ubuntu, systemd, /proc), Kubernetes (DaemonSet, K8s manifests), GitHub Actions (CI/CD)
+Monitoring & Reliability: Prometheus (/metrics, Text format, Counters/Gauges), Grafana, k6, Fuzz testing, go test -race
+Studied Linux system administration, Docker containerization, CI/CD automation, system reliability, and SRE principles.
+Mastered systems analysis, distributed systems architecture design, and REST/gRPC API specification.
+Developed a streaming telemetry and anomaly detection agent in Go for Edge AI devices with zero memory allocations on hot paths.
+Implemented system metric parsers (/proc/stat, /proc/meminfo) using direct non-blocking Linux system calls (SYS_OPENAT, SYS_READ) on fixed stack buffers.
+Designed a mathematical engine based on Welford's algorithm, EWMA for baseline drift tracking, and Z-Score filtering.
+Built a custom Prometheus metric registry, an HTTP dispatcher with exponential backoff and jitter, a Kubernetes DaemonSet manifest, and a secured systemd service.
+Configured GitHub Actions CI with fuzz testing (Go Fuzz), race condition detection (-race), and cross-compilation for linux/amd64 and linux/arm64.
+Designed a distributed reverse proxy in Go featuring an in-memory Token Bucket algorithm and distributed rate limiting in Redis via atomic Lua scripts.
+Integrated a three-state Circuit Breaker and context-aware retries with request body rewind for idempotent methods.
+Configured Prometheus metrics collection and Grafana dashboards; conducted load testing in k6.

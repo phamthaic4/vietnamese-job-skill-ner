@@ -15,10 +15,10 @@
 - None
 
 ### Next week
-- Collect more raw sentences toward 100+ (have 57)
-- Write docs/skill_vocab.md (~50 common IT skills as labeling reference)
-- Label toward 200-300 total
-- Write scripts/convert_to_hf_dataset.py + train/val/test split
+- [ ] Collect raw toward 100+ (diversify: frontend/mobile/QA/DevOps + ~15 CV lines)
+- [ ] Label toward ~100 total (vocab rules now frozen in docs/skill_vocab.md)
+- [x] docs/skill_vocab.md + audit of 57 sentences (API/RAG canonical rules applied)
+- [x] scripts/convert_to_hf_dataset.py + 70/15/15 split (seed 42, smoke-test only)
 
 ### Notes / learnings
 - Week 0 done ahead of plan: 57 labeled sentences (target was 20)

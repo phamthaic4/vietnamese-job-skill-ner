@@ -1,4 +1,4 @@
-sentence_id	token_id	token	label
+﻿sentence_id	token_id	token	label
 1	1	Thành	O
 1	2	thạo	O
 1	3	ít	O
@@ -71,7 +71,7 @@ sentence_id	token_id	token	label
 4	17	...	O
 5	1	Hiểu	O
 5	2	rõ	O
-5	3	API	B-SKILL
+5	3	API	O
 5	4	design	O
 5	5	(	O
 5	6	RESTful	B-SKILL
@@ -116,7 +116,7 @@ sentence_id	token_id	token	label
 7	21	Autogen	B-SKILL
 7	22	,	O
 7	23	RAG	B-SKILL
-7	24	pipelines	I-SKILL
+7	24	pipelines	O
 7	25	,	O
 7	26	Vector	B-SKILL
 7	27	Database	I-SKILL
@@ -210,7 +210,7 @@ sentence_id	token_id	token	label
 12	13	REST	B-SKILL
 12	14	/	O
 12	15	gRPC	B-SKILL
-12	16	APIs	I-SKILL
+12	16	APIs	O
 12	17	.	O
 13	1	Nghiên	O
 13	2	cứu	O
@@ -286,7 +286,7 @@ sentence_id	token_id	token	label
 16	21	Autogen	B-SKILL
 16	22	,	O
 16	23	RAG	B-SKILL
-16	24	pipelines	I-SKILL
+16	24	pipelines	O
 16	25	,	O
 16	26	Vector	B-SKILL
 16	27	Database	I-SKILL
@@ -699,7 +699,7 @@ sentence_id	token_id	token	label
 35	2	trình	O
 35	3	&	O
 35	4	ETL	B-SKILL
-35	5	Pipeline	I-SKILL
+35	5	Pipeline	O
 35	6	:	O
 35	7	Sử	O
 35	8	dụng	O
@@ -861,7 +861,7 @@ sentence_id	token_id	token	label
 40	3	tài	O
 40	4	liệu	O
 40	5	hóa	O
-40	6	API	B-SKILL
+40	6	API	O
 40	7	,	O
 40	8	luồng	O
 40	9	xử	O
@@ -940,7 +940,7 @@ sentence_id	token_id	token	label
 42	16	AI	B-SKILL
 42	17	/	O
 42	18	LLM	B-SKILL
-42	19	API	I-SKILL
+42	19	API	O
 42	20	;	O
 42	21	đảm	O
 42	22	bảo	O
@@ -1166,7 +1166,7 @@ sentence_id	token_id	token	label
 49	7	tối	O
 49	8	ưu	O
 49	9	REST	B-SKILL
-49	10	API	I-SKILL
+49	10	API	O
 49	11	/	O
 49	12	Backend	O
 49	13	Service	O
@@ -1233,7 +1233,7 @@ sentence_id	token_id	token	label
 51	6	Boot	I-SKILL
 51	7	và	O
 51	8	REST	B-SKILL
-51	9	API	I-SKILL
+51	9	API	O
 51	10	.	O
 52	1	Có	O
 52	2	kinh	O
@@ -1293,7 +1293,7 @@ sentence_id	token_id	token	label
 55	7	AI	B-SKILL
 55	8	/	O
 55	9	LLM	B-SKILL
-55	10	API	I-SKILL
+55	10	API	O
 55	11	là	O
 55	12	lợi	O
 55	13	thế	O
@@ -1337,3 +1337,317 @@ sentence_id	token_id	token	label
 57	18	thần	O
 57	19	Ownership	O
 57	20	.	O
+58	1	Programming	
+58	2	Languages	
+58	3	:	
+58	4	Go	
+58	5	(	
+58	6	Golang	
+58	7	),	
+58	8	SQL	
+58	9	,	
+58	10	Bash	
+58	11	,	
+58	12	Python	
+58	13	,	
+58	14	C	
+58	15	/	
+58	16	C	
+58	17	++	
+58	18	(	
+58	19	basic	
+58	20	)	
+59	1	DevOps	
+59	2	&	
+59	3	Infrastructure	
+59	4	:	
+59	5	Docker	
+59	6	,	
+59	7	Multi	
+59	8	-	
+59	9	stage	
+59	10	builds	
+59	11	,	
+59	12	Distroless	
+59	13	,	
+59	14	Linux	
+59	15	(	
+59	16	Debian	
+59	17	,	
+59	18	Ubuntu	
+59	19	,	
+59	20	systemd	
+59	21	,	
+59	22	/	
+59	23	proc	
+59	24	),	
+59	25	Kubernetes	
+59	26	(	
+59	27	DaemonSet	
+59	28	,	
+59	29	K8s	
+59	30	manifests	
+59	31	),	
+59	32	GitHub	
+59	33	Actions	
+59	34	(	
+59	35	CI	
+59	36	/	
+59	37	CD	
+59	38	)	
+60	1	Monitoring	
+60	2	&	
+60	3	Reliability	
+60	4	:	
+60	5	Prometheus	
+60	6	(/	
+60	7	metrics	
+60	8	,	
+60	9	Text	
+60	10	format	
+60	11	,	
+60	12	Counters	
+60	13	/	
+60	14	Gauges	
+60	15	),	
+60	16	Grafana	
+60	17	,	
+60	18	k6	
+60	19	,	
+60	20	Fuzz	
+60	21	testing	
+60	22	,	
+60	23	go	
+60	24	test	
+60	25	-	
+60	26	race	
+61	1	Studied	
+61	2	Linux	
+61	3	system	
+61	4	administration	
+61	5	,	
+61	6	Docker	
+61	7	containerization	
+61	8	,	
+61	9	CI	
+61	10	/	
+61	11	CD	
+61	12	automation	
+61	13	,	
+61	14	system	
+61	15	reliability	
+61	16	,	
+61	17	and	
+61	18	SRE	
+61	19	principles	
+61	20	.	
+62	1	Mastered	
+62	2	systems	
+62	3	analysis	
+62	4	,	
+62	5	distributed	
+62	6	systems	
+62	7	architecture	
+62	8	design	
+62	9	,	
+62	10	and	
+62	11	REST	
+62	12	/	
+62	13	gRPC	
+62	14	API	
+62	15	specification	
+62	16	.	
+63	1	Developed	
+63	2	a	
+63	3	streaming	
+63	4	telemetry	
+63	5	and	
+63	6	anomaly	
+63	7	detection	
+63	8	agent	
+63	9	in	
+63	10	Go	
+63	11	for	
+63	12	Edge	
+63	13	AI	
+63	14	devices	
+63	15	with	
+63	16	zero	
+63	17	memory	
+63	18	allocations	
+63	19	on	
+63	20	hot	
+63	21	paths	
+63	22	.	
+64	1	Implemented	
+64	2	system	
+64	3	metric	
+64	4	parsers	
+64	5	(/	
+64	6	proc	
+64	7	/	
+64	8	stat	
+64	9	,	
+64	10	/	
+64	11	proc	
+64	12	/	
+64	13	meminfo	
+64	14	)	
+64	15	using	
+64	16	direct	
+64	17	non	
+64	18	-	
+64	19	blocking	
+64	20	Linux	
+64	21	system	
+64	22	calls	
+64	23	(	
+64	24	SYS_OPENAT	
+64	25	,	
+64	26	SYS_READ	
+64	27	)	
+64	28	on	
+64	29	fixed	
+64	30	stack	
+64	31	buffers	
+64	32	.	
+65	1	Designed	
+65	2	a	
+65	3	mathematical	
+65	4	engine	
+65	5	based	
+65	6	on	
+65	7	Welford	
+65	8	'	
+65	9	s	
+65	10	algorithm	
+65	11	,	
+65	12	EWMA	
+65	13	for	
+65	14	baseline	
+65	15	drift	
+65	16	tracking	
+65	17	,	
+65	18	and	
+65	19	Z	
+65	20	-	
+65	21	Score	
+65	22	filtering	
+65	23	.	
+66	1	Built	
+66	2	a	
+66	3	custom	
+66	4	Prometheus	
+66	5	metric	
+66	6	registry	
+66	7	,	
+66	8	an	
+66	9	HTTP	
+66	10	dispatcher	
+66	11	with	
+66	12	exponential	
+66	13	backoff	
+66	14	and	
+66	15	jitter	
+66	16	,	
+66	17	a	
+66	18	Kubernetes	
+66	19	DaemonSet	
+66	20	manifest	
+66	21	,	
+66	22	and	
+66	23	a	
+66	24	secured	
+66	25	systemd	
+66	26	service	
+66	27	.	
+67	1	Configured	
+67	2	GitHub	
+67	3	Actions	
+67	4	CI	
+67	5	with	
+67	6	fuzz	
+67	7	testing	
+67	8	(	
+67	9	Go	
+67	10	Fuzz	
+67	11	),	
+67	12	race	
+67	13	condition	
+67	14	detection	
+67	15	(-	
+67	16	race	
+67	17	),	
+67	18	and	
+67	19	cross	
+67	20	-	
+67	21	compilation	
+67	22	for	
+67	23	linux	
+67	24	/	
+67	25	amd64	
+67	26	and	
+67	27	linux	
+67	28	/	
+67	29	arm64	
+67	30	.	
+68	1	Designed	
+68	2	a	
+68	3	distributed	
+68	4	reverse	
+68	5	proxy	
+68	6	in	
+68	7	Go	
+68	8	featuring	
+68	9	an	
+68	10	in	
+68	11	-	
+68	12	memory	
+68	13	Token	
+68	14	Bucket	
+68	15	algorithm	
+68	16	and	
+68	17	distributed	
+68	18	rate	
+68	19	limiting	
+68	20	in	
+68	21	Redis	
+68	22	via	
+68	23	atomic	
+68	24	Lua	
+68	25	scripts	
+68	26	.	
+69	1	Integrated	
+69	2	a	
+69	3	three	
+69	4	-	
+69	5	state	
+69	6	Circuit	
+69	7	Breaker	
+69	8	and	
+69	9	context	
+69	10	-	
+69	11	aware	
+69	12	retries	
+69	13	with	
+69	14	request	
+69	15	body	
+69	16	rewind	
+69	17	for	
+69	18	idempotent	
+69	19	methods	
+69	20	.	
+70	1	Configured	
+70	2	Prometheus	
+70	3	metrics	
+70	4	collection	
+70	5	and	
+70	6	Grafana	
+70	7	dashboards	
+70	8	;	
+70	9	conducted	
+70	10	load	
+70	11	testing	
+70	12	in	
+70	13	k6	
+70	14	.	
