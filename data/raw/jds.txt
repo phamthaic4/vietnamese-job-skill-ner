@@ -95,3 +95,922 @@ Configured GitHub Actions CI with fuzz testing (Go Fuzz), race condition detecti
 Designed a distributed reverse proxy in Go featuring an in-memory Token Bucket algorithm and distributed rate limiting in Redis via atomic Lua scripts.
 Integrated a three-state Circuit Breaker and context-aware retries with request body rewind for idempotent methods.
 Configured Prometheus metrics collection and Grafana dashboards; conducted load testing in k6.
+
+[TopCV] Phát Triển Mobile Developer IOS/Android React Native TypeScript - Edufit
+Phát triển và duy trì ứng dụng Mobile trên iOS/Android bằng React Native + TypeScript, ưu tiên Expo.
+Xây dựng UI, component, navigation, state management và form.
+Tích hợp REST API, authentication, push notification, deep link.
+Làm việc với storage, cache/offline, camera, media, location và native module khi cần.
+Testing, debugging, tối ưu performance và xử lý lỗi.
+Tham gia build/release app trên App Store/Google Play.
+Phối hợp với Product/BA, UI/UX, Backend, QA và DevOps.
+Ứng dụng AI trong development/testing/debugging và tích hợp AI/LLM khi có yêu cầu.
+2–4 năm kinh nghiệm phát triển Mobile.
+Tối thiểu 1,5 năm React Native.
+Thành thạo TypeScript; ưu tiên kinh nghiệm Expo/EAS.
+Có kinh nghiệm REST API, debugging, testing và app release.
+Có kinh nghiệm thực tế ứng dụng AI trong phát triển Mobile.
+Biết sử dụng AI Coding Assistant.
+Chủ động, trách nhiệm, phối hợp tốt và ham học hỏi.
+
+[TopCV] Senior Frontend Developer - SHB
+Thiết kế và phát triển giao diện người dùng (UI) cho các hệ thống phần mềm nghiệp vụ của Ngân hàng trên nền tảng web, sử dụng công nghệ Angular và ReactJS, đảm bảo thân thiện với người dùng, hiệu năng cao và đáp ứng các yêu cầu bảo mật – hiệu suất của ngân hàng.
+Phân tích yêu cầu, thiết kế và phát triển các thành phần giao diện web theo đặc tả kỹ thuật, sử dụng Angular hoặc ReactJS.
+Phối hợp chặt chẽ với nhóm thiết kế UX/UI và nhóm Back-end để đảm bảo trải nghiệm người dùng mượt mà, đồng bộ dữ liệu và tối ưu hiệu năng.
+Tối ưu hóa UI/UX cho các trình duyệt và thiết bị khác nhau (responsive design).
+Tham gia viết tài liệu kỹ thuật, tài liệu bàn giao và hướng dẫn sử dụng khi cần.
+Hỗ trợ kiểm thử, khắc phục lỗi (bug fixing) và bảo trì hệ thống sau triển khai.
+Nghiên cứu và đề xuất các công nghệ mới nhằm nâng cao chất lượng giao diện và trải nghiệm người dùng.
+Tuân thủ quy trình phát triển phần mềm và các tiêu chuẩn về an toàn thông tin của ngân hàng.
+Thành thạo Angular (8+) và/hoặc ReactJS (với hooks, Redux).
+Nắm vững nguyên lý thiết kế giao diện, responsive web design, cross-browser compatibility.
+Biết sử dụng RESTful API và có kinh nghiệm tích hợp front-end với back-end.
+Ưu tiên ứng viên có kinh nghiệm làm việc với:
+Git, Gitlab, CI/CD.
+Các thư viện như RxJS, NgRx (với Angular), hoặc Zustand/Recoil (với React).
+Unit test, integration test cho front-end.
+Có kinh nghiệm làm việc với Ant Design.
+
+[TopCV] Fullstack Developer - Công ty Cổ phần MISA
+Thiết kế và phát triển toàn diện từ Frontend, API, Backend .NET đến cơ sở dữ liệu, đồng thời chủ động đề xuất giải pháp kỹ thuật.
+Xây dựng, chuẩn hóa codebase Frontend với Angular, React hoặc Vue, giúp sản phẩm dễ phát triển, tái sử dụng và mở rộng.
+Đo lường, tối ưu hiệu năng Client và Backend, cải thiện tốc độ phản hồi, trải nghiệm người dùng và khả năng chịu tải của hệ thống.
+Giải quyết các bài toán chuyên sâu về Transaction, Caching, Concurrency, Messaging và hệ thống có lượng truy cập lớn.
+Tham gia định hình kiến trúc, thực hiện Design Review, Code Review và Testing, góp phần xây dựng sản phẩm ổn định, dễ bảo trì.
+Phối hợp cùng Product Manager, BA và DevOps để chuyển hóa nhu cầu kinh doanh thành giải pháp công nghệ hiệu quả.
+Chia sẻ chuyên môn, mentoring thành viên và phát triển năng lực theo định hướng Technical Leadership.
+Có từ 3-4 năm kinh nghiệm phát triển ứng dụng Web với C#, .NET/.NET Core và hiểu cách tổ chức hệ thống theo Clean Architecture.
+Có kinh nghiệm phát triển Frontend với JavaScript/TypeScript và ít nhất một framework Angular, React hoặc Vue; có khả năng xây dựng, chuẩn hóa codebase.
+Đã trực tiếp tối ưu hiệu năng Backend và Client, mang lại cải thiện thực tế về tốc độ phản hồi, trải nghiệm người dùng hoặc khả năng chịu tải.
+Nắm vững OOP, SOLID, Design Pattern; có tư duy viết mã dễ đọc, dễ kiểm thử và bảo trì.
+Thành thạo SQL Server/MySQL, có kinh nghiệm thiết kế dữ liệu và tối ưu truy vấn.
+Có khả năng phân tích vấn đề, phối hợp đội nhóm và chủ động đề xuất giải pháp kỹ thuật.
+Kinh nghiệm với Redis, RabbitMQ, Microservices, Docker hoặc CI/CD.
+Đã sử dụng các công cụ đo lường hiệu năng Frontend như Lighthouse, Chrome DevTools hoặc Web Vitals.
+Có kinh nghiệm với hệ thống quy mô lớn, Unit Test, Code Review hoặc mentoring thành viên.
+
+[TopCV] Fullstack Developer - Công ty Cổ phần MISA
+Tham gia phát triển các sản phẩm và dịch vụ tài chính trên nền tảng công nghệ tiên tiến nhất
+Phụ trách phát triển Fullstack từ Frontend (FE), Backend (BE) đến Database (thiết kế, truy vấn, tối ưu).
+Phân tích và tối ưu hiệu năng ứng dụng: xử lý các vấn đề về tốc độ, tài nguyên, khả năng mở rộng và ổn định hệ thống.
+Phối hợp chặt chẽ với các team liên quan (QC, DevOps, BA,...) để đảm bảo đúng yêu cầu, đúng chất lượng và đúng tiến độ.
+Viết tài liệu kỹ thuật/hướng dẫn sử dụng phục vụ bàn giao, đào tạo nội bộ khi cần.
+Tham gia code review, góp ý nâng cao chất lượng code, đồng thời chia sẻ kiến thức và kinh nghiệm để cùng nâng trình team.
+Tốt nghiệp ĐH chuyên ngành CNTT hoặc các chuyên ngành liên quan.
+Có tối thiểu 1.5 năm kinh nghiệm lập trình trên nền tảng Web
+Thành thạo các kiến thức về .NET Framework hoặc .NET Core (C#, ASP.NET, MVC, ...) và VueJS
+Nắm vững nền tảng lập trình và kiến trúc: OOP, SOLID, Design Patterns, hiểu SOA/Microservices
+Có kinh nghiệm phát triển hệ thống Web quy mô vừa/lớn, tối ưu và vận hành ổn định.
+Có kinh nghiệm với Web API/RESTful API.
+Có kinh nghiệm với SQL Server/MySQL/PostgreSQL; biết thêm MongoDB/Couchbase/Redis/RabbitMQ (hoặc tương đương) là điểm cộng.
+Yêu thích môi trường product, có tư duy làm sản phẩm hướng người dùng.
+Biết ứng dụng công cụ AI để hỗ trợ lập trình (viết code/test/tài liệu, review, tối ưu…).
+
+[TopCV] Frontend Developer - CÔNG TY TNHH EAERA VIỆT NAM
+Design and develop compelling and usable customer web interfaces using VueJS.
+Work closely with engineers from other teams to develop and build high-quality software.
+Improve the efficiency of existing products, debug and troubleshoot production issues.
+Build the architecture and design of new products and features.
+Implement UI components and libraries.
+Must Haves:
+Utilize code versioning tools (Git).
+Experienced with working on Linux based infrastructure
+Expert knowledge with HTML5, CSS3, SASS/SCSS.
+Expert with developing responsive layouts leveraging CSS and media queries.
+Solid knowledge of modern web development technologies & front-end frameworks.
+Proficient in Vue 3, Nuxt 3
+Nice to Have
+Experience in Mobile App development (build cross platform apps using Javascript)
+Understanding of SSR (Server-Side Rendering) and Static Site Generation (SSG)
+Experience with Nuxt 4
+Know how to debug, measure and optimize the performance of web applications.
+Understand and be able to implement good tests for front-end code.
+Basic understanding of server, database, and good experience in RESTful API design and development
+Desired soft skills
+Awareness of critical concepts in DevOps and Agile principles
+Ability to grasp technical and financial concepts quickly
+Easily adapt and learn new things.
+Ability to work independently and as part of a team
+Ability to work under pressure and handle emergency situations effectively
+Good problem-solving skills.
+Attention to detail.
+
+[TopCV] Full Stack - Công ty Cổ phần JVB Việt Nam
+Trao đổi/hỗ trợ khách hàng và các thành viên trong dự án về các vấn đề liên quan đến công việc;
+Báo cáo công việc cho Team dự án và các cấp Quản lý;
+Phát triển và vận hành sản phẩm về Web/Phần mềm;
+Code review, hướng dẫn kỹ thuật và đảm bảo tuân thủ quy chuẩn lập trình;
+Thiết kế kiến trúc hệ thống, đảm bảo hiệu năng, bảo mật và khả năng mở rộng;
+Tối ưu hóa Code để hệ thống hoạt động nhanh và mượt mà hơn;
+Dẫn dắt và hỗ trợ các vấn đề lập trình ở cả Back-end và Front-end.
+Ít nhất 3 năm kinh nghiệm phát triển phần mềm full-stack
+Thành thạo phát triển backend với golang là một lợi thế;
+Thành thạo ReactJS (có kinh nghiệm với TypeScript là lợi thế);
+Có kinh nghiệm thiết kế API theo chuẩn RESTful, thiết kế CSDL và kiến trúc microservices;
+Có kinh nghiệm sử dụng Docker, Git, CI/CD (GitLab CI, Jenkins…), nền tảng cloud (AWS/GCP/Azure).
+Có kinh nghiệm làm việc với cơ sở dữ liệu: PostgreSQL, MySQL, MongoDB (tùy dự án).
+Có kinh nghiệm trong việc thiết kế hệ thống, tối ưu hiệu suất, bảo mật ứng dụng web;
+Hiểu biết về Clean Architecture, Design Patterns, và best practices trong lập trình.
+Kỹ năng giải quyết vấn đề tốt và có khả năng dẫn dắt nhóm kỹ thuật;
+Có kỹ năng giao tiếp bằng tiếng Anh một lợi thế.
+
+[TopCV] DEV Full-Stack - Công Ty Cổ Phần GoGroup
+Tham gia phân tích, thiết kế, phát triển và bảo trì các ứng dụng web Full-stack sử dụng Java Spring Boot và Angular (v12+).
+Phát triển các hệ thống end-to-end, bao gồm Backend, RESTful API và giao diện người dùng hiện đại, responsive.
+Thiết kế và phát triển các dịch vụ theo kiến trúc Microservices, đảm bảo khả năng mở rộng, ổn định và dễ bảo trì.
+Xây dựng, tích hợp và kiểm thử các API phục vụ kết nối giữa các hệ thống nội bộ và hệ thống bên thứ ba.
+Tham gia tích hợp với các hệ thống doanh nghiệp, nền tảng messaging và các dịch vụ bên ngoài.
+Phối hợp với BA, QA/Testers, DevOps và các thành viên dự án để đảm bảo chất lượng và tiến độ triển khai.
+Tham gia xử lý các vấn đề về hiệu năng, bảo mật, tính ổn định và khả năng mở rộng của hệ thống.
+Thực hiện code review, viết tài liệu kỹ thuật và tuân thủ các tiêu chuẩn phát triển phần mềm của dự án.
+Có kinh nghiệm dày dạn về phát triển full-stack sử dụng Java (Spring Boot) và Angular (v12+).
+Có kinh nghiệm thực tế trong việc thiết kế, phát triển và bảo trì các ứng dụng toàn diện (end-to-end), bao gồm RESTful API và giao diện người dùng (UI) hiện đại trên nền tảng web.
+Am hiểu sâu sắc về kiến ​​trúc microservices, các tiêu chuẩn thiết kế API và các mô hình tích hợp.
+Có kinh nghiệm làm việc với OpenAPI/Swagger và các công cụ kiểm thử API như Postman, cURL, HTTPie.
+Thành thạo TypeScript, RxJS và kỹ năng xây dựng giao diện (UI) có khả năng thích ứng (responsive) và mở rộng (scalable) bằng Angular cùng các thư viện frontend hiện đại (Angular Material, Ant Design, v.v.).
+Có kinh nghiệm tích hợp với các hệ thống bên thứ ba, dịch vụ doanh nghiệp và nền tảng nhắn tin/truyền tải thông điệp (Kafka, RabbitMQ, v.v.).
+Có kiến ​​thức về cơ sở dữ liệu và công nghệ caching như Oracle, MongoDB, Redis.
+Am hiểu vững chắc về các quy tắc lập trình an toàn (secure coding), xác thực & phân quyền (OAuth2, JWT) và tối ưu hóa hiệu năng ứng dụng.
+Có kinh nghiệm làm việc với Git, quy trình CI/CD, Docker và Kubernetes là một lợi thế.
+Có kinh nghiệm về kiến ​​trúc Micro Frontend là một lợi thế lớn.
+Ưu tiên ứng viên có kinh nghiệm trong lĩnh vực ngân hàng, fintech hoặc các hệ thống xử lý giao dịch khối lượng lớn.
+
+[TopCV] Junior Fullstack Developer - XIPAT FLEXIBLE SOLUTIONS COMPANY LIMITED
+Develop applications for the Shopify e-commerce platform.
+Participate in the development of web applications using ReactJS and server-side applications on the Node.js platform.
+Design, build, and maintain efficient RESTful APIs and integrate them with third-party services and frontend applications.
+Maintain and optimize code, and resolve bugs identified during the development process to ensure system stability and security.
+Research and implement new technologies to enhance product quality and performance.
+Collaborate with product teams to define, design, and ship new features.
+Write clean, readable, and well-documented code following team standards.
+Research and apply new tools or technologies to improve development efficiency.
+Use AI tools such as ChatGPT, Claude, Cursor, or GitHub Copilot to support coding, debugging, documentation, and daily workflow.
+Must-have: At least 1 year of professional experience in Fullstack development using Node.js and ReactJS.
+Knowledge:
+Solid foundation in JavaScript/TypeScript, HTML5, and CSS3.
+Good baseline knowledge of Node.js and ReactJS (familiarity with NestJS is a strong plus).
+Basic understanding of relational/non-relational databases and synchronous vs. asynchronous programming concepts.
+Familiarity with leveraging AI tools (e.g., ChatGPT, Claude) to improve daily coding efficiency and quality.
+Skills:
+Strong core coding skills with a focus on writing clean, readable, and well-documented code.
+Ability to conduct effective self-testing (Unit testing) to minimize bugs before QA handover.
+Good logical thinking, problem-solving capabilities, and a collaborative teamwork mindset.
+Strong self-learning capability to quickly adapt to new tools and frameworks.
+Language:
+Basic to intermediate English reading and writing skills, especially for technical documentation, API references, and project specifications.
+Characteristics:
+Open mindset, highly enthusiastic about learning and exploring emerging technologies.
+Proactive, accountable, and receptive to constructive feedback from senior team members.
+Nice-to-have
+Experience with Shopify app development, Shopify themes, Liquid template language, and Shopify APIs.
+Experience with GraphQL API (both client and server-side).
+Understanding of State Management libraries: Redux Toolkit, or Context API.
+Knowledge of API Security (JWT, OAuth) and performance optimization.
+A good eye for UI/UX design and product usability.
+Basic communication and technical reading/writing skills in English.
+
+[TopCV] Data Engineer (Mobile App & AdTech / Data Platform) - CÔNG TY TNHH MAPLE LABS
+As a Data Engineer, you will be a key driver in designing, scaling, and operating the data backbone across our entire Mobile Apps & Games ecosystem. You will be responsible for transforming tens of millions of raw event logs (in-app events, MMP tracking, ad network revenues) into robust Data Warehouse models, high-performance feature pipelines for ML/AI models (LTV forecasting, anomaly detection), and internal self-service analytics platforms for Product & Growth Squads.
+
+JOB DESCRIPTION:
+
+Build and operate end-to-end ELT/ETL data pipelines (batch & near-realtime) to ingest data from MMPs (Adjust, Qonversion), Ad Networks (Google Ads, AdMob, AppLovin, Mintegral, Apple Search Ads,...), and in-app event tracking into the Data Warehouse.
+Design schema architectures (Star/Snowflake), optimize complex analytical queries, partitioning, clustering, and storage costs on Google BigQuery and modern columnar databases.
+Build, scale, and maintain workflow orchestrations using Apache Airflow, Celery, Redis, and Docker on Cloud environments (GCP/Compute Engine).
+Develop custom Model Context Protocol (MCP) servers, agent tools, and data APIs to connect LLMs and AI IDEs directly with data warehouses, documentation vaults, and internal systems.
+Construct reliable feature stores and datasets for Machine Learning/AI initiatives (LTV forecasting, payback modeling, anomaly detection) and assist in model serving pipelines.
+Implement data observability, automated monitoring, and data quality checks; develop internal data tools and self-service dashboards using Streamlit and Metabase/Looker Studio.
+Establish engineering best practices, data modeling standards, and comprehensive documentation (Data Dictionaries, Architecture Blueprints).
+REQUIREMENTS:
+
+3+ years of hands-on data engineering experience building and maintaining production data pipelines.
+Strong proficiency in Python for high-performance data processing and advanced SQL (performance tuning, window functions, complex transformations).
+Solid experience with Google BigQuery (or modern columnar stores like ClickHouse, Snowflake, Redshift), including query optimization and cost management.
+Practical experience with Apache Airflow, Celery/Redis, Docker/containerization, CI/CD workflows, and Cloud platforms (GCP preferred).
+AI-First & Vibe Coding Mindset: Daily hands-on experience using AI coding assistants and AI IDEs (Cursor, Claude Code, Antigravity, etc.) to rapidly prototype, build, and ship production-grade code at high velocity.
+Hands-on experience or strong interest in building/integrating MCP (Model Context Protocol) servers, custom tools, and AI workflows for data engineering tasks.
+Strong ownership, problem-solving abilities, clear communication, and effective collaboration with Product Owners, Data Analysts, and Leadership.
+Nice to have:
+Domain knowledge in Mobile Apps, Games, or Digital Advertising / AdTech (MMP attribution, Ad Network APIs, eCPM, ROAS, LTV).
+Experience building internal web tools or BI applications using Streamlit.
+Familiarity with ML lifecycles, BigQuery ML, or LLM serving infrastructure and token monitoring.
+Experience with workflow automation APIs (Google Apps Script, Slack webhooks, third-party integrations).
+
+[TopCV] Phát Triển Mobile Developer IOS/Android React Native TypeScript - Edufit
+Phát triển và duy trì ứng dụng Mobile trên iOS/Android bằng React Native + TypeScript, ưu tiên Expo.
+Xây dựng UI, component, navigation, state management và form.
+Tích hợp REST API, authentication, push notification, deep link.
+Làm việc với storage, cache/offline, camera, media, location và native module khi cần.
+Testing, debugging, tối ưu performance và xử lý lỗi.
+Tham gia build/release app trên App Store/Google Play.
+Phối hợp với Product/BA, UI/UX, Backend, QA và DevOps.
+Ứng dụng AI trong development/testing/debugging và tích hợp AI/LLM khi có yêu cầu.
+2–4 năm kinh nghiệm phát triển Mobile.
+Tối thiểu 1,5 năm React Native.
+Thành thạo TypeScript; ưu tiên kinh nghiệm Expo/EAS.
+Có kinh nghiệm REST API, debugging, testing và app release.
+Có kinh nghiệm thực tế ứng dụng AI trong phát triển Mobile.
+Biết sử dụng AI Coding Assistant.
+Chủ động, trách nhiệm, phối hợp tốt và ham học hỏi.
+
+[TopCV] IOS Developer - Công ty cổ phần phần mềm ITSOL Holdings
+Thực hiện quy hoạch và phát triển các ứng dụng Mobile Ngân hàng số
+Phối hợp với các team UI/UX, BA, Backend,...để triển khai và đảm bảo yêu cầu về chất lượng, tiến độ của các dự án.
+Thực hiện tối ưu hóa, cải tiến kiến trúc và mở rộng hệ thống.
+Từ 2 năm kinh nghiệm làm thực tế về phát triển apps cho Mobile IOS (Swift)
+Có kinh nghiệm về REST API, WebSocket, GraphQL.Có khả năng sử dụng các công cụ hỗ trợ như GitLab.
+Có khả năng sử dụng thư viện CocoaPods.
+Có kinh nghiệm với Firebase, Chart.
+Có kinh nghiệm về các mô hình MVC hoặc MVVM.
+Có kinh nghiệm tham gia các dự án theo mô hình Agile, Scrum.
+
+[ITviec] Senior Mobile Developer (Native iOS & Android) - NEC Vietnam
+Design, develop, and maintain high-quality mobile applications for iOS and Android platforms.
+Analyze business requirements and technical specifications and propose appropriate implementation solutions.
+Understand, analyze, and enhance existing application architecture and legacy source code.
+Define mobile application architecture and propose scalable, maintainable solutions aligned with business requirements.
+Conduct source code reviews, ensure coding standards compliance, and promote engineering best practices.
+Review technical designs, identify technical risks, and provide improvement recommendations.
+Analyze and resolve complex technical issues related to performance, security, scalability, and maintainability.
+Participate in technical discussions, architecture design, effort estimation, and risk assessment.
+Collaborate closely with project teams, customers, and stakeholders to deliver high-quality solutions.
+Provide technical guidance and mentoring to team members.
+Contribute to continuous improvement activities, including development processes, code quality, and engineering practices.
+Perform other tasks assigned by the PM/SM.
+Bachelor’s degree in Computer Science, Information Technology, or a related field.
+At least 5 years of experience in mobile application development, with strong expertise in iOS (Swift) and/or Android (Java/Kotlin).
+Strong knowledge of Mobile Architecture, Clean Architecture, SOLID Principles, and Design Patterns.
+Experience in source code review, design review, refactoring, and performance optimization.
+Ability to understand existing systems, analyze requirements, and propose technical solutions.
+Experience working on Japanese software development projects.
+Experience mentoring team members and participating in technical discussions.
+Familiarity with CI/CD, build automation, and cloud platforms (AWS, Azure, or GCP).
+Experience with Frontend technologies, Flutter, or React Native is a plus.
+Japanese language proficiency (N4 or above) is an advantage.
+Good communication, problem-solving, and teamwork skills. 
+
+[ITviec] Middle Flutter Developer – Mobile App - Nam Viet JSC
+Lập trình viên Flutter – Phát triển ứng dụng Mobile quản lý trường đại học
+1. Tham gia phân tích, thiết kế và phát triển ứng dụng Mobile phục vụ hệ thống quản lý đào tạo và quản lý trường đại học trên nền tảng Android và iOS.
+2. Phát triển các chức năng nghiệp vụ như: quản lý sinh viên, đào tạo, thời khóa biểu, điểm, học phí, thông báo và các dịch vụ dành cho sinh viên, giảng viên, cán bộ quản lý, ....
+3. Xây dựng giao diện Mobile hiện đại, responsive, tối ưu trải nghiệm người dùng.
+4. Tích hợp ứng dụng với hệ thống Backend thông qua RESTful API.
+5. Phối hợp với đội ngũ Backend, Database, QA và nghiệp vụ để triển khai, kiểm thử và hoàn thiện sản phẩm.
+6. Thực hiện đóng gói, phát hành và cập nhật ứng dụng trên Google Play Store và Apple App Store
++A. Flutter & Dart
+Ứng viên cần:
+- Thành thạo ngôn ngữ Dart
+- Có kinh nghiệm phát triển ứng dụng bằng Flutter
+- Hiểu và sử dụng tốt: Widget, StatelessWidget, StatefulWidget, Widget Lifecycle, BuildContext, Future, async/await, Stream, Null Safety, Extension, Exception Handling.
+- Có khả năng xây dựng UI responsive cho nhiều kích thước màn hình
+- Thành thạo Form, Validation, Navigation, Animation cơ bản và Theme.
++B. Quản lý trạng thái
+- Có kinh nghiệm thực tế với ít nhất một giải pháp: Bloc/Cubit, Provider, Riverpod hoặc GetX 
+REST API & Backend Integration
+- Thành thạo RESTful API, HTTP/HTTPS và JSON serialization/deserialization.
+-  Xử lý tốt request bất đồng bộ, timeout, exception và lỗi API.
+- Có kinh nghiệm với Dio hoặc http, Interceptor, Authentication.
+- Hiểu và triển khai Bearer Token, Access Token/Refresh Token.
+- Có kinh nghiệm upload/download file và xử lý dữ liệu từ API.
+
+C. Đóng gói & phát hành ứng dụng
+- Có kinh nghiệm build, ký ứng dụng và phát hành thực tế lên Google Play Store và Apple App Store.
+- Biết quản lý version, signing/certificate, release và cập nhật ứng dụng.
++D. Có kinh nghiệm upcode lên Apple store và CH Play
+* Ưu tiên: 
+- Đã từng phát triển ứng dụng trong lĩnh vực giáo dục, quản lý đào tạo hoặc quản lý trường đại học.
+- Có kinh nghiệm làm việc với hệ thống Backend .NET/Web API và SQL Server là lợi thế.
+- Có tư duy về kiến trúc phần mềm, khả năng tối ưu hiệu năng và bảo mật ứng dụng Mobile.
+- Có tinh thần trách nhiệm, chủ động học hỏi và phối hợp tốt với đội ngũ phát triển.
+2. Yêu cầu ứng viên
+• Tốt nghiệp Đại học chuyên ngành: CNTT, Khoa học máy tính, Hệ thống thông tin hoặc tương đương.
+• Làm việc kỷ luật, đúng quy trình, có trách nhiệm với sản phẩm phần mềm, chủ động nghiên cứu công nghệ mới.
+• Tinh thần bảo mật dữ liệu và tuân thủ quy định hệ thống.
+
+[ITviec] Senior Mobile Engineer (iOS, Android) - TPIsoftware Co., Ltd
+1. Own assigned features end to end — design, implementation, test, release, and behaviour in production.
+
+2. Build to the security bar a financial application requires: secure storage, authentication, session handling, and data handling that survives internal security review and data residency obligations.
+
+3. Translate product and design requirements into technical solutions, working directly with product owners, designers, and backend engineers rather than through a spec handoff.
+
+4. Set and raise architectural and engineering standards for mobile, through code review, pairing, and technical guidance. Onboard new engineers and support their growth.
+
+5. Define the AI-assisted development workflow for mobile — the conventions, tooling, and quality gates — working alongside our framework team.
+
+6. Diagnose and resolve production issues, including performance, memory, crash, and release-related problems.
+
+7. Participate in technical interviews as the engineering organisation scales.
+1. 5+ years building mobile applications, with at least one production app owned through multiple release cycles. The role requires setting architectural standards, debugging production incidents, coaching engineers, and supporting hiring — depth below this bar will not carry it.
+
+2. Strong native proficiency in one platform:
+
+- Android: Kotlin — Compose, Coroutines
+
+- iOS: Swift — SwiftUI, Structured Concurrency
+
+3. Practical experience with MVVM or equivalent, asynchronous programming, and REST API integration.
+
+4. Familiarity with regulated-environment features: secure storage, biometric authentication, certificate pinning, root/jailbreak detection, obfuscation, and data residency requirements.
+
+5. Unit and UI testing as a working habit, not an afterthought. Familiarity with app store submission and review for financial applications.
+
+6. Git and collaborative branching workflows; comfortable working within a CI/CD pipeline.
+
+7. Track record of mentoring less-experienced engineers and giving constructive code review.
+
+8. Working English. Chinese is a plus for cross-region collaboration.
+
+9. Degree in Computer Science or equivalent practical experience.
+
+Nice to Have
+
+- Practical Clean Architecture experience.
+
+- Production on-call or incident response experience (significant plus).
+
+- Scrum experience.
+
+- Cross-platform exposure (Flutter / React Native).
+
+- Performance profiling depth.
+
+- Prior fintech or banking delivery.
+
+[TopCV] Tester /QA Engineer - Công ty TNHH Smartbooks
+- Xây dựng kế hoạch kiểm thử hệ thống (System Test Plan).
+
+- Thiết kế và thực hiện Test Case/Test Scenario dựa trên tài liệu yêu cầu nghiệp vụ và thiết kế hệ thống.
+
+- Kiểm thử chức năng (Functional Testing) cho toàn bộ hệ thống.
+
+- Kiểm thử luồng nghiệp vụ end-to-end.
+
+- Kiểm thử tích hợp giữa các phân hệ và hệ thống liên quan.
+
+- Kiểm thử giao diện người dùng, phân quyền và xử lý dữ liệu.
+
+- Thực hiện kiểm thử hồi quy (Regression Testing) khi có thay đổi/chỉnh sửa hệ thống.
+
+- Phát hiện, ghi nhận và theo dõi lỗi phát sinh trong quá trình kiểm thử.
+
+- Phối hợp với nhóm phát triển để xác minh lỗi và kiểm thử lại sau khi sửa lỗi (Retest).
+• Đảm bảo hệ thống đáp ứng đầy đủ yêu cầu chức năng và nghiệp vụ.
+
+• Đảm bảo chất lượng phần mềm trước khi triển khai UAT hoặc Go-live.
+
+• Theo dõi vòng đời lỗi (Bug Lifecycle); review Test Case và góp phần cải tiến chất lượng kiểm thử.
+
+• Phân tích kết quả kiểm thử và lập báo cáo đánh giá chất lượng hệ thống.
+
+• Đảm bảo các lỗi nghiêm trọng được xử lý trước khi nghiệm thu.
+
+• Phối hợp với nhóm BA, Dev và vận hành trong suốt quá trình kiểm thử; sẵn sàng hỗ trợ, chia sẻ kinh nghiệm với đồng đội khi cần.
+
+[TopCV] Manual Tester - CÔNG TY CỔ PHẦN POWERGATE SOFTWARE
+Analyze/ review product requirements
+Reading technical documents in English well.
+Write/ review detailed test cases/ scripts and perform testing on Web Application
+Analyze Business Requirements, develops test cases and executes manual testing
+Report/ manage defects
+Understand use cases
+Pay close attention to details of User Experience
+Writes/analyze user stories
+At least 3 years of software testing experience.
+Having Good knowledge of Software Testing process
+Careful, highly organized and self-learning attitude
+Capable of working in a team and under high pressure.
+Good at presentation, report writing skills, communication skills, problem-solving skills, analytical skills, attention to details
+Have a high sense of responsibility
+Attitude to learn new technologies quickly.
+Experience working in an Agile/Scrum environment;
+Pay close attention to details of User Experience;
+Be familiar with testing cross-platform/browser web applications.
+It Would Be Nice If You Have
+Experience using SQL on access data for testing, preparing test data.
+Experience to use Test performance, Load test tool
+Cybersecurity domain experience, including file security, device security, network security, etc.
+
+[TopCV] IT Automation Developer / RPA Developer - CÔNG TY TNHH A.S.T.R
+Chúng tôi đang tìm kiếm một IT Automation Developer có tư duy tự động hóa và khả năng phát triển các công cụ phục vụ hoạt động nội bộ.
+
+Công việc chính là phân tích các quy trình đang được thực hiện thủ công, xây dựng Bot/Automation để giảm thao tác lặp lại, đồng thời phát triển và bảo trì các ứng dụng/web nội bộ khi có nhu cầu.
+
+A. Phát triển Automation / Bot
+
+Phân tích các quy trình nghiệp vụ nội bộ và xác định các công đoạn có thể tự động hóa.
+Thiết kế và phát triển các Bot nhằm tự động hóa các thao tác trên Website/Web system, Excel và các file dữ liệu, Email, hệ thống quản lý nội bộ và các phần mềm/web application khác.
+Phát triển automation bằng Python và các framework/thư viện phù hợp.
+Tự động hóa các công việc như thu thập và xử lý dữ liệu; đọc/ghi/chỉnh sửa Excel; đăng nhập và thao tác trên Web; Download/Upload file; gửi và xử lý email; kiểm tra, đối chiếu và tổng hợp dữ liệu; tự động nhập dữ liệu vào hệ thống.
+Theo dõi hoạt động của Bot, xử lý lỗi và cải thiện độ ổn định.
+Bảo trì, nâng cấp các Bot hiện có khi hệ thống hoặc quy trình nghiệp vụ thay đổi.
+B. Phát triển App / Web nội bộ
+
+Phát triển các ứng dụng hoặc website nội bộ theo nhu cầu thực tế của công ty.
+Xây dựng các tool hỗ trợ nhân viên trong công việc hằng ngày.
+Thiết kế giao diện đơn giản, dễ sử dụng cho người dùng nội bộ.
+Phát triển các chức năng xử lý dữ liệu, tìm kiếm, nhập liệu, báo cáo và quản lý thông tin.
+Kết nối App/Web với database hoặc các hệ thống khác khi cần.
+Maintain và nâng cấp các ứng dụng đã triển khai.
+C. Phân tích và cải tiến quy trình
+
+Trao đổi trực tiếp với các bộ phận nghiệp vụ để tìm hiểu quy trình.
+Phân tích các công việc thủ công, repetitive và tốn thời gian.
+Đề xuất phương án cải tiến bằng Automation/IT.
+Đo lường hiệu quả sau khi triển khai Bot, ví dụ: giảm thời gian xử lý, giảm số lượng thao tác thủ công, giảm lỗi do nhập liệu và giảm workload cho nhân viên.
+Viết tài liệu hướng dẫn sử dụng và tài liệu kỹ thuật cho các hệ thống/Bot.
+Bắt buộc:
+
+Có kinh nghiệm lập trình thực tế, Không yêu cầu ứng viên phải có kinh nghiệm RPA chuyên sâu nếu có nền tảng lập trình tốt và tư duy Automation.
+Có thể tuyển ứng viên ở các level: Junior / Mid-level.
+Có kiến thức, xử lý dữ liệu và kinh nghiệm sử dụng Python
+Có khả năng đọc hiểu và thao tác với Excel.
+Có tư duy logic và khả năng phân tích quy trình.
+Có khả năng tự tìm hiểu, debug và giải quyết vấn đề.
+Có tinh thần chủ động và chịu trách nhiệm với sản phẩm mình phát triển.
+Ưu tiên: Không bắt buộc phải biết tất cả các công nghệ trên. Công ty ưu tiên ứng viên có nền tảng lập trình tốt, tư duy automation và khả năng học công nghệ mới.
+Python
+Selenium / Playwright
+Pandas
+OpenPyXL / XlsxWriter
+PyAutoGUI
+FastAPI / Flask / Django
+HTML / CSS / JavaScript
+React / Vue
+SQL / MySQL / PostgreSQL
+Git / GitHub / GitLab
+REST API
+Docker
+Windows automation
+RPA / Process Automation
+
+[ITviec] QA Automation Tester - CO-WELL ASIA
+Thực hiện các công việc liên quan đến kiểm thử tự động trong các dự án.
+Thực hiện estimate, lên schedule, đảm bảo năng suất, chất lượng kiểm thử tự động của dự án.
+Thực hiện công việc xây dựng/chạy/report kịch bản kiểm thử tự động một cách độc lập.
+Chủ động trong việc phân tích kết quả kiểm thử để xác định và cải thiện vấn đề
+Có từ 3 năm kinh nghiệm trong lĩnh vực automation test mạnh về DB, API và Mobile
+Tinh thần không ngại thay đổi tool/ framework/ ngôn ngữ
+Có kinh nghiệm CI/CD với Jenkins hoặc tương tự
+Có kinh nghiệm sử dụng các tool/framework: Karate, Selenium, Appium, Serenity BDD,…
+Có kinh nghiệm lập trình: Java hoặc JavaScript/Typescript
+Có kinh nghiệm với SQL (MySQL, SQL Server,..)
+Có kinh nghiệm quản lý mã nguồn với GIT hoặc tương tự
+Hiểu biết về quy trình test, chiến lược và kỹ thuật test phần mềm, tạo tài liệu test tốt.
+Đọc hiểu các tài liệu yêu cầu nghiệp vụ, đặc tả hệ thống, các tài liệu dự án liên quan
+Ưu tiên ứng viên có kinh nghiệm với domain banking, Life Insurance hoặc Fintech
+
+[ITviec] Mobile/Web Tester (QA/QC) - INTOWELL
+We are looking for a QA / Tester to join our team working on Mobile & Web applications with AI-powered features. You will ensure product quality, reliability, and user experience across platforms.
+Key Responsibilities
+Perform Manual Testing for Web & Mobile (iOS, Android)
+Analyze User Stories, Use Cases, Requirements
+Design & execute Test Plans, Test Cases, Test Scenarios
+Conduct Functional, Integration, System, Regression Testing
+Collaborate with Developers, Product Managers, Designers
+Improve QA Process, Test Coverage, Documentation
+Your skills and experience
+Bachelor’s degree in IT / Computer Science
+1+ year experience in Software Testing
+Experience with Mobile & Web Testing
+Strong skills in Test Case Writing & Bug Reporting
+Familiar with Jira / Redmine / Bug Tracking Tools
+Basic English communication skills (reading and writing)
+Nice to have:
+Experience with AI Applications, API Testing (Postman, Swagger)
+Basic SQL / Data Validation
+ISTQB Certification
+Automation Testing (Selenium, Appium)
+
+[ITviec] Manual QA Tester (Japanese N3) - Cube System Việt Nam
+Phân tích yêu cầu, tài liệu thiết kế và đặc tả chức năng để xác định phạm vi kiểm thử.
+Thiết kế và thực hiện Test Case, Test Scenario, Checklist và Test Data.
+Thực hiện Functional Test, Integration Test, System Test và Regression Test cho các sản phẩm Web, Desktop và Mobile.
+Phát hiện, ghi nhận, theo dõi và xác nhận lỗi sau khi sửa.
+Phối hợp với BA, Developer và khách hàng để làm rõ yêu cầu, xử lý các vấn đề phát sinh.
+Trao đổi với khách hàng Nhật về yêu cầu, tiến độ và kết quả kiểm thử.
+Tham gia review Test Case/Test Report và đóng góp ý kiến để nâng cao chất lượng sản phẩm.
+Đề xuất các cải tiến trong quá trình kiểm thử.
+Từ 2 - 3 năm kinh nghiệm trong lĩnh vực Software Testing/QA
+Có kinh nghiệm thiết kế Test Case, Test Scenario, Test Data, thực hiện Functional, Integration, System và Regression Testing.
+Có kinh nghiệm kiểm thử Web/Desktop/Mobile và quản lý lỗi trên Jira, Redmine, Backlog hoặc tương đương.
+Hiểu rõ SDLC/STLC, có kỹ năng phân tích yêu cầu và xử lý vấn đề.
+Tiếng Nhật N3 hoặc tương đương, có khả năng đọc hiểu tài liệu và trao đổi công việc với khách hàng Nhật.
+Có kỹ năng giao tiếp, làm việc nhóm; kinh nghiệm review Test Case, mentoring, SQL, API Testing là lợi thế.
+
+[TopCV] Software Engineer (Golang/Python/Java/.NET) - Viettel IDC
+1. Tham gia các team Agile thiết kế, lập trình xây dựng các sản phẩm Cloud (Cloud Management; Automation & Sefl Service,) hoặc sản phẩm nội bộ ...... sử dụng ngôn ngữ lập trình như: Golang/Python/Java/.NET
+2. Quản trị, nâng cấp, sửa lỗi các công cụ phần mềm đã lập trình và được phân công tiếp nhận
+3. Thực hiện review code, tối ưu source, fix bug
+4. Tham gia thiết kế CSDL, mô hình hệ thống CNTT trong Công ty
+Tốt nghiệp Đại học chuyên ngành CNTT/chuyên ngành liên quan, ưu tiên các trường Bách Khoa, Công nghệ,.. hoặc tốt nghiệp nước ngoài
+Từ 3 năm kinh nghiệm trở lên vị trí fullstack
+Tiếng Anh cơ bản (Toeic ≥ 550 điểm hoặc tương đương)
+Kiến thức về quy trình phát triển phần mềm, lập trình an toàn
+Biết sử dụng tối thiểu 01 loại ngôn ngữ lập trình Golang/Python/Java/.NET
+Biết sử dụng, làm việc với ít nhất 1 hệ quản trị CSDL (My SQL, SQL Server, Oracle, Mongo, Maria)
+Có kinh nghiệm tham gia thiết kế hệ thống, API & theo tiêu chuẩn SDK
+Ưu tiên có kinh nghiệm triển khai sản phầm trên nền tảng Cloud, đã làm việc với mô hình Microservice,.
+
+[TopCV] DevOps Engineer - Công Ty TNHH LG CNS VIỆT NAM
+Design scalable, secure, and maintainable application architecture for on-premises and/or public cloud environments.
+Define standard deployment patterns (VM-based, container-based, Kubernetes-based) and guide teams on best-fit approaches.
+Build and maintain CI/CD pipelines and reusable templates to improve delivery speed, quality, and traceability.
+Install, configure, and harden middleware components (Nginx/Apache HTTPD/Tomcat), including TLS and routing best practices.
+Establish and promote architecture standards, security guidelines, and design principles (secrets handling, least privilege, secure defaults).
+Produce and maintain architecture documentation (diagrams, ADRs, runbooks, deployment guides).
+Collaborate with development, QA, product, and operations teams to ensure smooth releases and stable operations.
+Contribute to an AI Agent solution development project.
+Proven ability to design application architecture and deliver modern applications in On-premises and/or Public Cloud environments.
+Working knowledge of CI/CD using tools such as GitLab CI, Jenkins, GitHub Actions, Argo CD/GitOps, or equivalent.
+Ability to install and configure at least one middleware stack (Nginx, Apache HTTP Server, Apache Tomcat).
+Capability to deploy applications on at least one of: on-premises servers, public cloud, containers, Kubernetes.
+Familiarity with artifact/container registries (e.g., Nexus Repository, Harbor, Docker Registry) including publishing, versioning, and access control.
+Understanding Linux fundamentals and basic networking (DNS, HTTP/HTTPS, TLS).
+Strong communication skills and effective collaboration with developers.
+Intermediate English communication skills (speaking)
+
+[TopCV] Senior DevOps / Cloud Infrastructure Engineer - CÔNG TY TNHH VODAPLAY VIỆT NAM
+Về sản phẩm
+
+Chúng tôi đang xây dựng nền tảng AI Agent phục vụ Social Marketing và E-commerce, giúp doanh nghiệp tự động hóa quá trình tạo, quản lý và phân phối nội dung đa phương tiện trên nhiều nền tảng.
+
+Hệ thống được xây dựng theo kiến trúc Microservices & Cloud-Native, vận hành trên AWS và hướng tới khả năng mở rộng lớn, độ ổn định cao và khả năng xử lý các workload AI/ML.
+
+Bạn sẽ tham gia trực tiếp vào việc xây dựng và vận hành Cloud Infrastructure / Platform cho hệ thống, đồng thời đóng vai trò quan trọng trong việc nâng cao độ ổn định, khả năng mở rộng, bảo mật và hiệu quả chi phí của toàn bộ nền tảng.
+
+Trách nhiệm chính
+
+Thiết kế, triển khai và vận hành hạ tầng AWS cho Development, Staging và Production, đảm bảo scalability, reliability, security và cost efficiency.
+Quản lý và tối ưu Kubernetes / Amazon EKS, Helm và application lifecycle.
+Xây dựng và quản lý Infrastructure as Code với Terraform, chuẩn hóa infrastructure giữa các môi trường.
+Xây dựng và cải tiến CI/CD Pipeline với GitLab CI/CD và triển khai GitOps với ArgoCD.
+Xây dựng hệ thống Monitoring, Logging, Alerting & Observability cho Production.
+Điều tra, xử lý Production incidents, thực hiện RCA, cải thiện reliability và giảm MTTR.
+Quản lý Cloud & Kubernetes Security, IAM/RBAC, Secrets, access control và compliance.
+Phối hợp với các team kỹ thuật trong deployment, troubleshooting và tối ưu hệ thống; xây
+
+Từ 4 năm kinh nghiệm DevOps / SRE / Cloud Infrastructure / Platform Engineering.
+Thành thạo Linux, Docker, Kubernetes/EKS, Terraform.
+Có kinh nghiệm thực tế với AWS và vận hành Production.
+Có kinh nghiệm CI/CD, GitLab CI/CD, ArgoCD/GitOps, Helm.
+Có khả năng troubleshooting và xử lý sự cố Production độc lập.
+Ưu tiên:
+
+Kinh nghiệm Microservices / Cloud-Native / Large-scale system.
+Biết Prometheus, Grafana, ELK/OpenSearch, OpenTelemetry.
+Có kinh nghiệm AI/ML Platform, GPU, Kafka/RabbitMQ/Redis hoặc Cloud Security.
+Chúng tôi tìm kiếm:
+
+Tư duy Ownership và Production First.
+Khả năng làm việc độc lập và giải quyết vấn đề tốt.
+Chủ động cải tiến và xây dựng nền tảng kỹ thuật dài hạn.
+Khả năng phối hợp hiệu quả với các nhóm kỹ thuật.
+
+[TopCV] Java Engineer (Payment & Cloud AWS) - Java Engineer (Payment & Cloud AWS)
+Design, develop, and optimize backend services for payment and fund transfer systems (Payment Hub, Fund Transfer) using Java and Spring Boot.
+Deploy, operate, and monitor applications on AWS cloud infrastructure (EC2, ECS/EKS, RDS, Lambda, API Gateway, SQS/SNS, etc.).
+Integrate and process interbank fund transfer workflows, including:
+IBFT (24/7 Fast Transfer via NAPAS);
+CITAD (State Bank of Vietnam Interbank Electronic Payment System);
+SWIFT (International Wire Transfer);
+BIDV (BIDV EPAY).
+Optimize system performance to ensure high throughput, low latency, and strong security for financial data transactions.
+Bachelor's degree in Computer Science, Software Engineering, or a related field; a Master's degree is a plus.
+4+ years of hands-on experience in Backend development using Java (Java 8+), Spring Boot, and Hibernate/JPA.
+Proven commercial experience with AWS Cloud: Designing cloud-native microservices architectures, managing cloud resources, and deploying scalable applications.
+AWS Certifications (Associate or Professional level) are a strong plus.
+Deep domain knowledge of payment workflows and messaging formats (ISO 20022, MT/MX messages) across IBFT, SWIFT, and CITAD.
+Hands-on experience integrating with or working directly on Temenos T24 Core Banking (specifically modules related to Accounts, Limits, and FT - Fund Transfer accounting entries) is a major advantage.
+Proficient with Message Queue systems (Kafka, ActiveMQ, RabbitMQ, or AWS SQS) for high-throughput asynchronous transaction processing.
+Strong understanding of banking security standards: Data encryption (AES, RSA), Digital Signatures, and SSL/TLS protocols.
+
+[ITviec] DevOps Engineer (Senior/Principal) - PLAYSTUDIOS
+As a Senior/Principal DevOps Engineer at playSTUDIOS, you will be a key contributor in designing, implementing, and maintaining scalable infrastructure that powers engaging gaming experiences enjoyed by millions worldwide. You will ensure reliability, automation, and performance across development and production environments, while also mentoring teammates and driving DevOps projects with autonomy.
+1. CI/CD & Automation:
+
+Design, maintain, and enhance build pipelines for .NET and Java microservices, Unity, and Android/iOS, using continuous integration and deployment best practices.
+Automate manual tasks related to code deployment, infrastructure provisioning, and data management.
+2. Infrastructure & Cloud:
+
+Provision, manage, and evolve infrastructure using an Infrastructure-as-Code (IaC) approach (e.g., Terraform).
+Manage, debug, and operate the Kubernetes fleet across Azure and AWS environments.
+Deploy and maintain high-volume, scalable web services with a focus on reliability and performance.
+3. Collaboration & Delivery:
+
+Partner with developers, testers, and system administrators to streamline the software development lifecycle.
+Work alongside engineering teams to deliver on the technology roadmap.
+Successfully drive DevOps projects autonomously, ensuring on-time, high-quality delivery.
+4. Operations & Reliability:
+
+Ensure high availability of services and rapid response to production incidents; participate in the on-call rotation.
+Triage, resolve, or escalate production issues to minimize downtime.
+Maintain and enhance logging, monitoring, and alerting systems (e.g., Prometheus, Grafana, Azure Application Insights, CloudWatch).
+5. Leadership & Continuous Improvement:
+
+Act as a mentor for junior team members, supporting their growth.
+Maintain thorough documentation of tooling, processes, and procedures.
+Identify new opportunities, propose alternative solutions, and drive continuous improvement initiatives.
+Must have:
+5+ years of hands-on experience in infrastructure automation, CI/CD, and application deployments.
+Good command of written and spoken English.
+Strong expertise with Kubernetes, containerized workloads, and IaC tooling (Terraform or equivalent).
+Solid experience with CI/CD tools such as Jenkins, ArgoCD, and GitHub Actions.
+Experience with either Azure or AWS for production environments (both a plus).
+Strong knowledge of Linux systems.
+Proficiency with Git and modern SCM workflows.
+Strong problem-solving, critical thinking, and ability to work semi-independently while sharing progress.
+Nice to have:
+Experience with service mesh tools (e.g., Linkerd, Istio, Flagger).
+Experience in observability and APM systems (Datadog, New Relic, etc.).
+Knowledge of managing Windows servers.
+Familiarity with databases (SQL, MySQL, MongoDB, Couchbase).
+Familiarity with Unity pipelines, Android/Xcode build processes.
+Proficiency with scripting and/or programming (e.g., Bash, Python, C#, Java, Go, PowerShell).
+
+[ITviec] DevOps Engineer (Cloud Native / Kubernetes) - Endava Việt Nam
+Come join our team and take ownership of Cloud-native Test Orchestration products used in complex telecommunications environments.
+
+We are looking for a DevOps Engineer with practical experience in Linux, Kubernetes, CI/CD, automation, and troubleshooting. You will independently deliver well-defined platform and development tasks while collaborating with senior engineers on more complex technical challenges.
+
+The assignment covers feature development, operational support, troubleshooting, fault correction, automation, and continuous improvement across a distributed, international environment.
+
+You will be expected to become productive after onboarding, own tasks end to end, contribute to knowledge sharing, and steadily grow toward broader technical ownership.
+
+Your responsibilities include but are not limited to the following:
+
+Develop, configure, and support cloud-native Test Orchestration services and the platforms on which they run.
+Operate and troubleshoot Kubernetes and Linux environments, including deployments, configuration, logs, networking, storage, and application runtime issues.
+Create and maintain Python and Bash automation for recurring operational and delivery tasks, applying Infrastructure as Code and configuration management where appropriate.
+Maintain and improve CI/CD pipelines, Git workflows, quality gates, artifact handling, and release automation using tools such as Jenkins, Git/Gerrit, Artifactory or Nexus, and SonarQube.
+Investigate support tickets and incidents, perform structured root-cause analysis for common issues, implement fixes, and escalate complex problems with clear evidence.
+Collaborate with software developers and testers on microservice-based feature development, integration, and automated testing.
+Improve platform reliability through monitoring, observability, documentation, security practices, and continuous-improvement initiatives, including pragmatic use of automation and AI-assisted engineering tools.
+Communicate progress, risks, and technical findings to international stakeholders, and contribute to peer reviews, documentation, knowledge transfer, and team learning.
+Qualifications
+
+A university degree in Computer Science, IT, Telecommunications, Software Engineering, or a related field (or equivalent practical experience) is preferred.
+
+Around 2-4 years of relevant experience in DevOps, platform engineering, SRE, or cloud engineering.
+
+Hands-on experience operating and troubleshooting Kubernetes-based platforms in development, test, or production environments.
+Solid Linux administration and troubleshooting skills in RHEL/CentOS, Ubuntu, or comparable distributions.
+Practical experience with CI/CD pipelines and Git-based engineering workflows using tools such as Jenkins, Gerrit/GitLab, artifact repositories, and SonarQube.
+Good Python or Bash/Shell scripting skills, with the ability to create, maintain, and troubleshoot automation.
+Good understanding of Docker, Helm, microservices, and Cloud-native deployment patterns.
+Structured troubleshooting skills across applications, containers, operating systems, platform services, networking, and storage, with sound escalation judgment.
+Working knowledge of TCP/IP, DNS, ports, routing, load balancing, and common L2/L3 concepts.
+Experience handling platform operations, support tickets or incidents, root-cause analysis, and clear technical documentation.
+Understanding of software testing practices, including unit, integration, and functional testing.
+Good written and verbal English communication skills and the ability to collaborate in distributed, cross-functional teams.
+A proactive, analytical, solution-oriented mindset with the ability to own tasks, seek guidance when appropriate, and contribute to continuous improvement.
+Nice to have
+
+Backend development experience with Java and Spring Boot.
+Experience in telecom, RAN, Test Orchestration, or other network-intensive domains.
+Experience with Ansible, GitOps, Spinnaker, GitHub Actions, or similar automation and deployment tools.
+Hands-on exposure to Prometheus, Grafana, OpenSearch/ELK, Zabbix, or comparable monitoring and observability platforms.
+Experience with MongoDB, MySQL, or Oracle, and relevant certifications such as CKA, RHCSA, or RHCE.
+
+[ITviec] Principal Engineer DevOps - Timo
+We are looking for a Principal Software Engineer, DevOps, to define and drive the infrastructure and delivery foundations behind Timo's digital banking platform.
+In this role, you will own Timo's DevOps strategy, building and scaling the infrastructure, CI/CD pipelines, and operational practices that power our production, QA, and development environments. You will set the technical direction for reliability, deployment, and cloud efficiency.
+Define and drive Timo's DevOps strategy: infrastructure, deployment, observability, and cloud efficiency
+Architect and maintain stable, secure, and efficient infrastructure across production, QA, and development environments
+Lead CI/CD and GitOps practices from build, packaging, and deployment pipelines through to continuous improvement
+Drive DORA metrics improve lead time for changes, deployment frequency, time to restore service, and change failure rate
+Standardize Infrastructure as Code practices: Terraform, Ansible, Packer across Timo's engineering teams
+Partner with Engineering, Security, and Compliance to ensure infrastructure meets banking-grade reliability and security requirements
+Optimize cloud costs while ensuring scalable, performant infrastructure
+Mentor senior engineers and help drive adoption of DevOps best practices across the organization
+Experience
+
+8+ years in DevOps, SRE, or Infrastructure Engineering, with prior experience in a Principal, Staff, or technical leadership role
+Proven track record of operating production systems at scale, ideally in fintech, banking, or another regulated environment
+Experience driving infrastructure strategy and standards across multiple engineering teams
+ 
+
+Skills & Expertise
+
+Deep expertise in container orchestration, Kubernetes, Docker, Helm
+Strong experience with CI/CD and GitOps: GitLab CI/CD, ArgoCD, Helm Charts/Helmfile
+Hands-on with Infrastructure as Code: Terraform, Ansible, Packer
+Experience with public cloud platforms: AWS preferred
+Proficient in scripting and automation: Bash, Python (or Go/Java for tooling)
+Strong understanding of observability: logging, tracing, and monitoring
+Familiarity with secrets management (HashiCorp Vault) and infrastructure security best practices
+Experience supporting databases and messaging systems at scale
+Professional working English: Collaboration with Timo's local and Kredivo's regional teams
+Bonus Points
+Experience in fintech, banking, or other regulated industries
+Hands-on with cloud cost optimization at scale
+Background in Platform Engineering, SRE, or DevEx teams
+
+[ITviec] Senior DevOps Engineer - TPIsoftware Co., Ltd
+1.Lead the development of high-quality, impactful, and scalable products and systems to achieve business goals.
+
+2. Cloud and System Management Responsibilities (GCP) : 
+
+Manage Cloud Services 
+Administer virtual machines, container services, databases, storage solutions, and other cloud resources
+Ensure optimal performance, high availability, scalability, and robust security across all cloud environments
+Implement and maintain comprehensive backup and disaster recovery solutions
+Infrastructure Optimization
+Monitor and optimize data center costs
+Stay current with emerging cloud technologies and implement infrastructure improvements
+Establish and automate access management policies for cloud services
+3. Infrastructure as Code (IaC)
+
+Maintain and develop IaC scripts and templates
+Enhance configuration management tools and processes
+Implement automation for consistent and reliable infrastructure deployment
+4. Collaborate closely with engineering managers and engineers across multiple platforms and domains
+
+5. Support to recruit, develop, and retain exceptional engineering talent who excel in innovative, user-focused, fast-paced environments.
+
+6. Establish and maintain high engineering standards for your team regarding quality practices, delivery speed, architecture, design, and code quality, with clear measurable goals
+
+7. Contribute to the improvement and scaling of the engineering organization by mentoring engineers, sharing technical knowledge, industry best practices, and leadership skills
+1. Familiarity with Google Cloud Platform.
+
+2. Familiarity with DevOps, SRE, Platform Engineering.
+
+3. Have experience with Kubernetes . Having CKA Lisence is Plus.
+
+4. Have experience with system design.
+
+5. Strong analytical and problem-solving skills.
+
+6. Has team collaboration awareness, able to work cooperatively with team members. Experience in Scrum is a plus.
+
+7. Good communication skills and logical thinking/judgment abilities.
+
+8. Proactive and self-motivated to learn.
+
+9. Possesses or is willing to learn multiple languages (including Chinese, English, Vietnamese) to effectively communicate with the team.
+
+[ITviec] Middle/Senior DevOps Engineer (Python, Linux, English) - ITviec Recruitment Consulting
+ITviec's client is seeking an exceptionally talented Middle/Senior DevOps Engineer who will work closely with Software Engineers to help them deploy and operate different systems. In addition, this position will join a group responsible for various core platforms within the enterprise.
+Work within the team on the various products that the team supports
+Develop tools to improve our ability to rapidly deploy and effectively monitor services in a large-scale distributed environment
+Work with teams to design, develop, and implement innovative software solutions related to the DevOps and Agile transformation of the enterprise.
+Participate in periodic on-call duties
+Collaborate with peers both inside and outside your team.
+3+ years of experience as a DevOps Engineer with excellent communication skills and a positive, “can-do” attitude.
+Proficient in Python development with hands-on experience.
+Solid understanding of the Linux environment, particularly with command-line usage.
+Experienced in Infrastructure as Code (IaC) frameworks such as Ansible, Terraform, and Helm charts.
+Familiar with Docker and Kubernetes.
+Experience with Continuous Integration/Continuous Deployment (CI/CD) using GitLab (preferred), GitHub, or Git.
+Familiar with JIRA and Wiki tools.
+Effective English communication abilities.
+Agile development experience is a plus
+
+[Facebook] CV - Software Engineering
+Developed and deployed new web features using PHP, resolving critical user interface (UI) issues to improve overall application stability.
+Executed comprehensive web application testing protocols to ensure functionality, performance, and cross-browser compatibility.
+Collaborated within a professional development team, utilizing Git for version control and participating in technical communication workflows.
+Optimized UI components based on testing feedback to enhance the end-user experience.
+Programming Language: Java, C# / .NET, Entity Framework
+Backend & Frameworks: ASP.NET Core, Entity Framework Core, Microservices, OData, Ocelot API Gateway, JWT Authentication, SignalR, AJAX
+Database: MySQL, SQL Server, Entity Framework Code First
+Tools & Platforms: Git, GitHub, Visual Studio, Android Studio, Lucid
+Soft Skills: Teamwork & Collaboration, Self-learning, Adaptability
+Languages: Japanese: JLPT N3 equivalent, English: Reading the document basically
+Engineered a full-stack booking platform using Microservices Architecture and ASP.NET Core to handle concurrent user reservations.
+Designed a relational database schema using EF Core Code First and implemented OData for high-performance, flexible data querying.
+Secured system resources by implementing JWT-based Role-Based Access Control and Ocelot API Gateway for centralized request routing.
+Integrated SignalR for real-time booking notifications and Leaflet map services for stadium geolocation and navigation.
+Developed a companion Android application in Java, connecting to backend services via RESTful APIs to provide mobile accessibility.
+Built an end-to-end online ordering system utilizing C# and .NET Core microservices to separate order processing from inventory management.
+Implemented asynchronous UI updates using AJAX and SignalR to provide instant order status notifications without page reloads.
+Configured Ocelot API Gateway to manage cross-service communication and enforced security protocols via JWT authentication.
+Streamlined data retrieval processes by implementing OData endpoints, reducing unnecessary payload sizes in API responses.
+
+[Facebook] CV - Computer Networks and Data Communication
+Core CS & AI: Deep Learning, Machine Learning, Recommender Systems, Data Structures, Algorithms
+Languages: Python, Java, C, SQL (MySQL)
+ML Frameworks: PyTorch, FastAI, TensorFlow, Streamlit (for AI apps)
+Networking: Network Administration, pfSense Firewall, Cisco ASAv, GNS3
+Tools: Git, GitHub, VirtualBox, Docker, Linux (Ubuntu/Debian)
+AI-Native Tools: Gemini, Claude, Perplexity, NotebookLM for research and development support
+Technologies: Python, PyTorch, LAMDA Framework, DREAM, Git
+Designing and developing a Deep Learning-based framework for Android malware detection, specifically addressing the "Concept Drift" problem.
+Implementing data preprocessing pipelines to drop leakage-prone metadata (e.g., 'vt_count') ensuring model integrity.
+Evaluating model performance across IID, NEAR, and FAR temporal splits to validate robustness against evolving malware samples.
+Integrating the DREAM and LAMDA research frameworks into a unified experimental pipeline.
+Technologies: Python, PyTorch, FastAI, Streamlit, Pandas, Plotly, Kaggle Dataset
+Developed a web-based movie recommendation system using Collaborative Filtering and Matrix Factorization (MF).
+Implemented a Hybrid Engine combining Cosine Similarity with item Bias (10% weight) to balance personalization and popularity.
+Resolved the "Cold Start" problem for new items using Genre Vector Averaging (Mean of latent factors).
+Built interactive visualizations including a 2D Genre Map using Principal Component Analysis (PCA) to cluster similar movie vibes.
+Deployed the final model as a Streamlit application with full admin functionalities for real-time item updates.
+Technologies: GNS3, Cisco ASAv, pfSense, VirtualBox, Cisco IOS, Linux
+Designed and simulated a complex multi-zone enterprise network topology using GNS3 and VirtualBox.
+Configured pfSense firewalls and Cisco ASAv Access Control Lists (ACLs) to implement zero-trust traffic policies.
+Optimized network asset management and routing protocols (OSPF/Static) for high availability.
+
+[Facebook] CV - Data Engineer
+Languages: SQL, Java, C++, Python (pandas, scripting)
+Streaming & Big Data: Apache Spark (Structured Streaming, mapPartitions), Apache Kafka (Kraft Mode), PySpark
+Data Warehousing & ETL: SSIS, SSAS (OLAP Cubes), Star Schema Modeling, SQL Server, Oracle
+Tools & Infrastructure: Docker, Docker Compose, Linux (Ubuntu), Apache Maven, Git, Jupyter Notebook
+Visualization & Analytics: Power BI, Looker Studio, ONNX Runtime, SHAP
+Technologies: Java, Python, Apache Spark, Kafka, Docker
+Built a 3-tier streaming pipeline (Producer $\rightarrow$ Kafka $\rightarrow$ Spark) processing ~180K IoT sensor events in real time.
+Integrated ONNX Runtime C++ Engine into Spark's mapPartitions with manual Z-score vectorization, bypassing JVM GC bottlenecks and reaching ~11.5K rows/s throughput with 869ms sub-second latency under a 4GB JVM Heap.
+Aligned Kafka topic partitions 1-to-1 with Spark shuffle partitions and physical CPU cores to eliminate context-switching overhead.
+Benchmarked streaming performance across Logistic Regression, Random Forest, GBT, and Deep MLP while maintaining absolute memory invariance
+Technologies: Python, SHAP, XGBoost, LightGBM, CatBoost, ARIMAX, GARCH
+Built an automated pipeline ingesting daily financial (Yahoo Finance) and macroeconomic data (FRED: Fed Funds Rate, Treasury yields) for major U.S. banks (JPM, BAC, WFC).
+Applied expanding-window walk-forward validation (3 rolling folds) to prevent data leakage in financial time-series.
+Optimized GBDT models via Optuna (TPE) and utilized SHAP (XAI) to analyze feature importance dynamics across VIX-defined volatility regimes.
+Technologies: SQL Server, SSIS, SSAS, MDX, Power BI, Looker Studio
+Designed a Star Schema Data Warehouse (1 Fact, 5 Dimension tables) analyzing global food waste data (2018–2024).
+Built automated SSIS ETL workflows to extract, clean (deduplication, casing, trimming), and stage raw data into relational tables.
+Developed SSAS OLAP cubes with custom Calculated Members and MDX queries to support multi-dimensional roll-up and drill-down analysis.
+Implemented ML models (XGBoost/Random Forest, $R^2 = 0.9895$) in Python to forecast economic losses for 2025–2029.
+
+[Facebook] CV - BACKEND & SYSTEMS ENGINEER
+Languages: Rust, C/C++, Python (Intermediate), TypeScript, Java (Basic)
+Systems & Networking: Linux, Network Routing (Netplan, iptables), RTOS (ESP32), QUIC (Quinn)
+Backend & Databases: Tokio, Axum, Bun, Node, ElysiaJs, PostgreSQL, Redis, MQTT
+Systems Thinking: Concurrency, Low-level Memory, Zero-Copy I/O, Cache Optimization, DSP
+Tech: Rust, QUIC (Quinn), Tokio, Rustls, SQLite, X25519/ChaCha20
+Architected a high-throughput, low-latency E2EE messaging protocol multiplexing control, real-time chat, unreliable datagrams (presence/typing), and file transfer over single QUIC/UDP connections.
+Implemented stream priority QoS (Control=90, Chat=80, File=0) and Threema-inspired blob streaming, achieving $>150$ MB/s file transfer speed with zero head-of-line blocking.
+Engineered actor-based connection lifecycles with Tokio, zero-copy buffer slicing via Bytes, robust backpressure, and Double-Ratchet/X25519 end-to-end encryption.
+Tech: Rust, C-FFI, WebAssembly, DFA, Zero-Allocation
+Authored and published bamboo-core on crates.io, an ultra-fast Vietnamese Input Method Engine (IME) core in Rust supporting Telex, VNI, and VIQR.
+Designed a hybrid Deterministic Finite Automaton (DFA) state machine and rule-based parser featuring a zero-allocation hot path for $O(1)$ syllable-level transformation.
+Engineered cross-platform C-FFI and WebAssembly (WASM) interfaces for frictionless embedding into native desktop, mobile, and browser environments.
+Tech: C/C++, STM32F429 (Cortex-M4), TouchGFX, DMA2D, SDRAM
+Designed the TouchGFX MVP architecture and screen-flow state machine, separating UI rendering, game logic, and hardware abstraction.
+Engineered core game physics: hex-grid snapping with $O(1)$ LUT neighbor lookup, BFS Match-3 chain detection, orphan-drop, and sqrt-free squared-distance collision with EMA aim smoothing at 60 FPS.
+Optimized CPU-bound hot paths: sub-stepping continuous collision to prevent tunneling, dirty-flag partial rendering, $O(1)$ cached egg count, LUT-based color mapping, and local grid buffer copies to minimize cache misses.
+Tech: TypeScript, Bun, ElysiaJS, PostgreSQL, Drizzle ORM, Redis
+Built a REST API backend solving the debt simplification problem: greedy creditor-debtor matching algorithm minimizes the number of settlement transactions across group members.
+Structured codebase into feature-based modules (users, groups, expenses, settlements) with Strategy pattern for split logic (Equal/Exact/Percentage), JWT + OAuth authentication, Redis-backed rate limiting, and Redis cache invalidation.
+Reverse Engineering & R&D: Leveraged LLMs for parsing complex network protocol specifications (RFCs), hardware datasheets, and low-level code inspection.
+Automated QA & Testing: Synthesized automated test suites, concurrency regression tests, and edge-case property-based validation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
