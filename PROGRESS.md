@@ -15,10 +15,12 @@
 - None
 
 ### Next week
-- [ ] Collect raw toward 100+ (diversify: frontend/mobile/QA/DevOps + ~15 CV lines)
-- [ ] Label toward ~100 total (vocab rules now frozen in docs/skill_vocab.md)
-- [x] docs/skill_vocab.md + audit of 57 sentences (API/RAG canonical rules applied)
-- [x] scripts/convert_to_hf_dataset.py + 70/15/15 split (seed 42, smoke-test only)
+- [x] Collect raw toward 100+ — overdelivered: 757 unique (frontend/mobile/qa/devops/rpa/payment + 5 CVs)
+- [x] Label toward ~100 total — overdelivered: 350 labeled, 372 skill mentions, 186 unique skills
+- [x] Audit-fix 97 label cells (generic nouns to O, split Java Spring Boot / .NET spans, X-API rule)
+- [x] Final split frozen: 244 train / 52 val / 54 test (seed 42)
+- [ ] notebooks/01_eda.ipynb
+- [ ] Week 3: train.py + first PhoBERT fine-tuning run on Colab
 
 ### Notes / learnings
 - Week 0 done ahead of plan: 57 labeled sentences (target was 20)
