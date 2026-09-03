@@ -24,7 +24,9 @@ Vẫn không rõ → ghi `sentence_id` vào mục "Review list" ở cuối file,
 | `Production Bug` | `O` | Là đối tượng xử lý, không phải năng lực |
 | `GitFlow` | SKILL | Methodology có tên riêng |
 | `RAG pipelines` | Chỉ label `RAG`, `pipelines` = `O` | Canonical form là RAG |
-| `REST API` / `gRPC APIs` / `LLM API` | Chỉ label `REST` / `gRPC` / `LLM`; `API(s)` = `O` | API là danh từ chung |
+| `REST API` / `RESTful API(s)` / `GraphQL API` / `Context API` | Label cả cụm là 1 entity: từ protocol B-SKILL + `API` I-SKILL | Quy ước của dataset thực tế; "API" đứng MỘT MÌNH mới là O. JobMatch gom nhóm qua synonym map nên granularity không ảnh hưởng downstream |
+| `Web API`, `Ad Network APIs` đứng chung | `O` toàn bộ | Danh từ chung, không gắn protocol cụ thể |
+| `API` đứng một mình | `O` | Danh từ chung |
 | `Message Broker`, `Vector Database` | SKILL | Tên vùng công nghệ chuẩn |
 | `AI Safety`, `Model Monitoring`, `Guardrails` | SKILL | Lĩnh vực kỹ thuật có tên cụ thể |
 | `C++` | Token `C` = B-SKILL, token `++` = I-SKILL | Tokenizer tách "+"; chấp nhận |

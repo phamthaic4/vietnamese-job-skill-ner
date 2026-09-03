@@ -228,7 +228,7 @@
 13	14	Calling	I-SKILL
 13	15	,	O
 13	16	Multi	B-SKILL
-13	17	-	I-SKILL 
+13	17	-	I-SKILL
 13	18	agent	I-SKILL
 13	19	systems	I-SKILL
 13	20	,	O
@@ -1337,4899 +1337,4899 @@
 57	18	thần	O
 57	19	Ownership	O
 57	20	.	O
-58	1	Programming	
-58	2	Languages	
-58	3	:	
-58	4	Go	
-58	5	(	
-58	6	Golang	
-58	7	),	
-58	8	SQL	
-58	9	,	
-58	10	Bash	
-58	11	,	
-58	12	Python	
-58	13	,	
-58	14	C	
-58	15	/	
-58	16	C	
-58	17	++	
-58	18	(	
-58	19	basic	
-58	20	)	
-59	1	DevOps	
-59	2	&	
-59	3	Infrastructure	
-59	4	:	
-59	5	Docker	
-59	6	,	
-59	7	Multi	
-59	8	-	
-59	9	stage	
-59	10	builds	
-59	11	,	
-59	12	Distroless	
-59	13	,	
-59	14	Linux	
-59	15	(	
-59	16	Debian	
-59	17	,	
-59	18	Ubuntu	
-59	19	,	
-59	20	systemd	
-59	21	,	
-59	22	/	
-59	23	proc	
-59	24	),	
-59	25	Kubernetes	
-59	26	(	
-59	27	DaemonSet	
-59	28	,	
-59	29	K8s	
-59	30	manifests	
-59	31	),	
-59	32	GitHub	
-59	33	Actions	
-59	34	(	
-59	35	CI	
-59	36	/	
-59	37	CD	
-59	38	)	
-60	1	Monitoring	
-60	2	&	
-60	3	Reliability	
-60	4	:	
-60	5	Prometheus	
-60	6	(/	
-60	7	metrics	
-60	8	,	
-60	9	Text	
-60	10	format	
-60	11	,	
-60	12	Counters	
-60	13	/	
-60	14	Gauges	
-60	15	),	
-60	16	Grafana	
-60	17	,	
-60	18	k6	
-60	19	,	
-60	20	Fuzz	
-60	21	testing	
-60	22	,	
-60	23	go	
-60	24	test	
-60	25	-	
-60	26	race	
-61	1	Studied	
-61	2	Linux	
-61	3	system	
-61	4	administration	
-61	5	,	
-61	6	Docker	
-61	7	containerization	
-61	8	,	
-61	9	CI	
-61	10	/	
-61	11	CD	
-61	12	automation	
-61	13	,	
-61	14	system	
-61	15	reliability	
-61	16	,	
-61	17	and	
-61	18	SRE	
-61	19	principles	
-61	20	.	
-62	1	Mastered	
-62	2	systems	
-62	3	analysis	
-62	4	,	
-62	5	distributed	
-62	6	systems	
-62	7	architecture	
-62	8	design	
-62	9	,	
-62	10	and	
-62	11	REST	
-62	12	/	
-62	13	gRPC	
-62	14	API	
-62	15	specification	
-62	16	.	
-63	1	Developed	
-63	2	a	
-63	3	streaming	
-63	4	telemetry	
-63	5	and	
-63	6	anomaly	
-63	7	detection	
-63	8	agent	
-63	9	in	
-63	10	Go	
-63	11	for	
-63	12	Edge	
-63	13	AI	
-63	14	devices	
-63	15	with	
-63	16	zero	
-63	17	memory	
-63	18	allocations	
-63	19	on	
-63	20	hot	
-63	21	paths	
-63	22	.	
-64	1	Implemented	
-64	2	system	
-64	3	metric	
-64	4	parsers	
-64	5	(/	
-64	6	proc	
-64	7	/	
-64	8	stat	
-64	9	,	
-64	10	/	
-64	11	proc	
-64	12	/	
-64	13	meminfo	
-64	14	)	
-64	15	using	
-64	16	direct	
-64	17	non	
-64	18	-	
-64	19	blocking	
-64	20	Linux	
-64	21	system	
-64	22	calls	
-64	23	(	
-64	24	SYS_OPENAT	
-64	25	,	
-64	26	SYS_READ	
-64	27	)	
-64	28	on	
-64	29	fixed	
-64	30	stack	
-64	31	buffers	
-64	32	.	
-65	1	Designed	
-65	2	a	
-65	3	mathematical	
-65	4	engine	
-65	5	based	
-65	6	on	
-65	7	Welford	
-65	8	'	
-65	9	s	
-65	10	algorithm	
-65	11	,	
-65	12	EWMA	
-65	13	for	
-65	14	baseline	
-65	15	drift	
-65	16	tracking	
-65	17	,	
-65	18	and	
-65	19	Z	
-65	20	-	
-65	21	Score	
-65	22	filtering	
-65	23	.	
-66	1	Built	
-66	2	a	
-66	3	custom	
-66	4	Prometheus	
-66	5	metric	
-66	6	registry	
-66	7	,	
-66	8	an	
-66	9	HTTP	
-66	10	dispatcher	
-66	11	with	
-66	12	exponential	
-66	13	backoff	
-66	14	and	
-66	15	jitter	
-66	16	,	
-66	17	a	
-66	18	Kubernetes	
-66	19	DaemonSet	
-66	20	manifest	
-66	21	,	
-66	22	and	
-66	23	a	
-66	24	secured	
-66	25	systemd	
-66	26	service	
-66	27	.	
-67	1	Configured	
-67	2	GitHub	
-67	3	Actions	
-67	4	CI	
-67	5	with	
-67	6	fuzz	
-67	7	testing	
-67	8	(	
-67	9	Go	
-67	10	Fuzz	
-67	11	),	
-67	12	race	
-67	13	condition	
-67	14	detection	
-67	15	(-	
-67	16	race	
-67	17	),	
-67	18	and	
-67	19	cross	
-67	20	-	
-67	21	compilation	
-67	22	for	
-67	23	linux	
-67	24	/	
-67	25	amd64	
-67	26	and	
-67	27	linux	
-67	28	/	
-67	29	arm64	
-67	30	.	
-68	1	Designed	
-68	2	a	
-68	3	distributed	
-68	4	reverse	
-68	5	proxy	
-68	6	in	
-68	7	Go	
-68	8	featuring	
-68	9	an	
-68	10	in	
-68	11	-	
-68	12	memory	
-68	13	Token	
-68	14	Bucket	
-68	15	algorithm	
-68	16	and	
-68	17	distributed	
-68	18	rate	
-68	19	limiting	
-68	20	in	
-68	21	Redis	
-68	22	via	
-68	23	atomic	
-68	24	Lua	
-68	25	scripts	
-68	26	.	
-69	1	Integrated	
-69	2	a	
-69	3	three	
-69	4	-	
-69	5	state	
-69	6	Circuit	
-69	7	Breaker	
-69	8	and	
-69	9	context	
-69	10	-	
-69	11	aware	
-69	12	retries	
-69	13	with	
-69	14	request	
-69	15	body	
-69	16	rewind	
-69	17	for	
-69	18	idempotent	
-69	19	methods	
-69	20	.	
-70	1	Configured	
-70	2	Prometheus	
-70	3	metrics	
-70	4	collection	
-70	5	and	
-70	6	Grafana	
-70	7	dashboards	
-70	8	;	
-70	9	conducted	
-70	10	load	
-70	11	testing	
-70	12	in	
-70	13	k6	
-70	14	.	
-71	1	Phát	
-71	2	triển	
-71	3	và	
-71	4	duy	
-71	5	trì	
-71	6	ứng	
-71	7	dụng	
-71	8	Mobile	
-71	9	trên	
-71	10	iOS	
-71	11	/	
-71	12	Android	
-71	13	bằng	
-71	14	React	
-71	15	Native	
-71	16	+	
-71	17	TypeScript	
-71	18	,	
-71	19	ưu	
-71	20	tiên	
-71	21	Expo	
-71	22	.	
-72	1	Xây	
-72	2	dựng	
-72	3	UI	
-72	4	,	
-72	5	component	
-72	6	,	
-72	7	navigation	
-72	8	,	
-72	9	state	
-72	10	management	
-72	11	và	
-72	12	form	
-72	13	.	
-73	1	Tích	
-73	2	hợp	
-73	3	REST	
-73	4	API	
-73	5	,	
-73	6	authentication	
-73	7	,	
-73	8	push	
-73	9	notification	
-73	10	,	
-73	11	deep	
-73	12	link	
-73	13	.	
-74	1	Làm	
-74	2	việc	
-74	3	với	
-74	4	storage	
-74	5	,	
-74	6	cache	
-74	7	/	
-74	8	offline	
-74	9	,	
-74	10	camera	
-74	11	,	
-74	12	media	
-74	13	,	
-74	14	location	
-74	15	và	
-74	16	native	
-74	17	module	
-74	18	khi	
-74	19	cần	
-74	20	.	
-75	1	Testing	
-75	2	,	
-75	3	debugging	
-75	4	,	
-75	5	tối	
-75	6	ưu	
-75	7	performance	
-75	8	và	
-75	9	xử	
-75	10	lý	
-75	11	lỗi	
-75	12	.	
-76	1	Tham	
-76	2	gia	
-76	3	build	
-76	4	/	
-76	5	release	
-76	6	app	
-76	7	trên	
-76	8	App	
-76	9	Store	
-76	10	/	
-76	11	Google	
-76	12	Play	
-76	13	.	
-77	1	Phối	
-77	2	hợp	
-77	3	với	
-77	4	Product	
-77	5	/	
-77	6	BA	
-77	7	,	
-77	8	UI	
-77	9	/	
-77	10	UX	
-77	11	,	
-77	12	Backend	
-77	13	,	
-77	14	QA	
-77	15	và	
-77	16	DevOps	
-77	17	.	
-78	1	Ứng	
-78	2	dụng	
-78	3	AI	
-78	4	trong	
-78	5	development	
-78	6	/	
-78	7	testing	
-78	8	/	
-78	9	debugging	
-78	10	và	
-78	11	tích	
-78	12	hợp	
-78	13	AI	
-78	14	/	
-78	15	LLM	
-78	16	khi	
-78	17	có	
-78	18	yêu	
-78	19	cầu	
-78	20	.	
-79	1	2	
-79	2	–	
-79	3	4	
-79	4	năm	
-79	5	kinh	
-79	6	nghiệm	
-79	7	phát	
-79	8	triển	
-79	9	Mobile	
-79	10	.	
-80	1	Tối	
-80	2	thiểu	
-80	3	1	
-80	4	,	
-80	5	5	
-80	6	năm	
-80	7	React	
-80	8	Native	
-80	9	.	
-81	1	Thành	
-81	2	thạo	
-81	3	TypeScript	
-81	4	;	
-81	5	ưu	
-81	6	tiên	
-81	7	kinh	
-81	8	nghiệm	
-81	9	Expo	
-81	10	/	
-81	11	EAS	
-81	12	.	
-82	1	Có	
-82	2	kinh	
-82	3	nghiệm	
-82	4	REST	
-82	5	API	
-82	6	,	
-82	7	debugging	
-82	8	,	
-82	9	testing	
-82	10	và	
-82	11	app	
-82	12	release	
-82	13	.	
-83	1	Có	
-83	2	kinh	
-83	3	nghiệm	
-83	4	thực	
-83	5	tế	
-83	6	ứng	
-83	7	dụng	
-83	8	AI	
-83	9	trong	
-83	10	phát	
-83	11	triển	
-83	12	Mobile	
-83	13	.	
-84	1	Biết	
-84	2	sử	
-84	3	dụng	
-84	4	AI	
-84	5	Coding	
-84	6	Assistant	
-84	7	.	
-85	1	Chủ	
-85	2	động	
-85	3	,	
-85	4	trách	
-85	5	nhiệm	
-85	6	,	
-85	7	phối	
-85	8	hợp	
-85	9	tốt	
-85	10	và	
-85	11	ham	
-85	12	học	
-85	13	hỏi	
-85	14	.	
-86	1	Thiết	
-86	2	kế	
-86	3	và	
-86	4	phát	
-86	5	triển	
-86	6	giao	
-86	7	diện	
-86	8	người	
-86	9	dùng	
-86	10	(	
-86	11	UI	
-86	12	)	
-86	13	cho	
-86	14	các	
-86	15	hệ	
-86	16	thống	
-86	17	phần	
-86	18	mềm	
-86	19	nghiệp	
-86	20	vụ	
-86	21	của	
-86	22	Ngân	
-86	23	hàng	
-86	24	trên	
-86	25	nền	
-86	26	tảng	
-86	27	web	
-86	28	,	
-86	29	sử	
-86	30	dụng	
-86	31	công	
-86	32	nghệ	
-86	33	Angular	
-86	34	và	
-86	35	ReactJS	
-86	36	,	
-86	37	đảm	
-86	38	bảo	
-86	39	thân	
-86	40	thiện	
-86	41	với	
-86	42	người	
-86	43	dùng	
-86	44	,	
-86	45	hiệu	
-86	46	năng	
-86	47	cao	
-86	48	và	
-86	49	đáp	
-86	50	ứng	
-86	51	các	
-86	52	yêu	
-86	53	cầu	
-86	54	bảo	
-86	55	mật	
-86	56	–	
-86	57	hiệu	
-86	58	suất	
-86	59	của	
-86	60	ngân	
-86	61	hàng	
-86	62	.	
-87	1	Phân	
-87	2	tích	
-87	3	yêu	
-87	4	cầu	
-87	5	,	
-87	6	thiết	
-87	7	kế	
-87	8	và	
-87	9	phát	
-87	10	triển	
-87	11	các	
-87	12	thành	
-87	13	phần	
-87	14	giao	
-87	15	diện	
-87	16	web	
-87	17	theo	
-87	18	đặc	
-87	19	tả	
-87	20	kỹ	
-87	21	thuật	
-87	22	,	
-87	23	sử	
-87	24	dụng	
-87	25	Angular	
-87	26	hoặc	
-87	27	ReactJS	
-87	28	.	
-88	1	Phối	
-88	2	hợp	
-88	3	chặt	
-88	4	chẽ	
-88	5	với	
-88	6	nhóm	
-88	7	thiết	
-88	8	kế	
-88	9	UX	
-88	10	/	
-88	11	UI	
-88	12	và	
-88	13	nhóm	
-88	14	Back	
-88	15	-	
-88	16	end	
-88	17	để	
-88	18	đảm	
-88	19	bảo	
-88	20	trải	
-88	21	nghiệm	
-88	22	người	
-88	23	dùng	
-88	24	mượt	
-88	25	mà	
-88	26	,	
-88	27	đồng	
-88	28	bộ	
-88	29	dữ	
-88	30	liệu	
-88	31	và	
-88	32	tối	
-88	33	ưu	
-88	34	hiệu	
-88	35	năng	
-88	36	.	
-89	1	Tối	
-89	2	ưu	
-89	3	hóa	
-89	4	UI	
-89	5	/	
-89	6	UX	
-89	7	cho	
-89	8	các	
-89	9	trình	
-89	10	duyệt	
-89	11	và	
-89	12	thiết	
-89	13	bị	
-89	14	khác	
-89	15	nhau	
-89	16	(	
-89	17	responsive	
-89	18	design	
-89	19	).	
-90	1	Tham	
-90	2	gia	
-90	3	viết	
-90	4	tài	
-90	5	liệu	
-90	6	kỹ	
-90	7	thuật	
-90	8	,	
-90	9	tài	
-90	10	liệu	
-90	11	bàn	
-90	12	giao	
-90	13	và	
-90	14	hướng	
-90	15	dẫn	
-90	16	sử	
-90	17	dụng	
-90	18	khi	
-90	19	cần	
-90	20	.	
-91	1	Hỗ	
-91	2	trợ	
-91	3	kiểm	
-91	4	thử	
-91	5	,	
-91	6	khắc	
-91	7	phục	
-91	8	lỗi	
-91	9	(	
-91	10	bug	
-91	11	fixing	
-91	12	)	
-91	13	và	
-91	14	bảo	
-91	15	trì	
-91	16	hệ	
-91	17	thống	
-91	18	sau	
-91	19	triển	
-91	20	khai	
-91	21	.	
-92	1	Nghiên	
-92	2	cứu	
-92	3	và	
-92	4	đề	
-92	5	xuất	
-92	6	các	
-92	7	công	
-92	8	nghệ	
-92	9	mới	
-92	10	nhằm	
-92	11	nâng	
-92	12	cao	
-92	13	chất	
-92	14	lượng	
-92	15	giao	
-92	16	diện	
-92	17	và	
-92	18	trải	
-92	19	nghiệm	
-92	20	người	
-92	21	dùng	
-92	22	.	
-93	1	Tuân	
-93	2	thủ	
-93	3	quy	
-93	4	trình	
-93	5	phát	
-93	6	triển	
-93	7	phần	
-93	8	mềm	
-93	9	và	
-93	10	các	
-93	11	tiêu	
-93	12	chuẩn	
-93	13	về	
-93	14	an	
-93	15	toàn	
-93	16	thông	
-93	17	tin	
-93	18	của	
-93	19	ngân	
-93	20	hàng	
-93	21	.	
-94	1	Thành	
-94	2	thạo	
-94	3	Angular	
-94	4	(	
-94	5	8	
-94	6	+)	
-94	7	và	
-94	8	/	
-94	9	hoặc	
-94	10	ReactJS	
-94	11	(	
-94	12	với	
-94	13	hooks	
-94	14	,	
-94	15	Redux	
-94	16	).	
-95	1	Nắm	
-95	2	vững	
-95	3	nguyên	
-95	4	lý	
-95	5	thiết	
-95	6	kế	
-95	7	giao	
-95	8	diện	
-95	9	,	
-95	10	responsive	
-95	11	web	
-95	12	design	
-95	13	,	
-95	14	cross	
-95	15	-	
-95	16	browser	
-95	17	compatibility	
-95	18	.	
-96	1	Biết	
-96	2	sử	
-96	3	dụng	
-96	4	RESTful	
-96	5	API	
-96	6	và	
-96	7	có	
-96	8	kinh	
-96	9	nghiệm	
-96	10	tích	
-96	11	hợp	
-96	12	front	
-96	13	-	
-96	14	end	
-96	15	với	
-96	16	back	
-96	17	-	
-96	18	end	
-96	19	.	
-97	1	Ưu	
-97	2	tiên	
-97	3	ứng	
-97	4	viên	
-97	5	có	
-97	6	kinh	
-97	7	nghiệm	
-97	8	làm	
-97	9	việc	
-97	10	với	
-97	11	:	
-98	1	Git	
-98	2	,	
-98	3	Gitlab	
-98	4	,	
-98	5	CI	
-98	6	/	
-98	7	CD	
-98	8	.	
-99	1	Các	
-99	2	thư	
-99	3	viện	
-99	4	như	
-99	5	RxJS	
-99	6	,	
-99	7	NgRx	
-99	8	(	
-99	9	với	
-99	10	Angular	
-99	11	),	
-99	12	hoặc	
-99	13	Zustand	
-99	14	/	
-99	15	Recoil	
-99	16	(	
-99	17	với	
-99	18	React	
-99	19	).	
-100	1	Unit	
-100	2	test	
-100	3	,	
-100	4	integration	
-100	5	test	
-100	6	cho	
-100	7	front	
-100	8	-	
-100	9	end	
-100	10	.	
-101	1	Có	
-101	2	kinh	
-101	3	nghiệm	
-101	4	làm	
-101	5	việc	
-101	6	với	
-101	7	Ant	
-101	8	Design	
-101	9	.	
-102	1	Thiết	
-102	2	kế	
-102	3	và	
-102	4	phát	
-102	5	triển	
-102	6	toàn	
-102	7	diện	
-102	8	từ	
-102	9	Frontend	
-102	10	,	
-102	11	API	
-102	12	,	
-102	13	Backend	
-102	14	.	
-102	15	NET	
-102	16	đến	
-102	17	cơ	
-102	18	sở	
-102	19	dữ	
-102	20	liệu	
-102	21	,	
-102	22	đồng	
-102	23	thời	
-102	24	chủ	
-102	25	động	
-102	26	đề	
-102	27	xuất	
-102	28	giải	
-102	29	pháp	
-102	30	kỹ	
-102	31	thuật	
-102	32	.	
-103	1	Xây	
-103	2	dựng	
-103	3	,	
-103	4	chuẩn	
-103	5	hóa	
-103	6	codebase	
-103	7	Frontend	
-103	8	với	
-103	9	Angular	
-103	10	,	
-103	11	React	
-103	12	hoặc	
-103	13	Vue	
-103	14	,	
-103	15	giúp	
-103	16	sản	
-103	17	phẩm	
-103	18	dễ	
-103	19	phát	
-103	20	triển	
-103	21	,	
-103	22	tái	
-103	23	sử	
-103	24	dụng	
-103	25	và	
-103	26	mở	
-103	27	rộng	
-103	28	.	
-104	1	Đo	
-104	2	lường	
-104	3	,	
-104	4	tối	
-104	5	ưu	
-104	6	hiệu	
-104	7	năng	
-104	8	Client	
-104	9	và	
-104	10	Backend	
-104	11	,	
-104	12	cải	
-104	13	thiện	
-104	14	tốc	
-104	15	độ	
-104	16	phản	
-104	17	hồi	
-104	18	,	
-104	19	trải	
-104	20	nghiệm	
-104	21	người	
-104	22	dùng	
-104	23	và	
-104	24	khả	
-104	25	năng	
-104	26	chịu	
-104	27	tải	
-104	28	của	
-104	29	hệ	
-104	30	thống	
-104	31	.	
-105	1	Giải	
-105	2	quyết	
-105	3	các	
-105	4	bài	
-105	5	toán	
-105	6	chuyên	
-105	7	sâu	
-105	8	về	
-105	9	Transaction	
-105	10	,	
-105	11	Caching	
-105	12	,	
-105	13	Concurrency	
-105	14	,	
-105	15	Messaging	
-105	16	và	
-105	17	hệ	
-105	18	thống	
-105	19	có	
-105	20	lượng	
-105	21	truy	
-105	22	cập	
-105	23	lớn	
-105	24	.	
-106	1	Tham	
-106	2	gia	
-106	3	định	
-106	4	hình	
-106	5	kiến	
-106	6	trúc	
-106	7	,	
-106	8	thực	
-106	9	hiện	
-106	10	Design	
-106	11	Review	
-106	12	,	
-106	13	Code	
-106	14	Review	
-106	15	và	
-106	16	Testing	
-106	17	,	
-106	18	góp	
-106	19	phần	
-106	20	xây	
-106	21	dựng	
-106	22	sản	
-106	23	phẩm	
-106	24	ổn	
-106	25	định	
-106	26	,	
-106	27	dễ	
-106	28	bảo	
-106	29	trì	
-106	30	.	
-107	1	Phối	
-107	2	hợp	
-107	3	cùng	
-107	4	Product	
-107	5	Manager	
-107	6	,	
-107	7	BA	
-107	8	và	
-107	9	DevOps	
-107	10	để	
-107	11	chuyển	
-107	12	hóa	
-107	13	nhu	
-107	14	cầu	
-107	15	kinh	
-107	16	doanh	
-107	17	thành	
-107	18	giải	
-107	19	pháp	
-107	20	công	
-107	21	nghệ	
-107	22	hiệu	
-107	23	quả	
-107	24	.	
-108	1	Chia	
-108	2	sẻ	
-108	3	chuyên	
-108	4	môn	
-108	5	,	
-108	6	mentoring	
-108	7	thành	
-108	8	viên	
-108	9	và	
-108	10	phát	
-108	11	triển	
-108	12	năng	
-108	13	lực	
-108	14	theo	
-108	15	định	
-108	16	hướng	
-108	17	Technical	
-108	18	Leadership	
-108	19	.	
-109	1	Có	
-109	2	từ	
-109	3	3	
-109	4	-	
-109	5	4	
-109	6	năm	
-109	7	kinh	
-109	8	nghiệm	
-109	9	phát	
-109	10	triển	
-109	11	ứng	
-109	12	dụng	
-109	13	Web	
-109	14	với	
-109	15	C	
-109	16	#,	
-109	17	.	
-109	18	NET	
-109	19	/.	
-109	20	NET	
-109	21	Core	
-109	22	và	
-109	23	hiểu	
-109	24	cách	
-109	25	tổ	
-109	26	chức	
-109	27	hệ	
-109	28	thống	
-109	29	theo	
-109	30	Clean	
-109	31	Architecture	
-109	32	.	
-110	1	Có	
-110	2	kinh	
-110	3	nghiệm	
-110	4	phát	
-110	5	triển	
-110	6	Frontend	
-110	7	với	
-110	8	JavaScript	
-110	9	/	
-110	10	TypeScript	
-110	11	và	
-110	12	ít	
-110	13	nhất	
-110	14	một	
-110	15	framework	
-110	16	Angular	
-110	17	,	
-110	18	React	
-110	19	hoặc	
-110	20	Vue	
-110	21	;	
-110	22	có	
-110	23	khả	
-110	24	năng	
-110	25	xây	
-110	26	dựng	
-110	27	,	
-110	28	chuẩn	
-110	29	hóa	
-110	30	codebase	
-110	31	.	
-111	1	Đã	
-111	2	trực	
-111	3	tiếp	
-111	4	tối	
-111	5	ưu	
-111	6	hiệu	
-111	7	năng	
-111	8	Backend	
-111	9	và	
-111	10	Client	
-111	11	,	
-111	12	mang	
-111	13	lại	
-111	14	cải	
-111	15	thiện	
-111	16	thực	
-111	17	tế	
-111	18	về	
-111	19	tốc	
-111	20	độ	
-111	21	phản	
-111	22	hồi	
-111	23	,	
-111	24	trải	
-111	25	nghiệm	
-111	26	người	
-111	27	dùng	
-111	28	hoặc	
-111	29	khả	
-111	30	năng	
-111	31	chịu	
-111	32	tải	
-111	33	.	
-112	1	Nắm	
-112	2	vững	
-112	3	OOP	
-112	4	,	
-112	5	SOLID	
-112	6	,	
-112	7	Design	
-112	8	Pattern	
-112	9	;	
-112	10	có	
-112	11	tư	
-112	12	duy	
-112	13	viết	
-112	14	mã	
-112	15	dễ	
-112	16	đọc	
-112	17	,	
-112	18	dễ	
-112	19	kiểm	
-112	20	thử	
-112	21	và	
-112	22	bảo	
-112	23	trì	
-112	24	.	
-113	1	Thành	
-113	2	thạo	
-113	3	SQL	
-113	4	Server	
-113	5	/	
-113	6	MySQL	
-113	7	,	
-113	8	có	
-113	9	kinh	
-113	10	nghiệm	
-113	11	thiết	
-113	12	kế	
-113	13	dữ	
-113	14	liệu	
-113	15	và	
-113	16	tối	
-113	17	ưu	
-113	18	truy	
-113	19	vấn	
-113	20	.	
-114	1	Có	
-114	2	khả	
-114	3	năng	
-114	4	phân	
-114	5	tích	
-114	6	vấn	
-114	7	đề	
-114	8	,	
-114	9	phối	
-114	10	hợp	
-114	11	đội	
-114	12	nhóm	
-114	13	và	
-114	14	chủ	
-114	15	động	
-114	16	đề	
-114	17	xuất	
-114	18	giải	
-114	19	pháp	
-114	20	kỹ	
-114	21	thuật	
-114	22	.	
-115	1	Kinh	
-115	2	nghiệm	
-115	3	với	
-115	4	Redis	
-115	5	,	
-115	6	RabbitMQ	
-115	7	,	
-115	8	Microservices	
-115	9	,	
-115	10	Docker	
-115	11	hoặc	
-115	12	CI	
-115	13	/	
-115	14	CD	
-115	15	.	
-116	1	Đã	
-116	2	sử	
-116	3	dụng	
-116	4	các	
-116	5	công	
-116	6	cụ	
-116	7	đo	
-116	8	lường	
-116	9	hiệu	
-116	10	năng	
-116	11	Frontend	
-116	12	như	
-116	13	Lighthouse	
-116	14	,	
-116	15	Chrome	
-116	16	DevTools	
-116	17	hoặc	
-116	18	Web	
-116	19	Vitals	
-116	20	.	
-117	1	Có	
-117	2	kinh	
-117	3	nghiệm	
-117	4	với	
-117	5	hệ	
-117	6	thống	
-117	7	quy	
-117	8	mô	
-117	9	lớn	
-117	10	,	
-117	11	Unit	
-117	12	Test	
-117	13	,	
-117	14	Code	
-117	15	Review	
-117	16	hoặc	
-117	17	mentoring	
-117	18	thành	
-117	19	viên	
-117	20	.	
-118	1	Tham	
-118	2	gia	
-118	3	phát	
-118	4	triển	
-118	5	các	
-118	6	sản	
-118	7	phẩm	
-118	8	và	
-118	9	dịch	
-118	10	vụ	
-118	11	tài	
-118	12	chính	
-118	13	trên	
-118	14	nền	
-118	15	tảng	
-118	16	công	
-118	17	nghệ	
-118	18	tiên	
-118	19	tiến	
-118	20	nhất	
-119	1	Phụ	
-119	2	trách	
-119	3	phát	
-119	4	triển	
-119	5	Fullstack	
-119	6	từ	
-119	7	Frontend	
-119	8	(	
-119	9	FE	
-119	10	),	
-119	11	Backend	
-119	12	(	
-119	13	BE	
-119	14	)	
-119	15	đến	
-119	16	Database	
-119	17	(	
-119	18	thiết	
-119	19	kế	
-119	20	,	
-119	21	truy	
-119	22	vấn	
-119	23	,	
-119	24	tối	
-119	25	ưu	
-119	26	).	
-120	1	Phân	
-120	2	tích	
-120	3	và	
-120	4	tối	
-120	5	ưu	
-120	6	hiệu	
-120	7	năng	
-120	8	ứng	
-120	9	dụng	
-120	10	:	
-120	11	xử	
-120	12	lý	
-120	13	các	
-120	14	vấn	
-120	15	đề	
-120	16	về	
-120	17	tốc	
-120	18	độ	
-120	19	,	
-120	20	tài	
-120	21	nguyên	
-120	22	,	
-120	23	khả	
-120	24	năng	
-120	25	mở	
-120	26	rộng	
-120	27	và	
-120	28	ổn	
-120	29	định	
-120	30	hệ	
-120	31	thống	
-120	32	.	
-121	1	Phối	
-121	2	hợp	
-121	3	chặt	
-121	4	chẽ	
-121	5	với	
-121	6	các	
-121	7	team	
-121	8	liên	
-121	9	quan	
-121	10	(	
-121	11	QC	
-121	12	,	
-121	13	DevOps	
-121	14	,	
-121	15	BA	
-121	16	,...)	
-121	17	để	
-121	18	đảm	
-121	19	bảo	
-121	20	đúng	
-121	21	yêu	
-121	22	cầu	
-121	23	,	
-121	24	đúng	
-121	25	chất	
-121	26	lượng	
-121	27	và	
-121	28	đúng	
-121	29	tiến	
-121	30	độ	
-121	31	.	
-122	1	Viết	
-122	2	tài	
-122	3	liệu	
-122	4	kỹ	
-122	5	thuật	
-122	6	/	
-122	7	hướng	
-122	8	dẫn	
-122	9	sử	
-122	10	dụng	
-122	11	phục	
-122	12	vụ	
-122	13	bàn	
-122	14	giao	
-122	15	,	
-122	16	đào	
-122	17	tạo	
-122	18	nội	
-122	19	bộ	
-122	20	khi	
-122	21	cần	
-122	22	.	
-123	1	Tham	
-123	2	gia	
-123	3	code	
-123	4	review	
-123	5	,	
-123	6	góp	
-123	7	ý	
-123	8	nâng	
-123	9	cao	
-123	10	chất	
-123	11	lượng	
-123	12	code	
-123	13	,	
-123	14	đồng	
-123	15	thời	
-123	16	chia	
-123	17	sẻ	
-123	18	kiến	
-123	19	thức	
-123	20	và	
-123	21	kinh	
-123	22	nghiệm	
-123	23	để	
-123	24	cùng	
-123	25	nâng	
-123	26	trình	
-123	27	team	
-123	28	.	
-124	1	Tốt	
-124	2	nghiệp	
-124	3	ĐH	
-124	4	chuyên	
-124	5	ngành	
-124	6	CNTT	
-124	7	hoặc	
-124	8	các	
-124	9	chuyên	
-124	10	ngành	
-124	11	liên	
-124	12	quan	
-124	13	.	
-125	1	Có	
-125	2	tối	
-125	3	thiểu	
-125	4	1.5	
-125	5	năm	
-125	6	kinh	
-125	7	nghiệm	
-125	8	lập	
-125	9	trình	
-125	10	trên	
-125	11	nền	
-125	12	tảng	
-125	13	Web	
-126	1	Thành	
-126	2	thạo	
-126	3	các	
-126	4	kiến	
-126	5	thức	
-126	6	về	
-126	7	.	
-126	8	NET	
-126	9	Framework	
-126	10	hoặc	
-126	11	.	
-126	12	NET	
-126	13	Core	
-126	14	(	
-126	15	C	
-126	16	#,	
-126	17	ASP.NET	
-126	18	,	
-126	19	MVC	
-126	20	,	
-126	21	...)	
-126	22	và	
-126	23	VueJS	
-127	1	Nắm	
-127	2	vững	
-127	3	nền	
-127	4	tảng	
-127	5	lập	
-127	6	trình	
-127	7	và	
-127	8	kiến	
-127	9	trúc	
-127	10	:	
-127	11	OOP	
-127	12	,	
-127	13	SOLID	
-127	14	,	
-127	15	Design	
-127	16	Patterns	
-127	17	,	
-127	18	hiểu	
-127	19	SOA	
-127	20	/	
-127	21	Microservices	
-128	1	Có	
-128	2	kinh	
-128	3	nghiệm	
-128	4	phát	
-128	5	triển	
-128	6	hệ	
-128	7	thống	
-128	8	Web	
-128	9	quy	
-128	10	mô	
-128	11	vừa	
-128	12	/	
-128	13	lớn	
-128	14	,	
-128	15	tối	
-128	16	ưu	
-128	17	và	
-128	18	vận	
-128	19	hành	
-128	20	ổn	
-128	21	định	
-128	22	.	
-129	1	Có	
-129	2	kinh	
-129	3	nghiệm	
-129	4	với	
-129	5	Web	
-129	6	API	
-129	7	/	
-129	8	RESTful	
-129	9	API	
-129	10	.	
-130	1	Có	
-130	2	kinh	
-130	3	nghiệm	
-130	4	với	
-130	5	SQL	
-130	6	Server	
-130	7	/	
-130	8	MySQL	
-130	9	/	
-130	10	PostgreSQL	
-130	11	;	
-130	12	biết	
-130	13	thêm	
-130	14	MongoDB	
-130	15	/	
-130	16	Couchbase	
-130	17	/	
-130	18	Redis	
-130	19	/	
-130	20	RabbitMQ	
-130	21	(	
-130	22	hoặc	
-130	23	tương	
-130	24	đương	
-130	25	)	
-130	26	là	
-130	27	điểm	
-130	28	cộng	
-130	29	.	
-131	1	Yêu	
-131	2	thích	
-131	3	môi	
-131	4	trường	
-131	5	product	
-131	6	,	
-131	7	có	
-131	8	tư	
-131	9	duy	
-131	10	làm	
-131	11	sản	
-131	12	phẩm	
-131	13	hướng	
-131	14	người	
-131	15	dùng	
-131	16	.	
-132	1	Biết	
-132	2	ứng	
-132	3	dụng	
-132	4	công	
-132	5	cụ	
-132	6	AI	
-132	7	để	
-132	8	hỗ	
-132	9	trợ	
-132	10	lập	
-132	11	trình	
-132	12	(	
-132	13	viết	
-132	14	code	
-132	15	/	
-132	16	test	
-132	17	/	
-132	18	tài	
-132	19	liệu	
-132	20	,	
-132	21	review	
-132	22	,	
-132	23	tối	
-132	24	ưu	
-132	25	…).	
-133	1	Design	
-133	2	and	
-133	3	develop	
-133	4	compelling	
-133	5	and	
-133	6	usable	
-133	7	customer	
-133	8	web	
-133	9	interfaces	
-133	10	using	
-133	11	VueJS	
-133	12	.	
-134	1	Work	
-134	2	closely	
-134	3	with	
-134	4	engineers	
-134	5	from	
-134	6	other	
-134	7	teams	
-134	8	to	
-134	9	develop	
-134	10	and	
-134	11	build	
-134	12	high	
-134	13	-	
-134	14	quality	
-134	15	software	
-134	16	.	
-135	1	Improve	
-135	2	the	
-135	3	efficiency	
-135	4	of	
-135	5	existing	
-135	6	products	
-135	7	,	
-135	8	debug	
-135	9	and	
-135	10	troubleshoot	
-135	11	production	
-135	12	issues	
-135	13	.	
-136	1	Build	
-136	2	the	
-136	3	architecture	
-136	4	and	
-136	5	design	
-136	6	of	
-136	7	new	
-136	8	products	
-136	9	and	
-136	10	features	
-136	11	.	
-137	1	Implement	
-137	2	UI	
-137	3	components	
-137	4	and	
-137	5	libraries	
-137	6	.	
-138	1	Must	
-138	2	Haves	
-138	3	:	
-139	1	Utilize	
-139	2	code	
-139	3	versioning	
-139	4	tools	
-139	5	(	
-139	6	Git	
-139	7	).	
-140	1	Experienced	
-140	2	with	
-140	3	working	
-140	4	on	
-140	5	Linux	
-140	6	based	
-140	7	infrastructure	
-141	1	Expert	
-141	2	knowledge	
-141	3	with	
-141	4	HTML5	
-141	5	,	
-141	6	CSS3	
-141	7	,	
-141	8	SASS	
-141	9	/	
-141	10	SCSS	
-141	11	.	
-142	1	Expert	
-142	2	with	
-142	3	developing	
-142	4	responsive	
-142	5	layouts	
-142	6	leveraging	
-142	7	CSS	
-142	8	and	
-142	9	media	
-142	10	queries	
-142	11	.	
-143	1	Solid	
-143	2	knowledge	
-143	3	of	
-143	4	modern	
-143	5	web	
-143	6	development	
-143	7	technologies	
-143	8	&	
-143	9	front	
-143	10	-	
-143	11	end	
-143	12	frameworks	
-143	13	.	
-144	1	Proficient	
-144	2	in	
-144	3	Vue	
-144	4	3	
-144	5	,	
-144	6	Nuxt	
-144	7	3	
-145	1	Nice	
-145	2	to	
-145	3	Have	
-146	1	Experience	
-146	2	in	
-146	3	Mobile	
-146	4	App	
-146	5	development	
-146	6	(	
-146	7	build	
-146	8	cross	
-146	9	platform	
-146	10	apps	
-146	11	using	
-146	12	Javascript	
-146	13	)	
-147	1	Understanding	
-147	2	of	
-147	3	SSR	
-147	4	(	
-147	5	Server	
-147	6	-	
-147	7	Side	
-147	8	Rendering	
-147	9	)	
-147	10	and	
-147	11	Static	
-147	12	Site	
-147	13	Generation	
-147	14	(	
-147	15	SSG	
-147	16	)	
-148	1	Experience	
-148	2	with	
-148	3	Nuxt	
-148	4	4	
-149	1	Know	
-149	2	how	
-149	3	to	
-149	4	debug	
-149	5	,	
-149	6	measure	
-149	7	and	
-149	8	optimize	
-149	9	the	
-149	10	performance	
-149	11	of	
-149	12	web	
-149	13	applications	
-149	14	.	
-150	1	Understand	
-150	2	and	
-150	3	be	
-150	4	able	
-150	5	to	
-150	6	implement	
-150	7	good	
-150	8	tests	
-150	9	for	
-150	10	front	
-150	11	-	
-150	12	end	
-150	13	code	
-150	14	.	
-151	1	Basic	
-151	2	understanding	
-151	3	of	
-151	4	server	
-151	5	,	
-151	6	database	
-151	7	,	
-151	8	and	
-151	9	good	
-151	10	experience	
-151	11	in	
-151	12	RESTful	
-151	13	API	
-151	14	design	
-151	15	and	
-151	16	development	
-152	1	Desired	
-152	2	soft	
-152	3	skills	
-153	1	Awareness	
-153	2	of	
-153	3	critical	
-153	4	concepts	
-153	5	in	
-153	6	DevOps	
-153	7	and	
-153	8	Agile	
-153	9	principles	
-154	1	Ability	
-154	2	to	
-154	3	grasp	
-154	4	technical	
-154	5	and	
-154	6	financial	
-154	7	concepts	
-154	8	quickly	
-155	1	Easily	
-155	2	adapt	
-155	3	and	
-155	4	learn	
-155	5	new	
-155	6	things	
-155	7	.	
-156	1	Ability	
-156	2	to	
-156	3	work	
-156	4	independently	
-156	5	and	
-156	6	as	
-156	7	part	
-156	8	of	
-156	9	a	
-156	10	team	
-157	1	Ability	
-157	2	to	
-157	3	work	
-157	4	under	
-157	5	pressure	
-157	6	and	
-157	7	handle	
-157	8	emergency	
-157	9	situations	
-157	10	effectively	
-158	1	Good	
-158	2	problem	
-158	3	-	
-158	4	solving	
-158	5	skills	
-158	6	.	
-159	1	Attention	
-159	2	to	
-159	3	detail	
-159	4	.	
-160	1	Trao	
-160	2	đổi	
-160	3	/	
-160	4	hỗ	
-160	5	trợ	
-160	6	khách	
-160	7	hàng	
-160	8	và	
-160	9	các	
-160	10	thành	
-160	11	viên	
-160	12	trong	
-160	13	dự	
-160	14	án	
-160	15	về	
-160	16	các	
-160	17	vấn	
-160	18	đề	
-160	19	liên	
-160	20	quan	
-160	21	đến	
-160	22	công	
-160	23	việc	
-160	24	;	
-161	1	Báo	
-161	2	cáo	
-161	3	công	
-161	4	việc	
-161	5	cho	
-161	6	Team	
-161	7	dự	
-161	8	án	
-161	9	và	
-161	10	các	
-161	11	cấp	
-161	12	Quản	
-161	13	lý	
-161	14	;	
-162	1	Phát	
-162	2	triển	
-162	3	và	
-162	4	vận	
-162	5	hành	
-162	6	sản	
-162	7	phẩm	
-162	8	về	
-162	9	Web	
-162	10	/	
-162	11	Phần	
-162	12	mềm	
-162	13	;	
-163	1	Code	
-163	2	review	
-163	3	,	
-163	4	hướng	
-163	5	dẫn	
-163	6	kỹ	
-163	7	thuật	
-163	8	và	
-163	9	đảm	
-163	10	bảo	
-163	11	tuân	
-163	12	thủ	
-163	13	quy	
-163	14	chuẩn	
-163	15	lập	
-163	16	trình	
-163	17	;	
-164	1	Thiết	
-164	2	kế	
-164	3	kiến	
-164	4	trúc	
-164	5	hệ	
-164	6	thống	
-164	7	,	
-164	8	đảm	
-164	9	bảo	
-164	10	hiệu	
-164	11	năng	
-164	12	,	
-164	13	bảo	
-164	14	mật	
-164	15	và	
-164	16	khả	
-164	17	năng	
-164	18	mở	
-164	19	rộng	
-164	20	;	
-165	1	Tối	
-165	2	ưu	
-165	3	hóa	
-165	4	Code	
-165	5	để	
-165	6	hệ	
-165	7	thống	
-165	8	hoạt	
-165	9	động	
-165	10	nhanh	
-165	11	và	
-165	12	mượt	
-165	13	mà	
-165	14	hơn	
-165	15	;	
-166	1	Dẫn	
-166	2	dắt	
-166	3	và	
-166	4	hỗ	
-166	5	trợ	
-166	6	các	
-166	7	vấn	
-166	8	đề	
-166	9	lập	
-166	10	trình	
-166	11	ở	
-166	12	cả	
-166	13	Back	
-166	14	-	
-166	15	end	
-166	16	và	
-166	17	Front	
-166	18	-	
-166	19	end	
-166	20	.	
-167	1	Ít	
-167	2	nhất	
-167	3	3	
-167	4	năm	
-167	5	kinh	
-167	6	nghiệm	
-167	7	phát	
-167	8	triển	
-167	9	phần	
-167	10	mềm	
-167	11	full	
-167	12	-	
-167	13	stack	
-168	1	Thành	
-168	2	thạo	
-168	3	phát	
-168	4	triển	
-168	5	backend	
-168	6	với	
-168	7	golang	
-168	8	là	
-168	9	một	
-168	10	lợi	
-168	11	thế	
-168	12	;	
-169	1	Thành	
-169	2	thạo	
-169	3	ReactJS	
-169	4	(	
-169	5	có	
-169	6	kinh	
-169	7	nghiệm	
-169	8	với	
-169	9	TypeScript	
-169	10	là	
-169	11	lợi	
-169	12	thế	
-169	13	);	
-170	1	Có	
-170	2	kinh	
-170	3	nghiệm	
-170	4	thiết	
-170	5	kế	
-170	6	API	
-170	7	theo	
-170	8	chuẩn	
-170	9	RESTful	
-170	10	,	
-170	11	thiết	
-170	12	kế	
-170	13	CSDL	
-170	14	và	
-170	15	kiến	
-170	16	trúc	
-170	17	microservices	
-170	18	;	
-171	1	Có	
-171	2	kinh	
-171	3	nghiệm	
-171	4	sử	
-171	5	dụng	
-171	6	Docker	
-171	7	,	
-171	8	Git	
-171	9	,	
-171	10	CI	
-171	11	/	
-171	12	CD	
-171	13	(	
-171	14	GitLab	
-171	15	CI	
-171	16	,	
-171	17	Jenkins	
-171	18	…),	
-171	19	nền	
-171	20	tảng	
-171	21	cloud	
-171	22	(	
-171	23	AWS	
-171	24	/	
-171	25	GCP	
-171	26	/	
-171	27	Azure	
-171	28	).	
-172	1	Có	
-172	2	kinh	
-172	3	nghiệm	
-172	4	làm	
-172	5	việc	
-172	6	với	
-172	7	cơ	
-172	8	sở	
-172	9	dữ	
-172	10	liệu	
-172	11	:	
-172	12	PostgreSQL	
-172	13	,	
-172	14	MySQL	
-172	15	,	
-172	16	MongoDB	
-172	17	(	
-172	18	tùy	
-172	19	dự	
-172	20	án	
-172	21	).	
-173	1	Có	
-173	2	kinh	
-173	3	nghiệm	
-173	4	trong	
-173	5	việc	
-173	6	thiết	
-173	7	kế	
-173	8	hệ	
-173	9	thống	
-173	10	,	
-173	11	tối	
-173	12	ưu	
-173	13	hiệu	
-173	14	suất	
-173	15	,	
-173	16	bảo	
-173	17	mật	
-173	18	ứng	
-173	19	dụng	
-173	20	web	
-173	21	;	
-174	1	Hiểu	
-174	2	biết	
-174	3	về	
-174	4	Clean	
-174	5	Architecture	
-174	6	,	
-174	7	Design	
-174	8	Patterns	
-174	9	,	
-174	10	và	
-174	11	best	
-174	12	practices	
-174	13	trong	
-174	14	lập	
-174	15	trình	
-174	16	.	
-175	1	Kỹ	
-175	2	năng	
-175	3	giải	
-175	4	quyết	
-175	5	vấn	
-175	6	đề	
-175	7	tốt	
-175	8	và	
-175	9	có	
-175	10	khả	
-175	11	năng	
-175	12	dẫn	
-175	13	dắt	
-175	14	nhóm	
-175	15	kỹ	
-175	16	thuật	
-175	17	;	
-176	1	Có	
-176	2	kỹ	
-176	3	năng	
-176	4	giao	
-176	5	tiếp	
-176	6	bằng	
-176	7	tiếng	
-176	8	Anh	
-176	9	một	
-176	10	lợi	
-176	11	thế	
-176	12	.	
-177	1	Tham	
-177	2	gia	
-177	3	phân	
-177	4	tích	
-177	5	,	
-177	6	thiết	
-177	7	kế	
-177	8	,	
-177	9	phát	
-177	10	triển	
-177	11	và	
-177	12	bảo	
-177	13	trì	
-177	14	các	
-177	15	ứng	
-177	16	dụng	
-177	17	web	
-177	18	Full	
-177	19	-	
-177	20	stack	
-177	21	sử	
-177	22	dụng	
-177	23	Java	
-177	24	Spring	
-177	25	Boot	
-177	26	và	
-177	27	Angular	
-177	28	(	
-177	29	v12	
-177	30	+).	
-178	1	Phát	
-178	2	triển	
-178	3	các	
-178	4	hệ	
-178	5	thống	
-178	6	end	
-178	7	-	
-178	8	to	
-178	9	-	
-178	10	end	
-178	11	,	
-178	12	bao	
-178	13	gồm	
-178	14	Backend	
-178	15	,	
-178	16	RESTful	
-178	17	API	
-178	18	và	
-178	19	giao	
-178	20	diện	
-178	21	người	
-178	22	dùng	
-178	23	hiện	
-178	24	đại	
-178	25	,	
-178	26	responsive	
-178	27	.	
-179	1	Thiết	
-179	2	kế	
-179	3	và	
-179	4	phát	
-179	5	triển	
-179	6	các	
-179	7	dịch	
-179	8	vụ	
-179	9	theo	
-179	10	kiến	
-179	11	trúc	
-179	12	Microservices	
-179	13	,	
-179	14	đảm	
-179	15	bảo	
-179	16	khả	
-179	17	năng	
-179	18	mở	
-179	19	rộng	
-179	20	,	
-179	21	ổn	
-179	22	định	
-179	23	và	
-179	24	dễ	
-179	25	bảo	
-179	26	trì	
-179	27	.	
-180	1	Xây	
-180	2	dựng	
-180	3	,	
-180	4	tích	
-180	5	hợp	
-180	6	và	
-180	7	kiểm	
-180	8	thử	
-180	9	các	
-180	10	API	
-180	11	phục	
-180	12	vụ	
-180	13	kết	
-180	14	nối	
-180	15	giữa	
-180	16	các	
-180	17	hệ	
-180	18	thống	
-180	19	nội	
-180	20	bộ	
-180	21	và	
-180	22	hệ	
-180	23	thống	
-180	24	bên	
-180	25	thứ	
-180	26	ba	
-180	27	.	
-181	1	Tham	
-181	2	gia	
-181	3	tích	
-181	4	hợp	
-181	5	với	
-181	6	các	
-181	7	hệ	
-181	8	thống	
-181	9	doanh	
-181	10	nghiệp	
-181	11	,	
-181	12	nền	
-181	13	tảng	
-181	14	messaging	
-181	15	và	
-181	16	các	
-181	17	dịch	
-181	18	vụ	
-181	19	bên	
-181	20	ngoài	
-181	21	.	
-182	1	Phối	
-182	2	hợp	
-182	3	với	
-182	4	BA	
-182	5	,	
-182	6	QA	
-182	7	/	
-182	8	Testers	
-182	9	,	
-182	10	DevOps	
-182	11	và	
-182	12	các	
-182	13	thành	
-182	14	viên	
-182	15	dự	
-182	16	án	
-182	17	để	
-182	18	đảm	
-182	19	bảo	
-182	20	chất	
-182	21	lượng	
-182	22	và	
-182	23	tiến	
-182	24	độ	
-182	25	triển	
-182	26	khai	
-182	27	.	
-183	1	Tham	
-183	2	gia	
-183	3	xử	
-183	4	lý	
-183	5	các	
-183	6	vấn	
-183	7	đề	
-183	8	về	
-183	9	hiệu	
-183	10	năng	
-183	11	,	
-183	12	bảo	
-183	13	mật	
-183	14	,	
-183	15	tính	
-183	16	ổn	
-183	17	định	
-183	18	và	
-183	19	khả	
-183	20	năng	
-183	21	mở	
-183	22	rộng	
-183	23	của	
-183	24	hệ	
-183	25	thống	
-183	26	.	
-184	1	Thực	
-184	2	hiện	
-184	3	code	
-184	4	review	
-184	5	,	
-184	6	viết	
-184	7	tài	
-184	8	liệu	
-184	9	kỹ	
-184	10	thuật	
-184	11	và	
-184	12	tuân	
-184	13	thủ	
-184	14	các	
-184	15	tiêu	
-184	16	chuẩn	
-184	17	phát	
-184	18	triển	
-184	19	phần	
-184	20	mềm	
-184	21	của	
-184	22	dự	
-184	23	án	
-184	24	.	
-185	1	Có	
-185	2	kinh	
-185	3	nghiệm	
-185	4	dày	
-185	5	dạn	
-185	6	về	
-185	7	phát	
-185	8	triển	
-185	9	full	
-185	10	-	
-185	11	stack	
-185	12	sử	
-185	13	dụng	
-185	14	Java	
-185	15	(	
-185	16	Spring	
-185	17	Boot	
-185	18	)	
-185	19	và	
-185	20	Angular	
-185	21	(	
-185	22	v12	
-185	23	+).	
-186	1	Có	
-186	2	kinh	
-186	3	nghiệm	
-186	4	thực	
-186	5	tế	
-186	6	trong	
-186	7	việc	
-186	8	thiết	
-186	9	kế	
-186	10	,	
-186	11	phát	
-186	12	triển	
-186	13	và	
-186	14	bảo	
-186	15	trì	
-186	16	các	
-186	17	ứng	
-186	18	dụng	
-186	19	toàn	
-186	20	diện	
-186	21	(	
-186	22	end	
-186	23	-	
-186	24	to	
-186	25	-	
-186	26	end	
-186	27	),	
-186	28	bao	
-186	29	gồm	
-186	30	RESTful	
-186	31	API	
-186	32	và	
-186	33	giao	
-186	34	diện	
-186	35	người	
-186	36	dùng	
-186	37	(	
-186	38	UI	
-186	39	)	
-186	40	hiện	
-186	41	đại	
-186	42	trên	
-186	43	nền	
-186	44	tảng	
-186	45	web	
-186	46	.	
-187	1	Am	
-187	2	hiểu	
-187	3	sâu	
-187	4	sắc	
-187	5	về	
-187	6	kiến	
-187	7	​​	
-187	8	trúc	
-187	9	microservices	
-187	10	,	
-187	11	các	
-187	12	tiêu	
-187	13	chuẩn	
-187	14	thiết	
-187	15	kế	
-187	16	API	
-187	17	và	
-187	18	các	
-187	19	mô	
-187	20	hình	
-187	21	tích	
-187	22	hợp	
-187	23	.	
-188	1	Có	
-188	2	kinh	
-188	3	nghiệm	
-188	4	làm	
-188	5	việc	
-188	6	với	
-188	7	OpenAPI	
-188	8	/	
-188	9	Swagger	
-188	10	và	
-188	11	các	
-188	12	công	
-188	13	cụ	
-188	14	kiểm	
-188	15	thử	
-188	16	API	
-188	17	như	
-188	18	Postman	
-188	19	,	
-188	20	cURL	
-188	21	,	
-188	22	HTTPie	
-188	23	.	
-189	1	Thành	
-189	2	thạo	
-189	3	TypeScript	
-189	4	,	
-189	5	RxJS	
-189	6	và	
-189	7	kỹ	
-189	8	năng	
-189	9	xây	
-189	10	dựng	
-189	11	giao	
-189	12	diện	
-189	13	(	
-189	14	UI	
-189	15	)	
-189	16	có	
-189	17	khả	
-189	18	năng	
-189	19	thích	
-189	20	ứng	
-189	21	(	
-189	22	responsive	
-189	23	)	
-189	24	và	
-189	25	mở	
-189	26	rộng	
-189	27	(	
-189	28	scalable	
-189	29	)	
-189	30	bằng	
-189	31	Angular	
-189	32	cùng	
-189	33	các	
-189	34	thư	
-189	35	viện	
-189	36	frontend	
-189	37	hiện	
-189	38	đại	
-189	39	(	
-189	40	Angular	
-189	41	Material	
-189	42	,	
-189	43	Ant	
-189	44	Design	
-189	45	,	
-189	46	v.v	
-189	47	.).	
-190	1	Có	
-190	2	kinh	
-190	3	nghiệm	
-190	4	tích	
-190	5	hợp	
-190	6	với	
-190	7	các	
-190	8	hệ	
-190	9	thống	
-190	10	bên	
-190	11	thứ	
-190	12	ba	
-190	13	,	
-190	14	dịch	
-190	15	vụ	
-190	16	doanh	
-190	17	nghiệp	
-190	18	và	
-190	19	nền	
-190	20	tảng	
-190	21	nhắn	
-190	22	tin	
-190	23	/	
-190	24	truyền	
-190	25	tải	
-190	26	thông	
-190	27	điệp	
-190	28	(	
-190	29	Kafka	
-190	30	,	
-190	31	RabbitMQ	
-190	32	,	
-190	33	v.v	
-190	34	.).	
-191	1	Có	
-191	2	kiến	
-191	3	​​	
-191	4	thức	
-191	5	về	
-191	6	cơ	
-191	7	sở	
-191	8	dữ	
-191	9	liệu	
-191	10	và	
-191	11	công	
-191	12	nghệ	
-191	13	caching	
-191	14	như	
-191	15	Oracle	
-191	16	,	
-191	17	MongoDB	
-191	18	,	
-191	19	Redis	
-191	20	.	
-192	1	Am	
-192	2	hiểu	
-192	3	vững	
-192	4	chắc	
-192	5	về	
-192	6	các	
-192	7	quy	
-192	8	tắc	
-192	9	lập	
-192	10	trình	
-192	11	an	
-192	12	toàn	
-192	13	(	
-192	14	secure	
-192	15	coding	
-192	16	),	
-192	17	xác	
-192	18	thực	
-192	19	&	
-192	20	phân	
-192	21	quyền	
-192	22	(	
-192	23	OAuth2	
-192	24	,	
-192	25	JWT	
-192	26	)	
-192	27	và	
-192	28	tối	
-192	29	ưu	
-192	30	hóa	
-192	31	hiệu	
-192	32	năng	
-192	33	ứng	
-192	34	dụng	
-192	35	.	
-193	1	Có	
-193	2	kinh	
-193	3	nghiệm	
-193	4	làm	
-193	5	việc	
-193	6	với	
-193	7	Git	
-193	8	,	
-193	9	quy	
-193	10	trình	
-193	11	CI	
-193	12	/	
-193	13	CD	
-193	14	,	
-193	15	Docker	
-193	16	và	
-193	17	Kubernetes	
-193	18	là	
-193	19	một	
-193	20	lợi	
-193	21	thế	
-193	22	.	
-194	1	Có	
-194	2	kinh	
-194	3	nghiệm	
-194	4	về	
-194	5	kiến	
-194	6	​​	
-194	7	trúc	
-194	8	Micro	
-194	9	Frontend	
-194	10	là	
-194	11	một	
-194	12	lợi	
-194	13	thế	
-194	14	lớn	
-194	15	.	
-195	1	Ưu	
-195	2	tiên	
-195	3	ứng	
-195	4	viên	
-195	5	có	
-195	6	kinh	
-195	7	nghiệm	
-195	8	trong	
-195	9	lĩnh	
-195	10	vực	
-195	11	ngân	
-195	12	hàng	
-195	13	,	
-195	14	fintech	
-195	15	hoặc	
-195	16	các	
-195	17	hệ	
-195	18	thống	
-195	19	xử	
-195	20	lý	
-195	21	giao	
-195	22	dịch	
-195	23	khối	
-195	24	lượng	
-195	25	lớn	
-195	26	.	
-196	1	Develop	
-196	2	applications	
-196	3	for	
-196	4	the	
-196	5	Shopify	
-196	6	e	
-196	7	-	
-196	8	commerce	
-196	9	platform	
-196	10	.	
-197	1	Participate	
-197	2	in	
-197	3	the	
-197	4	development	
-197	5	of	
-197	6	web	
-197	7	applications	
-197	8	using	
-197	9	ReactJS	
-197	10	and	
-197	11	server	
-197	12	-	
-197	13	side	
-197	14	applications	
-197	15	on	
-197	16	the	
-197	17	Node.js	
-197	18	platform	
-197	19	.	
-198	1	Design	
-198	2	,	
-198	3	build	
-198	4	,	
-198	5	and	
-198	6	maintain	
-198	7	efficient	
-198	8	RESTful	
-198	9	APIs	
-198	10	and	
-198	11	integrate	
-198	12	them	
-198	13	with	
-198	14	third	
-198	15	-	
-198	16	party	
-198	17	services	
-198	18	and	
-198	19	frontend	
-198	20	applications	
-198	21	.	
-199	1	Maintain	
-199	2	and	
-199	3	optimize	
-199	4	code	
-199	5	,	
-199	6	and	
-199	7	resolve	
-199	8	bugs	
-199	9	identified	
-199	10	during	
-199	11	the	
-199	12	development	
-199	13	process	
-199	14	to	
-199	15	ensure	
-199	16	system	
-199	17	stability	
-199	18	and	
-199	19	security	
-199	20	.	
-200	1	Research	
-200	2	and	
-200	3	implement	
-200	4	new	
-200	5	technologies	
-200	6	to	
-200	7	enhance	
-200	8	product	
-200	9	quality	
-200	10	and	
-200	11	performance	
-200	12	.	
-201	1	Collaborate	
-201	2	with	
-201	3	product	
-201	4	teams	
-201	5	to	
-201	6	define	
-201	7	,	
-201	8	design	
-201	9	,	
-201	10	and	
-201	11	ship	
-201	12	new	
-201	13	features	
-201	14	.	
-202	1	Write	
-202	2	clean	
-202	3	,	
-202	4	readable	
-202	5	,	
-202	6	and	
-202	7	well	
-202	8	-	
-202	9	documented	
-202	10	code	
-202	11	following	
-202	12	team	
-202	13	standards	
-202	14	.	
-203	1	Research	
-203	2	and	
-203	3	apply	
-203	4	new	
-203	5	tools	
-203	6	or	
-203	7	technologies	
-203	8	to	
-203	9	improve	
-203	10	development	
-203	11	efficiency	
-203	12	.	
-204	1	Use	
-204	2	AI	
-204	3	tools	
-204	4	such	
-204	5	as	
-204	6	ChatGPT	
-204	7	,	
-204	8	Claude	
-204	9	,	
-204	10	Cursor	
-204	11	,	
-204	12	or	
-204	13	GitHub	
-204	14	Copilot	
-204	15	to	
-204	16	support	
-204	17	coding	
-204	18	,	
-204	19	debugging	
-204	20	,	
-204	21	documentation	
-204	22	,	
-204	23	and	
-204	24	daily	
-204	25	workflow	
-204	26	.	
-205	1	Must	
-205	2	-	
-205	3	have	
-205	4	:	
-205	5	At	
-205	6	least	
-205	7	1	
-205	8	year	
-205	9	of	
-205	10	professional	
-205	11	experience	
-205	12	in	
-205	13	Fullstack	
-205	14	development	
-205	15	using	
-205	16	Node.js	
-205	17	and	
-205	18	ReactJS	
-205	19	.	
-206	1	Knowledge	
-206	2	:	
-207	1	Solid	
-207	2	foundation	
-207	3	in	
-207	4	JavaScript	
-207	5	/	
-207	6	TypeScript	
-207	7	,	
-207	8	HTML5	
-207	9	,	
-207	10	and	
-207	11	CSS3	
-207	12	.	
-208	1	Good	
-208	2	baseline	
-208	3	knowledge	
-208	4	of	
-208	5	Node.js	
-208	6	and	
-208	7	ReactJS	
-208	8	(	
-208	9	familiarity	
-208	10	with	
-208	11	NestJS	
-208	12	is	
-208	13	a	
-208	14	strong	
-208	15	plus	
-208	16	).	
-209	1	Basic	
-209	2	understanding	
-209	3	of	
-209	4	relational	
-209	5	/	
-209	6	non	
-209	7	-	
-209	8	relational	
-209	9	databases	
-209	10	and	
-209	11	synchronous	
-209	12	vs	
-209	13	.	
-209	14	asynchronous	
-209	15	programming	
-209	16	concepts	
-209	17	.	
-210	1	Familiarity	
-210	2	with	
-210	3	leveraging	
-210	4	AI	
-210	5	tools	
-210	6	(	
-210	7	e.g	
-210	8	.,	
-210	9	ChatGPT	
-210	10	,	
-210	11	Claude	
-210	12	)	
-210	13	to	
-210	14	improve	
-210	15	daily	
-210	16	coding	
-210	17	efficiency	
-210	18	and	
-210	19	quality	
-210	20	.	
-211	1	Skills	
-211	2	:	
-212	1	Strong	
-212	2	core	
-212	3	coding	
-212	4	skills	
-212	5	with	
-212	6	a	
-212	7	focus	
-212	8	on	
-212	9	writing	
-212	10	clean	
-212	11	,	
-212	12	readable	
-212	13	,	
-212	14	and	
-212	15	well	
-212	16	-	
-212	17	documented	
-212	18	code	
-212	19	.	
-213	1	Ability	
-213	2	to	
-213	3	conduct	
-213	4	effective	
-213	5	self	
-213	6	-	
-213	7	testing	
-213	8	(	
-213	9	Unit	
-213	10	testing	
-213	11	)	
-213	12	to	
-213	13	minimize	
-213	14	bugs	
-213	15	before	
-213	16	QA	
-213	17	handover	
-213	18	.	
-214	1	Good	
-214	2	logical	
-214	3	thinking	
-214	4	,	
-214	5	problem	
-214	6	-	
-214	7	solving	
-214	8	capabilities	
-214	9	,	
-214	10	and	
-214	11	a	
-214	12	collaborative	
-214	13	teamwork	
-214	14	mindset	
-214	15	.	
-215	1	Strong	
-215	2	self	
-215	3	-	
-215	4	learning	
-215	5	capability	
-215	6	to	
-215	7	quickly	
-215	8	adapt	
-215	9	to	
-215	10	new	
-215	11	tools	
-215	12	and	
-215	13	frameworks	
-215	14	.	
-216	1	Language	
-216	2	:	
-217	1	Basic	
-217	2	to	
-217	3	intermediate	
-217	4	English	
-217	5	reading	
-217	6	and	
-217	7	writing	
-217	8	skills	
-217	9	,	
-217	10	especially	
-217	11	for	
-217	12	technical	
-217	13	documentation	
-217	14	,	
-217	15	API	
-217	16	references	
-217	17	,	
-217	18	and	
-217	19	project	
-217	20	specifications	
-217	21	.	
-218	1	Characteristics	
-218	2	:	
-219	1	Open	
-219	2	mindset	
-219	3	,	
-219	4	highly	
-219	5	enthusiastic	
-219	6	about	
-219	7	learning	
-219	8	and	
-219	9	exploring	
-219	10	emerging	
-219	11	technologies	
-219	12	.	
-220	1	Proactive	
-220	2	,	
-220	3	accountable	
-220	4	,	
-220	5	and	
-220	6	receptive	
-220	7	to	
-220	8	constructive	
-220	9	feedback	
-220	10	from	
-220	11	senior	
-220	12	team	
-220	13	members	
-220	14	.	
-221	1	Nice	
-221	2	-	
-221	3	to	
-221	4	-	
-221	5	have	
-222	1	Experience	
-222	2	with	
-222	3	Shopify	
-222	4	app	
-222	5	development	
-222	6	,	
-222	7	Shopify	
-222	8	themes	
-222	9	,	
-222	10	Liquid	
-222	11	template	
-222	12	language	
-222	13	,	
-222	14	and	
-222	15	Shopify	
-222	16	APIs	
-222	17	.	
-223	1	Experience	
-223	2	with	
-223	3	GraphQL	
-223	4	API	
-223	5	(	
-223	6	both	
-223	7	client	
-223	8	and	
-223	9	server	
-223	10	-	
-223	11	side	
-223	12	).	
-224	1	Understanding	
-224	2	of	
-224	3	State	
-224	4	Management	
-224	5	libraries	
-224	6	:	
-224	7	Redux	
-224	8	Toolkit	
-224	9	,	
-224	10	or	
-224	11	Context	
-224	12	API	
-224	13	.	
-225	1	Knowledge	
-225	2	of	
-225	3	API	
-225	4	Security	
-225	5	(	
-225	6	JWT	
-225	7	,	
-225	8	OAuth	
-225	9	)	
-225	10	and	
-225	11	performance	
-225	12	optimization	
-225	13	.	
-226	1	A	
-226	2	good	
-226	3	eye	
-226	4	for	
-226	5	UI	
-226	6	/	
-226	7	UX	
-226	8	design	
-226	9	and	
-226	10	product	
-226	11	usability	
-226	12	.	
-227	1	Basic	
-227	2	communication	
-227	3	and	
-227	4	technical	
-227	5	reading	
-227	6	/	
-227	7	writing	
-227	8	skills	
-227	9	in	
-227	10	English	
-227	11	.	
-228	1	As	
-228	2	a	
-228	3	Data	
-228	4	Engineer	
-228	5	,	
-228	6	you	
-228	7	will	
-228	8	be	
-228	9	a	
-228	10	key	
-228	11	driver	
-228	12	in	
-228	13	designing	
-228	14	,	
-228	15	scaling	
-228	16	,	
-228	17	and	
-228	18	operating	
-228	19	the	
-228	20	data	
-228	21	backbone	
-228	22	across	
-228	23	our	
-228	24	entire	
-228	25	Mobile	
-228	26	Apps	
-228	27	&	
-228	28	Games	
-228	29	ecosystem	
-228	30	.	
-228	31	You	
-228	32	will	
-228	33	be	
-228	34	responsible	
-228	35	for	
-228	36	transforming	
-228	37	tens	
-228	38	of	
-228	39	millions	
-228	40	of	
-228	41	raw	
-228	42	event	
-228	43	logs	
-228	44	(	
-228	45	in	
-228	46	-	
-228	47	app	
-228	48	events	
-228	49	,	
-228	50	MMP	
-228	51	tracking	
-228	52	,	
-228	53	ad	
-228	54	network	
-228	55	revenues	
-228	56	)	
-228	57	into	
-228	58	robust	
-228	59	Data	
-228	60	Warehouse	
-228	61	models	
-228	62	,	
-228	63	high	
-228	64	-	
-228	65	performance	
-228	66	feature	
-228	67	pipelines	
-228	68	for	
-228	69	ML	
-228	70	/	
-228	71	AI	
-228	72	models	
-228	73	(	
-228	74	LTV	
-228	75	forecasting	
-228	76	,	
-228	77	anomaly	
-228	78	detection	
-228	79	),	
-228	80	and	
-228	81	internal	
-228	82	self	
-228	83	-	
-228	84	service	
-228	85	analytics	
-228	86	platforms	
-228	87	for	
-228	88	Product	
-228	89	&	
-228	90	Growth	
-228	91	Squads	
-228	92	.	
-229	1	JOB	
-229	2	DESCRIPTION	
-229	3	:	
-230	1	Build	
-230	2	and	
-230	3	operate	
-230	4	end	
-230	5	-	
-230	6	to	
-230	7	-	
-230	8	end	
-230	9	ELT	
-230	10	/	
-230	11	ETL	
-230	12	data	
-230	13	pipelines	
-230	14	(	
-230	15	batch	
-230	16	&	
-230	17	near	
-230	18	-	
-230	19	realtime	
-230	20	)	
-230	21	to	
-230	22	ingest	
-230	23	data	
-230	24	from	
-230	25	MMPs	
-230	26	(	
-230	27	Adjust	
-230	28	,	
-230	29	Qonversion	
-230	30	),	
-230	31	Ad	
-230	32	Networks	
-230	33	(	
-230	34	Google	
-230	35	Ads	
-230	36	,	
-230	37	AdMob	
-230	38	,	
-230	39	AppLovin	
-230	40	,	
-230	41	Mintegral	
-230	42	,	
-230	43	Apple	
-230	44	Search	
-230	45	Ads	
-230	46	,...),	
-230	47	and	
-230	48	in	
-230	49	-	
-230	50	app	
-230	51	event	
-230	52	tracking	
-230	53	into	
-230	54	the	
-230	55	Data	
-230	56	Warehouse	
-230	57	.	
-231	1	Design	
-231	2	schema	
-231	3	architectures	
-231	4	(	
-231	5	Star	
-231	6	/	
-231	7	Snowflake	
-231	8	),	
-231	9	optimize	
-231	10	complex	
-231	11	analytical	
-231	12	queries	
-231	13	,	
-231	14	partitioning	
-231	15	,	
-231	16	clustering	
-231	17	,	
-231	18	and	
-231	19	storage	
-231	20	costs	
-231	21	on	
-231	22	Google	
-231	23	BigQuery	
-231	24	and	
-231	25	modern	
-231	26	columnar	
-231	27	databases	
-231	28	.	
-232	1	Build	
-232	2	,	
-232	3	scale	
-232	4	,	
-232	5	and	
-232	6	maintain	
-232	7	workflow	
-232	8	orchestrations	
-232	9	using	
-232	10	Apache	
-232	11	Airflow	
-232	12	,	
-232	13	Celery	
-232	14	,	
-232	15	Redis	
-232	16	,	
-232	17	and	
-232	18	Docker	
-232	19	on	
-232	20	Cloud	
-232	21	environments	
-232	22	(	
-232	23	GCP	
-232	24	/	
-232	25	Compute	
-232	26	Engine	
-232	27	).	
-233	1	Develop	
-233	2	custom	
-233	3	Model	
-233	4	Context	
-233	5	Protocol	
-233	6	(	
-233	7	MCP	
-233	8	)	
-233	9	servers	
-233	10	,	
-233	11	agent	
-233	12	tools	
-233	13	,	
-233	14	and	
-233	15	data	
-233	16	APIs	
-233	17	to	
-233	18	connect	
-233	19	LLMs	
-233	20	and	
-233	21	AI	
-233	22	IDEs	
-233	23	directly	
-233	24	with	
-233	25	data	
-233	26	warehouses	
-233	27	,	
-233	28	documentation	
-233	29	vaults	
-233	30	,	
-233	31	and	
-233	32	internal	
-233	33	systems	
-233	34	.	
-234	1	Construct	
-234	2	reliable	
-234	3	feature	
-234	4	stores	
-234	5	and	
-234	6	datasets	
-234	7	for	
-234	8	Machine	
-234	9	Learning	
-234	10	/	
-234	11	AI	
-234	12	initiatives	
-234	13	(	
-234	14	LTV	
-234	15	forecasting	
-234	16	,	
-234	17	payback	
-234	18	modeling	
-234	19	,	
-234	20	anomaly	
-234	21	detection	
-234	22	)	
-234	23	and	
-234	24	assist	
-234	25	in	
-234	26	model	
-234	27	serving	
-234	28	pipelines	
-234	29	.	
-235	1	Implement	
-235	2	data	
-235	3	observability	
-235	4	,	
-235	5	automated	
-235	6	monitoring	
-235	7	,	
-235	8	and	
-235	9	data	
-235	10	quality	
-235	11	checks	
-235	12	;	
-235	13	develop	
-235	14	internal	
-235	15	data	
-235	16	tools	
-235	17	and	
-235	18	self	
-235	19	-	
-235	20	service	
-235	21	dashboards	
-235	22	using	
-235	23	Streamlit	
-235	24	and	
-235	25	Metabase	
-235	26	/	
-235	27	Looker	
-235	28	Studio	
-235	29	.	
-236	1	Establish	
-236	2	engineering	
-236	3	best	
-236	4	practices	
-236	5	,	
-236	6	data	
-236	7	modeling	
-236	8	standards	
-236	9	,	
-236	10	and	
-236	11	comprehensive	
-236	12	documentation	
-236	13	(	
-236	14	Data	
-236	15	Dictionaries	
-236	16	,	
-236	17	Architecture	
-236	18	Blueprints	
-236	19	).	
-237	1	REQUIREMENTS	
-237	2	:	
-238	1	3	
-238	2	+	
-238	3	years	
-238	4	of	
-238	5	hands	
-238	6	-	
-238	7	on	
-238	8	data	
-238	9	engineering	
-238	10	experience	
-238	11	building	
-238	12	and	
-238	13	maintaining	
-238	14	production	
-238	15	data	
-238	16	pipelines	
-238	17	.	
-239	1	Strong	
-239	2	proficiency	
-239	3	in	
-239	4	Python	
-239	5	for	
-239	6	high	
-239	7	-	
-239	8	performance	
-239	9	data	
-239	10	processing	
-239	11	and	
-239	12	advanced	
-239	13	SQL	
-239	14	(	
-239	15	performance	
-239	16	tuning	
-239	17	,	
-239	18	window	
-239	19	functions	
-239	20	,	
-239	21	complex	
-239	22	transformations	
-239	23	).	
-240	1	Solid	
-240	2	experience	
-240	3	with	
-240	4	Google	
-240	5	BigQuery	
-240	6	(	
-240	7	or	
-240	8	modern	
-240	9	columnar	
-240	10	stores	
-240	11	like	
-240	12	ClickHouse	
-240	13	,	
-240	14	Snowflake	
-240	15	,	
-240	16	Redshift	
-240	17	),	
-240	18	including	
-240	19	query	
-240	20	optimization	
-240	21	and	
-240	22	cost	
-240	23	management	
-240	24	.	
-241	1	Practical	
-241	2	experience	
-241	3	with	
-241	4	Apache	
-241	5	Airflow	
-241	6	,	
-241	7	Celery	
-241	8	/	
-241	9	Redis	
-241	10	,	
-241	11	Docker	
-241	12	/	
-241	13	containerization	
-241	14	,	
-241	15	CI	
-241	16	/	
-241	17	CD	
-241	18	workflows	
-241	19	,	
-241	20	and	
-241	21	Cloud	
-241	22	platforms	
-241	23	(	
-241	24	GCP	
-241	25	preferred	
-241	26	).	
-242	1	AI	
-242	2	-	
-242	3	First	
-242	4	&	
-242	5	Vibe	
-242	6	Coding	
-242	7	Mindset	
-242	8	:	
-242	9	Daily	
-242	10	hands	
-242	11	-	
-242	12	on	
-242	13	experience	
-242	14	using	
-242	15	AI	
-242	16	coding	
-242	17	assistants	
-242	18	and	
-242	19	AI	
-242	20	IDEs	
-242	21	(	
-242	22	Cursor	
-242	23	,	
-242	24	Claude	
-242	25	Code	
-242	26	,	
-242	27	Antigravity	
-242	28	,	
-242	29	etc	
-242	30	.)	
-242	31	to	
-242	32	rapidly	
-242	33	prototype	
-242	34	,	
-242	35	build	
-242	36	,	
-242	37	and	
-242	38	ship	
-242	39	production	
-242	40	-	
-242	41	grade	
-242	42	code	
-242	43	at	
-242	44	high	
-242	45	velocity	
-242	46	.	
-243	1	Hands	
-243	2	-	
-243	3	on	
-243	4	experience	
-243	5	or	
-243	6	strong	
-243	7	interest	
-243	8	in	
-243	9	building	
-243	10	/	
-243	11	integrating	
-243	12	MCP	
-243	13	(	
-243	14	Model	
-243	15	Context	
-243	16	Protocol	
-243	17	)	
-243	18	servers	
-243	19	,	
-243	20	custom	
-243	21	tools	
-243	22	,	
-243	23	and	
-243	24	AI	
-243	25	workflows	
-243	26	for	
-243	27	data	
-243	28	engineering	
-243	29	tasks	
-243	30	.	
-244	1	Strong	
-244	2	ownership	
-244	3	,	
-244	4	problem	
-244	5	-	
-244	6	solving	
-244	7	abilities	
-244	8	,	
-244	9	clear	
-244	10	communication	
-244	11	,	
-244	12	and	
-244	13	effective	
-244	14	collaboration	
-244	15	with	
-244	16	Product	
-244	17	Owners	
-244	18	,	
-244	19	Data	
-244	20	Analysts	
-244	21	,	
-244	22	and	
-244	23	Leadership	
-244	24	.	
-245	1	Nice	
-245	2	to	
-245	3	have	
-245	4	:	
-246	1	Domain	
-246	2	knowledge	
-246	3	in	
-246	4	Mobile	
-246	5	Apps	
-246	6	,	
-246	7	Games	
-246	8	,	
-246	9	or	
-246	10	Digital	
-246	11	Advertising	
-246	12	/	
-246	13	AdTech	
-246	14	(	
-246	15	MMP	
-246	16	attribution	
-246	17	,	
-246	18	Ad	
-246	19	Network	
-246	20	APIs	
-246	21	,	
-246	22	eCPM	
-246	23	,	
-246	24	ROAS	
-246	25	,	
-246	26	LTV	
-246	27	).	
-247	1	Experience	
-247	2	building	
-247	3	internal	
-247	4	web	
-247	5	tools	
-247	6	or	
-247	7	BI	
-247	8	applications	
-247	9	using	
-247	10	Streamlit	
-247	11	.	
-248	1	Familiarity	
-248	2	with	
-248	3	ML	
-248	4	lifecycles	
-248	5	,	
-248	6	BigQuery	
-248	7	ML	
-248	8	,	
-248	9	or	
-248	10	LLM	
-248	11	serving	
-248	12	infrastructure	
-248	13	and	
-248	14	token	
-248	15	monitoring	
-248	16	.	
-249	1	Experience	
-249	2	with	
-249	3	workflow	
-249	4	automation	
-249	5	APIs	
-249	6	(	
-249	7	Google	
-249	8	Apps	
-249	9	Script	
-249	10	,	
-249	11	Slack	
-249	12	webhooks	
-249	13	,	
-249	14	third	
-249	15	-	
-249	16	party	
-249	17	integrations	
-249	18	).	
-250	1	Thực	
-250	2	hiện	
-250	3	quy	
-250	4	hoạch	
-250	5	và	
-250	6	phát	
-250	7	triển	
-250	8	các	
-250	9	ứng	
-250	10	dụng	
-250	11	Mobile	
-250	12	Ngân	
-250	13	hàng	
-250	14	số	
-251	1	Phối	
-251	2	hợp	
-251	3	với	
-251	4	các	
-251	5	team	
-251	6	UI	
-251	7	/	
-251	8	UX	
-251	9	,	
-251	10	BA	
-251	11	,	
-251	12	Backend	
-251	13	,...	
-251	14	để	
-251	15	triển	
-251	16	khai	
-251	17	và	
-251	18	đảm	
-251	19	bảo	
-251	20	yêu	
-251	21	cầu	
-251	22	về	
-251	23	chất	
-251	24	lượng	
-251	25	,	
-251	26	tiến	
-251	27	độ	
-251	28	của	
-251	29	các	
-251	30	dự	
-251	31	án	
-251	32	.	
-252	1	Thực	
-252	2	hiện	
-252	3	tối	
-252	4	ưu	
-252	5	hóa	
-252	6	,	
-252	7	cải	
-252	8	tiến	
-252	9	kiến	
-252	10	trúc	
-252	11	và	
-252	12	mở	
-252	13	rộng	
-252	14	hệ	
-252	15	thống	
-252	16	.	
-253	1	Từ	
-253	2	2	
-253	3	năm	
-253	4	kinh	
-253	5	nghiệm	
-253	6	làm	
-253	7	thực	
-253	8	tế	
-253	9	về	
-253	10	phát	
-253	11	triển	
-253	12	apps	
-253	13	cho	
-253	14	Mobile	
-253	15	IOS	
-253	16	(	
-253	17	Swift	
-253	18	)	
-254	1	Có	
-254	2	kinh	
-254	3	nghiệm	
-254	4	về	
-254	5	REST	
-254	6	API	
-254	7	,	
-254	8	WebSocket	
-254	9	,	
-254	10	GraphQL.Có	
-254	11	khả	
-254	12	năng	
-254	13	sử	
-254	14	dụng	
-254	15	các	
-254	16	công	
-254	17	cụ	
-254	18	hỗ	
-254	19	trợ	
-254	20	như	
-254	21	GitLab	
-254	22	.	
-255	1	Có	
-255	2	khả	
-255	3	năng	
-255	4	sử	
-255	5	dụng	
-255	6	thư	
-255	7	viện	
-255	8	CocoaPods	
-255	9	.	
-256	1	Có	
-256	2	kinh	
-256	3	nghiệm	
-256	4	với	
-256	5	Firebase	
-256	6	,	
-256	7	Chart	
-256	8	.	
-257	1	Có	
-257	2	kinh	
-257	3	nghiệm	
-257	4	về	
-257	5	các	
-257	6	mô	
-257	7	hình	
-257	8	MVC	
-257	9	hoặc	
-257	10	MVVM	
-257	11	.	
-258	1	Có	
-258	2	kinh	
-258	3	nghiệm	
-258	4	tham	
-258	5	gia	
-258	6	các	
-258	7	dự	
-258	8	án	
-258	9	theo	
-258	10	mô	
-258	11	hình	
-258	12	Agile	
-258	13	,	
-258	14	Scrum	
-258	15	.	
-259	1	Design	
-259	2	,	
-259	3	develop	
-259	4	,	
-259	5	and	
-259	6	maintain	
-259	7	high	
-259	8	-	
-259	9	quality	
-259	10	mobile	
-259	11	applications	
-259	12	for	
-259	13	iOS	
-259	14	and	
-259	15	Android	
-259	16	platforms	
-259	17	.	
-260	1	Analyze	
-260	2	business	
-260	3	requirements	
-260	4	and	
-260	5	technical	
-260	6	specifications	
-260	7	and	
-260	8	propose	
-260	9	appropriate	
-260	10	implementation	
-260	11	solutions	
-260	12	.	
-261	1	Understand	
-261	2	,	
-261	3	analyze	
-261	4	,	
-261	5	and	
-261	6	enhance	
-261	7	existing	
-261	8	application	
-261	9	architecture	
-261	10	and	
-261	11	legacy	
-261	12	source	
-261	13	code	
-261	14	.	
-262	1	Define	
-262	2	mobile	
-262	3	application	
-262	4	architecture	
-262	5	and	
-262	6	propose	
-262	7	scalable	
-262	8	,	
-262	9	maintainable	
-262	10	solutions	
-262	11	aligned	
-262	12	with	
-262	13	business	
-262	14	requirements	
-262	15	.	
-263	1	Conduct	
-263	2	source	
-263	3	code	
-263	4	reviews	
-263	5	,	
-263	6	ensure	
-263	7	coding	
-263	8	standards	
-263	9	compliance	
-263	10	,	
-263	11	and	
-263	12	promote	
-263	13	engineering	
-263	14	best	
-263	15	practices	
-263	16	.	
-264	1	Review	
-264	2	technical	
-264	3	designs	
-264	4	,	
-264	5	identify	
-264	6	technical	
-264	7	risks	
-264	8	,	
-264	9	and	
-264	10	provide	
-264	11	improvement	
-264	12	recommendations	
-264	13	.	
-265	1	Analyze	
-265	2	and	
-265	3	resolve	
-265	4	complex	
-265	5	technical	
-265	6	issues	
-265	7	related	
-265	8	to	
-265	9	performance	
-265	10	,	
-265	11	security	
-265	12	,	
-265	13	scalability	
-265	14	,	
-265	15	and	
-265	16	maintainability	
-265	17	.	
-266	1	Participate	
-266	2	in	
-266	3	technical	
-266	4	discussions	
-266	5	,	
-266	6	architecture	
-266	7	design	
-266	8	,	
-266	9	effort	
-266	10	estimation	
-266	11	,	
-266	12	and	
-266	13	risk	
-266	14	assessment	
-266	15	.	
-267	1	Collaborate	
-267	2	closely	
-267	3	with	
-267	4	project	
-267	5	teams	
-267	6	,	
-267	7	customers	
-267	8	,	
-267	9	and	
-267	10	stakeholders	
-267	11	to	
-267	12	deliver	
-267	13	high	
-267	14	-	
-267	15	quality	
-267	16	solutions	
-267	17	.	
-268	1	Provide	
-268	2	technical	
-268	3	guidance	
-268	4	and	
-268	5	mentoring	
-268	6	to	
-268	7	team	
-268	8	members	
-268	9	.	
-269	1	Contribute	
-269	2	to	
-269	3	continuous	
-269	4	improvement	
-269	5	activities	
-269	6	,	
-269	7	including	
-269	8	development	
-269	9	processes	
-269	10	,	
-269	11	code	
-269	12	quality	
-269	13	,	
-269	14	and	
-269	15	engineering	
-269	16	practices	
-269	17	.	
-270	1	Perform	
-270	2	other	
-270	3	tasks	
-270	4	assigned	
-270	5	by	
-270	6	the	
-270	7	PM	
-270	8	/	
-270	9	SM	
-270	10	.	
-271	1	Bachelor	
-271	2	’	
-271	3	s	
-271	4	degree	
-271	5	in	
-271	6	Computer	
-271	7	Science	
-271	8	,	
-271	9	Information	
-271	10	Technology	
-271	11	,	
-271	12	or	
-271	13	a	
-271	14	related	
-271	15	field	
-271	16	.	
-272	1	At	
-272	2	least	
-272	3	5	
-272	4	years	
-272	5	of	
-272	6	experience	
-272	7	in	
-272	8	mobile	
-272	9	application	
-272	10	development	
-272	11	,	
-272	12	with	
-272	13	strong	
-272	14	expertise	
-272	15	in	
-272	16	iOS	
-272	17	(	
-272	18	Swift	
-272	19	)	
-272	20	and	
-272	21	/	
-272	22	or	
-272	23	Android	
-272	24	(	
-272	25	Java	
-272	26	/	
-272	27	Kotlin	
-272	28	).	
-273	1	Strong	
-273	2	knowledge	
-273	3	of	
-273	4	Mobile	
-273	5	Architecture	
-273	6	,	
-273	7	Clean	
-273	8	Architecture	
-273	9	,	
-273	10	SOLID	
-273	11	Principles	
-273	12	,	
-273	13	and	
-273	14	Design	
-273	15	Patterns	
-273	16	.	
-274	1	Experience	
-274	2	in	
-274	3	source	
-274	4	code	
-274	5	review	
-274	6	,	
-274	7	design	
-274	8	review	
-274	9	,	
-274	10	refactoring	
-274	11	,	
-274	12	and	
-274	13	performance	
-274	14	optimization	
-274	15	.	
-275	1	Ability	
-275	2	to	
-275	3	understand	
-275	4	existing	
-275	5	systems	
-275	6	,	
-275	7	analyze	
-275	8	requirements	
-275	9	,	
-275	10	and	
-275	11	propose	
-275	12	technical	
-275	13	solutions	
-275	14	.	
-276	1	Experience	
-276	2	working	
-276	3	on	
-276	4	Japanese	
-276	5	software	
-276	6	development	
-276	7	projects	
-276	8	.	
-277	1	Experience	
-277	2	mentoring	
-277	3	team	
-277	4	members	
-277	5	and	
-277	6	participating	
-277	7	in	
-277	8	technical	
-277	9	discussions	
-277	10	.	
-278	1	Familiarity	
-278	2	with	
-278	3	CI	
-278	4	/	
-278	5	CD	
-278	6	,	
-278	7	build	
-278	8	automation	
-278	9	,	
-278	10	and	
-278	11	cloud	
-278	12	platforms	
-278	13	(	
-278	14	AWS	
-278	15	,	
-278	16	Azure	
-278	17	,	
-278	18	or	
-278	19	GCP	
-278	20	).	
-279	1	Experience	
-279	2	with	
-279	3	Frontend	
-279	4	technologies	
-279	5	,	
-279	6	Flutter	
-279	7	,	
-279	8	or	
-279	9	React	
-279	10	Native	
-279	11	is	
-279	12	a	
-279	13	plus	
-279	14	.	
-280	1	Japanese	
-280	2	language	
-280	3	proficiency	
-280	4	(	
-280	5	N4	
-280	6	or	
-280	7	above	
-280	8	)	
-280	9	is	
-280	10	an	
-280	11	advantage	
-280	12	.	
-281	1	Good	
-281	2	communication	
-281	3	,	
-281	4	problem	
-281	5	-	
-281	6	solving	
-281	7	,	
-281	8	and	
-281	9	teamwork	
-281	10	skills	
-281	11	.	
-282	1	Lập	
-282	2	trình	
-282	3	viên	
-282	4	Flutter	
-282	5	–	
-282	6	Phát	
-282	7	triển	
-282	8	ứng	
-282	9	dụng	
-282	10	Mobile	
-282	11	quản	
-282	12	lý	
-282	13	trường	
-282	14	đại	
-282	15	học	
-283	1	1	
-283	2	.	
-283	3	Tham	
-283	4	gia	
-283	5	phân	
-283	6	tích	
-283	7	,	
-283	8	thiết	
-283	9	kế	
-283	10	và	
-283	11	phát	
-283	12	triển	
-283	13	ứng	
-283	14	dụng	
-283	15	Mobile	
-283	16	phục	
-283	17	vụ	
-283	18	hệ	
-283	19	thống	
-283	20	quản	
-283	21	lý	
-283	22	đào	
-283	23	tạo	
-283	24	và	
-283	25	quản	
-283	26	lý	
-283	27	trường	
-283	28	đại	
-283	29	học	
-283	30	trên	
-283	31	nền	
-283	32	tảng	
-283	33	Android	
-283	34	và	
-283	35	iOS	
-283	36	.	
-284	1	2	
-284	2	.	
-284	3	Phát	
-284	4	triển	
-284	5	các	
-284	6	chức	
-284	7	năng	
-284	8	nghiệp	
-284	9	vụ	
-284	10	như	
-284	11	:	
-284	12	quản	
-284	13	lý	
-284	14	sinh	
-284	15	viên	
-284	16	,	
-284	17	đào	
-284	18	tạo	
-284	19	,	
-284	20	thời	
-284	21	khóa	
-284	22	biểu	
-284	23	,	
-284	24	điểm	
-284	25	,	
-284	26	học	
-284	27	phí	
-284	28	,	
-284	29	thông	
-284	30	báo	
-284	31	và	
-284	32	các	
-284	33	dịch	
-284	34	vụ	
-284	35	dành	
-284	36	cho	
-284	37	sinh	
-284	38	viên	
-284	39	,	
-284	40	giảng	
-284	41	viên	
-284	42	,	
-284	43	cán	
-284	44	bộ	
-284	45	quản	
-284	46	lý	
-284	47	,	
-284	48	....	
-285	1	3	
-285	2	.	
-285	3	Xây	
-285	4	dựng	
-285	5	giao	
-285	6	diện	
-285	7	Mobile	
-285	8	hiện	
-285	9	đại	
-285	10	,	
-285	11	responsive	
-285	12	,	
-285	13	tối	
-285	14	ưu	
-285	15	trải	
-285	16	nghiệm	
-285	17	người	
-285	18	dùng	
-285	19	.	
-286	1	4	
-286	2	.	
-286	3	Tích	
-286	4	hợp	
-286	5	ứng	
-286	6	dụng	
-286	7	với	
-286	8	hệ	
-286	9	thống	
-286	10	Backend	
-286	11	thông	
-286	12	qua	
-286	13	RESTful	
-286	14	API	
-286	15	.	
-287	1	5	
-287	2	.	
-287	3	Phối	
-287	4	hợp	
-287	5	với	
-287	6	đội	
-287	7	ngũ	
-287	8	Backend	
-287	9	,	
-287	10	Database	
-287	11	,	
-287	12	QA	
-287	13	và	
-287	14	nghiệp	
-287	15	vụ	
-287	16	để	
-287	17	triển	
-287	18	khai	
-287	19	,	
-287	20	kiểm	
-287	21	thử	
-287	22	và	
-287	23	hoàn	
-287	24	thiện	
-287	25	sản	
-287	26	phẩm	
-287	27	.	
-288	1	6	
-288	2	.	
-288	3	Thực	
-288	4	hiện	
-288	5	đóng	
-288	6	gói	
-288	7	,	
-288	8	phát	
-288	9	hành	
-288	10	và	
-288	11	cập	
-288	12	nhật	
-288	13	ứng	
-288	14	dụng	
-288	15	trên	
-288	16	Google	
-288	17	Play	
-288	18	Store	
-288	19	và	
-288	20	Apple	
-288	21	App	
-288	22	Store	
-289	1	+	
-289	2	A	
-289	3	.	
-289	4	Flutter	
-289	5	&	
-289	6	Dart	
-290	1	Ứng	
-290	2	viên	
-290	3	cần	
-290	4	:	
-291	1	-	
-291	2	Thành	
-291	3	thạo	
-291	4	ngôn	
-291	5	ngữ	
-291	6	Dart	
-292	1	-	
-292	2	Có	
-292	3	kinh	
-292	4	nghiệm	
-292	5	phát	
-292	6	triển	
-292	7	ứng	
-292	8	dụng	
-292	9	bằng	
-292	10	Flutter	
-293	1	-	
-293	2	Hiểu	
-293	3	và	
-293	4	sử	
-293	5	dụng	
-293	6	tốt	
-293	7	:	
-293	8	Widget	
-293	9	,	
-293	10	StatelessWidget	
-293	11	,	
-293	12	StatefulWidget	
-293	13	,	
-293	14	Widget	
-293	15	Lifecycle	
-293	16	,	
-293	17	BuildContext	
-293	18	,	
-293	19	Future	
-293	20	,	
-293	21	async	
-293	22	/	
-293	23	await	
-293	24	,	
-293	25	Stream	
-293	26	,	
-293	27	Null	
-293	28	Safety	
-293	29	,	
-293	30	Extension	
-293	31	,	
-293	32	Exception	
-293	33	Handling	
-293	34	.	
-294	1	-	
-294	2	Có	
-294	3	khả	
-294	4	năng	
-294	5	xây	
-294	6	dựng	
-294	7	UI	
-294	8	responsive	
-294	9	cho	
-294	10	nhiều	
-294	11	kích	
-294	12	thước	
-294	13	màn	
-294	14	hình	
-295	1	-	
-295	2	Thành	
-295	3	thạo	
-295	4	Form	
-295	5	,	
-295	6	Validation	
-295	7	,	
-295	8	Navigation	
-295	9	,	
-295	10	Animation	
-295	11	cơ	
-295	12	bản	
-295	13	và	
-295	14	Theme	
-295	15	.	
-296	1	+	
-296	2	B	
-296	3	.	
-296	4	Quản	
-296	5	lý	
-296	6	trạng	
-296	7	thái	
-297	1	-	
-297	2	Có	
-297	3	kinh	
-297	4	nghiệm	
-297	5	thực	
-297	6	tế	
-297	7	với	
-297	8	ít	
-297	9	nhất	
-297	10	một	
-297	11	giải	
-297	12	pháp	
-297	13	:	
-297	14	Bloc	
-297	15	/	
-297	16	Cubit	
-297	17	,	
-297	18	Provider	
-297	19	,	
-297	20	Riverpod	
-297	21	hoặc	
-297	22	GetX	
-298	1	REST	
-298	2	API	
-298	3	&	
-298	4	Backend	
-298	5	Integration	
-299	1	-	
-299	2	Thành	
-299	3	thạo	
-299	4	RESTful	
-299	5	API	
-299	6	,	
-299	7	HTTP	
-299	8	/	
-299	9	HTTPS	
-299	10	và	
-299	11	JSON	
-299	12	serialization	
-299	13	/	
-299	14	deserialization	
-299	15	.	
-300	1	-	
-300	2	Xử	
-300	3	lý	
-300	4	tốt	
-300	5	request	
-300	6	bất	
-300	7	đồng	
-300	8	bộ	
-300	9	,	
-300	10	timeout	
-300	11	,	
-300	12	exception	
-300	13	và	
-300	14	lỗi	
-300	15	API	
-300	16	.	
-301	1	-	
-301	2	Có	
-301	3	kinh	
-301	4	nghiệm	
-301	5	với	
-301	6	Dio	
-301	7	hoặc	
-301	8	http	
-301	9	,	
-301	10	Interceptor	
-301	11	,	
-301	12	Authentication	
-301	13	.	
-302	1	-	
-302	2	Hiểu	
-302	3	và	
-302	4	triển	
-302	5	khai	
-302	6	Bearer	
-302	7	Token	
-302	8	,	
-302	9	Access	
-302	10	Token	
-302	11	/	
-302	12	Refresh	
-302	13	Token	
-302	14	.	
-303	1	-	
-303	2	Có	
-303	3	kinh	
-303	4	nghiệm	
-303	5	upload	
-303	6	/	
-303	7	download	
-303	8	file	
-303	9	và	
-303	10	xử	
-303	11	lý	
-303	12	dữ	
-303	13	liệu	
-303	14	từ	
-303	15	API	
-303	16	.	
-304	1	C	
-304	2	.	
-304	3	Đóng	
-304	4	gói	
-304	5	&	
-304	6	phát	
-304	7	hành	
-304	8	ứng	
-304	9	dụng	
-305	1	-	
-305	2	Có	
-305	3	kinh	
-305	4	nghiệm	
-305	5	build	
-305	6	,	
-305	7	ký	
-305	8	ứng	
-305	9	dụng	
-305	10	và	
-305	11	phát	
-305	12	hành	
-305	13	thực	
-305	14	tế	
-305	15	lên	
-305	16	Google	
-305	17	Play	
-305	18	Store	
-305	19	và	
-305	20	Apple	
-305	21	App	
-305	22	Store	
-305	23	.	
-306	1	-	
-306	2	Biết	
-306	3	quản	
-306	4	lý	
-306	5	version	
-306	6	,	
-306	7	signing	
-306	8	/	
-306	9	certificate	
-306	10	,	
-306	11	release	
-306	12	và	
-306	13	cập	
-306	14	nhật	
-306	15	ứng	
-306	16	dụng	
-306	17	.	
-307	1	+	
-307	2	D	
-307	3	.	
-307	4	Có	
-307	5	kinh	
-307	6	nghiệm	
-307	7	upcode	
-307	8	lên	
-307	9	Apple	
-307	10	store	
-307	11	và	
-307	12	CH	
-307	13	Play	
-308	1	*	
-308	2	Ưu	
-308	3	tiên	
-308	4	:	
-309	1	-	
-309	2	Đã	
-309	3	từng	
-309	4	phát	
-309	5	triển	
-309	6	ứng	
-309	7	dụng	
-309	8	trong	
-309	9	lĩnh	
-309	10	vực	
-309	11	giáo	
-309	12	dục	
-309	13	,	
-309	14	quản	
-309	15	lý	
-309	16	đào	
-309	17	tạo	
-309	18	hoặc	
-309	19	quản	
-309	20	lý	
-309	21	trường	
-309	22	đại	
-309	23	học	
-309	24	.	
-310	1	-	
-310	2	Có	
-310	3	kinh	
-310	4	nghiệm	
-310	5	làm	
-310	6	việc	
-310	7	với	
-310	8	hệ	
-310	9	thống	
-310	10	Backend	
-310	11	.	
-310	12	NET	
-310	13	/	
-310	14	Web	
-310	15	API	
-310	16	và	
-310	17	SQL	
-310	18	Server	
-310	19	là	
-310	20	lợi	
-310	21	thế	
-310	22	.	
-311	1	-	
-311	2	Có	
-311	3	tư	
-311	4	duy	
-311	5	về	
-311	6	kiến	
-311	7	trúc	
-311	8	phần	
-311	9	mềm	
-311	10	,	
-311	11	khả	
-311	12	năng	
-311	13	tối	
-311	14	ưu	
-311	15	hiệu	
-311	16	năng	
-311	17	và	
-311	18	bảo	
-311	19	mật	
-311	20	ứng	
-311	21	dụng	
-311	22	Mobile	
-311	23	.	
-312	1	-	
-312	2	Có	
-312	3	tinh	
-312	4	thần	
-312	5	trách	
-312	6	nhiệm	
-312	7	,	
-312	8	chủ	
-312	9	động	
-312	10	học	
-312	11	hỏi	
-312	12	và	
-312	13	phối	
-312	14	hợp	
-312	15	tốt	
-312	16	với	
-312	17	đội	
-312	18	ngũ	
-312	19	phát	
-312	20	triển	
-312	21	.	
-313	1	2	
-313	2	.	
-313	3	Yêu	
-313	4	cầu	
-313	5	ứng	
-313	6	viên	
-314	1	•	
-314	2	Tốt	
-314	3	nghiệp	
-314	4	Đại	
-314	5	học	
-314	6	chuyên	
-314	7	ngành	
-314	8	:	
-314	9	CNTT	
-314	10	,	
-314	11	Khoa	
-314	12	học	
-314	13	máy	
-314	14	tính	
-314	15	,	
-314	16	Hệ	
-314	17	thống	
-314	18	thông	
-314	19	tin	
-314	20	hoặc	
-314	21	tương	
-314	22	đương	
-314	23	.	
-315	1	•	
-315	2	Làm	
-315	3	việc	
-315	4	kỷ	
-315	5	luật	
-315	6	,	
-315	7	đúng	
-315	8	quy	
-315	9	trình	
-315	10	,	
-315	11	có	
-315	12	trách	
-315	13	nhiệm	
-315	14	với	
-315	15	sản	
-315	16	phẩm	
-315	17	phần	
-315	18	mềm	
-315	19	,	
-315	20	chủ	
-315	21	động	
-315	22	nghiên	
-315	23	cứu	
-315	24	công	
-315	25	nghệ	
-315	26	mới	
-315	27	.	
-316	1	•	
-316	2	Tinh	
-316	3	thần	
-316	4	bảo	
-316	5	mật	
-316	6	dữ	
-316	7	liệu	
-316	8	và	
-316	9	tuân	
-316	10	thủ	
-316	11	quy	
-316	12	định	
-316	13	hệ	
-316	14	thống	
-316	15	.	
-317	1	1	
-317	2	.	
-317	3	Own	
-317	4	assigned	
-317	5	features	
-317	6	end	
-317	7	to	
-317	8	end	
-317	9	—	
-317	10	design	
-317	11	,	
-317	12	implementation	
-317	13	,	
-317	14	test	
-317	15	,	
-317	16	release	
-317	17	,	
-317	18	and	
-317	19	behaviour	
-317	20	in	
-317	21	production	
-317	22	.	
-318	1	2	
-318	2	.	
-318	3	Build	
-318	4	to	
-318	5	the	
-318	6	security	
-318	7	bar	
-318	8	a	
-318	9	financial	
-318	10	application	
-318	11	requires	
-318	12	:	
-318	13	secure	
-318	14	storage	
-318	15	,	
-318	16	authentication	
-318	17	,	
-318	18	session	
-318	19	handling	
-318	20	,	
-318	21	and	
-318	22	data	
-318	23	handling	
-318	24	that	
-318	25	survives	
-318	26	internal	
-318	27	security	
-318	28	review	
-318	29	and	
-318	30	data	
-318	31	residency	
-318	32	obligations	
-318	33	.	
-319	1	3	
-319	2	.	
-319	3	Translate	
-319	4	product	
-319	5	and	
-319	6	design	
-319	7	requirements	
-319	8	into	
-319	9	technical	
-319	10	solutions	
-319	11	,	
-319	12	working	
-319	13	directly	
-319	14	with	
-319	15	product	
-319	16	owners	
-319	17	,	
-319	18	designers	
-319	19	,	
-319	20	and	
-319	21	backend	
-319	22	engineers	
-319	23	rather	
-319	24	than	
-319	25	through	
-319	26	a	
-319	27	spec	
-319	28	handoff	
-319	29	.	
-320	1	4	
-320	2	.	
-320	3	Set	
-320	4	and	
-320	5	raise	
-320	6	architectural	
-320	7	and	
-320	8	engineering	
-320	9	standards	
-320	10	for	
-320	11	mobile	
-320	12	,	
-320	13	through	
-320	14	code	
-320	15	review	
-320	16	,	
-320	17	pairing	
-320	18	,	
-320	19	and	
-320	20	technical	
-320	21	guidance	
-320	22	.	
-320	23	Onboard	
-320	24	new	
-320	25	engineers	
-320	26	and	
-320	27	support	
-320	28	their	
-320	29	growth	
-320	30	.	
-321	1	5	
-321	2	.	
+58	1	Programming	O
+58	2	Languages	O
+58	3	:	O
+58	4	Go	B-SKILL
+58	5	(	O
+58	6	Golang	B-SKILL
+58	7	),	O
+58	8	SQL	B-SKILL
+58	9	,	O
+58	10	Bash	B-SKILL
+58	11	,	O
+58	12	Python	B-SKILL
+58	13	,	O
+58	14	C	B-SKILL
+58	15	/	O
+58	16	C	B-SKILL
+58	17	++	I-SKILL
+58	18	(	O
+58	19	basic	O
+58	20	)	O
+59	1	DevOps	O
+59	2	&	O
+59	3	Infrastructure	O
+59	4	:	O
+59	5	Docker	B-SKILL
+59	6	,	O
+59	7	Multi	B-SKILL
+59	8	-	I-SKILL
+59	9	stage	I-SKILL
+59	10	builds	I-SKILL
+59	11	,	O
+59	12	Distroless	B-SKILL
+59	13	,	O
+59	14	Linux	B-SKILL
+59	15	(	O
+59	16	Debian	B-SKILL
+59	17	,	O
+59	18	Ubuntu	B-SKILL
+59	19	,	O
+59	20	systemd	O
+59	21	,	O
+59	22	/	O
+59	23	proc	O
+59	24	),	O
+59	25	Kubernetes	B-SKILL
+59	26	(	O
+59	27	DaemonSet	B-SKILL
+59	28	,	O
+59	29	K8s	B-SKILL
+59	30	manifests	I-SKILL
+59	31	),	O
+59	32	GitHub	B-SKILL
+59	33	Actions	I-SKILL
+59	34	(	O
+59	35	CI	B-SKILL
+59	36	/	I-SKILL
+59	37	CD	I-SKILL
+59	38	)	O
+60	1	Monitoring	O
+60	2	&	O
+60	3	Reliability	O
+60	4	:	O
+60	5	Prometheus	B-SKILL
+60	6	(/	O
+60	7	metrics	O
+60	8	,	O
+60	9	Text	O
+60	10	format	O
+60	11	,	O
+60	12	Counters	B-SKILL
+60	13	/	O
+60	14	Gauges	B-SKILL
+60	15	),	O
+60	16	Grafana	B-SKILL
+60	17	,	O
+60	18	k6	O
+60	19	,	O
+60	20	Fuzz	O
+60	21	testing	O
+60	22	,	O
+60	23	go	O
+60	24	test	O
+60	25	-	O
+60	26	race	O
+61	1	Studied	O
+61	2	Linux	B-SKILL
+61	3	system	O
+61	4	administration	O
+61	5	,	O
+61	6	Docker	B-SKILL
+61	7	containerization	O
+61	8	,	O
+61	9	CI	B-SKILL
+61	10	/	I-SKILL
+61	11	CD	I-SKILL
+61	12	automation	O
+61	13	,	O
+61	14	system	O
+61	15	reliability	O
+61	16	,	O
+61	17	and	O
+61	18	SRE	O
+61	19	principles	O
+61	20	.	O
+62	1	Mastered	O
+62	2	systems	O
+62	3	analysis	O
+62	4	,	O
+62	5	distributed	O
+62	6	systems	O
+62	7	architecture	O
+62	8	design	O
+62	9	,	O
+62	10	and	O
+62	11	REST	O
+62	12	/	O
+62	13	gRPC	O
+62	14	API	O
+62	15	specification	O
+62	16	.	O
+63	1	Developed	O
+63	2	a	O
+63	3	streaming	O
+63	4	telemetry	O
+63	5	and	O
+63	6	anomaly	O
+63	7	detection	O
+63	8	agent	O
+63	9	in	O
+63	10	Go	B-SKILL
+63	11	for	O
+63	12	Edge	O
+63	13	AI	O
+63	14	devices	O
+63	15	with	O
+63	16	zero	O
+63	17	memory	O
+63	18	allocations	O
+63	19	on	O
+63	20	hot	O
+63	21	paths	O
+63	22	.	O
+64	1	Implemented	O
+64	2	system	O
+64	3	metric	O
+64	4	parsers	O
+64	5	(/	O
+64	6	proc	O
+64	7	/	O
+64	8	stat	O
+64	9	,	O
+64	10	/	O
+64	11	proc	O
+64	12	/	O
+64	13	meminfo	O
+64	14	)	O
+64	15	using	O
+64	16	direct	O
+64	17	non	O
+64	18	-	O
+64	19	blocking	O
+64	20	Linux	B-SKILL
+64	21	system	O
+64	22	calls	O
+64	23	(	O
+64	24	SYS_OPENAT	O
+64	25	,	O
+64	26	SYS_READ	O
+64	27	)	O
+64	28	on	O
+64	29	fixed	O
+64	30	stack	O
+64	31	buffers	O
+64	32	.	O
+65	1	Designed	O
+65	2	a	O
+65	3	mathematical	O
+65	4	engine	O
+65	5	based	O
+65	6	on	O
+65	7	Welford	O
+65	8	.	O
+65	9	s	O
+65	10	algorithm	O
+65	11	,	O
+65	12	EWMA	O
+65	13	for	O
+65	14	baseline	O
+65	15	drift	O
+65	16	tracking	O
+65	17	,	O
+65	18	and	O
+65	19	Z	O
+65	20	-	O
+65	21	Score	O
+65	22	filtering	O
+65	23	.	O
+66	1	Built	O
+66	2	a	O
+66	3	custom	O
+66	4	Prometheus	O
+66	5	metric	O
+66	6	registry	O
+66	7	,	O
+66	8	an	O
+66	9	HTTP	O
+66	10	dispatcher	O
+66	11	with	O
+66	12	exponential	O
+66	13	backoff	O
+66	14	and	O
+66	15	jitter	O
+66	16	,	O
+66	17	a	O
+66	18	Kubernetes	B-SKILL
+66	19	DaemonSet	O
+66	20	manifest	O
+66	21	,	O
+66	22	and	O
+66	23	a	O
+66	24	secured	O
+66	25	systemd	O
+66	26	service	O
+66	27	.	O
+67	1	Configured	O
+67	2	GitHub	B-SKILL
+67	3	Actions	I-SKILL
+67	4	CI	I-SKILL
+67	5	with	O
+67	6	fuzz	O
+67	7	testing	O
+67	8	(	O
+67	9	Go	B-SKILL
+67	10	Fuzz	B-SKILL
+67	11	),	O
+67	12	race	O
+67	13	condition	O
+67	14	detection	O
+67	15	(-	O
+67	16	race	O
+67	17	),	O
+67	18	and	O
+67	19	cross	O
+67	20	-	O
+67	21	compilation	O
+67	22	for	O
+67	23	linux	B-SKILL
+67	24	/	O
+67	25	amd64	O
+67	26	and	O
+67	27	linux	B-SKILL
+67	28	/	O
+67	29	arm64	O
+67	30	.	O
+68	1	Designed	O
+68	2	a	O
+68	3	distributed	O
+68	4	reverse	O
+68	5	proxy	O
+68	6	in	O
+68	7	Go	B-SKILL
+68	8	featuring	O
+68	9	an	O
+68	10	in	O
+68	11	-	O
+68	12	memory	O
+68	13	Token	O
+68	14	Bucket	O
+68	15	algorithm	O
+68	16	and	O
+68	17	distributed	O
+68	18	rate	O
+68	19	limiting	O
+68	20	in	O
+68	21	Redis	B-SKILL
+68	22	via	O
+68	23	atomic	O
+68	24	Lua	B-SKILL
+68	25	scripts	O
+68	26	.	O
+69	1	Integrated	O
+69	2	a	O
+69	3	three	O
+69	4	-	O
+69	5	state	O
+69	6	Circuit	O
+69	7	Breaker	O
+69	8	and	O
+69	9	context	O
+69	10	-	O
+69	11	aware	O
+69	12	retries	O
+69	13	with	O
+69	14	request	O
+69	15	body	O
+69	16	rewind	O
+69	17	for	O
+69	18	idempotent	O
+69	19	methods	O
+69	20	.	O
+70	1	Configured	O
+70	2	Prometheus	B-SKILL
+70	3	metrics	O
+70	4	collection	O
+70	5	and	O
+70	6	Grafana	B-SKILL
+70	7	dashboards	O
+70	8	;	O
+70	9	conducted	O
+70	10	load	O
+70	11	testing	O
+70	12	in	O
+70	13	k6	O
+70	14	.	O
+71	1	Phát	O
+71	2	triển	O
+71	3	và	O
+71	4	duy	O
+71	5	trì	O
+71	6	ứng	O
+71	7	dụng	O
+71	8	Mobile	O
+71	9	trên	O
+71	10	iOS	B-SKILL
+71	11	/	O
+71	12	Android	B-SKILL
+71	13	bằng	O
+71	14	React	B-SKILL
+71	15	Native	I-SKILL
+71	16	+	O
+71	17	TypeScript	B-SKILL
+71	18	,	O
+71	19	ưu	O
+71	20	tiên	O
+71	21	Expo	O
+71	22	.	O
+72	1	Xây	O
+72	2	dựng	O
+72	3	UI	O
+72	4	,	O
+72	5	component	O
+72	6	,	O
+72	7	navigation	O
+72	8	,	O
+72	9	state	O
+72	10	management	O
+72	11	và	O
+72	12	form	O
+72	13	.	O
+73	1	Tích	O
+73	2	hợp	O
+73	3	REST	B-SKILL
+73	4	API	I-SKILL
+73	5	,	O
+73	6	authentication	O
+73	7	,	O
+73	8	push	O
+73	9	notification	O
+73	10	,	O
+73	11	deep	O
+73	12	link	O
+73	13	.	O
+74	1	Làm	O
+74	2	việc	O
+74	3	với	O
+74	4	storage	O
+74	5	,	O
+74	6	cache	O
+74	7	/	O
+74	8	offline	O
+74	9	,	O
+74	10	camera	O
+74	11	,	O
+74	12	media	O
+74	13	,	O
+74	14	location	O
+74	15	và	O
+74	16	native	O
+74	17	module	O
+74	18	khi	O
+74	19	cần	O
+74	20	.	O
+75	1	Testing	O
+75	2	,	O
+75	3	debugging	O
+75	4	,	O
+75	5	tối	O
+75	6	ưu	O
+75	7	performance	O
+75	8	và	O
+75	9	xử	O
+75	10	lý	O
+75	11	lỗi	O
+75	12	.	O
+76	1	Tham	O
+76	2	gia	O
+76	3	build	O
+76	4	/	O
+76	5	release	O
+76	6	app	O
+76	7	trên	O
+76	8	App	O
+76	9	Store	O
+76	10	/	O
+76	11	Google	O
+76	12	Play	O
+76	13	.	O
+77	1	Phối	O
+77	2	hợp	O
+77	3	với	O
+77	4	Product	O
+77	5	/	O
+77	6	BA	O
+77	7	,	O
+77	8	UI	O
+77	9	/	O
+77	10	UX	O
+77	11	,	O
+77	12	Backend	O
+77	13	,	O
+77	14	QA	O
+77	15	và	O
+77	16	DevOps	O
+77	17	.	O
+78	1	Ứng	O
+78	2	dụng	O
+78	3	AI	O
+78	4	trong	O
+78	5	development	O
+78	6	/	O
+78	7	testing	O
+78	8	/	O
+78	9	debugging	O
+78	10	và	O
+78	11	tích	O
+78	12	hợp	O
+78	13	AI	B-SKILL
+78	14	/	O
+78	15	LLM	B-SKILL
+78	16	khi	O
+78	17	có	O
+78	18	yêu	O
+78	19	cầu	O
+78	20	.	O
+79	1	2	O
+79	2	–	O
+79	3	4	O
+79	4	năm	O
+79	5	kinh	O
+79	6	nghiệm	O
+79	7	phát	O
+79	8	triển	O
+79	9	Mobile	O
+79	10	.	O
+80	1	Tối	O
+80	2	thiểu	O
+80	3	1	O
+80	4	,	O
+80	5	5	O
+80	6	năm	O
+80	7	React	B-SKILL
+80	8	Native	I-SKILL
+80	9	.	O
+81	1	Thành	O
+81	2	thạo	O
+81	3	TypeScript	B-SKILL
+81	4	;	O
+81	5	ưu	O
+81	6	tiên	O
+81	7	kinh	O
+81	8	nghiệm	O
+81	9	Expo	O
+81	10	/	O
+81	11	EAS	O
+81	12	.	O
+82	1	Có	O
+82	2	kinh	O
+82	3	nghiệm	O
+82	4	REST	B-SKILL
+82	5	API	I-SKILL
+82	6	,	O
+82	7	debugging	O
+82	8	,	O
+82	9	testing	O
+82	10	và	O
+82	11	app	O
+82	12	release	O
+82	13	.	O
+83	1	Có	O
+83	2	kinh	O
+83	3	nghiệm	O
+83	4	thực	O
+83	5	tế	O
+83	6	ứng	O
+83	7	dụng	O
+83	8	AI	B-SKILL
+83	9	trong	O
+83	10	phát	O
+83	11	triển	O
+83	12	Mobile	O
+83	13	.	O
+84	1	Biết	O
+84	2	sử	O
+84	3	dụng	O
+84	4	AI	B-SKILL
+84	5	Coding	I-SKILL
+84	6	Assistant	I-SKILL
+84	7	.	O
+85	1	Chủ	O
+85	2	động	O
+85	3	,	O
+85	4	trách	O
+85	5	nhiệm	O
+85	6	,	O
+85	7	phối	O
+85	8	hợp	O
+85	9	tốt	O
+85	10	và	O
+85	11	ham	O
+85	12	học	O
+85	13	hỏi	O
+85	14	.	O
+86	1	Thiết	O
+86	2	kế	O
+86	3	và	O
+86	4	phát	O
+86	5	triển	O
+86	6	giao	O
+86	7	diện	O
+86	8	người	O
+86	9	dùng	O
+86	10	(	O
+86	11	UI	O
+86	12	)	O
+86	13	cho	O
+86	14	các	O
+86	15	hệ	O
+86	16	thống	O
+86	17	phần	O
+86	18	mềm	O
+86	19	nghiệp	O
+86	20	vụ	O
+86	21	của	O
+86	22	Ngân	O
+86	23	hàng	O
+86	24	trên	O
+86	25	nền	O
+86	26	tảng	O
+86	27	web	O
+86	28	,	O
+86	29	sử	O
+86	30	dụng	O
+86	31	công	O
+86	32	nghệ	O
+86	33	Angular	B-SKILL
+86	34	và	O
+86	35	ReactJS	B-SKILL
+86	36	,	O
+86	37	đảm	O
+86	38	bảo	O
+86	39	thân	O
+86	40	thiện	O
+86	41	với	O
+86	42	người	O
+86	43	dùng	O
+86	44	,	O
+86	45	hiệu	O
+86	46	năng	O
+86	47	cao	O
+86	48	và	O
+86	49	đáp	O
+86	50	ứng	O
+86	51	các	O
+86	52	yêu	O
+86	53	cầu	O
+86	54	bảo	O
+86	55	mật	O
+86	56	–	O
+86	57	hiệu	O
+86	58	suất	O
+86	59	của	O
+86	60	ngân	O
+86	61	hàng	O
+86	62	.	O
+87	1	Phân	O
+87	2	tích	O
+87	3	yêu	O
+87	4	cầu	O
+87	5	,	O
+87	6	thiết	O
+87	7	kế	O
+87	8	và	O
+87	9	phát	O
+87	10	triển	O
+87	11	các	O
+87	12	thành	O
+87	13	phần	O
+87	14	giao	O
+87	15	diện	O
+87	16	web	O
+87	17	theo	O
+87	18	đặc	O
+87	19	tả	O
+87	20	kỹ	O
+87	21	thuật	O
+87	22	,	O
+87	23	sử	O
+87	24	dụng	O
+87	25	Angular	B-SKILL
+87	26	hoặc	O
+87	27	ReactJS	B-SKILL
+87	28	.	O
+88	1	Phối	O
+88	2	hợp	O
+88	3	chặt	O
+88	4	chẽ	O
+88	5	với	O
+88	6	nhóm	O
+88	7	thiết	O
+88	8	kế	O
+88	9	UX	O
+88	10	/	O
+88	11	UI	O
+88	12	và	O
+88	13	nhóm	O
+88	14	Back	O
+88	15	-	O
+88	16	end	O
+88	17	để	O
+88	18	đảm	O
+88	19	bảo	O
+88	20	trải	O
+88	21	nghiệm	O
+88	22	người	O
+88	23	dùng	O
+88	24	mượt	O
+88	25	mà	O
+88	26	,	O
+88	27	đồng	O
+88	28	bộ	O
+88	29	dữ	O
+88	30	liệu	O
+88	31	và	O
+88	32	tối	O
+88	33	ưu	O
+88	34	hiệu	O
+88	35	năng	O
+88	36	.	O
+89	1	Tối	O
+89	2	ưu	O
+89	3	hóa	O
+89	4	UI	O
+89	5	/	O
+89	6	UX	O
+89	7	cho	O
+89	8	các	O
+89	9	trình	O
+89	10	duyệt	O
+89	11	và	O
+89	12	thiết	O
+89	13	bị	O
+89	14	khác	O
+89	15	nhau	O
+89	16	(	O
+89	17	responsive	O
+89	18	design	O
+89	19	).	O
+90	1	Tham	O
+90	2	gia	O
+90	3	viết	O
+90	4	tài	O
+90	5	liệu	O
+90	6	kỹ	O
+90	7	thuật	O
+90	8	,	O
+90	9	tài	O
+90	10	liệu	O
+90	11	bàn	O
+90	12	giao	O
+90	13	và	O
+90	14	hướng	O
+90	15	dẫn	O
+90	16	sử	O
+90	17	dụng	O
+90	18	khi	O
+90	19	cần	O
+90	20	.	O
+91	1	Hỗ	O
+91	2	trợ	O
+91	3	kiểm	O
+91	4	thử	O
+91	5	,	O
+91	6	khắc	O
+91	7	phục	O
+91	8	lỗi	O
+91	9	(	O
+91	10	bug	O
+91	11	fixing	O
+91	12	)	O
+91	13	và	O
+91	14	bảo	O
+91	15	trì	O
+91	16	hệ	O
+91	17	thống	O
+91	18	sau	O
+91	19	triển	O
+91	20	khai	O
+91	21	.	O
+92	1	Nghiên	O
+92	2	cứu	O
+92	3	và	O
+92	4	đề	O
+92	5	xuất	O
+92	6	các	O
+92	7	công	O
+92	8	nghệ	O
+92	9	mới	O
+92	10	nhằm	O
+92	11	nâng	O
+92	12	cao	O
+92	13	chất	O
+92	14	lượng	O
+92	15	giao	O
+92	16	diện	O
+92	17	và	O
+92	18	trải	O
+92	19	nghiệm	O
+92	20	người	O
+92	21	dùng	O
+92	22	.	O
+93	1	Tuân	O
+93	2	thủ	O
+93	3	quy	O
+93	4	trình	O
+93	5	phát	O
+93	6	triển	O
+93	7	phần	O
+93	8	mềm	O
+93	9	và	O
+93	10	các	O
+93	11	tiêu	O
+93	12	chuẩn	O
+93	13	về	O
+93	14	an	O
+93	15	toàn	O
+93	16	thông	O
+93	17	tin	O
+93	18	của	O
+93	19	ngân	O
+93	20	hàng	O
+93	21	.	O
+94	1	Thành	O
+94	2	thạo	O
+94	3	Angular	B-SKILL
+94	4	(	O
+94	5	8	O
+94	6	+)	O
+94	7	và	O
+94	8	/	O
+94	9	hoặc	O
+94	10	ReactJS	B-SKILL
+94	11	(	O
+94	12	với	O
+94	13	hooks	O
+94	14	,	O
+94	15	Redux	B-SKILL
+94	16	).	O
+95	1	Nắm	O
+95	2	vững	O
+95	3	nguyên	O
+95	4	lý	O
+95	5	thiết	O
+95	6	kế	O
+95	7	giao	O
+95	8	diện	O
+95	9	,	O
+95	10	responsive	O
+95	11	web	O
+95	12	design	O
+95	13	,	O
+95	14	cross	O
+95	15	-	O
+95	16	browser	O
+95	17	compatibility	O
+95	18	.	O
+96	1	Biết	O
+96	2	sử	O
+96	3	dụng	O
+96	4	RESTful	B-SKILL
+96	5	API	I-SKILL
+96	6	và	O
+96	7	có	O
+96	8	kinh	O
+96	9	nghiệm	O
+96	10	tích	O
+96	11	hợp	O
+96	12	front	O
+96	13	-	O
+96	14	end	O
+96	15	với	O
+96	16	back	O
+96	17	-	O
+96	18	end	O
+96	19	.	O
+97	1	Ưu	O
+97	2	tiên	O
+97	3	ứng	O
+97	4	viên	O
+97	5	có	O
+97	6	kinh	O
+97	7	nghiệm	O
+97	8	làm	O
+97	9	việc	O
+97	10	với	O
+97	11	:	O
+98	1	Git	B-SKILL
+98	2	,	O
+98	3	Gitlab	B-SKILL
+98	4	,	O
+98	5	CI	B-SKILL
+98	6	/	I-SKILL
+98	7	CD	I-SKILL
+98	8	.	O
+99	1	Các	O
+99	2	thư	O
+99	3	viện	O
+99	4	như	O
+99	5	RxJS	B-SKILL
+99	6	,	O
+99	7	NgRx	B-SKILL
+99	8	(	O
+99	9	với	O
+99	10	Angular	B-SKILL
+99	11	),	O
+99	12	hoặc	O
+99	13	Zustand	B-SKILL
+99	14	/	O
+99	15	Recoil	B-SKILL
+99	16	(	O
+99	17	với	O
+99	18	React	B-SKILL
+99	19	).	O
+100	1	Unit	O
+100	2	test	O
+100	3	,	O
+100	4	integration	O
+100	5	test	O
+100	6	cho	O
+100	7	front	O
+100	8	-	O
+100	9	end	O
+100	10	.	O
+101	1	Có	O
+101	2	kinh	O
+101	3	nghiệm	O
+101	4	làm	O
+101	5	việc	O
+101	6	với	O
+101	7	Ant	B-SKILL
+101	8	Design	I-SKILL
+101	9	.	O
+102	1	Thiết	O
+102	2	kế	O
+102	3	và	O
+102	4	phát	O
+102	5	triển	O
+102	6	toàn	O
+102	7	diện	O
+102	8	từ	O
+102	9	Frontend	O
+102	10	,	O
+102	11	API	B-SKILL
+102	12	,	O
+102	13	Backend	O
+102	14	.	O
+102	15	NET	O
+102	16	đến	O
+102	17	cơ	O
+102	18	sở	O
+102	19	dữ	O
+102	20	liệu	O
+102	21	,	O
+102	22	đồng	O
+102	23	thời	O
+102	24	chủ	O
+102	25	động	O
+102	26	đề	O
+102	27	xuất	O
+102	28	giải	O
+102	29	pháp	O
+102	30	kỹ	O
+102	31	thuật	O
+102	32	.	O
+103	1	Xây	O
+103	2	dựng	O
+103	3	,	O
+103	4	chuẩn	O
+103	5	hóa	O
+103	6	codebase	O
+103	7	Frontend	O
+103	8	với	O
+103	9	Angular	B-SKILL
+103	10	,	O
+103	11	React	B-SKILL
+103	12	hoặc	O
+103	13	Vue	B-SKILL
+103	14	,	O
+103	15	giúp	O
+103	16	sản	O
+103	17	phẩm	O
+103	18	dễ	O
+103	19	phát	O
+103	20	triển	O
+103	21	,	O
+103	22	tái	O
+103	23	sử	O
+103	24	dụng	O
+103	25	và	O
+103	26	mở	O
+103	27	rộng	O
+103	28	.	O
+104	1	Đo	O
+104	2	lường	O
+104	3	,	O
+104	4	tối	O
+104	5	ưu	O
+104	6	hiệu	O
+104	7	năng	O
+104	8	Client	O
+104	9	và	O
+104	10	Backend	O
+104	11	,	O
+104	12	cải	O
+104	13	thiện	O
+104	14	tốc	O
+104	15	độ	O
+104	16	phản	O
+104	17	hồi	O
+104	18	,	O
+104	19	trải	O
+104	20	nghiệm	O
+104	21	người	O
+104	22	dùng	O
+104	23	và	O
+104	24	khả	O
+104	25	năng	O
+104	26	chịu	O
+104	27	tải	O
+104	28	của	O
+104	29	hệ	O
+104	30	thống	O
+104	31	.	O
+105	1	Giải	O
+105	2	quyết	O
+105	3	các	O
+105	4	bài	O
+105	5	toán	O
+105	6	chuyên	O
+105	7	sâu	O
+105	8	về	O
+105	9	Transaction	B-SKILL
+105	10	,	O
+105	11	Caching	B-SKILL
+105	12	,	O
+105	13	Concurrency	B-SKILL
+105	14	,	O
+105	15	Messaging	B-SKILL
+105	16	và	O
+105	17	hệ	O
+105	18	thống	O
+105	19	có	O
+105	20	lượng	O
+105	21	truy	O
+105	22	cập	O
+105	23	lớn	O
+105	24	.	O
+106	1	Tham	O
+106	2	gia	O
+106	3	định	O
+106	4	hình	O
+106	5	kiến	O
+106	6	trúc	O
+106	7	,	O
+106	8	thực	O
+106	9	hiện	O
+106	10	Design	O
+106	11	Review	O
+106	12	,	O
+106	13	Code	O
+106	14	Review	O
+106	15	và	O
+106	16	Testing	O
+106	17	,	O
+106	18	góp	O
+106	19	phần	O
+106	20	xây	O
+106	21	dựng	O
+106	22	sản	O
+106	23	phẩm	O
+106	24	ổn	O
+106	25	định	O
+106	26	,	O
+106	27	dễ	O
+106	28	bảo	O
+106	29	trì	O
+106	30	.	O
+107	1	Phối	O
+107	2	hợp	O
+107	3	cùng	O
+107	4	Product	O
+107	5	Manager	O
+107	6	,	O
+107	7	BA	O
+107	8	và	O
+107	9	DevOps	O
+107	10	để	O
+107	11	chuyển	O
+107	12	hóa	O
+107	13	nhu	O
+107	14	cầu	O
+107	15	kinh	O
+107	16	doanh	O
+107	17	thành	O
+107	18	giải	O
+107	19	pháp	O
+107	20	công	O
+107	21	nghệ	O
+107	22	hiệu	O
+107	23	quả	O
+107	24	.	O
+108	1	Chia	O
+108	2	sẻ	O
+108	3	chuyên	O
+108	4	môn	O
+108	5	,	O
+108	6	mentoring	O
+108	7	thành	O
+108	8	viên	O
+108	9	và	O
+108	10	phát	O
+108	11	triển	O
+108	12	năng	O
+108	13	lực	O
+108	14	theo	O
+108	15	định	O
+108	16	hướng	O
+108	17	Technical	O
+108	18	Leadership	O
+108	19	.	O
+109	1	Có	O
+109	2	từ	O
+109	3	3	O
+109	4	-	O
+109	5	4	O
+109	6	năm	O
+109	7	kinh	O
+109	8	nghiệm	O
+109	9	phát	O
+109	10	triển	O
+109	11	ứng	O
+109	12	dụng	O
+109	13	Web	O
+109	14	với	O
+109	15	C	B-SKILL
+109	16	#,	I-SKILL
+109	17	.	O
+109	18	NET	B-SKILL
+109	19	/.	I-SKILL
+109	20	NET	I-SKILL
+109	21	Core	O
+109	22	và	O
+109	23	hiểu	O
+109	24	cách	O
+109	25	tổ	O
+109	26	chức	O
+109	27	hệ	O
+109	28	thống	O
+109	29	theo	O
+109	30	Clean	B-SKILL
+109	31	Architecture	I-SKILL
+109	32	.	O
+110	1	Có	O
+110	2	kinh	O
+110	3	nghiệm	O
+110	4	phát	O
+110	5	triển	O
+110	6	Frontend	O
+110	7	với	O
+110	8	JavaScript	B-SKILL
+110	9	/	O
+110	10	TypeScript	B-SKILL
+110	11	và	O
+110	12	ít	O
+110	13	nhất	O
+110	14	một	O
+110	15	framework	O
+110	16	Angular	B-SKILL
+110	17	,	O
+110	18	React	B-SKILL
+110	19	hoặc	O
+110	20	Vue	B-SKILL
+110	21	;	O
+110	22	có	O
+110	23	khả	O
+110	24	năng	O
+110	25	xây	O
+110	26	dựng	O
+110	27	,	O
+110	28	chuẩn	O
+110	29	hóa	O
+110	30	codebase	O
+110	31	.	O
+111	1	Đã	O
+111	2	trực	O
+111	3	tiếp	O
+111	4	tối	O
+111	5	ưu	O
+111	6	hiệu	O
+111	7	năng	O
+111	8	Backend	O
+111	9	và	O
+111	10	Client	O
+111	11	,	O
+111	12	mang	O
+111	13	lại	O
+111	14	cải	O
+111	15	thiện	O
+111	16	thực	O
+111	17	tế	O
+111	18	về	O
+111	19	tốc	O
+111	20	độ	O
+111	21	phản	O
+111	22	hồi	O
+111	23	,	O
+111	24	trải	O
+111	25	nghiệm	O
+111	26	người	O
+111	27	dùng	O
+111	28	hoặc	O
+111	29	khả	O
+111	30	năng	O
+111	31	chịu	O
+111	32	tải	O
+111	33	.	O
+112	1	Nắm	O
+112	2	vững	O
+112	3	OOP	B-SKILL
+112	4	,	O
+112	5	SOLID	B-SKILL
+112	6	,	O
+112	7	Design	B-SKILL
+112	8	Pattern	I-SKILL
+112	9	;	O
+112	10	có	O
+112	11	tư	O
+112	12	duy	O
+112	13	viết	O
+112	14	mã	O
+112	15	dễ	O
+112	16	đọc	O
+112	17	,	O
+112	18	dễ	O
+112	19	kiểm	O
+112	20	thử	O
+112	21	và	O
+112	22	bảo	O
+112	23	trì	O
+112	24	.	O
+113	1	Thành	O
+113	2	thạo	O
+113	3	SQL	B-SKILL
+113	4	Server	I-SKILL
+113	5	/	O
+113	6	MySQL	B-SKILL
+113	7	,	O
+113	8	có	O
+113	9	kinh	O
+113	10	nghiệm	O
+113	11	thiết	O
+113	12	kế	O
+113	13	dữ	O
+113	14	liệu	O
+113	15	và	O
+113	16	tối	O
+113	17	ưu	O
+113	18	truy	O
+113	19	vấn	O
+113	20	.	O
+114	1	Có	O
+114	2	khả	O
+114	3	năng	O
+114	4	phân	O
+114	5	tích	O
+114	6	vấn	O
+114	7	đề	O
+114	8	,	O
+114	9	phối	O
+114	10	hợp	O
+114	11	đội	O
+114	12	nhóm	O
+114	13	và	O
+114	14	chủ	O
+114	15	động	O
+114	16	đề	O
+114	17	xuất	O
+114	18	giải	O
+114	19	pháp	O
+114	20	kỹ	O
+114	21	thuật	O
+114	22	.	O
+115	1	Kinh	O
+115	2	nghiệm	O
+115	3	với	O
+115	4	Redis	B-SKILL
+115	5	,	O
+115	6	RabbitMQ	B-SKILL
+115	7	,	O
+115	8	Microservices	B-SKILL
+115	9	,	O
+115	10	Docker	B-SKILL
+115	11	hoặc	O
+115	12	CI	B-SKILL
+115	13	/	I-SKILL
+115	14	CD	I-SKILL
+115	15	.	O
+116	1	Đã	O
+116	2	sử	O
+116	3	dụng	O
+116	4	các	O
+116	5	công	O
+116	6	cụ	O
+116	7	đo	O
+116	8	lường	O
+116	9	hiệu	O
+116	10	năng	O
+116	11	Frontend	O
+116	12	như	O
+116	13	Lighthouse	B-SKILL
+116	14	,	O
+116	15	Chrome	B-SKILL
+116	16	DevTools	I-SKILL
+116	17	hoặc	O
+116	18	Web	B-SKILL
+116	19	Vitals	I-SKILL
+116	20	.	O
+117	1	Có	O
+117	2	kinh	O
+117	3	nghiệm	O
+117	4	với	O
+117	5	hệ	O
+117	6	thống	O
+117	7	quy	O
+117	8	mô	O
+117	9	lớn	O
+117	10	,	O
+117	11	Unit	O
+117	12	Test	O
+117	13	,	O
+117	14	Code	O
+117	15	Review	O
+117	16	hoặc	O
+117	17	mentoring	O
+117	18	thành	O
+117	19	viên	O
+117	20	.	O
+118	1	Tham	O
+118	2	gia	O
+118	3	phát	O
+118	4	triển	O
+118	5	các	O
+118	6	sản	O
+118	7	phẩm	O
+118	8	và	O
+118	9	dịch	O
+118	10	vụ	O
+118	11	tài	O
+118	12	chính	O
+118	13	trên	O
+118	14	nền	O
+118	15	tảng	O
+118	16	công	O
+118	17	nghệ	O
+118	18	tiên	O
+118	19	tiến	O
+118	20	nhất	O
+119	1	Phụ	O
+119	2	trách	O
+119	3	phát	O
+119	4	triển	O
+119	5	Fullstack	O
+119	6	từ	O
+119	7	Frontend	O
+119	8	(	O
+119	9	FE	O
+119	10	),	O
+119	11	Backend	O
+119	12	(	O
+119	13	BE	O
+119	14	)	O
+119	15	đến	O
+119	16	Database	O
+119	17	(	O
+119	18	thiết	O
+119	19	kế	O
+119	20	,	O
+119	21	truy	O
+119	22	vấn	O
+119	23	,	O
+119	24	tối	O
+119	25	ưu	O
+119	26	).	O
+120	1	Phân	O
+120	2	tích	O
+120	3	và	O
+120	4	tối	O
+120	5	ưu	O
+120	6	hiệu	O
+120	7	năng	O
+120	8	ứng	O
+120	9	dụng	O
+120	10	:	O
+120	11	xử	O
+120	12	lý	O
+120	13	các	O
+120	14	vấn	O
+120	15	đề	O
+120	16	về	O
+120	17	tốc	O
+120	18	độ	O
+120	19	,	O
+120	20	tài	O
+120	21	nguyên	O
+120	22	,	O
+120	23	khả	O
+120	24	năng	O
+120	25	mở	O
+120	26	rộng	O
+120	27	và	O
+120	28	ổn	O
+120	29	định	O
+120	30	hệ	O
+120	31	thống	O
+120	32	.	O
+121	1	Phối	O
+121	2	hợp	O
+121	3	chặt	O
+121	4	chẽ	O
+121	5	với	O
+121	6	các	O
+121	7	team	O
+121	8	liên	O
+121	9	quan	O
+121	10	(	O
+121	11	QC	O
+121	12	,	O
+121	13	DevOps	O
+121	14	,	O
+121	15	BA	O
+121	16	,...)	O
+121	17	để	O
+121	18	đảm	O
+121	19	bảo	O
+121	20	đúng	O
+121	21	yêu	O
+121	22	cầu	O
+121	23	,	O
+121	24	đúng	O
+121	25	chất	O
+121	26	lượng	O
+121	27	và	O
+121	28	đúng	O
+121	29	tiến	O
+121	30	độ	O
+121	31	.	O
+122	1	Viết	O
+122	2	tài	O
+122	3	liệu	O
+122	4	kỹ	O
+122	5	thuật	O
+122	6	/	O
+122	7	hướng	O
+122	8	dẫn	O
+122	9	sử	O
+122	10	dụng	O
+122	11	phục	O
+122	12	vụ	O
+122	13	bàn	O
+122	14	giao	O
+122	15	,	O
+122	16	đào	O
+122	17	tạo	O
+122	18	nội	O
+122	19	bộ	O
+122	20	khi	O
+122	21	cần	O
+122	22	.	O
+123	1	Tham	O
+123	2	gia	O
+123	3	code	O
+123	4	review	O
+123	5	,	O
+123	6	góp	O
+123	7	ý	O
+123	8	nâng	O
+123	9	cao	O
+123	10	chất	O
+123	11	lượng	O
+123	12	code	O
+123	13	,	O
+123	14	đồng	O
+123	15	thời	O
+123	16	chia	O
+123	17	sẻ	O
+123	18	kiến	O
+123	19	thức	O
+123	20	và	O
+123	21	kinh	O
+123	22	nghiệm	O
+123	23	để	O
+123	24	cùng	O
+123	25	nâng	O
+123	26	trình	O
+123	27	team	O
+123	28	.	O
+124	1	Tốt	O
+124	2	nghiệp	O
+124	3	ĐH	O
+124	4	chuyên	O
+124	5	ngành	O
+124	6	CNTT	O
+124	7	hoặc	O
+124	8	các	O
+124	9	chuyên	O
+124	10	ngành	O
+124	11	liên	O
+124	12	quan	O
+124	13	.	O
+125	1	Có	O
+125	2	tối	O
+125	3	thiểu	O
+125	4	1.5	O
+125	5	năm	O
+125	6	kinh	O
+125	7	nghiệm	O
+125	8	lập	O
+125	9	trình	O
+125	10	trên	O
+125	11	nền	O
+125	12	tảng	O
+125	13	Web	O
+126	1	Thành	O
+126	2	thạo	O
+126	3	các	O
+126	4	kiến	O
+126	5	thức	O
+126	6	về	O
+126	7	.	B-SKILL
+126	8	NET	I-SKILL
+126	9	Framework	O
+126	10	hoặc	O
+126	11	.	B-SKILL
+126	12	NET	I-SKILL
+126	13	Core	I-SKILL
+126	14	(	O
+126	15	C	B-SKILL
+126	16	#,	I-SKILL
+126	17	ASP.NET	B-SKILL
+126	18	,	O
+126	19	MVC	B-SKILL
+126	20	,	O
+126	21	...)	O
+126	22	và	O
+126	23	VueJS	B-SKILL
+127	1	Nắm	O
+127	2	vững	O
+127	3	nền	O
+127	4	tảng	O
+127	5	lập	O
+127	6	trình	O
+127	7	và	O
+127	8	kiến	O
+127	9	trúc	O
+127	10	:	O
+127	11	OOP	B-SKILL
+127	12	,	O
+127	13	SOLID	B-SKILL
+127	14	,	O
+127	15	Design	B-SKILL
+127	16	Patterns	I-SKILL
+127	17	,	O
+127	18	hiểu	O
+127	19	SOA	B-SKILL
+127	20	/	O
+127	21	Microservices	B-SKILL
+128	1	Có	O
+128	2	kinh	O
+128	3	nghiệm	O
+128	4	phát	O
+128	5	triển	O
+128	6	hệ	O
+128	7	thống	O
+128	8	Web	O
+128	9	quy	O
+128	10	mô	O
+128	11	vừa	O
+128	12	/	O
+128	13	lớn	O
+128	14	,	O
+128	15	tối	O
+128	16	ưu	O
+128	17	và	O
+128	18	vận	O
+128	19	hành	O
+128	20	ổn	O
+128	21	định	O
+128	22	.	O
+129	1	Có	O
+129	2	kinh	O
+129	3	nghiệm	O
+129	4	với	O
+129	5	Web	B-SKILL
+129	6	API	I-SKILL
+129	7	/	O
+129	8	RESTful	B-SKILL
+129	9	API	I-SKILL
+129	10	.	O
+130	1	Có	O
+130	2	kinh	O
+130	3	nghiệm	O
+130	4	với	O
+130	5	SQL	B-SKILL
+130	6	Server	I-SKILL
+130	7	/	O
+130	8	MySQL	B-SKILL
+130	9	/	O
+130	10	PostgreSQL	B-SKILL
+130	11	;	O
+130	12	biết	O
+130	13	thêm	O
+130	14	MongoDB	B-SKILL
+130	15	/	O
+130	16	Couchbase	B-SKILL
+130	17	/	O
+130	18	Redis	B-SKILL
+130	19	/	O
+130	20	RabbitMQ	B-SKILL
+130	21	(	O
+130	22	hoặc	O
+130	23	tương	O
+130	24	đương	O
+130	25	)	O
+130	26	là	O
+130	27	điểm	O
+130	28	cộng	O
+130	29	.	O
+131	1	Yêu	O
+131	2	thích	O
+131	3	môi	O
+131	4	trường	O
+131	5	product	O
+131	6	,	O
+131	7	có	O
+131	8	tư	O
+131	9	duy	O
+131	10	làm	O
+131	11	sản	O
+131	12	phẩm	O
+131	13	hướng	O
+131	14	người	O
+131	15	dùng	O
+131	16	.	O
+132	1	Biết	O
+132	2	ứng	O
+132	3	dụng	O
+132	4	công	O
+132	5	cụ	O
+132	6	AI	O
+132	7	để	O
+132	8	hỗ	O
+132	9	trợ	O
+132	10	lập	O
+132	11	trình	O
+132	12	(	O
+132	13	viết	O
+132	14	code	O
+132	15	/	O
+132	16	test	O
+132	17	/	O
+132	18	tài	O
+132	19	liệu	O
+132	20	,	O
+132	21	review	O
+132	22	,	O
+132	23	tối	O
+132	24	ưu	O
+132	25	…).	O
+133	1	Design	O
+133	2	and	O
+133	3	develop	O
+133	4	compelling	O
+133	5	and	O
+133	6	usable	O
+133	7	customer	O
+133	8	web	O
+133	9	interfaces	O
+133	10	using	O
+133	11	VueJS	B-SKILL
+133	12	.	O
+134	1	Work	O
+134	2	closely	O
+134	3	with	O
+134	4	engineers	O
+134	5	from	O
+134	6	other	O
+134	7	teams	O
+134	8	to	O
+134	9	develop	O
+134	10	and	O
+134	11	build	O
+134	12	high	O
+134	13	-	O
+134	14	quality	O
+134	15	software	O
+134	16	.	O
+135	1	Improve	O
+135	2	the	O
+135	3	efficiency	O
+135	4	of	O
+135	5	existing	O
+135	6	products	O
+135	7	,	O
+135	8	debug	O
+135	9	and	O
+135	10	troubleshoot	O
+135	11	production	O
+135	12	issues	O
+135	13	.	O
+136	1	Build	O
+136	2	the	O
+136	3	architecture	O
+136	4	and	O
+136	5	design	O
+136	6	of	O
+136	7	new	O
+136	8	products	O
+136	9	and	O
+136	10	features	O
+136	11	.	O
+137	1	Implement	O
+137	2	UI	O
+137	3	components	O
+137	4	and	O
+137	5	libraries	O
+137	6	.	O
+138	1	Must	O
+138	2	Haves	O
+138	3	:	O
+139	1	Utilize	O
+139	2	code	O
+139	3	versioning	O
+139	4	tools	O
+139	5	(	O
+139	6	Git	B-SKILL
+139	7	).	O
+140	1	Experienced	O
+140	2	with	O
+140	3	working	O
+140	4	on	O
+140	5	Linux	B-SKILL
+140	6	based	O
+140	7	infrastructure	O
+141	1	Expert	O
+141	2	knowledge	O
+141	3	with	O
+141	4	HTML5	B-SKILL
+141	5	,	O
+141	6	CSS3	B-SKILL
+141	7	,	O
+141	8	SASS	B-SKILL
+141	9	/	O
+141	10	SCSS	B-SKILL
+141	11	.	O
+142	1	Expert	O
+142	2	with	O
+142	3	developing	O
+142	4	responsive	O
+142	5	layouts	O
+142	6	leveraging	O
+142	7	CSS	B-SKILL
+142	8	and	O
+142	9	media	O
+142	10	queries	O
+142	11	.	O
+143	1	Solid	O
+143	2	knowledge	O
+143	3	of	O
+143	4	modern	O
+143	5	web	O
+143	6	development	O
+143	7	technologies	O
+143	8	&	O
+143	9	front	O
+143	10	-	O
+143	11	end	O
+143	12	frameworks	O
+143	13	.	O
+144	1	Proficient	O
+144	2	in	O
+144	3	Vue	B-SKILL
+144	4	3	O
+144	5	,	O
+144	6	Nuxt	B-SKILL
+144	7	3	O
+145	1	Nice	O
+145	2	to	O
+145	3	Have	O
+146	1	Experience	O
+146	2	in	O
+146	3	Mobile	B-SKILL
+146	4	App	I-SKILL
+146	5	development	O
+146	6	(	O
+146	7	build	O
+146	8	cross	O
+146	9	platform	O
+146	10	apps	O
+146	11	using	O
+146	12	Javascript	B-SKILL
+146	13	)	O
+147	1	Understanding	O
+147	2	of	O
+147	3	SSR	B-SKILL
+147	4	(	O
+147	5	Server	B-SKILL
+147	6	-	I-SKILL
+147	7	Side	I-SKILL
+147	8	Rendering	I-SKILL
+147	9	)	O
+147	10	and	O
+147	11	Static	B-SKILL
+147	12	Site	I-SKILL
+147	13	Generation	I-SKILL
+147	14	(	O
+147	15	SSG	B-SKILL
+147	16	)	O
+148	1	Experience	O
+148	2	with	O
+148	3	Nuxt	B-SKILL
+148	4	4	O
+149	1	Know	O
+149	2	how	O
+149	3	to	O
+149	4	debug	O
+149	5	,	O
+149	6	measure	O
+149	7	and	O
+149	8	optimize	O
+149	9	the	O
+149	10	performance	O
+149	11	of	O
+149	12	web	O
+149	13	applications	O
+149	14	.	O
+150	1	Understand	O
+150	2	and	O
+150	3	be	O
+150	4	able	O
+150	5	to	O
+150	6	implement	O
+150	7	good	O
+150	8	tests	O
+150	9	for	O
+150	10	front	O
+150	11	-	O
+150	12	end	O
+150	13	code	O
+150	14	.	O
+151	1	Basic	O
+151	2	understanding	O
+151	3	of	O
+151	4	server	O
+151	5	,	O
+151	6	database	O
+151	7	,	O
+151	8	and	O
+151	9	good	O
+151	10	experience	O
+151	11	in	O
+151	12	RESTful	B-SKILL
+151	13	API	I-SKILL
+151	14	design	O
+151	15	and	O
+151	16	development	O
+152	1	Desired	O
+152	2	soft	O
+152	3	skills	O
+153	1	Awareness	O
+153	2	of	O
+153	3	critical	O
+153	4	concepts	O
+153	5	in	O
+153	6	DevOps	O
+153	7	and	O
+153	8	Agile	O
+153	9	principles	O
+154	1	Ability	O
+154	2	to	O
+154	3	grasp	O
+154	4	technical	O
+154	5	and	O
+154	6	financial	O
+154	7	concepts	O
+154	8	quickly	O
+155	1	Easily	O
+155	2	adapt	O
+155	3	and	O
+155	4	learn	O
+155	5	new	O
+155	6	things	O
+155	7	.	O
+156	1	Ability	O
+156	2	to	O
+156	3	work	O
+156	4	independently	O
+156	5	and	O
+156	6	as	O
+156	7	part	O
+156	8	of	O
+156	9	a	O
+156	10	team	O
+157	1	Ability	O
+157	2	to	O
+157	3	work	O
+157	4	under	O
+157	5	pressure	O
+157	6	and	O
+157	7	handle	O
+157	8	emergency	O
+157	9	situations	O
+157	10	effectively	O
+158	1	Good	O
+158	2	problem	O
+158	3	-	O
+158	4	solving	O
+158	5	skills	O
+158	6	.	O
+159	1	Attention	O
+159	2	to	O
+159	3	detail	O
+159	4	.	O
+160	1	Trao	O
+160	2	đổi	O
+160	3	/	O
+160	4	hỗ	O
+160	5	trợ	O
+160	6	khách	O
+160	7	hàng	O
+160	8	và	O
+160	9	các	O
+160	10	thành	O
+160	11	viên	O
+160	12	trong	O
+160	13	dự	O
+160	14	án	O
+160	15	về	O
+160	16	các	O
+160	17	vấn	O
+160	18	đề	O
+160	19	liên	O
+160	20	quan	O
+160	21	đến	O
+160	22	công	O
+160	23	việc	O
+160	24	;	O
+161	1	Báo	O
+161	2	cáo	O
+161	3	công	O
+161	4	việc	O
+161	5	cho	O
+161	6	Team	O
+161	7	dự	O
+161	8	án	O
+161	9	và	O
+161	10	các	O
+161	11	cấp	O
+161	12	Quản	O
+161	13	lý	O
+161	14	;	O
+162	1	Phát	O
+162	2	triển	O
+162	3	và	O
+162	4	vận	O
+162	5	hành	O
+162	6	sản	O
+162	7	phẩm	O
+162	8	về	O
+162	9	Web	O
+162	10	/	O
+162	11	Phần	O
+162	12	mềm	O
+162	13	;	O
+163	1	Code	O
+163	2	review	O
+163	3	,	O
+163	4	hướng	O
+163	5	dẫn	O
+163	6	kỹ	O
+163	7	thuật	O
+163	8	và	O
+163	9	đảm	O
+163	10	bảo	O
+163	11	tuân	O
+163	12	thủ	O
+163	13	quy	O
+163	14	chuẩn	O
+163	15	lập	O
+163	16	trình	O
+163	17	;	O
+164	1	Thiết	O
+164	2	kế	O
+164	3	kiến	O
+164	4	trúc	O
+164	5	hệ	O
+164	6	thống	O
+164	7	,	O
+164	8	đảm	O
+164	9	bảo	O
+164	10	hiệu	O
+164	11	năng	O
+164	12	,	O
+164	13	bảo	O
+164	14	mật	O
+164	15	và	O
+164	16	khả	O
+164	17	năng	O
+164	18	mở	O
+164	19	rộng	O
+164	20	;	O
+165	1	Tối	O
+165	2	ưu	O
+165	3	hóa	O
+165	4	Code	O
+165	5	để	O
+165	6	hệ	O
+165	7	thống	O
+165	8	hoạt	O
+165	9	động	O
+165	10	nhanh	O
+165	11	và	O
+165	12	mượt	O
+165	13	mà	O
+165	14	hơn	O
+165	15	;	O
+166	1	Dẫn	O
+166	2	dắt	O
+166	3	và	O
+166	4	hỗ	O
+166	5	trợ	O
+166	6	các	O
+166	7	vấn	O
+166	8	đề	O
+166	9	lập	O
+166	10	trình	O
+166	11	ở	O
+166	12	cả	O
+166	13	Back	O
+166	14	-	O
+166	15	end	O
+166	16	và	O
+166	17	Front	O
+166	18	-	O
+166	19	end	O
+166	20	.	O
+167	1	Ít	O
+167	2	nhất	O
+167	3	3	O
+167	4	năm	O
+167	5	kinh	O
+167	6	nghiệm	O
+167	7	phát	O
+167	8	triển	O
+167	9	phần	O
+167	10	mềm	O
+167	11	full	O
+167	12	-	O
+167	13	stack	O
+168	1	Thành	O
+168	2	thạo	O
+168	3	phát	O
+168	4	triển	O
+168	5	backend	O
+168	6	với	O
+168	7	golang	B-SKILL
+168	8	là	O
+168	9	một	O
+168	10	lợi	O
+168	11	thế	O
+168	12	;	O
+169	1	Thành	O
+169	2	thạo	O
+169	3	ReactJS	B-SKILL
+169	4	(	O
+169	5	có	O
+169	6	kinh	O
+169	7	nghiệm	O
+169	8	với	O
+169	9	TypeScript	B-SKILL
+169	10	là	O
+169	11	lợi	O
+169	12	thế	O
+169	13	);	O
+170	1	Có	O
+170	2	kinh	O
+170	3	nghiệm	O
+170	4	thiết	O
+170	5	kế	O
+170	6	API	B-SKILL
+170	7	theo	O
+170	8	chuẩn	O
+170	9	RESTful	B-SKILL
+170	10	,	O
+170	11	thiết	O
+170	12	kế	O
+170	13	CSDL	O
+170	14	và	O
+170	15	kiến	O
+170	16	trúc	O
+170	17	microservices	B-SKILL
+170	18	;	O
+171	1	Có	O
+171	2	kinh	O
+171	3	nghiệm	O
+171	4	sử	O
+171	5	dụng	O
+171	6	Docker	B-SKILL
+171	7	,	O
+171	8	Git	B-SKILL
+171	9	,	O
+171	10	CI	B-SKILL
+171	11	/	I-SKILL
+171	12	CD	I-SKILL
+171	13	(	O
+171	14	GitLab	B-SKILL
+171	15	CI	I-SKILL
+171	16	,	O
+171	17	Jenkins	B-SKILL
+171	18	…),	O
+171	19	nền	O
+171	20	tảng	O
+171	21	cloud	B-SKILL
+171	22	(	O
+171	23	AWS	B-SKILL
+171	24	/	O
+171	25	GCP	B-SKILL
+171	26	/	O
+171	27	Azure	B-SKILL
+171	28	).	O
+172	1	Có	O
+172	2	kinh	O
+172	3	nghiệm	O
+172	4	làm	O
+172	5	việc	O
+172	6	với	O
+172	7	cơ	O
+172	8	sở	O
+172	9	dữ	O
+172	10	liệu	O
+172	11	:	O
+172	12	PostgreSQL	B-SKILL
+172	13	,	O
+172	14	MySQL	B-SKILL
+172	15	,	O
+172	16	MongoDB	B-SKILL
+172	17	(	O
+172	18	tùy	O
+172	19	dự	O
+172	20	án	O
+172	21	).	O
+173	1	Có	O
+173	2	kinh	O
+173	3	nghiệm	O
+173	4	trong	O
+173	5	việc	O
+173	6	thiết	O
+173	7	kế	O
+173	8	hệ	O
+173	9	thống	O
+173	10	,	O
+173	11	tối	O
+173	12	ưu	O
+173	13	hiệu	O
+173	14	suất	O
+173	15	,	O
+173	16	bảo	O
+173	17	mật	O
+173	18	ứng	O
+173	19	dụng	O
+173	20	web	O
+173	21	;	O
+174	1	Hiểu	O
+174	2	biết	O
+174	3	về	O
+174	4	Clean	O
+174	5	Architecture	O
+174	6	,	O
+174	7	Design	O
+174	8	Patterns	O
+174	9	,	O
+174	10	và	O
+174	11	best	O
+174	12	practices	O
+174	13	trong	O
+174	14	lập	O
+174	15	trình	O
+174	16	.	O
+175	1	Kỹ	O
+175	2	năng	O
+175	3	giải	O
+175	4	quyết	O
+175	5	vấn	O
+175	6	đề	O
+175	7	tốt	O
+175	8	và	O
+175	9	có	O
+175	10	khả	O
+175	11	năng	O
+175	12	dẫn	O
+175	13	dắt	O
+175	14	nhóm	O
+175	15	kỹ	O
+175	16	thuật	O
+175	17	;	O
+176	1	Có	O
+176	2	kỹ	O
+176	3	năng	O
+176	4	giao	O
+176	5	tiếp	O
+176	6	bằng	O
+176	7	tiếng	O
+176	8	Anh	O
+176	9	một	O
+176	10	lợi	O
+176	11	thế	O
+176	12	.	O
+177	1	Tham	O
+177	2	gia	O
+177	3	phân	O
+177	4	tích	O
+177	5	,	O
+177	6	thiết	O
+177	7	kế	O
+177	8	,	O
+177	9	phát	O
+177	10	triển	O
+177	11	và	O
+177	12	bảo	O
+177	13	trì	O
+177	14	các	O
+177	15	ứng	O
+177	16	dụng	O
+177	17	web	O
+177	18	Full	O
+177	19	-	O
+177	20	stack	O
+177	21	sử	O
+177	22	dụng	O
+177	23	Java	B-SKILL
+177	24	Spring	I-SKILL
+177	25	Boot	I-SKILL
+177	26	và	O
+177	27	Angular	B-SKILL
+177	28	(	O
+177	29	v12	O
+177	30	+).	O
+178	1	Phát	O
+178	2	triển	O
+178	3	các	O
+178	4	hệ	O
+178	5	thống	O
+178	6	end	O
+178	7	-	O
+178	8	to	O
+178	9	-	O
+178	10	end	O
+178	11	,	O
+178	12	bao	O
+178	13	gồm	O
+178	14	Backend	O
+178	15	,	O
+178	16	RESTful	B-SKILL
+178	17	API	I-SKILL
+178	18	và	O
+178	19	giao	O
+178	20	diện	O
+178	21	người	O
+178	22	dùng	O
+178	23	hiện	O
+178	24	đại	O
+178	25	,	O
+178	26	responsive	O
+178	27	.	O
+179	1	Thiết	O
+179	2	kế	O
+179	3	và	O
+179	4	phát	O
+179	5	triển	O
+179	6	các	O
+179	7	dịch	O
+179	8	vụ	O
+179	9	theo	O
+179	10	kiến	O
+179	11	trúc	O
+179	12	Microservices	B-SKILL
+179	13	,	O
+179	14	đảm	O
+179	15	bảo	O
+179	16	khả	O
+179	17	năng	O
+179	18	mở	O
+179	19	rộng	O
+179	20	,	O
+179	21	ổn	O
+179	22	định	O
+179	23	và	O
+179	24	dễ	O
+179	25	bảo	O
+179	26	trì	O
+179	27	.	O
+180	1	Xây	O
+180	2	dựng	O
+180	3	,	O
+180	4	tích	O
+180	5	hợp	O
+180	6	và	O
+180	7	kiểm	O
+180	8	thử	O
+180	9	các	O
+180	10	API	B-SKILL
+180	11	phục	O
+180	12	vụ	O
+180	13	kết	O
+180	14	nối	O
+180	15	giữa	O
+180	16	các	O
+180	17	hệ	O
+180	18	thống	O
+180	19	nội	O
+180	20	bộ	O
+180	21	và	O
+180	22	hệ	O
+180	23	thống	O
+180	24	bên	O
+180	25	thứ	O
+180	26	ba	O
+180	27	.	O
+181	1	Tham	O
+181	2	gia	O
+181	3	tích	O
+181	4	hợp	O
+181	5	với	O
+181	6	các	O
+181	7	hệ	O
+181	8	thống	O
+181	9	doanh	O
+181	10	nghiệp	O
+181	11	,	O
+181	12	nền	O
+181	13	tảng	O
+181	14	messaging	O
+181	15	và	O
+181	16	các	O
+181	17	dịch	O
+181	18	vụ	O
+181	19	bên	O
+181	20	ngoài	O
+181	21	.	O
+182	1	Phối	O
+182	2	hợp	O
+182	3	với	O
+182	4	BA	O
+182	5	,	O
+182	6	QA	O
+182	7	/	O
+182	8	Testers	O
+182	9	,	O
+182	10	DevOps	O
+182	11	và	O
+182	12	các	O
+182	13	thành	O
+182	14	viên	O
+182	15	dự	O
+182	16	án	O
+182	17	để	O
+182	18	đảm	O
+182	19	bảo	O
+182	20	chất	O
+182	21	lượng	O
+182	22	và	O
+182	23	tiến	O
+182	24	độ	O
+182	25	triển	O
+182	26	khai	O
+182	27	.	O
+183	1	Tham	O
+183	2	gia	O
+183	3	xử	O
+183	4	lý	O
+183	5	các	O
+183	6	vấn	O
+183	7	đề	O
+183	8	về	O
+183	9	hiệu	O
+183	10	năng	O
+183	11	,	O
+183	12	bảo	O
+183	13	mật	O
+183	14	,	O
+183	15	tính	O
+183	16	ổn	O
+183	17	định	O
+183	18	và	O
+183	19	khả	O
+183	20	năng	O
+183	21	mở	O
+183	22	rộng	O
+183	23	của	O
+183	24	hệ	O
+183	25	thống	O
+183	26	.	O
+184	1	Thực	O
+184	2	hiện	O
+184	3	code	O
+184	4	review	O
+184	5	,	O
+184	6	viết	O
+184	7	tài	O
+184	8	liệu	O
+184	9	kỹ	O
+184	10	thuật	O
+184	11	và	O
+184	12	tuân	O
+184	13	thủ	O
+184	14	các	O
+184	15	tiêu	O
+184	16	chuẩn	O
+184	17	phát	O
+184	18	triển	O
+184	19	phần	O
+184	20	mềm	O
+184	21	của	O
+184	22	dự	O
+184	23	án	O
+184	24	.	O
+185	1	Có	O
+185	2	kinh	O
+185	3	nghiệm	O
+185	4	dày	O
+185	5	dạn	O
+185	6	về	O
+185	7	phát	O
+185	8	triển	O
+185	9	full	O
+185	10	-	O
+185	11	stack	O
+185	12	sử	O
+185	13	dụng	O
+185	14	Java	B-SKILL
+185	15	(	O
+185	16	Spring	B-SKILL
+185	17	Boot	I-SKILL
+185	18	)	O
+185	19	và	O
+185	20	Angular	B-SKILL
+185	21	(	O
+185	22	v12	O
+185	23	+).	O
+186	1	Có	O
+186	2	kinh	O
+186	3	nghiệm	O
+186	4	thực	O
+186	5	tế	O
+186	6	trong	O
+186	7	việc	O
+186	8	thiết	O
+186	9	kế	O
+186	10	,	O
+186	11	phát	O
+186	12	triển	O
+186	13	và	O
+186	14	bảo	O
+186	15	trì	O
+186	16	các	O
+186	17	ứng	O
+186	18	dụng	O
+186	19	toàn	O
+186	20	diện	O
+186	21	(	O
+186	22	end	O
+186	23	-	O
+186	24	to	O
+186	25	-	O
+186	26	end	O
+186	27	),	O
+186	28	bao	O
+186	29	gồm	O
+186	30	RESTful	B-SKILL
+186	31	API	I-SKILL
+186	32	và	O
+186	33	giao	O
+186	34	diện	O
+186	35	người	O
+186	36	dùng	O
+186	37	(	O
+186	38	UI	O
+186	39	)	O
+186	40	hiện	O
+186	41	đại	O
+186	42	trên	O
+186	43	nền	O
+186	44	tảng	O
+186	45	web	O
+186	46	.	O
+187	1	Am	O
+187	2	hiểu	O
+187	3	sâu	O
+187	4	sắc	O
+187	5	về	O
+187	6	kiến	O
+187	7	​​	O
+187	8	trúc	O
+187	9	microservices	B-SKILL
+187	10	,	O
+187	11	các	O
+187	12	tiêu	O
+187	13	chuẩn	O
+187	14	thiết	O
+187	15	kế	O
+187	16	API	O
+187	17	và	O
+187	18	các	O
+187	19	mô	O
+187	20	hình	O
+187	21	tích	O
+187	22	hợp	O
+187	23	.	O
+188	1	Có	O
+188	2	kinh	O
+188	3	nghiệm	O
+188	4	làm	O
+188	5	việc	O
+188	6	với	O
+188	7	OpenAPI	O
+188	8	/	O
+188	9	Swagger	B-SKILL
+188	10	và	O
+188	11	các	O
+188	12	công	O
+188	13	cụ	O
+188	14	kiểm	O
+188	15	thử	O
+188	16	API	O
+188	17	như	O
+188	18	Postman	B-SKILL
+188	19	,	O
+188	20	cURL	B-SKILL
+188	21	,	O
+188	22	HTTPie	B-SKILL
+188	23	.	O
+189	1	Thành	O
+189	2	thạo	O
+189	3	TypeScript	B-SKILL
+189	4	,	O
+189	5	RxJS	B-SKILL
+189	6	và	O
+189	7	kỹ	O
+189	8	năng	O
+189	9	xây	O
+189	10	dựng	O
+189	11	giao	O
+189	12	diện	O
+189	13	(	O
+189	14	UI	O
+189	15	)	O
+189	16	có	O
+189	17	khả	O
+189	18	năng	O
+189	19	thích	O
+189	20	ứng	O
+189	21	(	O
+189	22	responsive	O
+189	23	)	O
+189	24	và	O
+189	25	mở	O
+189	26	rộng	O
+189	27	(	O
+189	28	scalable	O
+189	29	)	O
+189	30	bằng	O
+189	31	Angular	B-SKILL
+189	32	cùng	O
+189	33	các	O
+189	34	thư	O
+189	35	viện	O
+189	36	frontend	O
+189	37	hiện	O
+189	38	đại	O
+189	39	(	O
+189	40	Angular	B-SKILL
+189	41	Material	I-SKILL
+189	42	,	O
+189	43	Ant	B-SKILL
+189	44	Design	I-SKILL
+189	45	,	O
+189	46	v.v	O
+189	47	.).	O
+190	1	Có	O
+190	2	kinh	O
+190	3	nghiệm	O
+190	4	tích	O
+190	5	hợp	O
+190	6	với	O
+190	7	các	O
+190	8	hệ	O
+190	9	thống	O
+190	10	bên	O
+190	11	thứ	O
+190	12	ba	O
+190	13	,	O
+190	14	dịch	O
+190	15	vụ	O
+190	16	doanh	O
+190	17	nghiệp	O
+190	18	và	O
+190	19	nền	O
+190	20	tảng	O
+190	21	nhắn	O
+190	22	tin	O
+190	23	/	O
+190	24	truyền	O
+190	25	tải	O
+190	26	thông	O
+190	27	điệp	O
+190	28	(	O
+190	29	Kafka	B-SKILL
+190	30	,	O
+190	31	RabbitMQ	B-SKILL
+190	32	,	O
+190	33	v.v	O
+190	34	.).	O
+191	1	Có	O
+191	2	kiến	O
+191	3	​​	O
+191	4	thức	O
+191	5	về	O
+191	6	cơ	O
+191	7	sở	O
+191	8	dữ	O
+191	9	liệu	O
+191	10	và	O
+191	11	công	O
+191	12	nghệ	O
+191	13	caching	O
+191	14	như	O
+191	15	Oracle	B-SKILL
+191	16	,	O
+191	17	MongoDB	B-SKILL
+191	18	,	O
+191	19	Redis	B-SKILL
+191	20	.	O
+192	1	Am	O
+192	2	hiểu	O
+192	3	vững	O
+192	4	chắc	O
+192	5	về	O
+192	6	các	O
+192	7	quy	O
+192	8	tắc	O
+192	9	lập	O
+192	10	trình	O
+192	11	an	O
+192	12	toàn	O
+192	13	(	O
+192	14	secure	B-SKILL
+192	15	coding	I-SKILL
+192	16	),	O
+192	17	xác	O
+192	18	thực	O
+192	19	&	O
+192	20	phân	O
+192	21	quyền	O
+192	22	(	O
+192	23	OAuth2	B-SKILL
+192	24	,	O
+192	25	JWT	B-SKILL
+192	26	)	O
+192	27	và	O
+192	28	tối	O
+192	29	ưu	O
+192	30	hóa	O
+192	31	hiệu	O
+192	32	năng	O
+192	33	ứng	O
+192	34	dụng	O
+192	35	.	O
+193	1	Có	O
+193	2	kinh	O
+193	3	nghiệm	O
+193	4	làm	O
+193	5	việc	O
+193	6	với	O
+193	7	Git	B-SKILL
+193	8	,	O
+193	9	quy	O
+193	10	trình	O
+193	11	CI	B-SKILL
+193	12	/	I-SKILL
+193	13	CD	I-SKILL
+193	14	,	O
+193	15	Docker	B-SKILL
+193	16	và	O
+193	17	Kubernetes	B-SKILL
+193	18	là	O
+193	19	một	O
+193	20	lợi	O
+193	21	thế	O
+193	22	.	O
+194	1	Có	O
+194	2	kinh	O
+194	3	nghiệm	O
+194	4	về	O
+194	5	kiến	O
+194	6	​​	O
+194	7	trúc	O
+194	8	Micro	O
+194	9	Frontend	O
+194	10	là	O
+194	11	một	O
+194	12	lợi	O
+194	13	thế	O
+194	14	lớn	O
+194	15	.	O
+195	1	Ưu	O
+195	2	tiên	O
+195	3	ứng	O
+195	4	viên	O
+195	5	có	O
+195	6	kinh	O
+195	7	nghiệm	O
+195	8	trong	O
+195	9	lĩnh	O
+195	10	vực	O
+195	11	ngân	O
+195	12	hàng	O
+195	13	,	O
+195	14	fintech	O
+195	15	hoặc	O
+195	16	các	O
+195	17	hệ	O
+195	18	thống	O
+195	19	xử	O
+195	20	lý	O
+195	21	giao	O
+195	22	dịch	O
+195	23	khối	O
+195	24	lượng	O
+195	25	lớn	O
+195	26	.	O
+196	1	Develop	O
+196	2	applications	O
+196	3	for	O
+196	4	the	O
+196	5	Shopify	O
+196	6	e	O
+196	7	-	O
+196	8	commerce	O
+196	9	platform	O
+196	10	.	O
+197	1	Participate	O
+197	2	in	O
+197	3	the	O
+197	4	development	O
+197	5	of	O
+197	6	web	O
+197	7	applications	O
+197	8	using	O
+197	9	ReactJS	B-SKILL
+197	10	and	O
+197	11	server	O
+197	12	-	O
+197	13	side	O
+197	14	applications	O
+197	15	on	O
+197	16	the	O
+197	17	Node.js	B-SKILL
+197	18	platform	O
+197	19	.	O
+198	1	Design	O
+198	2	,	O
+198	3	build	O
+198	4	,	O
+198	5	and	O
+198	6	maintain	O
+198	7	efficient	O
+198	8	RESTful	B-SKILL
+198	9	APIs	I-SKILL
+198	10	and	O
+198	11	integrate	O
+198	12	them	O
+198	13	with	O
+198	14	third	O
+198	15	-	O
+198	16	party	O
+198	17	services	O
+198	18	and	O
+198	19	frontend	O
+198	20	applications	O
+198	21	.	O
+199	1	Maintain	O
+199	2	and	O
+199	3	optimize	O
+199	4	code	O
+199	5	,	O
+199	6	and	O
+199	7	resolve	O
+199	8	bugs	O
+199	9	identified	O
+199	10	during	O
+199	11	the	O
+199	12	development	O
+199	13	process	O
+199	14	to	O
+199	15	ensure	O
+199	16	system	O
+199	17	stability	O
+199	18	and	O
+199	19	security	O
+199	20	.	O
+200	1	Research	O
+200	2	and	O
+200	3	implement	O
+200	4	new	O
+200	5	technologies	O
+200	6	to	O
+200	7	enhance	O
+200	8	product	O
+200	9	quality	O
+200	10	and	O
+200	11	performance	O
+200	12	.	O
+201	1	Collaborate	O
+201	2	with	O
+201	3	product	O
+201	4	teams	O
+201	5	to	O
+201	6	define	O
+201	7	,	O
+201	8	design	O
+201	9	,	O
+201	10	and	O
+201	11	ship	O
+201	12	new	O
+201	13	features	O
+201	14	.	O
+202	1	Write	O
+202	2	clean	O
+202	3	,	O
+202	4	readable	O
+202	5	,	O
+202	6	and	O
+202	7	well	O
+202	8	-	O
+202	9	documented	O
+202	10	code	O
+202	11	following	O
+202	12	team	O
+202	13	standards	O
+202	14	.	O
+203	1	Research	O
+203	2	and	O
+203	3	apply	O
+203	4	new	O
+203	5	tools	O
+203	6	or	O
+203	7	technologies	O
+203	8	to	O
+203	9	improve	O
+203	10	development	O
+203	11	efficiency	O
+203	12	.	O
+204	1	Use	O
+204	2	AI	O
+204	3	tools	O
+204	4	such	O
+204	5	as	O
+204	6	ChatGPT	B-SKILL
+204	7	,	O
+204	8	Claude	B-SKILL
+204	9	,	O
+204	10	Cursor	B-SKILL
+204	11	,	O
+204	12	or	O
+204	13	GitHub	B-SKILL
+204	14	Copilot	I-SKILL
+204	15	to	O
+204	16	support	O
+204	17	coding	O
+204	18	,	O
+204	19	debugging	O
+204	20	,	O
+204	21	documentation	O
+204	22	,	O
+204	23	and	O
+204	24	daily	O
+204	25	workflow	O
+204	26	.	O
+205	1	Must	O
+205	2	-	O
+205	3	have	O
+205	4	:	O
+205	5	At	O
+205	6	least	O
+205	7	1	O
+205	8	year	O
+205	9	of	O
+205	10	professional	O
+205	11	experience	O
+205	12	in	O
+205	13	Fullstack	O
+205	14	development	O
+205	15	using	O
+205	16	Node.js	B-SKILL
+205	17	and	O
+205	18	ReactJS	B-SKILL
+205	19	.	O
+206	1	Knowledge	O
+206	2	:	O
+207	1	Solid	O
+207	2	foundation	O
+207	3	in	O
+207	4	JavaScript	B-SKILL
+207	5	/	O
+207	6	TypeScript	B-SKILL
+207	7	,	O
+207	8	HTML5	B-SKILL
+207	9	,	O
+207	10	and	O
+207	11	CSS3	B-SKILL
+207	12	.	O
+208	1	Good	O
+208	2	baseline	O
+208	3	knowledge	O
+208	4	of	O
+208	5	Node.js	B-SKILL
+208	6	and	O
+208	7	ReactJS	B-SKILL
+208	8	(	O
+208	9	familiarity	O
+208	10	with	O
+208	11	NestJS	B-SKILL
+208	12	is	O
+208	13	a	O
+208	14	strong	O
+208	15	plus	O
+208	16	).	O
+209	1	Basic	O
+209	2	understanding	O
+209	3	of	O
+209	4	relational	O
+209	5	/	O
+209	6	non	O
+209	7	-	O
+209	8	relational	O
+209	9	databases	O
+209	10	and	O
+209	11	synchronous	O
+209	12	vs	O
+209	13	.	O
+209	14	asynchronous	O
+209	15	programming	O
+209	16	concepts	O
+209	17	.	O
+210	1	Familiarity	O
+210	2	with	O
+210	3	leveraging	O
+210	4	AI	O
+210	5	tools	O
+210	6	(	O
+210	7	e.g	O
+210	8	.,	O
+210	9	ChatGPT	B-SKILL
+210	10	,	O
+210	11	Claude	B-SKILL
+210	12	)	O
+210	13	to	O
+210	14	improve	O
+210	15	daily	O
+210	16	coding	O
+210	17	efficiency	O
+210	18	and	O
+210	19	quality	O
+210	20	.	O
+211	1	Skills	O
+211	2	:	O
+212	1	Strong	O
+212	2	core	O
+212	3	coding	O
+212	4	skills	O
+212	5	with	O
+212	6	a	O
+212	7	focus	O
+212	8	on	O
+212	9	writing	O
+212	10	clean	O
+212	11	,	O
+212	12	readable	O
+212	13	,	O
+212	14	and	O
+212	15	well	O
+212	16	-	O
+212	17	documented	O
+212	18	code	O
+212	19	.	O
+213	1	Ability	O
+213	2	to	O
+213	3	conduct	O
+213	4	effective	O
+213	5	self	O
+213	6	-	O
+213	7	testing	O
+213	8	(	O
+213	9	Unit	O
+213	10	testing	O
+213	11	)	O
+213	12	to	O
+213	13	minimize	O
+213	14	bugs	O
+213	15	before	O
+213	16	QA	O
+213	17	handover	O
+213	18	.	O
+214	1	Good	O
+214	2	logical	O
+214	3	thinking	O
+214	4	,	O
+214	5	problem	O
+214	6	-	O
+214	7	solving	O
+214	8	capabilities	O
+214	9	,	O
+214	10	and	O
+214	11	a	O
+214	12	collaborative	O
+214	13	teamwork	O
+214	14	mindset	O
+214	15	.	O
+215	1	Strong	O
+215	2	self	O
+215	3	-	O
+215	4	learning	O
+215	5	capability	O
+215	6	to	O
+215	7	quickly	O
+215	8	adapt	O
+215	9	to	O
+215	10	new	O
+215	11	tools	O
+215	12	and	O
+215	13	frameworks	O
+215	14	.	O
+216	1	Language	O
+216	2	:	O
+217	1	Basic	O
+217	2	to	O
+217	3	intermediate	O
+217	4	English	O
+217	5	reading	O
+217	6	and	O
+217	7	writing	O
+217	8	skills	O
+217	9	,	O
+217	10	especially	O
+217	11	for	O
+217	12	technical	O
+217	13	documentation	O
+217	14	,	O
+217	15	API	O
+217	16	references	O
+217	17	,	O
+217	18	and	O
+217	19	project	O
+217	20	specifications	O
+217	21	.	O
+218	1	Characteristics	O
+218	2	:	O
+219	1	Open	O
+219	2	mindset	O
+219	3	,	O
+219	4	highly	O
+219	5	enthusiastic	O
+219	6	about	O
+219	7	learning	O
+219	8	and	O
+219	9	exploring	O
+219	10	emerging	O
+219	11	technologies	O
+219	12	.	O
+220	1	Proactive	O
+220	2	,	O
+220	3	accountable	O
+220	4	,	O
+220	5	and	O
+220	6	receptive	O
+220	7	to	O
+220	8	constructive	O
+220	9	feedback	O
+220	10	from	O
+220	11	senior	O
+220	12	team	O
+220	13	members	O
+220	14	.	O
+221	1	Nice	O
+221	2	-	O
+221	3	to	O
+221	4	-	O
+221	5	have	O
+222	1	Experience	O
+222	2	with	O
+222	3	Shopify	O
+222	4	app	O
+222	5	development	O
+222	6	,	O
+222	7	Shopify	O
+222	8	themes	O
+222	9	,	O
+222	10	Liquid	O
+222	11	template	O
+222	12	language	O
+222	13	,	O
+222	14	and	O
+222	15	Shopify	O
+222	16	APIs	O
+222	17	.	O
+223	1	Experience	O
+223	2	with	O
+223	3	GraphQL	B-SKILL
+223	4	API	I-SKILL
+223	5	(	O
+223	6	both	O
+223	7	client	O
+223	8	and	O
+223	9	server	O
+223	10	-	O
+223	11	side	O
+223	12	).	O
+224	1	Understanding	O
+224	2	of	O
+224	3	State	O
+224	4	Management	O
+224	5	libraries	O
+224	6	:	O
+224	7	Redux	B-SKILL
+224	8	Toolkit	I-SKILL
+224	9	,	O
+224	10	or	O
+224	11	Context	B-SKILL
+224	12	API	I-SKILL
+224	13	.	O
+225	1	Knowledge	O
+225	2	of	O
+225	3	API	O
+225	4	Security	O
+225	5	(	O
+225	6	JWT	B-SKILL
+225	7	,	O
+225	8	OAuth	B-SKILL
+225	9	)	O
+225	10	and	O
+225	11	performance	O
+225	12	optimization	O
+225	13	.	O
+226	1	A	O
+226	2	good	O
+226	3	eye	O
+226	4	for	O
+226	5	UI	O
+226	6	/	O
+226	7	UX	O
+226	8	design	O
+226	9	and	O
+226	10	product	O
+226	11	usability	O
+226	12	.	O
+227	1	Basic	O
+227	2	communication	O
+227	3	and	O
+227	4	technical	O
+227	5	reading	O
+227	6	/	O
+227	7	writing	O
+227	8	skills	O
+227	9	in	O
+227	10	English	O
+227	11	.	O
+228	1	As	O
+228	2	a	O
+228	3	Data	O
+228	4	Engineer	O
+228	5	,	O
+228	6	you	O
+228	7	will	O
+228	8	be	O
+228	9	a	O
+228	10	key	O
+228	11	driver	O
+228	12	in	O
+228	13	designing	O
+228	14	,	O
+228	15	scaling	O
+228	16	,	O
+228	17	and	O
+228	18	operating	O
+228	19	the	O
+228	20	data	O
+228	21	backbone	O
+228	22	across	O
+228	23	our	O
+228	24	entire	O
+228	25	Mobile	O
+228	26	Apps	O
+228	27	&	O
+228	28	Games	O
+228	29	ecosystem	O
+228	30	.	O
+228	31	You	O
+228	32	will	O
+228	33	be	O
+228	34	responsible	O
+228	35	for	O
+228	36	transforming	O
+228	37	tens	O
+228	38	of	O
+228	39	millions	O
+228	40	of	O
+228	41	raw	O
+228	42	event	O
+228	43	logs	O
+228	44	(	O
+228	45	in	O
+228	46	-	O
+228	47	app	O
+228	48	events	O
+228	49	,	O
+228	50	MMP	O
+228	51	tracking	O
+228	52	,	O
+228	53	ad	O
+228	54	network	O
+228	55	revenues	O
+228	56	)	O
+228	57	into	O
+228	58	robust	O
+228	59	Data	O
+228	60	Warehouse	O
+228	61	models	O
+228	62	,	O
+228	63	high	O
+228	64	-	O
+228	65	performance	O
+228	66	feature	O
+228	67	pipelines	O
+228	68	for	O
+228	69	ML	O
+228	70	/	O
+228	71	AI	O
+228	72	models	O
+228	73	(	O
+228	74	LTV	B-SKILL
+228	75	forecasting	I-SKILL
+228	76	,	O
+228	77	anomaly	B-SKILL
+228	78	detection	I-SKILL
+228	79	),	O
+228	80	and	O
+228	81	internal	O
+228	82	self	O
+228	83	-	O
+228	84	service	O
+228	85	analytics	O
+228	86	platforms	O
+228	87	for	O
+228	88	Product	O
+228	89	&	O
+228	90	Growth	O
+228	91	Squads	O
+228	92	.	O
+229	1	JOB	O
+229	2	DESCRIPTION	O
+229	3	:	O
+230	1	Build	O
+230	2	and	O
+230	3	operate	O
+230	4	end	O
+230	5	-	O
+230	6	to	O
+230	7	-	O
+230	8	end	O
+230	9	ELT	B-SKILL
+230	10	/	O
+230	11	ETL	B-SKILL
+230	12	data	I-SKILL
+230	13	pipelines	O
+230	14	(	O
+230	15	batch	O
+230	16	&	O
+230	17	near	O
+230	18	-	O
+230	19	realtime	O
+230	20	)	O
+230	21	to	O
+230	22	ingest	O
+230	23	data	O
+230	24	from	O
+230	25	MMPs	B-SKILL
+230	26	(	O
+230	27	Adjust	O
+230	28	,	O
+230	29	Qonversion	O
+230	30	),	O
+230	31	Ad	O
+230	32	Networks	O
+230	33	(	O
+230	34	Google	B-SKILL
+230	35	Ads	I-SKILL
+230	36	,	O
+230	37	AdMob	B-SKILL
+230	38	,	O
+230	39	AppLovin	B-SKILL
+230	40	,	O
+230	41	Mintegral	B-SKILL
+230	42	,	O
+230	43	Apple	O
+230	44	Search	O
+230	45	Ads	O
+230	46	,...),	O
+230	47	and	O
+230	48	in	O
+230	49	-	O
+230	50	app	O
+230	51	event	O
+230	52	tracking	O
+230	53	into	O
+230	54	the	O
+230	55	Data	O
+230	56	Warehouse	O
+230	57	.	O
+231	1	Design	O
+231	2	schema	O
+231	3	architectures	O
+231	4	(	O
+231	5	Star	B-SKILL
+231	6	/	O
+231	7	Snowflake	B-SKILL
+231	8	),	O
+231	9	optimize	O
+231	10	complex	O
+231	11	analytical	O
+231	12	queries	O
+231	13	,	O
+231	14	partitioning	O
+231	15	,	O
+231	16	clustering	O
+231	17	,	O
+231	18	and	O
+231	19	storage	O
+231	20	costs	O
+231	21	on	O
+231	22	Google	O
+231	23	BigQuery	O
+231	24	and	O
+231	25	modern	O
+231	26	columnar	O
+231	27	databases	O
+231	28	.	O
+232	1	Build	O
+232	2	,	O
+232	3	scale	O
+232	4	,	O
+232	5	and	O
+232	6	maintain	O
+232	7	workflow	O
+232	8	orchestrations	O
+232	9	using	O
+232	10	Apache	B-SKILL
+232	11	Airflow	I-SKILL
+232	12	,	O
+232	13	Celery	B-SKILL
+232	14	,	O
+232	15	Redis	B-SKILL
+232	16	,	O
+232	17	and	O
+232	18	Docker	B-SKILL
+232	19	on	O
+232	20	Cloud	O
+232	21	environments	O
+232	22	(	O
+232	23	GCP	B-SKILL
+232	24	/	O
+232	25	Compute	O
+232	26	Engine	O
+232	27	).	O
+233	1	Develop	O
+233	2	custom	O
+233	3	Model	O
+233	4	Context	O
+233	5	Protocol	O
+233	6	(	O
+233	7	MCP	O
+233	8	)	O
+233	9	servers	O
+233	10	,	O
+233	11	agent	O
+233	12	tools	O
+233	13	,	O
+233	14	and	O
+233	15	data	O
+233	16	APIs	O
+233	17	to	O
+233	18	connect	O
+233	19	LLMs	O
+233	20	and	O
+233	21	AI	O
+233	22	IDEs	O
+233	23	directly	O
+233	24	with	O
+233	25	data	O
+233	26	warehouses	O
+233	27	,	O
+233	28	documentation	O
+233	29	vaults	O
+233	30	,	O
+233	31	and	O
+233	32	internal	O
+233	33	systems	O
+233	34	.	O
+234	1	Construct	O
+234	2	reliable	O
+234	3	feature	O
+234	4	stores	O
+234	5	and	O
+234	6	datasets	O
+234	7	for	O
+234	8	Machine	B-SKILL
+234	9	Learning	I-SKILL
+234	10	/	O
+234	11	AI	B-SKILL
+234	12	initiatives	I-SKILL
+234	13	(	O
+234	14	LTV	B-SKILL
+234	15	forecasting	I-SKILL
+234	16	,	O
+234	17	payback	B-SKILL
+234	18	modeling	I-SKILL
+234	19	,	O
+234	20	anomaly	B-SKILL
+234	21	detection	I-SKILL
+234	22	)	O
+234	23	and	O
+234	24	assist	O
+234	25	in	O
+234	26	model	O
+234	27	serving	O
+234	28	pipelines	O
+234	29	.	O
+235	1	Implement	O
+235	2	data	O
+235	3	observability	O
+235	4	,	O
+235	5	automated	O
+235	6	monitoring	O
+235	7	,	O
+235	8	and	O
+235	9	data	O
+235	10	quality	O
+235	11	checks	O
+235	12	;	O
+235	13	develop	O
+235	14	internal	O
+235	15	data	O
+235	16	tools	O
+235	17	and	O
+235	18	self	O
+235	19	-	O
+235	20	service	O
+235	21	dashboards	O
+235	22	using	O
+235	23	Streamlit	B-SKILL
+235	24	and	O
+235	25	Metabase	B-SKILL
+235	26	/	O
+235	27	Looker	B-SKILL
+235	28	Studio	I-SKILL
+235	29	.	O
+236	1	Establish	O
+236	2	engineering	O
+236	3	best	O
+236	4	practices	O
+236	5	,	O
+236	6	data	O
+236	7	modeling	O
+236	8	standards	O
+236	9	,	O
+236	10	and	O
+236	11	comprehensive	O
+236	12	documentation	O
+236	13	(	O
+236	14	Data	O
+236	15	Dictionaries	O
+236	16	,	O
+236	17	Architecture	O
+236	18	Blueprints	O
+236	19	).	O
+237	1	REQUIREMENTS	O
+237	2	:	O
+238	1	3	O
+238	2	+	O
+238	3	years	O
+238	4	of	O
+238	5	hands	O
+238	6	-	O
+238	7	on	O
+238	8	data	O
+238	9	engineering	O
+238	10	experience	O
+238	11	building	O
+238	12	and	O
+238	13	maintaining	O
+238	14	production	O
+238	15	data	O
+238	16	pipelines	O
+238	17	.	O
+239	1	Strong	O
+239	2	proficiency	O
+239	3	in	O
+239	4	Python	B-SKILL
+239	5	for	O
+239	6	high	O
+239	7	-	O
+239	8	performance	O
+239	9	data	O
+239	10	processing	O
+239	11	and	O
+239	12	advanced	O
+239	13	SQL	B-SKILL
+239	14	(	O
+239	15	performance	O
+239	16	tuning	O
+239	17	,	O
+239	18	window	O
+239	19	functions	O
+239	20	,	O
+239	21	complex	O
+239	22	transformations	O
+239	23	).	O
+240	1	Solid	O
+240	2	experience	O
+240	3	with	O
+240	4	Google	B-SKILL
+240	5	BigQuery	I-SKILL
+240	6	(	O
+240	7	or	O
+240	8	modern	O
+240	9	columnar	O
+240	10	stores	O
+240	11	like	O
+240	12	ClickHouse	B-SKILL
+240	13	,	O
+240	14	Snowflake	B-SKILL
+240	15	,	O
+240	16	Redshift	B-SKILL
+240	17	),	O
+240	18	including	O
+240	19	query	O
+240	20	optimization	O
+240	21	and	O
+240	22	cost	O
+240	23	management	O
+240	24	.	O
+241	1	Practical	O
+241	2	experience	O
+241	3	with	O
+241	4	Apache	B-SKILL
+241	5	Airflow	I-SKILL
+241	6	,	O
+241	7	Celery	B-SKILL
+241	8	/	O
+241	9	Redis	B-SKILL
+241	10	,	O
+241	11	Docker	B-SKILL
+241	12	/	O
+241	13	containerization	B-SKILL
+241	14	,	O
+241	15	CI	B-SKILL
+241	16	/	I-SKILL
+241	17	CD	I-SKILL
+241	18	workflows	O
+241	19	,	O
+241	20	and	O
+241	21	Cloud	O
+241	22	platforms	O
+241	23	(	O
+241	24	GCP	B-SKILL
+241	25	preferred	O
+241	26	).	O
+242	1	AI	O
+242	2	-	O
+242	3	First	O
+242	4	&	O
+242	5	Vibe	O
+242	6	Coding	O
+242	7	Mindset	O
+242	8	:	O
+242	9	Daily	O
+242	10	hands	O
+242	11	-	O
+242	12	on	O
+242	13	experience	O
+242	14	using	O
+242	15	AI	O
+242	16	coding	O
+242	17	assistants	O
+242	18	and	O
+242	19	AI	O
+242	20	IDEs	O
+242	21	(	O
+242	22	Cursor	B-SKILL
+242	23	,	O
+242	24	Claude	B-SKILL
+242	25	Code	I-SKILL
+242	26	,	O
+242	27	Antigravity	B-SKILL
+242	28	,	O
+242	29	etc	O
+242	30	.)	O
+242	31	to	O
+242	32	rapidly	O
+242	33	prototype	O
+242	34	,	O
+242	35	build	O
+242	36	,	O
+242	37	and	O
+242	38	ship	O
+242	39	production	O
+242	40	-	O
+242	41	grade	O
+242	42	code	O
+242	43	at	O
+242	44	high	O
+242	45	velocity	O
+242	46	.	O
+243	1	Hands	O
+243	2	-	O
+243	3	on	O
+243	4	experience	O
+243	5	or	O
+243	6	strong	O
+243	7	interest	O
+243	8	in	O
+243	9	building	O
+243	10	/	O
+243	11	integrating	O
+243	12	MCP	B-SKILL
+243	13	(	O
+243	14	Model	B-SKILL
+243	15	Context	I-SKILL
+243	16	Protocol	I-SKILL
+243	17	)	O
+243	18	servers	O
+243	19	,	O
+243	20	custom	O
+243	21	tools	O
+243	22	,	O
+243	23	and	O
+243	24	AI	O
+243	25	workflows	O
+243	26	for	O
+243	27	data	O
+243	28	engineering	O
+243	29	tasks	O
+243	30	.	O
+244	1	Strong	O
+244	2	ownership	O
+244	3	,	O
+244	4	problem	O
+244	5	-	O
+244	6	solving	O
+244	7	abilities	O
+244	8	,	O
+244	9	clear	O
+244	10	communication	O
+244	11	,	O
+244	12	and	O
+244	13	effective	O
+244	14	collaboration	O
+244	15	with	O
+244	16	Product	O
+244	17	Owners	O
+244	18	,	O
+244	19	Data	O
+244	20	Analysts	O
+244	21	,	O
+244	22	and	O
+244	23	Leadership	O
+244	24	.	O
+245	1	Nice	O
+245	2	to	O
+245	3	have	O
+245	4	:	O
+246	1	Domain	O
+246	2	knowledge	O
+246	3	in	O
+246	4	Mobile	O
+246	5	Apps	O
+246	6	,	O
+246	7	Games	O
+246	8	,	O
+246	9	or	O
+246	10	Digital	O
+246	11	Advertising	O
+246	12	/	O
+246	13	AdTech	O
+246	14	(	O
+246	15	MMP	B-SKILL
+246	16	attribution	I-SKILL
+246	17	,	O
+246	18	Ad	B-SKILL
+246	19	Network	I-SKILL
+246	20	APIs	I-SKILL
+246	21	,	O
+246	22	eCPM	B-SKILL
+246	23	,	O
+246	24	ROAS	B-SKILL
+246	25	,	O
+246	26	LTV	B-SKILL
+246	27	).	O
+247	1	Experience	O
+247	2	building	O
+247	3	internal	O
+247	4	web	O
+247	5	tools	O
+247	6	or	O
+247	7	BI	B-SKILL
+247	8	applications	O
+247	9	using	O
+247	10	Streamlit	B-SKILL
+247	11	.	O
+248	1	Familiarity	O
+248	2	with	O
+248	3	ML	B-SKILL
+248	4	lifecycles	O
+248	5	,	O
+248	6	BigQuery	B-SKILL
+248	7	ML	I-SKILL
+248	8	,	O
+248	9	or	O
+248	10	LLM	B-SKILL
+248	11	serving	O
+248	12	infrastructure	O
+248	13	and	O
+248	14	token	O
+248	15	monitoring	O
+248	16	.	O
+249	1	Experience	O
+249	2	with	O
+249	3	workflow	O
+249	4	automation	O
+249	5	APIs	O
+249	6	(	O
+249	7	Google	B-SKILL
+249	8	Apps	I-SKILL
+249	9	Script	I-SKILL
+249	10	,	O
+249	11	Slack	B-SKILL
+249	12	webhooks	I-SKILL
+249	13	,	O
+249	14	third	O
+249	15	-	O
+249	16	party	O
+249	17	integrations	O
+249	18	).	O
+250	1	Thực	O
+250	2	hiện	O
+250	3	quy	O
+250	4	hoạch	O
+250	5	và	O
+250	6	phát	O
+250	7	triển	O
+250	8	các	O
+250	9	ứng	O
+250	10	dụng	O
+250	11	Mobile	O
+250	12	Ngân	O
+250	13	hàng	O
+250	14	số	O
+251	1	Phối	O
+251	2	hợp	O
+251	3	với	O
+251	4	các	O
+251	5	team	O
+251	6	UI	O
+251	7	/	O
+251	8	UX	O
+251	9	,	O
+251	10	BA	O
+251	11	,	O
+251	12	Backend	O
+251	13	,...	O
+251	14	để	O
+251	15	triển	O
+251	16	khai	O
+251	17	và	O
+251	18	đảm	O
+251	19	bảo	O
+251	20	yêu	O
+251	21	cầu	O
+251	22	về	O
+251	23	chất	O
+251	24	lượng	O
+251	25	,	O
+251	26	tiến	O
+251	27	độ	O
+251	28	của	O
+251	29	các	O
+251	30	dự	O
+251	31	án	O
+251	32	.	O
+252	1	Thực	O
+252	2	hiện	O
+252	3	tối	O
+252	4	ưu	O
+252	5	hóa	O
+252	6	,	O
+252	7	cải	O
+252	8	tiến	O
+252	9	kiến	O
+252	10	trúc	O
+252	11	và	O
+252	12	mở	O
+252	13	rộng	O
+252	14	hệ	O
+252	15	thống	O
+252	16	.	O
+253	1	Từ	O
+253	2	2	O
+253	3	năm	O
+253	4	kinh	O
+253	5	nghiệm	O
+253	6	làm	O
+253	7	thực	O
+253	8	tế	O
+253	9	về	O
+253	10	phát	O
+253	11	triển	O
+253	12	apps	O
+253	13	cho	O
+253	14	Mobile	O
+253	15	IOS	O
+253	16	(	O
+253	17	Swift	B-SKILL
+253	18	)	O
+254	1	Có	O
+254	2	kinh	O
+254	3	nghiệm	O
+254	4	về	O
+254	5	REST	B-SKILL
+254	6	API	I-SKILL
+254	7	,	O
+254	8	WebSocket	B-SKILL
+254	9	,	O
+254	10	GraphQL.Có	B-SKILL
+254	11	khả	O
+254	12	năng	O
+254	13	sử	O
+254	14	dụng	O
+254	15	các	O
+254	16	công	O
+254	17	cụ	O
+254	18	hỗ	O
+254	19	trợ	O
+254	20	như	O
+254	21	GitLab	B-SKILL
+254	22	.	O
+255	1	Có	O
+255	2	khả	O
+255	3	năng	O
+255	4	sử	O
+255	5	dụng	O
+255	6	thư	O
+255	7	viện	O
+255	8	CocoaPods	B-SKILL
+255	9	.	O
+256	1	Có	O
+256	2	kinh	O
+256	3	nghiệm	O
+256	4	với	O
+256	5	Firebase	B-SKILL
+256	6	,	O
+256	7	Chart	B-SKILL
+256	8	.	O
+257	1	Có	O
+257	2	kinh	O
+257	3	nghiệm	O
+257	4	về	O
+257	5	các	O
+257	6	mô	O
+257	7	hình	O
+257	8	MVC	B-SKILL
+257	9	hoặc	O
+257	10	MVVM	B-SKILL
+257	11	.	O
+258	1	Có	O
+258	2	kinh	O
+258	3	nghiệm	O
+258	4	tham	O
+258	5	gia	O
+258	6	các	O
+258	7	dự	O
+258	8	án	O
+258	9	theo	O
+258	10	mô	O
+258	11	hình	O
+258	12	Agile	O
+258	13	,	O
+258	14	Scrum	O
+258	15	.	O
+259	1	Design	O
+259	2	,	O
+259	3	develop	O
+259	4	,	O
+259	5	and	O
+259	6	maintain	O
+259	7	high	O
+259	8	-	O
+259	9	quality	O
+259	10	mobile	O
+259	11	applications	O
+259	12	for	O
+259	13	iOS	O
+259	14	and	O
+259	15	Android	O
+259	16	platforms	O
+259	17	.	O
+260	1	Analyze	O
+260	2	business	O
+260	3	requirements	O
+260	4	and	O
+260	5	technical	O
+260	6	specifications	O
+260	7	and	O
+260	8	propose	O
+260	9	appropriate	O
+260	10	implementation	O
+260	11	solutions	O
+260	12	.	O
+261	1	Understand	O
+261	2	,	O
+261	3	analyze	O
+261	4	,	O
+261	5	and	O
+261	6	enhance	O
+261	7	existing	O
+261	8	application	O
+261	9	architecture	O
+261	10	and	O
+261	11	legacy	O
+261	12	source	O
+261	13	code	O
+261	14	.	O
+262	1	Define	O
+262	2	mobile	O
+262	3	application	O
+262	4	architecture	O
+262	5	and	O
+262	6	propose	O
+262	7	scalable	O
+262	8	,	O
+262	9	maintainable	O
+262	10	solutions	O
+262	11	aligned	O
+262	12	with	O
+262	13	business	O
+262	14	requirements	O
+262	15	.	O
+263	1	Conduct	O
+263	2	source	O
+263	3	code	O
+263	4	reviews	O
+263	5	,	O
+263	6	ensure	O
+263	7	coding	O
+263	8	standards	O
+263	9	compliance	O
+263	10	,	O
+263	11	and	O
+263	12	promote	O
+263	13	engineering	O
+263	14	best	O
+263	15	practices	O
+263	16	.	O
+264	1	Review	O
+264	2	technical	O
+264	3	designs	O
+264	4	,	O
+264	5	identify	O
+264	6	technical	O
+264	7	risks	O
+264	8	,	O
+264	9	and	O
+264	10	provide	O
+264	11	improvement	O
+264	12	recommendations	O
+264	13	.	O
+265	1	Analyze	O
+265	2	and	O
+265	3	resolve	O
+265	4	complex	O
+265	5	technical	O
+265	6	issues	O
+265	7	related	O
+265	8	to	O
+265	9	performance	O
+265	10	,	O
+265	11	security	O
+265	12	,	O
+265	13	scalability	O
+265	14	,	O
+265	15	and	O
+265	16	maintainability	O
+265	17	.	O
+266	1	Participate	O
+266	2	in	O
+266	3	technical	O
+266	4	discussions	O
+266	5	,	O
+266	6	architecture	O
+266	7	design	O
+266	8	,	O
+266	9	effort	O
+266	10	estimation	O
+266	11	,	O
+266	12	and	O
+266	13	risk	O
+266	14	assessment	O
+266	15	.	O
+267	1	Collaborate	O
+267	2	closely	O
+267	3	with	O
+267	4	project	O
+267	5	teams	O
+267	6	,	O
+267	7	customers	O
+267	8	,	O
+267	9	and	O
+267	10	stakeholders	O
+267	11	to	O
+267	12	deliver	O
+267	13	high	O
+267	14	-	O
+267	15	quality	O
+267	16	solutions	O
+267	17	.	O
+268	1	Provide	O
+268	2	technical	O
+268	3	guidance	O
+268	4	and	O
+268	5	mentoring	O
+268	6	to	O
+268	7	team	O
+268	8	members	O
+268	9	.	O
+269	1	Contribute	O
+269	2	to	O
+269	3	continuous	O
+269	4	improvement	O
+269	5	activities	O
+269	6	,	O
+269	7	including	O
+269	8	development	O
+269	9	processes	O
+269	10	,	O
+269	11	code	O
+269	12	quality	O
+269	13	,	O
+269	14	and	O
+269	15	engineering	O
+269	16	practices	O
+269	17	.	O
+270	1	Perform	O
+270	2	other	O
+270	3	tasks	O
+270	4	assigned	O
+270	5	by	O
+270	6	the	O
+270	7	PM	O
+270	8	/	O
+270	9	SM	O
+270	10	.	O
+271	1	Bachelor	O
+271	2	’	O
+271	3	s	O
+271	4	degree	O
+271	5	in	O
+271	6	Computer	O
+271	7	Science	O
+271	8	,	O
+271	9	Information	O
+271	10	Technology	O
+271	11	,	O
+271	12	or	O
+271	13	a	O
+271	14	related	O
+271	15	field	O
+271	16	.	O
+272	1	At	O
+272	2	least	O
+272	3	5	O
+272	4	years	O
+272	5	of	O
+272	6	experience	O
+272	7	in	O
+272	8	mobile	O
+272	9	application	O
+272	10	development	O
+272	11	,	O
+272	12	with	O
+272	13	strong	O
+272	14	expertise	O
+272	15	in	O
+272	16	iOS	O
+272	17	(	O
+272	18	Swift	B-SKILL
+272	19	)	O
+272	20	and	O
+272	21	/	O
+272	22	or	O
+272	23	Android	O
+272	24	(	O
+272	25	Java	B-SKILL
+272	26	/	O
+272	27	Kotlin	B-SKILL
+272	28	).	O
+273	1	Strong	O
+273	2	knowledge	O
+273	3	of	O
+273	4	Mobile	O
+273	5	Architecture	O
+273	6	,	O
+273	7	Clean	O
+273	8	Architecture	O
+273	9	,	O
+273	10	SOLID	O
+273	11	Principles	O
+273	12	,	O
+273	13	and	O
+273	14	Design	O
+273	15	Patterns	O
+273	16	.	O
+274	1	Experience	O
+274	2	in	O
+274	3	source	O
+274	4	code	O
+274	5	review	O
+274	6	,	O
+274	7	design	O
+274	8	review	O
+274	9	,	O
+274	10	refactoring	O
+274	11	,	O
+274	12	and	O
+274	13	performance	O
+274	14	optimization	O
+274	15	.	O
+275	1	Ability	O
+275	2	to	O
+275	3	understand	O
+275	4	existing	O
+275	5	systems	O
+275	6	,	O
+275	7	analyze	O
+275	8	requirements	O
+275	9	,	O
+275	10	and	O
+275	11	propose	O
+275	12	technical	O
+275	13	solutions	O
+275	14	.	O
+276	1	Experience	O
+276	2	working	O
+276	3	on	O
+276	4	Japanese	O
+276	5	software	O
+276	6	development	O
+276	7	projects	O
+276	8	.	O
+277	1	Experience	O
+277	2	mentoring	O
+277	3	team	O
+277	4	members	O
+277	5	and	O
+277	6	participating	O
+277	7	in	O
+277	8	technical	O
+277	9	discussions	O
+277	10	.	O
+278	1	Familiarity	O
+278	2	with	O
+278	3	CI	B-SKILL
+278	4	/	I-SKILL
+278	5	CD	I-SKILL
+278	6	,	O
+278	7	build	O
+278	8	automation	O
+278	9	,	O
+278	10	and	O
+278	11	cloud	O
+278	12	platforms	O
+278	13	(	O
+278	14	AWS	B-SKILL
+278	15	,	O
+278	16	Azure	B-SKILL
+278	17	,	O
+278	18	or	O
+278	19	GCP	B-SKILL
+278	20	).	O
+279	1	Experience	O
+279	2	with	O
+279	3	Frontend	O
+279	4	technologies	O
+279	5	,	O
+279	6	Flutter	B-SKILL
+279	7	,	O
+279	8	or	O
+279	9	React	B-SKILL
+279	10	Native	I-SKILL
+279	11	is	O
+279	12	a	O
+279	13	plus	O
+279	14	.	O
+280	1	Japanese	O
+280	2	language	O
+280	3	proficiency	O
+280	4	(	O
+280	5	N4	O
+280	6	or	O
+280	7	above	O
+280	8	)	O
+280	9	is	O
+280	10	an	O
+280	11	advantage	O
+280	12	.	O
+281	1	Good	O
+281	2	communication	O
+281	3	,	O
+281	4	problem	O
+281	5	-	O
+281	6	solving	O
+281	7	,	O
+281	8	and	O
+281	9	teamwork	O
+281	10	skills	O
+281	11	.	O
+282	1	Lập	O
+282	2	trình	O
+282	3	viên	O
+282	4	Flutter	B-SKILL
+282	5	–	O
+282	6	Phát	O
+282	7	triển	O
+282	8	ứng	O
+282	9	dụng	O
+282	10	Mobile	O
+282	11	quản	O
+282	12	lý	O
+282	13	trường	O
+282	14	đại	O
+282	15	học	O
+283	1	1	O
+283	2	.	O
+283	3	Tham	O
+283	4	gia	O
+283	5	phân	O
+283	6	tích	O
+283	7	,	O
+283	8	thiết	O
+283	9	kế	O
+283	10	và	O
+283	11	phát	O
+283	12	triển	O
+283	13	ứng	O
+283	14	dụng	O
+283	15	Mobile	O
+283	16	phục	O
+283	17	vụ	O
+283	18	hệ	O
+283	19	thống	O
+283	20	quản	O
+283	21	lý	O
+283	22	đào	O
+283	23	tạo	O
+283	24	và	O
+283	25	quản	O
+283	26	lý	O
+283	27	trường	O
+283	28	đại	O
+283	29	học	O
+283	30	trên	O
+283	31	nền	O
+283	32	tảng	O
+283	33	Android	O
+283	34	và	O
+283	35	iOS	O
+283	36	.	O
+284	1	2	O
+284	2	.	O
+284	3	Phát	O
+284	4	triển	O
+284	5	các	O
+284	6	chức	O
+284	7	năng	O
+284	8	nghiệp	O
+284	9	vụ	O
+284	10	như	O
+284	11	:	O
+284	12	quản	O
+284	13	lý	O
+284	14	sinh	O
+284	15	viên	O
+284	16	,	O
+284	17	đào	O
+284	18	tạo	O
+284	19	,	O
+284	20	thời	O
+284	21	khóa	O
+284	22	biểu	O
+284	23	,	O
+284	24	điểm	O
+284	25	,	O
+284	26	học	O
+284	27	phí	O
+284	28	,	O
+284	29	thông	O
+284	30	báo	O
+284	31	và	O
+284	32	các	O
+284	33	dịch	O
+284	34	vụ	O
+284	35	dành	O
+284	36	cho	O
+284	37	sinh	O
+284	38	viên	O
+284	39	,	O
+284	40	giảng	O
+284	41	viên	O
+284	42	,	O
+284	43	cán	O
+284	44	bộ	O
+284	45	quản	O
+284	46	lý	O
+284	47	,	O
+284	48	....	O
+285	1	3	O
+285	2	.	O
+285	3	Xây	O
+285	4	dựng	O
+285	5	giao	O
+285	6	diện	O
+285	7	Mobile	O
+285	8	hiện	O
+285	9	đại	O
+285	10	,	O
+285	11	responsive	O
+285	12	,	O
+285	13	tối	O
+285	14	ưu	O
+285	15	trải	O
+285	16	nghiệm	O
+285	17	người	O
+285	18	dùng	O
+285	19	.	O
+286	1	4	O
+286	2	.	O
+286	3	Tích	O
+286	4	hợp	O
+286	5	ứng	O
+286	6	dụng	O
+286	7	với	O
+286	8	hệ	O
+286	9	thống	O
+286	10	Backend	O
+286	11	thông	O
+286	12	qua	O
+286	13	RESTful	B-SKILL
+286	14	API	I-SKILL
+286	15	.	O
+287	1	5	O
+287	2	.	O
+287	3	Phối	O
+287	4	hợp	O
+287	5	với	O
+287	6	đội	O
+287	7	ngũ	O
+287	8	Backend	O
+287	9	,	O
+287	10	Database	O
+287	11	,	O
+287	12	QA	O
+287	13	và	O
+287	14	nghiệp	O
+287	15	vụ	O
+287	16	để	O
+287	17	triển	O
+287	18	khai	O
+287	19	,	O
+287	20	kiểm	O
+287	21	thử	O
+287	22	và	O
+287	23	hoàn	O
+287	24	thiện	O
+287	25	sản	O
+287	26	phẩm	O
+287	27	.	O
+288	1	6	O
+288	2	.	O
+288	3	Thực	O
+288	4	hiện	O
+288	5	đóng	O
+288	6	gói	O
+288	7	,	O
+288	8	phát	O
+288	9	hành	O
+288	10	và	O
+288	11	cập	O
+288	12	nhật	O
+288	13	ứng	O
+288	14	dụng	O
+288	15	trên	O
+288	16	Google	O
+288	17	Play	O
+288	18	Store	O
+288	19	và	O
+288	20	Apple	O
+288	21	App	O
+288	22	Store	O
+289	1	+	O
+289	2	A	O
+289	3	.	O
+289	4	Flutter	B-SKILL
+289	5	&	O
+289	6	Dart	B-SKILL
+290	1	Ứng	O
+290	2	viên	O
+290	3	cần	O
+290	4	:	O
+291	1	-	O
+291	2	Thành	O
+291	3	thạo	O
+291	4	ngôn	O
+291	5	ngữ	O
+291	6	Dart	B-SKILL
+292	1	-	O
+292	2	Có	O
+292	3	kinh	O
+292	4	nghiệm	O
+292	5	phát	O
+292	6	triển	O
+292	7	ứng	O
+292	8	dụng	O
+292	9	bằng	O
+292	10	Flutter	B-SKILL
+293	1	-	O
+293	2	Hiểu	O
+293	3	và	O
+293	4	sử	O
+293	5	dụng	O
+293	6	tốt	O
+293	7	:	O
+293	8	Widget	B-SKILL
+293	9	,	O
+293	10	StatelessWidget	B-SKILL
+293	11	,	O
+293	12	StatefulWidget	B-SKILL
+293	13	,	O
+293	14	Widget	B-SKILL
+293	15	Lifecycle	I-SKILL
+293	16	,	O
+293	17	BuildContext	B-SKILL
+293	18	,	O
+293	19	Future	B-SKILL
+293	20	,	O
+293	21	async	B-SKILL
+293	22	/	I-SKILL
+293	23	await	I-SKILL
+293	24	,	O
+293	25	Stream	B-SKILL
+293	26	,	O
+293	27	Null	B-SKILL
+293	28	Safety	I-SKILL
+293	29	,	O
+293	30	Extension	B-SKILL
+293	31	,	O
+293	32	Exception	B-SKILL
+293	33	Handling	I-SKILL
+293	34	.	O
+294	1	-	O
+294	2	Có	O
+294	3	khả	O
+294	4	năng	O
+294	5	xây	O
+294	6	dựng	O
+294	7	UI	O
+294	8	responsive	O
+294	9	cho	O
+294	10	nhiều	O
+294	11	kích	O
+294	12	thước	O
+294	13	màn	O
+294	14	hình	O
+295	1	-	O
+295	2	Thành	O
+295	3	thạo	O
+295	4	Form	O
+295	5	,	O
+295	6	Validation	O
+295	7	,	O
+295	8	Navigation	O
+295	9	,	O
+295	10	Animation	O
+295	11	cơ	O
+295	12	bản	O
+295	13	và	O
+295	14	Theme	O
+295	15	.	O
+296	1	+	O
+296	2	B	O
+296	3	.	O
+296	4	Quản	O
+296	5	lý	O
+296	6	trạng	O
+296	7	thái	O
+297	1	-	O
+297	2	Có	O
+297	3	kinh	O
+297	4	nghiệm	O
+297	5	thực	O
+297	6	tế	O
+297	7	với	O
+297	8	ít	O
+297	9	nhất	O
+297	10	một	O
+297	11	giải	O
+297	12	pháp	O
+297	13	:	O
+297	14	Bloc	B-SKILL
+297	15	/	I-SKILL
+297	16	Cubit	I-SKILL
+297	17	,	O
+297	18	Provider	B-SKILL
+297	19	,	O
+297	20	Riverpod	B-SKILL
+297	21	hoặc	O
+297	22	GetX	B-SKILL
+298	1	REST	B-SKILL
+298	2	API	I-SKILL
+298	3	&	O
+298	4	Backend	O
+298	5	Integration	O
+299	1	-	O
+299	2	Thành	O
+299	3	thạo	O
+299	4	RESTful	B-SKILL
+299	5	API	I-SKILL
+299	6	,	O
+299	7	HTTP	B-SKILL
+299	8	/	I-SKILL
+299	9	HTTPS	I-SKILL
+299	10	và	O
+299	11	JSON	B-SKILL
+299	12	serialization	I-SKILL
+299	13	/	I-SKILL
+299	14	deserialization	I-SKILL
+299	15	.	O
+300	1	-	O
+300	2	Xử	O
+300	3	lý	O
+300	4	tốt	O
+300	5	request	O
+300	6	bất	O
+300	7	đồng	O
+300	8	bộ	O
+300	9	,	O
+300	10	timeout	O
+300	11	,	O
+300	12	exception	O
+300	13	và	O
+300	14	lỗi	O
+300	15	API	O
+300	16	.	O
+301	1	-	O
+301	2	Có	O
+301	3	kinh	O
+301	4	nghiệm	O
+301	5	với	O
+301	6	Dio	B-SKILL
+301	7	hoặc	O
+301	8	http	B-SKILL
+301	9	,	O
+301	10	Interceptor	B-SKILL
+301	11	,	O
+301	12	Authentication	B-SKILL
+301	13	.	O
+302	1	-	O
+302	2	Hiểu	O
+302	3	và	O
+302	4	triển	O
+302	5	khai	O
+302	6	Bearer	B-SKILL
+302	7	Token	I-SKILL
+302	8	,	O
+302	9	Access	B-SKILL
+302	10	Token	I-SKILL
+302	11	/	O
+302	12	Refresh	B-SKILL
+302	13	Token	I-SKILL
+302	14	.	O
+303	1	-	O
+303	2	Có	O
+303	3	kinh	O
+303	4	nghiệm	O
+303	5	upload	O
+303	6	/	O
+303	7	download	O
+303	8	file	O
+303	9	và	O
+303	10	xử	O
+303	11	lý	O
+303	12	dữ	O
+303	13	liệu	O
+303	14	từ	O
+303	15	API	O
+303	16	.	O
+304	1	C	O
+304	2	.	O
+304	3	Đóng	O
+304	4	gói	O
+304	5	&	O
+304	6	phát	O
+304	7	hành	O
+304	8	ứng	O
+304	9	dụng	O
+305	1	-	O
+305	2	Có	O
+305	3	kinh	O
+305	4	nghiệm	O
+305	5	build	O
+305	6	,	O
+305	7	ký	O
+305	8	ứng	O
+305	9	dụng	O
+305	10	và	O
+305	11	phát	O
+305	12	hành	O
+305	13	thực	O
+305	14	tế	O
+305	15	lên	O
+305	16	Google	O
+305	17	Play	O
+305	18	Store	O
+305	19	và	O
+305	20	Apple	O
+305	21	App	O
+305	22	Store	O
+305	23	.	O
+306	1	-	O
+306	2	Biết	O
+306	3	quản	O
+306	4	lý	O
+306	5	version	O
+306	6	,	O
+306	7	signing	O
+306	8	/	O
+306	9	certificate	O
+306	10	,	O
+306	11	release	O
+306	12	và	O
+306	13	cập	O
+306	14	nhật	O
+306	15	ứng	O
+306	16	dụng	O
+306	17	.	O
+307	1	+	O
+307	2	D	O
+307	3	.	O
+307	4	Có	O
+307	5	kinh	O
+307	6	nghiệm	O
+307	7	upcode	O
+307	8	lên	O
+307	9	Apple	O
+307	10	store	O
+307	11	và	O
+307	12	CH	O
+307	13	Play	O
+308	1	*	O
+308	2	Ưu	O
+308	3	tiên	O
+308	4	:	O
+309	1	-	O
+309	2	Đã	O
+309	3	từng	O
+309	4	phát	O
+309	5	triển	O
+309	6	ứng	O
+309	7	dụng	O
+309	8	trong	O
+309	9	lĩnh	O
+309	10	vực	O
+309	11	giáo	O
+309	12	dục	O
+309	13	,	O
+309	14	quản	O
+309	15	lý	O
+309	16	đào	O
+309	17	tạo	O
+309	18	hoặc	O
+309	19	quản	O
+309	20	lý	O
+309	21	trường	O
+309	22	đại	O
+309	23	học	O
+309	24	.	O
+310	1	-	O
+310	2	Có	O
+310	3	kinh	O
+310	4	nghiệm	O
+310	5	làm	O
+310	6	việc	O
+310	7	với	O
+310	8	hệ	O
+310	9	thống	O
+310	10	Backend	O
+310	11	.	B-SKILL
+310	12	NET	I-SKILL
+310	13	/	O
+310	14	Web	B-SKILL
+310	15	API	I-SKILL
+310	16	và	O
+310	17	SQL	B-SKILL
+310	18	Server	I-SKILL
+310	19	là	O
+310	20	lợi	O
+310	21	thế	O
+310	22	.	O
+311	1	-	O
+311	2	Có	O
+311	3	tư	O
+311	4	duy	O
+311	5	về	O
+311	6	kiến	O
+311	7	trúc	O
+311	8	phần	O
+311	9	mềm	O
+311	10	,	O
+311	11	khả	O
+311	12	năng	O
+311	13	tối	O
+311	14	ưu	O
+311	15	hiệu	O
+311	16	năng	O
+311	17	và	O
+311	18	bảo	O
+311	19	mật	O
+311	20	ứng	O
+311	21	dụng	O
+311	22	Mobile	O
+311	23	.	O
+312	1	-	O
+312	2	Có	O
+312	3	tinh	O
+312	4	thần	O
+312	5	trách	O
+312	6	nhiệm	O
+312	7	,	O
+312	8	chủ	O
+312	9	động	O
+312	10	học	O
+312	11	hỏi	O
+312	12	và	O
+312	13	phối	O
+312	14	hợp	O
+312	15	tốt	O
+312	16	với	O
+312	17	đội	O
+312	18	ngũ	O
+312	19	phát	O
+312	20	triển	O
+312	21	.	O
+313	1	2	O
+313	2	.	O
+313	3	Yêu	O
+313	4	cầu	O
+313	5	ứng	O
+313	6	viên	O
+314	1	•	O
+314	2	Tốt	O
+314	3	nghiệp	O
+314	4	Đại	O
+314	5	học	O
+314	6	chuyên	O
+314	7	ngành	O
+314	8	:	O
+314	9	CNTT	O
+314	10	,	O
+314	11	Khoa	O
+314	12	học	O
+314	13	máy	O
+314	14	tính	O
+314	15	,	O
+314	16	Hệ	O
+314	17	thống	O
+314	18	thông	O
+314	19	tin	O
+314	20	hoặc	O
+314	21	tương	O
+314	22	đương	O
+314	23	.	O
+315	1	•	O
+315	2	Làm	O
+315	3	việc	O
+315	4	kỷ	O
+315	5	luật	O
+315	6	,	O
+315	7	đúng	O
+315	8	quy	O
+315	9	trình	O
+315	10	,	O
+315	11	có	O
+315	12	trách	O
+315	13	nhiệm	O
+315	14	với	O
+315	15	sản	O
+315	16	phẩm	O
+315	17	phần	O
+315	18	mềm	O
+315	19	,	O
+315	20	chủ	O
+315	21	động	O
+315	22	nghiên	O
+315	23	cứu	O
+315	24	công	O
+315	25	nghệ	O
+315	26	mới	O
+315	27	.	O
+316	1	•	O
+316	2	Tinh	O
+316	3	thần	O
+316	4	bảo	O
+316	5	mật	O
+316	6	dữ	O
+316	7	liệu	O
+316	8	và	O
+316	9	tuân	O
+316	10	thủ	O
+316	11	quy	O
+316	12	định	O
+316	13	hệ	O
+316	14	thống	O
+316	15	.	O
+317	1	1	O
+317	2	.	O
+317	3	Own	O
+317	4	assigned	O
+317	5	features	O
+317	6	end	O
+317	7	to	O
+317	8	end	O
+317	9	—	O
+317	10	design	O
+317	11	,	O
+317	12	implementation	O
+317	13	,	O
+317	14	test	O
+317	15	,	O
+317	16	release	O
+317	17	,	O
+317	18	and	O
+317	19	behaviour	O
+317	20	in	O
+317	21	production	O
+317	22	.	O
+318	1	2	O
+318	2	.	O
+318	3	Build	O
+318	4	to	O
+318	5	the	O
+318	6	security	O
+318	7	bar	O
+318	8	a	O
+318	9	financial	O
+318	10	application	O
+318	11	requires	O
+318	12	:	O
+318	13	secure	O
+318	14	storage	O
+318	15	,	O
+318	16	authentication	O
+318	17	,	O
+318	18	session	O
+318	19	handling	O
+318	20	,	O
+318	21	and	O
+318	22	data	O
+318	23	handling	O
+318	24	that	O
+318	25	survives	O
+318	26	internal	O
+318	27	security	O
+318	28	review	O
+318	29	and	O
+318	30	data	O
+318	31	residency	O
+318	32	obligations	O
+318	33	.	O
+319	1	3	O
+319	2	.	O
+319	3	Translate	O
+319	4	product	O
+319	5	and	O
+319	6	design	O
+319	7	requirements	O
+319	8	into	O
+319	9	technical	O
+319	10	solutions	O
+319	11	,	O
+319	12	working	O
+319	13	directly	O
+319	14	with	O
+319	15	product	O
+319	16	owners	O
+319	17	,	O
+319	18	designers	O
+319	19	,	O
+319	20	and	O
+319	21	backend	O
+319	22	engineers	O
+319	23	rather	O
+319	24	than	O
+319	25	through	O
+319	26	a	O
+319	27	spec	O
+319	28	handoff	O
+319	29	.	O
+320	1	4	O
+320	2	.	O
+320	3	Set	O
+320	4	and	O
+320	5	raise	O
+320	6	architectural	O
+320	7	and	O
+320	8	engineering	O
+320	9	standards	O
+320	10	for	O
+320	11	mobile	O
+320	12	,	O
+320	13	through	O
+320	14	code	O
+320	15	review	O
+320	16	,	O
+320	17	pairing	O
+320	18	,	O
+320	19	and	O
+320	20	technical	O
+320	21	guidance	O
+320	22	.	O
+320	23	Onboard	O
+320	24	new	O
+320	25	engineers	O
+320	26	and	O
+320	27	support	O
+320	28	their	O
+320	29	growth	O
+320	30	.	O
+321	1	5	O
+321	2	.	O
 321	3	Define	
 321	4	the	
 321	5	AI	
@@ -8557,7 +8557,7 @@
 478	3	dụng	
 478	4	tối	
 478	5	thiểu	
-478	6	01	
+478	6	1	
 478	7	loại	
 478	8	ngôn	
 478	9	ngữ	
@@ -9520,7 +9520,6 @@
 532	18	transactions	
 532	19	.	
 533	1	Bachelor	
-533	2	'	
 533	3	s	
 533	4	degree	
 533	5	in	
@@ -9537,7 +9536,6 @@
 533	16	;	
 533	17	a	
 533	18	Master	
-533	19	'	
 533	20	s	
 533	21	degree	
 533	22	is	
@@ -10964,7 +10962,6 @@
 608	20	foundations	
 608	21	behind	
 608	22	Timo	
-608	23	'	
 608	24	s	
 608	25	digital	
 608	26	banking	
@@ -10978,7 +10975,6 @@
 609	6	will	
 609	7	own	
 609	8	Timo	
-609	9	'	
 609	10	s	
 609	11	DevOps	
 609	12	strategy	
@@ -11027,7 +11023,6 @@
 610	2	and	
 610	3	drive	
 610	4	Timo	
-610	5	'	
 610	6	s	
 610	7	DevOps	
 610	8	strategy	
@@ -11112,7 +11107,6 @@
 614	11	Packer	
 614	12	across	
 614	13	Timo	
-614	14	'	
 614	15	s	
 614	16	engineering	
 614	17	teams	
@@ -11325,12 +11319,10 @@
 631	5	Collaboration	
 631	6	with	
 631	7	Timo	
-631	8	'	
 631	9	s	
 631	10	local	
 631	11	and	
 631	12	Kredivo	
-631	13	'	
 631	14	s	
 631	15	regional	
 631	16	teams	
@@ -11714,7 +11706,6 @@
 662	24	team	
 662	25	.	
 663	1	ITviec	
-663	2	'	
 663	3	s	
 663	4	client	
 663	5	is	
@@ -12411,10 +12402,10 @@
 704	15	specifically	
 704	16	addressing	
 704	17	the	
-704	18	""""	
+704	18	"	
 704	19	Concept	
 704	20	Drift	
-704	21	""""	
+704	21	"	
 704	22	problem	
 704	23	.	
 705	1	Implementing	
@@ -12430,9 +12421,8 @@
 705	11	(	
 705	12	e.g	
 705	13	.,	
-705	14	'	
 705	15	vt_count	
-705	16	')	
+705	16	)	
 705	17	ensuring	
 705	18	model	
 705	19	integrity	
@@ -12526,10 +12516,10 @@
 710	21	.	
 711	1	Resolved	
 711	2	the	
-711	3	""""	
+711	3	"	
 711	4	Cold	
 711	5	Start	
-711	6	""""	
+711	6	"	
 711	7	problem	
 711	8	for	
 711	9	new	
@@ -12787,7 +12777,6 @@
 725	6	Engine	
 725	7	into	
 725	8	Spark	
-725	9	'	
 725	10	s	
 725	11	mapPartitions	
 725	12	with	
@@ -13067,8 +13056,8 @@
 736	11	R	
 736	12	^	
 736	13	2	
-736	14	=	
-736	15	0.9895	
+736	14	#ERROR!	
+736	15	9.895	
 736	16	$)	
 736	17	in	
 736	18	Python	
@@ -13220,15 +13209,15 @@
 743	4	QoS	
 743	5	(	
 743	6	Control	
-743	7	=	
+743	7	#ERROR!	
 743	8	90	
 743	9	,	
 743	10	Chat	
-743	11	=	
+743	11	#ERROR!	
 743	12	80	
 743	13	,	
 743	14	File	
-743	15	=	
+743	15	#ERROR!	
 743	16	0	
 743	17	)	
 743	18	and	
