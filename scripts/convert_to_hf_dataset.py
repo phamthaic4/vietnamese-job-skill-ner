@@ -39,6 +39,15 @@ def load_sentences(path):
 
 def main():
     sentences = load_sentences(LABELED_PATH)
+    labeled = []
+    skipped = 0
+    for item in sentences:
+        if all(label in VALID_LABELS for label in item["labels"]):
+            labeled.append(item)
+        else:
+            skipped += 1
+    print(f"Labeled sentences: {len(labeled)} (skipped {skipped} unlabeled/incomplete)")
+    sentences = labeled
     rng = random.Random(SEED)
     order = list(range(len(sentences)))
     rng.shuffle(order)
