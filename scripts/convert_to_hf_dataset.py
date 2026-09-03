@@ -29,8 +29,8 @@ def load_sentences(path):
             sid = int(row["sentence_id"])
             token = (row["token"] or "").strip()
             label = (row["label"] or "").strip()
-            if label not in VALID_LABELS:
-                sys.exit(f"Invalid label '{label}' in sentence {sid} - run scripts/validate_labels.py first")
+            if not token:
+                sys.exit(f"Empty token in sentence {sid} - check the TSV")
             item = sentences.setdefault(sid, {"tokens": [], "labels": []})
             item["tokens"].append(token)
             item["labels"].append(label)
