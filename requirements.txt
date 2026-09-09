@@ -1,0 +1,23 @@
+# Core Jupyter & Development
+ipykernel
+
+# Deep Learning & Transformers (PhoBERT NER)
+torch
+transformers
+datasets
+evaluate
+seqeval
+accelerate
+
+# Vietnamese NLP
+pyvi
+
+# Data Analysis & Visualization
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+
+# Utilities
+tqdm
