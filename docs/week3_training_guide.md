@@ -121,6 +121,37 @@ eval_strategy = "epoch"            # mỗi epoch đánh giá val 1 lần
 load_best_model_at_end = True      # giữ checkpoint tốt nhất theo F1
 ```
 
+### Experiment tracking (bổ sung theo plan Week 3 — WandB)
+
+Plan yêu cầu log Loss & F1 curves chuyên nghiệp. Cách gọn nhẹ nhất:
+
+1. Tạo tài khoản free tại [wandb.ai](https://wandb.ai) → lấy API key
+2. Trên Colab:
+   ```python
+   !pip install -q wandb
+   import wandb; wandb.login()
+   ```
+3. Trong `TrainingArguments`: đổi `report_to="none"` → `report_to="wandb"`,
+   và truyền `run_name="exp_001-baseline"` để runs có tên trên dashboard
+4. Sau khi train xong: `wandb.finish()`
+5. Screenshot dashboard (loss curve + F1 curve) → dùng cho README sau này
+
+> Không muốn xài dịch vụ ngoài? Giữ `report_to="none"` và copy số liệu từ log
+> console vào `results/experiments.csv` — vẫn thỏa checkpoint, chỉ là ít "pro" hơn.
+
+### Bonus track — XLM-RoBERTa baseline (theo plan Week 3)
+
+Plan gợi ý chuẩn bị 1 baseline `xlm-roberta-base` để trả lời câu phỏng vấn
+*"Tại sao chọn PhoBERT thay vì multilingual model?"*. Cách làm rẻ nhất:
+
+- Code đã viết sẵn cho phép đổi model vì mọi thứ dùng biến `MODEL_NAME`
+- Chỉ cần chạy lại toàn bộ pipeline với `MODEL_NAME = "xlm-roberta-base"`
+  (output_dir đổi thành `runs/exp_xlmr_001`) → có bảng so sánh PhoBERT vs XLM-R
+- ⚠️ Làm SAU khi exp_001 (PhoBERT) xong và lưu model — không chạy song song
+  hai model cùng lúc trên 1 Colab session (RAM/GPU sẽ nổ)
+- Lưu ý nhỏ: XLM-R không dùng `use_fast=True` thì không có `word_ids()` —
+  giữ nguyên `use_fast=True`; nếu tokenizer slow thì tra bảng Troubleshooting
+
 ### Điều gì là "thành công" của exp_001?
 
 - Entity F1 **bất kỳ** được in ra từ test set (plan ghi: > 0.6 là ổn cho v1)
@@ -148,6 +179,18 @@ load_best_model_at_end = True      # giữ checkpoint tốt nhất theo F1
 
 - [ ] `src/train.py` hoàn chỉnh, smoke test pass
 - [ ] Chạy train trên Colab, không lỗi
+- [ ] **(Bonus theo plan)** WandB dashboard log Loss/F1 curves
 - [ ] Entity F1 (test) in ra → điền vào `results/experiments.csv` (exp_001)
 - [ ] Model + tokenizer save được
+- [ ] **(Bonus theo plan)** Bảng so sánh exp_001 (PhoBERT) vs XLM-RoBERTa baseline — lưu cho Week 4
 - [ ] Ghi 2–3 dòng học được vào `PROGRESS.md` (mục Notes)
+
+## Nhìn trước sang Week 4 (đã update trong plan — để định hướng)
+
+Các việc này **chưa làm bây giờ**, nhưng để bạn biết data đã chuẩn bị sẵn cho chúng:
+
+- **OOV Stress-testing:** EDA đã chỉ ra 31.8% skill ở test là OOV → Week 4 sẽ tách
+  In-vocab vs OOV Recall riêng. Guide này chưa cần làm gì thêm.
+- **3 dạng lỗi kinh điển** (FP / FN / Boundary mismatch) khi đọc error analysis —
+  khi decode prediction ở TODO 7, chú ý lưu vài dự đoán sai làm mẫu cho Week 4.
+- **ONNX export + benchmark** là của Week 5 — cần `predict.py` (Week 4) trước.
