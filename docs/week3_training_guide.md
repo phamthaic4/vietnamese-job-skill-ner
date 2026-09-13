@@ -56,12 +56,19 @@ word_ids:  None    0      1    2     2  None   ← word_ids() cho biết mảnh 
 labels:   -100     0      0    1  -100  -100   ← chỉ mảnh ĐẦU giữ nhãn
 ```
 
-### 2. `word_ids()` và `is_split_into_words=True`
+### 2. `word_ids()` và thực tế với PhoBERT (quan trọng!)
 
-- Gọi tokenizer với `is_split_into_words=True` và input là **list các từ** → tokenizer biết
-  ranh giới từ, và `tokenized.word_ids(batch_index=i)` trả về mapping "mảnh con → index từ".
-- ⚠️ Cần `use_fast=True` khi load tokenizer (chỉ fast tokenizer mới có `word_ids()`).
-  Nếu phobert không có bản fast → xem mục Troubleshooting.
+- Lý thuyết chuẩn: gọi tokenizer với `is_split_into_words=True`, rồi `tokenized.word_ids(i)`
+  cho biết "mảnh con thuộc về từ thứ mấy". Nhưng hàm này **chỉ tồn tại ở fast tokenizer**.
+- **Thực tế đã kiểm chứng (Aug 2026): `vinai/phobert-base` KHÔNG có bản fast**
+  (`tokenizer.is_fast == False`) → `word_ids()` không dùng được.
+- Cách đúng cho PhoBERT: **vòng lặp thủ công từng từ** như TODO 3 trong `src/train.py`
+  (`tokenizer.encode(word, add_special_tokens=False)` cho từng từ, miếng đầu giữ nhãn,
+  miếng sau `-100`, tự track `word_id` bằng index của từ trong vòng lặp).
+- Vì sao cách thủ công vẫn đúng? PhoBERT dùng BPE kiểu `@@` (đánh dấu tiếp diễn ở cuối
+  miếng) — điểm cắt chỉ phụ thuộc bên trong từ, nên encode riêng lẻ cho ID y hệt
+  encode cả câu (đã kiểm chứng: `Docker` → `[4448, 18095]` ở cả hai cách).
+  Với tokenizer kiểu `Ġ`-prefix (RoBERTa tiếng Anh) thì cách này mới sai.
 
 ### 3. Vì sao label_all_tokens=False (chỉ label subword đầu)?
 
