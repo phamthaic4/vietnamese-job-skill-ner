@@ -19,10 +19,12 @@
 - [x] Label toward ~100 total — overdelivered: 350 labeled, 372 skill mentions, 186 unique skills
 - [x] Audit-fix 97 label cells (generic nouns to O, split Java Spring Boot / .NET spans, X-API rule)
 - [x] Final split frozen: 244 train / 52 val / 54 test (seed 42)
-- [ ] notebooks/01_eda.ipynb
-- [ ] Week 3: train.py + first PhoBERT fine-tuning run on Colab
+- [x] notebooks/01_eda.ipynb (O 92.8%, max len 92, OOV 31.8%)
+- [x] Week 3: train.py + first PhoBERT fine-tuning run on Colab → TEST F1 = 0.6323 (P 0.6049 / R 0.6622)
 
 ### Notes / learnings
 - Week 0 done ahead of plan: 57 labeled sentences (target was 20)
-- Tokenizer splits "+" and "-" (e.g. "C ++", "Multi - agent") — PhoBERT subword alignment will handle in Week 2
+- Tokenizer splits "+" and "-" (e.g. "C ++", "Multi - agent") — PhoBERT subword alignment handled manually (no fast tokenizer for PhoBERT, @@-style BPE is word-independent)
 - AutoModel load drops lm_head keys (UNEXPECTED warning is expected)
+- exp_001: epoch 1 F1=0 (cold start, fresh classifier head predicts all-O) → normal; best val epoch 4 (0.6207); test 0.6323 > plan target 0.6
+- Recall (0.66) > Precision (0.60): model over-predicts slightly — boundary errors likely (strict seqeval punishes partial spans)
