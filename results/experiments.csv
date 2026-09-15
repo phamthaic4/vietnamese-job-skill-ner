@@ -1,3 +1,5 @@
 Experiment,LR,Epochs,Batch,F1_test,Precision_test,Recall_test,Notes
 exp_001,3e-5,5,16,0.6711,0.6538,0.6892,Baseline PhoBERT + WandB; epoch1 F1=0; best val F1=0.6173 at epoch 4; test F1=0.6711 (P=0.6538 R=0.6892)
 exp_002,3e-5,5,8,0.6536,0.6329,0.6757,Multilingual baseline (xlm-roberta-base); best val F1=0.6966 at epoch 4; test F1=0.6536 (PhoBERT outperforms XLM-R by +1.75% F1)
+exp_003,2e-5,5,16,0.5795,0.5,0.6892,LR sweep low; best val F1=0.5747 at epoch 5; test F1=0.5795 — recall identical to exp_001 (0.6892) but precision collapses (0.5000): too-low LR over-predicts skills; 3e-5 stays best
+exp_004,4e-5,5,16,0.6098,0.5556,0.6757,LR sweep high; best val F1=0.5979 at epoch 5; test F1=0.6098 — worse than 3e-5. Curve: 2e-5 (0.5795) < 4e-5 (0.6098) < 3e-5 (0.6711) → optimum at 3e-5. FINAL LR = 3e-5
