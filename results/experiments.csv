@@ -1,2 +1,3 @@
 Experiment,LR,Epochs,Batch,F1_test,Precision_test,Recall_test,Notes
-exp_001,3e-5,5,16,0.6323,0.6049,0.6622,Baseline PhoBERT; epoch1 F1=0 cold start (all-O predictions); best val F1=0.6207 at epoch 4
+exp_001,3e-5,5,16,0.6711,0.6538,0.6892,Baseline PhoBERT + WandB; epoch1 F1=0; best val F1=0.6173 at epoch 4; test F1=0.6711 (P=0.6538 R=0.6892)
+exp_002,3e-5,5,8,0.6536,0.6329,0.6757,Multilingual baseline (xlm-roberta-base); best val F1=0.6966 at epoch 4; test F1=0.6536 (PhoBERT outperforms XLM-R by +1.75% F1)

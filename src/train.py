@@ -265,7 +265,6 @@ def main():
         load_best_model_at_end=True,
         metric_for_best_model="f1",
         greater_is_better=True,
-        logging_dir="runs/exp_001/logs",
         logging_steps=10,
         report_to="none",  # Tắt wandb tạm thời ở local, khi lên Colab có thể bật
     )

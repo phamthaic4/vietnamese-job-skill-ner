@@ -21,3 +21,4 @@ scikit-learn
 
 # Utilities
 tqdm
+seqeval
