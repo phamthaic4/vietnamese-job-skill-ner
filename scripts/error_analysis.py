@@ -78,6 +78,12 @@ def main():
     total_pred_entities = 0
     total_tp = 0
 
+    # Đếm riêng In-vocab (đã học) vs OOV (chưa thấy ở train) để stress-test
+    iv_total = 0
+    iv_tp = 0
+    oov_total = 0
+    oov_tp = 0
+
     fn_list = []  # Bỏ sót
     fp_list = []  # Đoán nhầm
     boundary_list = []  # Sai ranh giới
@@ -89,6 +95,11 @@ def main():
         gold_labels = sample["labels"]
         gold_spans = extract_spans_from_bio(tokens, gold_labels)
         total_gold_entities += len(gold_spans)
+        for g_span in gold_spans:
+            if g_span.lower() in train_vocab:
+                iv_total += 1
+            else:
+                oov_total += 1
 
         # Tokenize từng từ
         input_ids = [cls_id]
@@ -131,6 +142,10 @@ def main():
                     gold_matched.add(g_idx)
                     pred_matched.add(p_idx)
                     total_tp += 1
+                    if g_span.lower() in train_vocab:
+                        iv_tp += 1
+                    else:
+                        oov_tp += 1
                     break
 
         # 2. Khớp một phần / Sai ranh giới (Boundary mismatch)
@@ -191,6 +206,15 @@ def main():
     print(f"   + Bỏ sót từ đã học (In-vocab):          {fn_invocab_count}")
     print(f"2. False Positives (Báo động giả):         {len(fp_list)}")
     print(f"3. Boundary Mismatch (Sai ranh giới):      {len(boundary_list)}")
+    print("=" * 60)
+
+    print("\n" + "=" * 60)
+    print("OOV STRESS-TEST: Recall In-vocab vs OOV (kỹ năng chưa từng thấy ở train):")
+    iv_recall = iv_tp / iv_total if iv_total else 0
+    oov_recall = oov_tp / oov_total if oov_total else 0
+    print(f" - In-vocab entities: {iv_tp}/{iv_total} = {iv_recall:.1%}")
+    print(f" - OOV entities:      {oov_tp}/{oov_total} = {oov_recall:.1%}")
+    print(f" - Chênh lệch Recall (OOV - In-vocab): {oov_recall - iv_recall:+.1%}")
     print("=" * 60)
 
     # Note: docs/error_analysis.md được duy trì thủ công (tổng hợp từ output in bên trên

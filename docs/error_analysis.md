@@ -5,6 +5,23 @@
 
 ---
 
+## 0. OOV Stress-test: Recall In-vocab vs Out-of-Vocabulary
+
+So sánh khả năng nhận diện **kỹ năng đã thấy ở train** vs **kỹ năng hoàn toàn mới** (model phải dựa vào ngữ cảnh):
+
+| Nhóm | Số entity (Test) | Exact Recall | Mức độ lệch |
+|---|---|---|---|
+| **In-vocab** (đã xuất hiện ở train) | 52/74 (70.3%) | **71.2%** (37/52) | baseline |
+| **OOV** (chưa từng thấy ở train) | 22/74 (29.7%) | **54.5%** (12/22) | **−16.6%** |
+
+- Tỉ lệ OOV 29.7% tại Test khớp với dự đoán từ EDA (31.8% skill ở test chưa từng thấy ở train).
+- Model vẫn đạt **54.5% recall** trên kỹ năng chưa từng thấy nhờ ngữ cảnh (từ khóa động từ như "sử dụng", "thành thạo", "kinh nghiệm với") — nhưng tụt **16.6 điểm** so với kỹ năng quen thuộc.
+- **Kết luận cho pipeline thực tế:** danh sách skill phổ biến nên được build động (từ điển + feedback), vì kỹ năng mới xuất hiện liên tục trong JD. Đây là điểm để thêm "few-shot / dictionary boost" ở phiên bản sau.
+
+> Chạy lại: `python scripts/error_analysis.py`
+
+---
+
 ## 1. Bảng phân loại tổng thể các loại lỗi
 
 | Loại lỗi (Error Category) | Số lượng | Tỉ lệ / Tổng lỗi | Bản chất nguyên nhân |
