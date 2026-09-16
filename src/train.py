@@ -31,10 +31,15 @@ if sys.stdout.encoding != "utf-8":
     except AttributeError:
         pass
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+try:
+    ROOT = Path(__file__).resolve().parents[1]
+except NameError:
+    # Chạy trên Jupyter / Colab (không có biến __file__)
+    ROOT = Path(".")
 
-# Colab: đổi thành Path(".") hoặc path bạn upload — xem guide phần B
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 DATA_DIR = ROOT / "data" / "splits"
 
 LABEL_LIST = ["O", "B-SKILL", "I-SKILL"]

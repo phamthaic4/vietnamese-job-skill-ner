@@ -33,3 +33,25 @@
 - Model Comparison (Ablation): PhoBERT-base (F1=0.6711) outperforms XLM-RoBERTa-base (F1=0.6536) by +1.75% F1 on Vietnamese IT JDs, despite XLM-R having 2x larger parameter size (~1.1GB vs ~540MB) and training ~2.5x slower. Confirms monolingual pre-trained tokenizer/representations benefit Vietnamese NER.
 - Lesson on val noise: XLM-R had HIGHER best-val F1 (0.6966) yet LOWER test F1 (0.6536) than PhoBERT (val 0.6173 / test 0.6711) — with only 52 val sentences, val F1 is noisy and model selection by val does not guarantee test ranking. Report test F1 as the decision metric.
 - LR sweep done (test F1): 2e-5 → 0.5795, 3e-5 → 0.6711, 4e-5 → 0.6098. Optimum at 3e-5 (symmetric drop both sides). Lower LR (2e-5) dropped precision hard (0.5000) with recall unchanged; higher LR (4e-5) raised precision but lost recall. FINAL config locked: PhoBERT, LR 3e-5, batch 16, 5 epochs, test F1 0.6711.
+
+## Week 4 — 2026-09-17 (hoàn thành)
+
+### Done
+- [x] LR sweep (2e-5 / 3e-5 / 4e-5) → 3e-5 là điểm tối ưu (0.6711)
+- [x] XLM-R baseline so sánh → PhoBERT thắng +1.75% F1 (0.6536)
+- [x] WandB tracking (2 run có curves)
+- [x] `scripts/error_analysis.py` — phân loại lỗi trên Test set (54 câu, 74 entity)
+- [x] `docs/error_analysis.md` — FN 10 / FP 17 / Boundary 15; 50% FN là OOV
+- [x] `src/predict.py` v1 với post-processing — câu mẫu đạt 11/11 skill
+- [x] README: bảng so sánh experiments + repo structure + usage
+
+### Notes / learnings
+- Error distribution: False Negatives 10 (23.8%), False Positives 17 (40.5%), Boundary 15 (35.7%); total 42 errors on 74 gold entities → F1 0.6711 consistent.
+- 50% (5/10) của FN là do kỹ năng OOV — đúng dự đoán EDA (OOV 31.8%)
+- 3/4 lỗi predict.py gốc đến từ **tokenization mất ký tự** (C++, C/C++, CI/CD, Spring Boot) chứ không phải model — post-processing đóng vai trò quyết định trong real pipeline
+- predict.py fixes: regex glue `/`+`+`, B-SKILL adjacent merge (`Spring Boot`), bỏ `(` `)` chen giữa span, strip `.` cuối giữ `.NET`
+- `scripts/error_analysis.py` hiện chỉ in console (md duy trì thủ công để tránh ghi đè analysis sống)
+
+### Next week
+- [ ] Week 5: polish README (đã gần xong), ONNX export + CPU benchmark, tag release v1.0.0
+- [ ] Đóng gói model weights + hướng dẫn reproduce (`model/best` hiện nằm local, không lên git)
