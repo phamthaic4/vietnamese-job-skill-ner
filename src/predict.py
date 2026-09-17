@@ -15,6 +15,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
+from typing import Union
 import torch
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 
@@ -33,8 +34,9 @@ TOKEN_RE = re.compile(r"(?:[^\W_]+[./+#_]*)+|_+|[^\w\s]+", re.UNICODE)
 
 
 class SkillExtractor:
-    def __init__(self, model_dir: Path = MODEL_DIR, device: str = None):
+    def __init__(self, model_dir: Union[Path, str] = MODEL_DIR, device: str = None):
         """Nạp model và tokenizer đã lưu từ thư mục model_dir."""
+        model_dir = Path(model_dir)
         if not model_dir.exists():
             raise FileNotFoundError(f"Không tìm thấy thư mục mô hình tại: {model_dir}")
 

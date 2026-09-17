@@ -3,3 +3,5 @@ lo-trinh-quant-finance.md
 docs/week3_training_guide.md
 model/
 runs/
+.agents/
+src/__pycache__/

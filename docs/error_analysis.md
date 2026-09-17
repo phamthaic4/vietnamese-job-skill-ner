@@ -11,13 +11,13 @@ So sánh khả năng nhận diện **kỹ năng đã thấy ở train (In-vocabu
 
 | Nhóm kỹ năng | Số entity (Test) | Exact Match Recall | Soft Match Recall (gồm Boundary) | Độ lệch vs In-vocab |
 |---|---|---|---|---|
-| **In-vocab** (đã xuất hiện ở train) | 52 / 74 (70.3%) | **71.2%** (37/52) | **90.4%** (47/52) | *Baseline* |
-| **OOV** (chưa từng thấy ở train) | 22 / 74 (29.7%) | **54.5%** (12/22) | **77.3%** (17/22) | **−16.6%** (Exact) / **−13.1%** (Soft) |
-| **TOÀN BỘ TẬP TEST** | 74 / 74 (100%) | **66.2%** (49/74) | **86.5%** (64/74) | — |
+| **In-vocab** (đã xuất hiện ở train) | 52 / 74 (70.3%) | **71.2%** (37/52) | **92.3%** (48/52) | *Baseline* |
+| **OOV** (chưa từng thấy ở train) | 22 / 74 (29.7%) | **54.5%** (12/22) | **77.3%** (17/22) | **−16.6%** (Exact) / **−15.0%** (Soft) |
+| **TOÀN BỘ TẬP TEST** | 74 / 74 (100%) | **66.2%** (49/74) | **87.8%** (65/74) | — |
 
 - **Khớp sát phân tích EDA:** Tỉ lệ entity OOV trong tập Test là 29.7% (22/74 mentions, tương đương 31.8% unique skills ở EDA).
 - **Khả năng khái quát hóa theo ngữ cảnh (Generalization):** Ngay cả với các skill hoàn toàn mới chưa từng học trong tập Train, mô hình vẫn nhận diện được **54.5% (Exact Match)** và chạm trúng **77.3% (Soft Match)**. Điều này chứng minh PhoBERT không chỉ "học vẹt" từ điển mà đã học được các mẫu ngữ cảnh vị trí xung quanh kỹ năng (các động từ/cụm từ như *"kinh nghiệm về..."*, *"thành thạo..."*, *"lập trình bằng..."*).
-- **Mức độ sụt giảm đồng nhất (~13–17%):** Dù xét theo tiêu chuẩn khắt khe (Exact Match tụt 16.6 điểm) hay mềm (Soft Match tụt 13.1 điểm), việc thiếu vắng từ vựng đã khiến độ tự tin kích hoạt nhãn `B-SKILL` giảm rõ rệt.
+- **Mức độ sụt giảm đồng nhất (~15–16%):** Dù xét theo tiêu chuẩn khắt khe (Exact Match tụt 16.6 điểm) hay mềm (Soft Match tụt 15.0 điểm), việc thiếu vắng từ vựng đã khiến độ tự tin kích hoạt nhãn `B-SKILL` giảm rõ rệt.
 - **Ý nghĩa thực tế cho Project 2 (JobMatch):** Trong thị trường IT, công nghệ mới (như LLM Agents, Vector DB, MCP, ...) xuất hiện liên tục trong JD. NER thuần túy dựa vào supervised model sẽ có "độ trễ từ vựng". Do đó, ở Proj 2 cần kết hợp cơ chế Hybrid: PhoBERT trích xuất theo ngữ cảnh + Dynamic Dictionary / LLM Few-shot verification.
 
 > Lệnh chạy kiểm chứng: `python scripts/error_analysis.py`
