@@ -7,18 +7,20 @@
 
 ## 0. OOV Stress-test: Recall In-vocab vs Out-of-Vocabulary
 
-So sánh khả năng nhận diện **kỹ năng đã thấy ở train** vs **kỹ năng hoàn toàn mới** (model phải dựa vào ngữ cảnh):
+So sánh khả năng nhận diện **kỹ năng đã thấy ở train (In-vocabulary)** vs **kỹ năng hoàn toàn mới (Out-of-Vocabulary)** trên tập Test:
 
-| Nhóm | Số entity (Test) | Exact Recall | Mức độ lệch |
-|---|---|---|---|
-| **In-vocab** (đã xuất hiện ở train) | 52/74 (70.3%) | **71.2%** (37/52) | baseline |
-| **OOV** (chưa từng thấy ở train) | 22/74 (29.7%) | **54.5%** (12/22) | **−16.6%** |
+| Nhóm kỹ năng | Số entity (Test) | Exact Match Recall | Soft Match Recall (gồm Boundary) | Độ lệch vs In-vocab |
+|---|---|---|---|---|
+| **In-vocab** (đã xuất hiện ở train) | 52 / 74 (70.3%) | **71.2%** (37/52) | **90.4%** (47/52) | *Baseline* |
+| **OOV** (chưa từng thấy ở train) | 22 / 74 (29.7%) | **54.5%** (12/22) | **77.3%** (17/22) | **−16.6%** (Exact) / **−13.1%** (Soft) |
+| **TOÀN BỘ TẬP TEST** | 74 / 74 (100%) | **66.2%** (49/74) | **86.5%** (64/74) | — |
 
-- Tỉ lệ OOV 29.7% tại Test khớp với dự đoán từ EDA (31.8% skill ở test chưa từng thấy ở train).
-- Model vẫn đạt **54.5% recall** trên kỹ năng chưa từng thấy nhờ ngữ cảnh (từ khóa động từ như "sử dụng", "thành thạo", "kinh nghiệm với") — nhưng tụt **16.6 điểm** so với kỹ năng quen thuộc.
-- **Kết luận cho pipeline thực tế:** danh sách skill phổ biến nên được build động (từ điển + feedback), vì kỹ năng mới xuất hiện liên tục trong JD. Đây là điểm để thêm "few-shot / dictionary boost" ở phiên bản sau.
+- **Khớp sát phân tích EDA:** Tỉ lệ entity OOV trong tập Test là 29.7% (22/74 mentions, tương đương 31.8% unique skills ở EDA).
+- **Khả năng khái quát hóa theo ngữ cảnh (Generalization):** Ngay cả với các skill hoàn toàn mới chưa từng học trong tập Train, mô hình vẫn nhận diện được **54.5% (Exact Match)** và chạm trúng **77.3% (Soft Match)**. Điều này chứng minh PhoBERT không chỉ "học vẹt" từ điển mà đã học được các mẫu ngữ cảnh vị trí xung quanh kỹ năng (các động từ/cụm từ như *"kinh nghiệm về..."*, *"thành thạo..."*, *"lập trình bằng..."*).
+- **Mức độ sụt giảm đồng nhất (~13–17%):** Dù xét theo tiêu chuẩn khắt khe (Exact Match tụt 16.6 điểm) hay mềm (Soft Match tụt 13.1 điểm), việc thiếu vắng từ vựng đã khiến độ tự tin kích hoạt nhãn `B-SKILL` giảm rõ rệt.
+- **Ý nghĩa thực tế cho Project 2 (JobMatch):** Trong thị trường IT, công nghệ mới (như LLM Agents, Vector DB, MCP, ...) xuất hiện liên tục trong JD. NER thuần túy dựa vào supervised model sẽ có "độ trễ từ vựng". Do đó, ở Proj 2 cần kết hợp cơ chế Hybrid: PhoBERT trích xuất theo ngữ cảnh + Dynamic Dictionary / LLM Few-shot verification.
 
-> Chạy lại: `python scripts/error_analysis.py`
+> Lệnh chạy kiểm chứng: `python scripts/error_analysis.py`
 
 ---
 
@@ -35,14 +37,16 @@ So sánh khả năng nhận diện **kỹ năng đã thấy ở train** vs **k�
 
 ## 2. Chi tiết từng dạng lỗi & Phân tích nguyên nhân
 
-### A. False Negatives (Bỏ sót thực thể)
-Các kỹ năng xuất hiện trong JD nhưng mô hình không nhận diện được:
-- **Lỗi do Out-of-Vocabulary (5 trường hợp):**
-  - Các kỹ năng: `Function Calling, JPA, Microservice Architecture, Reinforcement Learning Agents`
-  - *Nguyên nhân:* Các công cụ mới hoặc ít phổ biến, không xuất hiện trong tập Train (như dự đoán ở bước EDA tỉ lệ OOV = 31.8%). Mô hình không nhận đủ tín hiệu ngữ cảnh để tự tin kích hoạt nhãn `B-SKILL`.
+### A. False Negatives & OOV Stress-testing (Đánh giá khả năng bắt từ mới)
+
+Đối chiếu với phân tích EDA (Test có 31.8% kỹ năng OOV), dưới đây là chi tiết phân tích lỗi bỏ sót:
+
+- **Lỗi do Out-of-Vocabulary (5 trường hợp bỏ sót hoàn toàn):**
+  - Các kỹ năng: `Function Calling, JPA, Microservice Architecture, Reinforcement Learning Agents, Multi - agent`
+  - *Nguyên nhân:* Các công cụ mới hoặc ít phổ biến, hoàn toàn không xuất hiện trong tập Train (như dự đoán ở bước EDA tỉ lệ OOV = 31.8%). Khi đứng trong câu có cấu trúc liệt kê ngắn gọn hoặc thiếu động từ báo hiệu rõ ràng, mô hình không nhận đủ tín hiệu ngữ cảnh để tự tin kích hoạt nhãn `B-SKILL`.
 - **Lỗi bỏ sót từ quen thuộc (5 trường hợp):**
   - Các kỹ năng: `Agents, Linux, PostgreSQL, React Native, Vector Database`
-  - *Nguyên nhân:* Câu văn có cấu trúc đặc biệt hoặc từ ngữ đứng ở vị trí ngữ pháp không điển hình.
+  - *Nguyên nhân:* Câu văn có cấu trúc đặc biệt hoặc từ ngữ đứng ở vị trí ngữ pháp không điển hình (ví dụ đứng cạnh các dấu ngoặc phức tạp hoặc tên tool nội bộ như `/proc/stat`, `SYS_OPENAT`).
 
 ### B. False Positives (Báo động giả / Đoán thừa)
 Các từ mô hình gán nhãn là kỹ năng nhưng Ground Truth là nhãn `O`:
