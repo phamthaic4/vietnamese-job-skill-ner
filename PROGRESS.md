@@ -53,5 +53,21 @@
 - `scripts/error_analysis.py` hiện chỉ in console (md duy trì thủ công để tránh ghi đè analysis sống)
 
 ### Next week
-- [ ] Week 5: polish README (đã gần xong), ONNX export + CPU benchmark, tag release v1.0.0
-- [ ] Đóng gói model weights + hướng dẫn reproduce (`model/best` hiện nằm local, không lên git)
+- [x] Week 5: polish README, ONNX export + CPU benchmark, reproduce docs
+
+## Week 5 — 2026-10-10 (hoàn thành)
+
+### Done
+- [x] `scripts/export_onnx.py` — export `model/best` → `model.onnx` (opset 14, `dynamo=False`)
+- [x] CPU benchmark (batch 1, n=50): PyTorch **35.39 ms**, ONNX Runtime **12.55 ms** → **2.82×** (đúng khoảng đoán 2–3×)
+- [x] README v1: status, data thật, bảng LR + XLM-R, latency, OOV, quick start, reproduce
+- [x] `docs/reproduce.md` + `model/README.md` — weights gitignored, hướng dẫn train / đặt checkpoint / export
+- [x] `requirements.txt`: `onnx`, `onnxruntime`, `onnxscript`
+
+### Notes / learnings
+- Torch mới default `torch.onnx.export` sang dynamo → cần `onnxscript`; trên Windows dynamo in emoji ✅ crash cp1252. Legacy exporter (`dynamo=False`) khớp skeleton `dynamic_axes`.
+- ONNX không đổi F1: cùng weights, chỉ khác runtime.
+
+### Còn lại (không chặn v1 code)
+- Push tag `v1.0.0` + zip `model/best` lên GitHub Release khi sẵn sàng (`git push && git push --tags`).
+

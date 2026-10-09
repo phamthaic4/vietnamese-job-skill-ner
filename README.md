@@ -1,24 +1,22 @@
 # Vietnamese Job Skill NER
 
-Fine-tune [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) to extract **SKILL** entities from Vietnamese job description / CV text using BIO tagging.
+Fine-tune [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) to extract **SKILL** entities from Vietnamese job-description and CV text (BIO tagging).
 
-> **Status:** Work in progress — Week 0 (setup & data collection)
+> **Status:** v1.0.0 — PhoBERT test F1 **0.6711**. CPU inference: PyTorch **35.39 ms** → ONNX Runtime **12.55 ms** (**2.82×**).
 
 ## Problem
 
-Recruiter tools need to know which skills a job post or CV mentions. This project trains a NER model to automatically extract IT skills (e.g. Python, SQL, Docker) from Vietnamese text.
+Recruiter tools need the skills a job post or CV actually mentions. This project trains a NER model to extract IT skills (Python, SQL, Docker, …) from mixed Vietnamese/English text.
 
 ## Data
 
 | Item | Value |
 |------|-------|
-| Source | IT job posts (TopCV, ITviec, VietnamWorks) |
-| Size v1 | 200–300 labeled sentences |
+| Source | IT job posts (TopCV, ITviec, VietnamWorks) + 5 CVs |
+| Size v1 | 350 labeled sentences, 372 skill mentions (186 unique) |
 | Format | JSON: `{ "tokens": [...], "labels": [...] }` |
 | Labels | `B-SKILL`, `I-SKILL`, `O` |
-| Split | 70% train / 15% val / 15% test |
-
-Example:
+| Split | 244 train / 52 val / 54 test (seed 42) |
 
 ```
 Token:   Tuyển   Python  developer  có  kinh nghiệm  SQL
@@ -27,59 +25,99 @@ Label:   O       B-SKILL O          O   O           B-SKILL
 
 ## Method
 
-- Model: `vinai/phobert-base`
-- Task: token classification with BIO tagging
-- Subword label alignment for PhoBERT tokenizer
-- Metrics: entity-level Precision / Recall / F1 via `seqeval`
+- Model: `vinai/phobert-base` (locked after ablation vs `xlm-roberta-base`)
+- Task: token classification, BIO
+- Subword label alignment for PhoBERT’s slow tokenizer
+- Metrics: entity-level Precision / Recall / F1 (`seqeval`)
+- Inference: `src/predict.py` with post-processing (glue `C/C++`, `CI/CD`; merge adjacent `B-SKILL` spans)
 
-## Results & Hyperparameter Experiments
+## Results
 
-Toàn bộ quá trình huấn luyện được theo dõi trực tiếp qua [Weights & Biases (WandB)](https://wandb.ai). Dưới đây là bảng so sánh thực nghiệm điều chỉnh Learning Rate (LR sweep) và so sánh với mô hình đa ngôn ngữ (Multilingual baseline):
+Training runs are logged on [Weights & Biases](https://wandb.ai). Decision metric is **test F1** (52-sentence val set is noisy).
 
-| Experiment | Model | Learning Rate | Epochs | Batch Size | Precision (Test) | Recall (Test) | **F1-Score (Test)** | Ghi chú / Nhận xét |
+| Experiment | Model | LR | Epochs | Batch | P | R | **Test F1** | Notes |
 |---|---|---|---|---|---|---|---|---|
-| **exp_001** | `vinai/phobert-base` | **3e-5** | **5** | **16** | **0.6538** | **0.6892** | **`0.6711`** | **Tối ưu nhất (Best checkpoint)**; F1 val đạt 0.6173 ở epoch 4 |
-| **exp_002** | `xlm-roberta-base` | 3e-5 | 5 | 8 | 0.6329 | 0.6757 | `0.6536` | Multilingual baseline; PhoBERT vượt trội **+1.75% F1** dù nhẹ hơn một nửa |
-| **exp_003** | `vinai/phobert-base` | 2e-5 | 5 | 16 | 0.5000 | 0.6892 | `0.5795` | LR thấp: Recall giữ nguyên nhưng Precision sụt giảm mạnh (dự đoán thừa nhiều) |
-| **exp_004** | `vinai/phobert-base` | 4e-5 | 5 | 16 | 0.5556 | 0.6757 | `0.6098` | LR cao: Bước nhảy gradient quá lớn, F1 thấp hơn mốc 3e-5 |
+| **exp_001** | `vinai/phobert-base` | **3e-5** | **5** | **16** | **0.6538** | **0.6892** | **0.6711** | Best checkpoint; val F1 0.6173 @ epoch 4 |
+| exp_002 | `xlm-roberta-base` | 3e-5 | 5 | 8 | 0.6329 | 0.6757 | 0.6536 | Multilingual baseline; PhoBERT **+1.75% F1**, ~2.5× faster |
+| exp_003 | `vinai/phobert-base` | 2e-5 | 5 | 16 | 0.5000 | 0.6892 | 0.5795 | Too-low LR: recall holds, precision collapses |
+| exp_004 | `vinai/phobert-base` | 4e-5 | 5 | 16 | 0.5556 | 0.6757 | 0.6098 | Too-high LR: worse than 3e-5 |
 
-> 📌 **Kết luận kỹ thuật (Key Takeaways):**
-> 1. **Đường cong học tập theo LR:** $2\times 10^{-5} (0.5795) < 4\times 10^{-5} (0.6098) < \mathbf{3\times 10^{-5} (0.6711)}$. Tốc độ học $\text{LR} = 3\times 10^{-5}$ là điểm hội tụ tối ưu cho PhoBERT trên tập dữ liệu này.
-> 2. **Monolingual vs Multilingual:** Mô hình đơn ngữ chuyên biệt cho tiếng Việt (`PhoBERT-base` ~540MB) đạt hiệu năng cao hơn mô hình đa ngôn ngữ (`XLM-RoBERTa-base` ~1.12GB) tới $+1.75\%$ F1, đồng thời huấn luyện và suy luận nhanh hơn gấp $2.5\times$.
+**Locked config:** PhoBERT-base, LR `3e-5`, batch 16, 5 epochs.
 
-## Error Analysis
-Xem chi tiết báo cáo mổ xẻ lỗi và các trường hợp sai ranh giới (Boundary), bỏ sót OOV tại [docs/error_analysis.md](docs/error_analysis.md).
+### CPU latency (batch 1, local)
 
-## Repository Structure
+| Runtime | Mean latency | Notes |
+|---|---|---|
+| PyTorch `model/best` | 35.39 ms | torch CPU |
+| ONNX Runtime `model/best/model.onnx` | 12.55 ms | opset 14 |
 
-```
-vietnamese-job-skill-ner/
-├── data/            # raw, labeled, splits
-├── docs/            # skill vocab, error analysis report
-├── notebooks/       # EDA (label distribution, length, OOV analysis)
-├── scripts/         # data conversion, error analysis utilities
-├── src/             # train.py, predict.py (with post-processing)
-├── model/           # saved checkpoints (model/best)
-├── results/         # experiment logs (experiments.csv)
-└── tests/
-```
+Same weights, **2.82×** faster. Re-run: `python scripts/export_onnx.py`.
 
-## How to Run
+### OOV robustness (test set)
+
+| Group | Exact-match recall |
+|---|---|
+| In-vocab (52 / 74) | 71.2% |
+| OOV (22 / 74) | 54.5% (−16.6%) |
+
+Half of false negatives (5/10) are OOV skills — matches EDA (31.8% OOV unique skills). Full breakdown: [docs/error_analysis.md](docs/error_analysis.md).
+
+## Quick start
 
 ```bash
 pip install -r requirements.txt
+```
 
-# Huấn luyện mô hình (Fine-tune):
-python src/train.py
+Weights live in `model/best/` and are **not** in git (see [docs/reproduce.md](docs/reproduce.md)). After the checkpoint is in place:
 
-# Thử nghiệm suy luận trích xuất kỹ năng:
+```bash
 python src/predict.py --text "Tuyển Backend Engineer thành thạo Python, Docker, PostgreSQL và Redis."
+```
+
+Train from the frozen splits (Colab GPU recommended):
+
+```bash
+python src/train.py --smoke          # CPU smoke: alignment only
+python src/train.py                  # full fine-tune → model/best
+```
+
+Export ONNX + benchmark:
+
+```bash
+python scripts/export_onnx.py
+```
+
+## Reproduce
+
+| Step | Command / location |
+|---|---|
+| Labeled data | `data/splits/{train,val,test}.json` (frozen, seed 42) |
+| Train | `python src/train.py` — PhoBERT, LR 3e-5, batch 16, 5 epochs |
+| Weights | `model/best/` (gitignored) |
+| Predict | `python src/predict.py --text "..."` |
+| Error analysis | `python scripts/error_analysis.py` |
+| ONNX | `python scripts/export_onnx.py` |
+
+Details: [docs/reproduce.md](docs/reproduce.md).
+
+## Repository
+
+```
+vietnamese-job-skill-ner/
+├── data/splits/          # frozen train / val / test JSON
+├── docs/                 # error analysis, skill vocab, reproduce
+├── notebooks/            # 01_eda, 02_error_analysis
+├── scripts/              # labeling, convert, error_analysis, export_onnx
+├── src/train.py          # fine-tune
+├── src/predict.py        # inference + post-processing
+├── model/best/           # checkpoint + model.onnx (local, gitignored)
+└── results/experiments.csv
 ```
 
 ## Roadmap
 
 - [x] Week 1: setup + collect 100+ JD sentences + label first 50
 - [x] Week 2: label to 200–300 + data pipeline + EDA (O 92.8%, OOV 31.8%)
-- [x] Week 3: first training run + seqeval baseline F1 (0.6711) + WandB tracking
-- [x] Week 4: hyperparameter experiments (LR sweep) + Multilingual comparison + error analysis + predict.py
-- [ ] Week 5: polish README, ONNX export benchmark, tag release v1.0.0
+- [x] Week 3: first training run + seqeval baseline F1 (0.6711) + WandB
+- [x] Week 4: LR sweep + XLM-R comparison + error analysis + `predict.py`
+- [x] Week 5: README v1, ONNX CPU benchmark (2.82×), reproduce docs

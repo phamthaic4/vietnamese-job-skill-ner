@@ -1,7 +1,10 @@
 INTERN_PORTFOLIO_PLAN.md
 lo-trinh-quant-finance.md
 docs/week3_training_guide.md
-model/
 runs/
 .agents/
-src/__pycache__/
+**/__pycache__/
+
+# Checkpoints are large; keep only the placeholder README in git
+model/**
+!model/README.md

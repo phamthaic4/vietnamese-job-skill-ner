@@ -21,4 +21,8 @@ scikit-learn
 
 # Utilities
 tqdm
-seqeval
+
+# ONNX export / CPU inference
+onnx
+onnxruntime
+onnxscript
