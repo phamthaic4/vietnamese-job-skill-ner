@@ -48,7 +48,7 @@ Label:   O       B-SKILL O          O   O           B-SKILL
 
 ## Results
 
-Training runs are logged on [Weights & Biases](https://wandb.ai) — loss and eval curves are embedded below. All numbers below are **entity-level** metrics (`seqeval`) on the frozen test split — **54 sentences / 74 skill entities**. Decision metric is **test F1**: the 52-sentence val set is too noisy to rank models reliably.
+Training runs are logged on [Weights & Biases](https://forge.coreweave.com/wandb/home) (self-hosted) — loss and eval curves are embedded below. All numbers below are **entity-level** metrics (`seqeval`) on the frozen test split — **54 sentences / 74 skill entities**. Decision metric is **test F1**: the 52-sentence val set is too noisy to rank models reliably.
 
 | Experiment | Model | LR | Epochs | Batch | P | R | **Test F1** | Notes |
 |---|---|---|---|---|---|---|---|---|
