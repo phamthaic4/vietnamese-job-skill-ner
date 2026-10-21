@@ -27,7 +27,7 @@ def parse_sentences(raw_text):
     source = ""
     for line in raw_text.splitlines():
         line = line.strip()
-        if not line or line.startswith("#") or line.startswith("==="):
+        if not line or line.startswith(("#", "===")):
             continue
         if line.startswith("["):
             source = line
@@ -48,7 +48,7 @@ def main():
     ensure_trailing_newline(INDEX_PATH)
     with INDEX_PATH.open(encoding="utf-8-sig", newline="") as f:
         index_rows = list(csv.reader(f, delimiter=DELIM))
-    header, existing = index_rows[0], index_rows[1:]
+    _header, existing = index_rows[0], index_rows[1:]
     known_texts = {row[2].strip().lower() for row in existing}
     max_sid = max(int(row[0]) for row in existing)
 

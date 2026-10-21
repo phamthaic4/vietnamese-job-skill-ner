@@ -15,9 +15,9 @@ import argparse
 import re
 import sys
 from pathlib import Path
-from typing import Union
+
 import torch
-from transformers import AutoTokenizer, AutoModelForTokenClassification
+from transformers import AutoModelForTokenClassification, AutoTokenizer
 
 # Thiết lập encoding UTF-8 cho console Windows
 if sys.stdout.encoding != "utf-8":
@@ -34,7 +34,7 @@ TOKEN_RE = re.compile(r"(?:[^\W_]+[./+#_]*)+|_+|[^\w\s]+", re.UNICODE)
 
 
 class SkillExtractor:
-    def __init__(self, model_dir: Union[Path, str] = MODEL_DIR, device: str = None):
+    def __init__(self, model_dir: Path | str = MODEL_DIR, device: str | None = None):
         """Nạp model và tokenizer đã lưu từ thư mục model_dir."""
         model_dir = Path(model_dir)
         if not model_dir.exists():

@@ -30,7 +30,7 @@ def parse_sentences(raw_text):
     source = ""
     for line in raw_text.splitlines():
         line = line.strip()
-        if not line or line.startswith("#") or line.startswith("==="):
+        if not line or line.startswith(("#", "===")):
             continue
         if line.startswith("["):
             source = line

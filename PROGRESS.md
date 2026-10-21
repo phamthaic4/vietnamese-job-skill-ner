@@ -85,6 +85,20 @@
 - [x] `LICENSE` (MIT) — repo public cần license để dùng lại hợp pháp.
 - [x] README: nhúng 2 ảnh WandB (`docs/images/`), thêm sample output 11/11 skills, ghi rõ `n=54 câu / 74 entities` cạnh mọi con số F1.
 - [x] README pass 2 (pro polish): badges (Python/PyTorch/Transformers/ONNX/MIT), snippet `from_pretrained`, mục **Limitations** + **Next steps** thay cho checklist tuần nội bộ, **Related work** (paper arXiv 2210.14607 về skill detection trong JD tiếng Việt), tree repo cập nhật, link `PROGRESS.md`, mục Problem + Data có số liệu labeling/QC.
+- [x] Pass 3 — repo hygiene:
+  - `requirements.txt` rút còn đúng thứ dùng thật (bỏ `datasets`, `evaluate`, `pyvi`, `seaborn`, `scikit-learn`, `tqdm`, `ipykernel` — không import ở đâu), thêm `>=` lower bound + `pytest`.
+  - `requirements-lock.txt` — pin đúng version môi trường đã sinh ra số liệu (torch 2.11, transformers 5.5.3, seqeval 1.2.2…).
+  - `pyproject.toml` — config ruff + pytest (thay `pytest.ini`).
+  - `tests/` — 21 test: unit cho TOKEN_RE + post-processing (không cần weights) + end-to-end load model (marker `slow`).
+  - `.github/workflows/ci.yml` — 3 job: ruff lint / unit test / end-to-end (tải weights từ release v1.0.0).
+  - `scripts/make_demo_gif.py` — sinh `docs/images/demo_predict.gif` (48 frame, 0.48 MB) bằng PIL thay vì quay màn hình → reproducible.
+  - Sửa 15 lỗi ruff: import sorting, unused imports, `l` → `lbl`, `Optional[str]`, `startswith(tuple)`, nested if.
+  - Verify không regression: `error_analysis.py` vẫn ra đúng 71.2% / 54.5% / −16.6%; `predict.py` vẫn 11/11.
+
+### Bài học mới
+- **DejaVu Sans Mono thiếu 5 glyph tiếng Việt** (`Ả ả Ấ ỗ Ế`) → render ra ô vuông. Consolas phủ đủ. Script demo giờ tự dò font có đủ coverage (so mask với `.notdef`).
+- **PIL bỏ frame khi quantize từng frame riêng** (60 frame → 23) vì mỗi frame có palette riêng → tính delta sai. Fix: quantize tất cả frame về **một palette chung** + `optimize=False` → 48/48 frame đúng.
+- Ruff 0.17 default rule set rất rộng (YTT, ASYNC, S, BLE...) → cần `pyproject.toml` khoá rule set, không phụ thuộc config global của máy.
 
 ### Notes / learnings
 - Upload bằng **GitHub API** (`POST https://uploads.github.com/repos/{owner}/{repo}/releases/{id}/assets?name=…`) với token lấy từ Git Credential Manager (`git credential fill`) — khỏi cài `gh` CLI. Token có scope `repo` + `workflow`, repo `admin=True`.

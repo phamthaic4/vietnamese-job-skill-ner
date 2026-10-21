@@ -4,6 +4,9 @@ docs/week3_training_guide.md
 runs/
 .agents/
 **/__pycache__/
+.ruff_cache/
+.pytest_cache/
+.venv/
 
 # Checkpoints are large; keep only the placeholder README in git
 model/**

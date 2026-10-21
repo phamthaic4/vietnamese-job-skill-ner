@@ -5,11 +5,14 @@
 [![Transformers](https://img.shields.io/badge/Transformers-4.x-yellow.svg)](https://huggingface.co/docs/transformers)
 [![ONNX](https://img.shields.io/badge/ONNX--Runtime-2.82%C3%97-purple.svg)](https://onnxruntime.ai/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/phamthaic4/vietnamese-job-skill-ner/actions/workflows/ci.yml/badge.svg)](https://github.com/phamthaic4/vietnamese-job-skill-ner/actions/workflows/ci.yml)
 
 Fine-tune [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) to extract **SKILL** entities from Vietnamese job-description and CV text (BIO tagging).
 
 > **Status:** v1.0.0 — PhoBERT test F1 **0.6711** (54 sentences / 74 skill entities). CPU inference: PyTorch **35.39 ms** → ONNX Runtime **12.55 ms** (**2.82×**).
 > **Weights:** [v1.0.0 release](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/tag/v1.0.0) — `model.onnx` · `model.safetensors` · `tokenizer.zip`.
+
+![Demo: python src/predict.py extracting 11 skills from a Vietnamese job description](docs/images/demo_predict.gif)
 
 ## Problem
 
@@ -166,6 +169,8 @@ python scripts/export_onnx.py
 | Error analysis | `python scripts/error_analysis.py` |
 | ONNX | `python scripts/export_onnx.py` |
 | Build log | [PROGRESS.md](PROGRESS.md) — week-by-week decisions and lessons |
+| Tests | `python -m pytest` — unit tests need no weights; `-m "not slow"` skips the end-to-end test |
+| Lint | `ruff check src scripts tests` |
 
 Details: [docs/reproduce.md](docs/reproduce.md).
 
@@ -177,14 +182,17 @@ vietnamese-job-skill-ner/
 │   ├── raw/jds.txt        # 757 collected JD sentences
 │   ├── labeled/           # labeling template + sentence index
 │   └── splits/            # frozen train / val / test JSON (seed 42)
-├── docs/                  # error analysis, skill vocab, reproduce, wandb screenshots
+├── docs/                  # error analysis, skill vocab, reproduce, images
 ├── notebooks/             # 01_eda, 02_error_analysis
-├── scripts/               # labeling, convert, error_analysis, export_onnx
+├── scripts/               # labeling, convert, error_analysis, export_onnx, demo gif
 ├── src/train.py           # fine-tune
 ├── src/predict.py         # inference + post-processing
+├── tests/                 # pytest: post-processing unit tests + end-to-end
+├── .github/workflows/     # CI: lint + unit tests + end-to-end with weights
 ├── model/best/            # checkpoint (gitignored — download from the v1.0.0 release)
 ├── results/experiments.csv
 ├── PROGRESS.md            # week-by-week build log
+├── pyproject.toml         # ruff + pytest config
 └── requirements.txt
 ```
 

@@ -1,28 +1,18 @@
-# Core Jupyter & Development
-ipykernel
+# Runtime — training + inference
+torch>=2.5
+transformers>=4.46
+accelerate>=0.30
+seqeval>=1.2
+numpy>=1.26
 
-# Deep Learning & Transformers (PhoBERT NER)
-torch
-transformers
-datasets
-evaluate
-seqeval
-accelerate
+# ONNX export + CPU inference
+onnx>=1.16
+onnxruntime>=1.18
+onnxscript>=0.1
 
-# Vietnamese NLP
-pyvi
+# Notebooks (EDA / error analysis)
+pandas>=2.0
+matplotlib>=3.8
 
-# Data Analysis & Visualization
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-
-# Utilities
-tqdm
-
-# ONNX export / CPU inference
-onnx
-onnxruntime
-onnxscript
+# Tests
+pytest>=8.0

@@ -47,12 +47,13 @@ def main():
     prev_label = None
     prev_sid = None
     for line_no, row in enumerate(rows, start=2):
-        if row["label"] == "I-SKILL":
-            if row["sid"] != prev_sid or prev_label not in {"B-SKILL", "I-SKILL"}:
-                errors.append(
-                    f"line {line_no}: I-SKILL starts a new entity "
-                    f"(sentence {row['sid']}, token '{row['token']}') - use B-SKILL instead"
-                )
+        if row["label"] == "I-SKILL" and (
+            row["sid"] != prev_sid or prev_label not in {"B-SKILL", "I-SKILL"}
+        ):
+            errors.append(
+                f"line {line_no}: I-SKILL starts a new entity "
+                f"(sentence {row['sid']}, token '{row['token']}') - use B-SKILL instead"
+            )
         if row["label"]:
             prev_label = row["label"]
             prev_sid = row["sid"]

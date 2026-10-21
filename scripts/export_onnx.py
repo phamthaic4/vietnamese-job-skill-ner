@@ -1,11 +1,11 @@
 """Export model/best to ONNX and benchmark torch vs onnxruntime latency."""
 
-from pathlib import Path
 import time
+from pathlib import Path
 
 import numpy as np
 import torch
-from transformers import AutoTokenizer, AutoModelForTokenClassification
+from transformers import AutoModelForTokenClassification, AutoTokenizer
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL_DIR = ROOT / "model" / "best"

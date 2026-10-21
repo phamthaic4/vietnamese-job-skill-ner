@@ -9,12 +9,11 @@ Xuất kết quả ra file docs/error_analysis.md.
 """
 
 import json
-import re
 import sys
-from collections import Counter
 from pathlib import Path
+
 import torch
-from transformers import AutoTokenizer, AutoModelForTokenClassification
+from transformers import AutoModelForTokenClassification, AutoTokenizer
 
 if sys.stdout.encoding != "utf-8":
     try:

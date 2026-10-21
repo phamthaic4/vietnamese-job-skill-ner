@@ -15,16 +15,16 @@ Kết quả kỳ vọng trên test set: P 0.6538 / R 0.6892 / F1 0.6711.
 import argparse
 import sys
 from pathlib import Path
-import torch
-from torch.utils.data import Dataset
+
 import numpy as np
-from seqeval.metrics import f1_score, precision_score, recall_score 
+from seqeval.metrics import f1_score, precision_score, recall_score
+from torch.utils.data import Dataset
 from transformers import (
-    AutoTokenizer, 
     AutoModelForTokenClassification,
-    TrainingArguments, 
-    Trainer, 
-    DataCollatorForTokenClassification
+    AutoTokenizer,
+    DataCollatorForTokenClassification,
+    Trainer,
+    TrainingArguments,
 )
 
 # Đảm bảo in tiếng Việt không lỗi trên Windows CMD (cp1252)
@@ -152,10 +152,10 @@ def compute_metrics(eval_pred):
         cur_preds = []
         cur_labels = []
 
-        for p, l in zip(pred_sentence, label_sentence):
-            if l != -100:
+        for p, lbl in zip(pred_sentence, label_sentence):
+            if lbl != -100:
                 cur_preds.append(id2label[p])
-                cur_labels.append(id2label[l])
+                cur_labels.append(id2label[lbl])
 
         true_predictions.append(cur_preds)
         true_labels.append(cur_labels)
@@ -181,8 +181,8 @@ def run_smoke():
     
     for i, s in enumerate(data):
         print(f"\n=== Câu {i} ===")
-        for w, l in zip(s["tokens"], s["labels"]):
-            print(f"  word: {w!r:20} label: {l}")
+        for w, lbl in zip(s["tokens"], s["labels"]):
+            print(f"  word: {w!r:20} label: {lbl}")
         print("  --- subwords alignment ---")
         inp_ids = out["input_ids"][i]
         lbl_ids = out["labels"][i]
@@ -244,7 +244,7 @@ def main():
     print("\n>>> Đang đánh giá trên tập TEST...")
     test_results = trainer.evaluate(eval_dataset=test_dataset)
     print("\n" + "="*40)
-    print(f"KẾT QUẢ TRÊN TẬP TEST:")
+    print("KẾT QUẢ TRÊN TẬP TEST:")
     print(f" - Precision: {test_results.get('eval_precision', 0):.4f}")
     print(f" - Recall:    {test_results.get('eval_recall', 0):.4f}")
     print(f" - F1-Score:  {test_results.get('eval_f1', 0):.4f}")
