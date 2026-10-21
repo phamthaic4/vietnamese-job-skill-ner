@@ -3,6 +3,7 @@
 Fine-tune [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) to extract **SKILL** entities from Vietnamese job-description and CV text (BIO tagging).
 
 > **Status:** v1.0.0 — PhoBERT test F1 **0.6711**. CPU inference: PyTorch **35.39 ms** → ONNX Runtime **12.55 ms** (**2.82×**).
+> **Weights:** [v1.0.0 release](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/tag/v1.0.0) — `model.onnx` · `model.safetensors` · `tokenizer.zip`.
 
 ## Problem
 
@@ -68,11 +69,31 @@ Half of false negatives (5/10) are OOV skills — matches EDA (31.8% OOV unique 
 pip install -r requirements.txt
 ```
 
-Weights live in `model/best/` and are **not** in git (see [docs/reproduce.md](docs/reproduce.md)). After the checkpoint is in place:
+### Model weights
+
+Weights are **not** in git (the checkpoint is ~513 MB). Download them from the [v1.0.0 release](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/tag/v1.0.0):
+
+| File | Size | Use |
+|---|---|---|
+| [`model.onnx`](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/download/v1.0.0/model.onnx) | 513 MB | ONNX Runtime inference — 12.55 ms CPU |
+| [`model.safetensors`](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/download/v1.0.0/model.safetensors) | 513 MB | `transformers` / `from_pretrained()` |
+| [`tokenizer.zip`](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/download/v1.0.0/tokenizer.zip) | 0.8 MB | `config.json` + `vocab.txt` + `bpe.codes` + `tokenizer_config.json` + `added_tokens.json` |
+
+Put all three in `model/best/` (extract `tokenizer.zip` in place):
+
+```bash
+mkdir -p model/best
+# move model.onnx, model.safetensors, tokenizer.zip into model/best/
+unzip tokenizer.zip -d model/best/
+```
+
+Then run:
 
 ```bash
 python src/predict.py --text "Tuyển Backend Engineer thành thạo Python, Docker, PostgreSQL và Redis."
 ```
+
+Full guide: [docs/reproduce.md](docs/reproduce.md).
 
 Train from the frozen splits (Colab GPU recommended):
 
@@ -93,7 +114,7 @@ python scripts/export_onnx.py
 |---|---|
 | Labeled data | `data/splits/{train,val,test}.json` (frozen, seed 42) |
 | Train | `python src/train.py` — PhoBERT, LR 3e-5, batch 16, 5 epochs |
-| Weights | `model/best/` (gitignored) |
+| Weights | [v1.0.0 release](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/tag/v1.0.0) → extract into `model/best/` |
 | Predict | `python src/predict.py --text "..."` |
 | Error analysis | `python scripts/error_analysis.py` |
 | ONNX | `python scripts/export_onnx.py` |

@@ -69,5 +69,26 @@
 - ONNX không đổi F1: cùng weights, chỉ khác runtime.
 
 ### Còn lại (không chặn v1 code)
-- Push tag `v1.0.0` + zip `model/best` lên GitHub Release khi sẵn sàng (`git push && git push --tags`).
+- ~~Push tag `v1.0.0` + zip `model/best` lên GitHub Release khi sẵn sàng~~ → xong 2026-10-21 (xem wrap-up bên dưới).
+
+## Proj 1 wrap-up — 2026-10-21
+
+### Done
+- [x] Tạo **GitHub Release thật** `v1.0.0` (id 419468385) — trước đó repo mới chỉ có *tag*, trang `/releases/tag/v1.0.0` chỉ hiện "Source code (zip/tar.gz)" tự sinh, không có weights.
+- [x] Upload 3 assets (tổng 1.03 GB), sha256 khớp byte-for-byte với file local:
+  - `model.onnx` (513 MB) — sha256 `a0548653…8ec06ed`
+  - `model.safetensors` (513 MB) — sha256 `f047aea7…1557db2`
+  - `tokenizer.zip` (0.8 MB) — config.json + tokenizer_config.json + vocab.txt + bpe.codes + added_tokens.json
+- [x] `README.md`, `docs/reproduce.md`, `model/README.md` — thêm link tải + bước giải nén + sha256 để verify.
+- [x] `model/` vẫn gitignore → repo không phình, lịch sử git sạch.
+
+### Notes / learnings
+- Upload bằng **GitHub API** (`POST https://uploads.github.com/repos/{owner}/{repo}/releases/{id}/assets?name=…`) với token lấy từ Git Credential Manager (`git credential fill`) — khỏi cài `gh` CLI. Token có scope `repo` + `workflow`, repo `admin=True`.
+- Asset tối đa 2GB/file → 513MB OK. Tốc độ upload máy này ~2.0–2.5 MB/s (~4.5 phút/file).
+- PowerShell 5.1: `Get-Content -Raw` trả về PSObject có metadata → phải ép `[string]` trước khi `ConvertTo-Json`, nếu không GitHub trả 422 "is not a string". Và luôn đọc `-Encoding UTF8` cho file tiếng Việt.
+- `curl` trên Windows báo `HTTP=000` khi dùng `-L` + `-w` với URL redirect dài (signed Azure SAS) → **không phải lỗi thật**, verbose log vẫn 100%. Dùng `Get-FileHash` + `digest` do GitHub trả về để verify integrity thay vì dựa vào HTTP code.
+- `schannel: failed to decrypt data, need more data` trong verbose log của curl là log nhiễu TLS renegotiation, không phải lỗi.
+
+### Next
+- [ ] **Proj 2 — JobMatch**: FastAPI + `/extract-skills` (nạp model từ release này) → `/match` → Gemini interview prep → Streamlit → Docker → deploy.
 

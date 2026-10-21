@@ -24,7 +24,7 @@ Do not reshuffle. Relabeling would invalidate the reported F1.
 
 ## 3. Weights (`model/best`)
 
-`model/` is gitignored (PhoBERT checkpoint is ~500MB). Place files here:
+`model/` is gitignored (PhoBERT checkpoint is ~513MB). Place files here:
 
 ```
 model/best/
@@ -34,10 +34,32 @@ model/best/
   model.onnx          # optional; created by export_onnx.py
 ```
 
-Get the folder by either:
+Get the folder by any of:
 
-1. **Train** (below), or
-2. Copy a previously trained `model/best` from the machine / Colab that ran exp_001.
+1. **Download** from the [v1.0.0 release](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/tag/v1.0.0):
+
+   | Asset | Size | Contents |
+   |---|---|---|
+   | [`model.onnx`](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/download/v1.0.0/model.onnx) | 513 MB | ONNX graph (opset 14) |
+   | [`model.safetensors`](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/download/v1.0.0/model.safetensors) | 513 MB | Fine-tuned weights |
+   | [`tokenizer.zip`](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/download/v1.0.0/tokenizer.zip) | 0.8 MB | `config.json`, `tokenizer_config.json`, `vocab.txt`, `bpe.codes`, `added_tokens.json` |
+
+   ```bash
+   mkdir -p model/best
+   # move the three files into model/best/
+   unzip tokenizer.zip -d model/best/
+   ```
+
+   SHA-256 of the release assets:
+
+   ```
+   a0548653873512d3750033ea2d8089f3f6bf761d0d1f1b83ef3ed248d8ec06ed  model.onnx
+   f047aea77ab031a4e8d826da8a379886b571d755156177daea9c888611557db2  model.safetensors
+   59c747474ae5e17eb7ef96d59e6867d3178f5a8ccfd3510e7fc5adbe245801a4  tokenizer.zip
+   ```
+
+2. **Train** (below), or
+3. Copy a previously trained `model/best` from the machine / Colab that ran exp_001.
 
 ## 4. Train (locked config)
 
