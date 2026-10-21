@@ -84,6 +84,7 @@
 - [x] Dọn `src/train.py`: xoá 8 comment `[TODO]` + dead code `sys.exit("Chưa điền TODO 1-2!")`, bỏ reference tới `docs/week3_training_guide.md` (file bị gitignore → link chết), thêm cờ `--wandb` để reproduce đúng cách log WandB.
 - [x] `LICENSE` (MIT) — repo public cần license để dùng lại hợp pháp.
 - [x] README: nhúng 2 ảnh WandB (`docs/images/`), thêm sample output 11/11 skills, ghi rõ `n=54 câu / 74 entities` cạnh mọi con số F1.
+- [x] README pass 2 (pro polish): badges (Python/PyTorch/Transformers/ONNX/MIT), snippet `from_pretrained`, mục **Limitations** + **Next steps** thay cho checklist tuần nội bộ, **Related work** (paper arXiv 2210.14607 về skill detection trong JD tiếng Việt), tree repo cập nhật, link `PROGRESS.md`, mục Problem + Data có số liệu labeling/QC.
 
 ### Notes / learnings
 - Upload bằng **GitHub API** (`POST https://uploads.github.com/repos/{owner}/{repo}/releases/{id}/assets?name=…`) với token lấy từ Git Credential Manager (`git credential fill`) — khỏi cài `gh` CLI. Token có scope `repo` + `workflow`, repo `admin=True`.

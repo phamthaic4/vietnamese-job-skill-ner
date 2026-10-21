@@ -1,5 +1,11 @@
 # Vietnamese Job Skill NER
 
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-orange.svg)](https://pytorch.org/)
+[![Transformers](https://img.shields.io/badge/Transformers-4.x-yellow.svg)](https://huggingface.co/docs/transformers)
+[![ONNX](https://img.shields.io/badge/ONNX--Runtime-2.82%C3%97-purple.svg)](https://onnxruntime.ai/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 Fine-tune [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) to extract **SKILL** entities from Vietnamese job-description and CV text (BIO tagging).
 
 > **Status:** v1.0.0 — PhoBERT test F1 **0.6711** (54 sentences / 74 skill entities). CPU inference: PyTorch **35.39 ms** → ONNX Runtime **12.55 ms** (**2.82×**).
@@ -9,14 +15,19 @@ Fine-tune [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) to ext
 
 Recruiter tools need the skills a job post or CV actually mentions. This project trains a NER model to extract IT skills (Python, SQL, Docker, …) from mixed Vietnamese/English text.
 
+The task is harder than it looks: Vietnamese job posts embed English technical terms inside Vietnamese syntax (`"có kinh nghiệm về Java Spring Boot"`), compound skills span several words (`Spring Boot`, `SQL Server`), symbol-heavy names get shredded by any whitespace tokenizer (`C/C++`, `CI/CD`, `.NET`), and ~30% of the skills in a held-out set are terms the model has never seen in training.
+
 ## Data
 
 | Item | Value |
 |------|-------|
 | Source | IT job posts (TopCV, ITviec, VietnamWorks) + 5 CVs |
+| Collected | 757 unique sentences (deduped) → 350 labeled after BIO validation |
 | Size v1 | 350 labeled sentences, 372 skill mentions (186 unique) |
 | Format | JSON: `{ "tokens": [...], "labels": [...] }` |
 | Labels | `B-SKILL`, `I-SKILL`, `O` |
+| Labeling | Manual BIO annotation in a spreadsheet; 97 label cells audited and fixed |
+| QC | `scripts/validate_labels.py` — enforces that every `I-SKILL` follows a `B-SKILL` |
 | Split | 244 train / 52 val / 54 test (seed 42) |
 
 ```
@@ -34,7 +45,7 @@ Label:   O       B-SKILL O          O   O           B-SKILL
 
 ## Results
 
-Training runs are logged on [Weights & Biases](https://wandb.ai). All numbers below are **entity-level** metrics (`seqeval`) on the frozen test split — **54 sentences / 74 skill entities**. Decision metric is **test F1**: the 52-sentence val set is too noisy to rank models reliably.
+Training runs are logged on [Weights & Biases](https://wandb.ai) — loss and eval curves are embedded below. All numbers below are **entity-level** metrics (`seqeval`) on the frozen test split — **54 sentences / 74 skill entities**. Decision metric is **test F1**: the 52-sentence val set is too noisy to rank models reliably.
 
 | Experiment | Model | LR | Epochs | Batch | P | R | **Test F1** | Notes |
 |---|---|---|---|---|---|---|---|---|
@@ -97,6 +108,15 @@ mkdir -p model/best
 unzip tokenizer.zip -d model/best/
 ```
 
+Or load the checkpoint straight into `transformers`:
+
+```python
+from transformers import AutoTokenizer, AutoModelForTokenClassification
+
+tokenizer = AutoTokenizer.from_pretrained("model/best")
+model = AutoModelForTokenClassification.from_pretrained("model/best")
+```
+
 Then run:
 
 ```bash
@@ -145,6 +165,7 @@ python scripts/export_onnx.py
 | Predict | `python src/predict.py --text "..."` |
 | Error analysis | `python scripts/error_analysis.py` |
 | ONNX | `python scripts/export_onnx.py` |
+| Build log | [PROGRESS.md](PROGRESS.md) — week-by-week decisions and lessons |
 
 Details: [docs/reproduce.md](docs/reproduce.md).
 
@@ -152,20 +173,42 @@ Details: [docs/reproduce.md](docs/reproduce.md).
 
 ```
 vietnamese-job-skill-ner/
-├── data/splits/          # frozen train / val / test JSON
-├── docs/                 # error analysis, skill vocab, reproduce
-├── notebooks/            # 01_eda, 02_error_analysis
-├── scripts/              # labeling, convert, error_analysis, export_onnx
-├── src/train.py          # fine-tune
-├── src/predict.py        # inference + post-processing
-├── model/best/           # checkpoint + model.onnx (local, gitignored)
-└── results/experiments.csv
+├── data/
+│   ├── raw/jds.txt        # 757 collected JD sentences
+│   ├── labeled/           # labeling template + sentence index
+│   └── splits/            # frozen train / val / test JSON (seed 42)
+├── docs/                  # error analysis, skill vocab, reproduce, wandb screenshots
+├── notebooks/             # 01_eda, 02_error_analysis
+├── scripts/               # labeling, convert, error_analysis, export_onnx
+├── src/train.py           # fine-tune
+├── src/predict.py         # inference + post-processing
+├── model/best/            # checkpoint (gitignored — download from the v1.0.0 release)
+├── results/experiments.csv
+├── PROGRESS.md            # week-by-week build log
+└── requirements.txt
 ```
 
-## Roadmap
+## Limitations
 
-- [x] Week 1: setup + collect 100+ JD sentences + label first 50
-- [x] Week 2: label to 200–300 + data pipeline + EDA (O 92.8%, OOV 31.8%)
-- [x] Week 3: first training run + seqeval baseline F1 (0.6711) + WandB
-- [x] Week 4: LR sweep + XLM-R comparison + error analysis + `predict.py`
-- [x] Week 5: README v1, ONNX CPU benchmark (2.82×), reproduce docs
+Scope of v1.0.0, stated plainly:
+
+| Limitation | Impact |
+|---|---|
+| Small test set — 54 sentences / 74 entities | F1 carries a wide confidence interval; one split cannot separate close models |
+| False positives are the largest error class (17 / 42 = 40.5%) | Generic tech nouns (`frontend`, `Apple`, `OOP`, `Blueprints`) get tagged as skills |
+| OOV recall drops 16.6 points vs in-vocab | Newly coined tech terms are systematically under-detected |
+| Single entity type (`SKILL`) | No role / experience-level / seniority entities yet |
+| Post-processing rules are hand-written | `C/C++`, `CI/CD` glue rules are tuned by hand, not learned |
+| No CRF or rule-only baseline | The value added by post-processing is not yet quantified against a learned decoder |
+
+## Next steps
+
+- **v2 data** — grow to 500+ labeled sentences, add negative samples to cut false positives, augment from `docs/skill_vocab.md`
+- **Hybrid extraction** — NER (context signal) + dynamic skill dictionary (vocabulary signal), motivated directly by the OOV result
+- **Baselines** — CRF and rule-only decoders, to quantify what post-processing actually buys
+- **Project 2 — JobMatch** — FastAPI service over this model (`/extract-skills`), CV–JD skill gap analysis, Gemini-generated interview questions
+
+## Related work
+
+- [A practical method for occupational skills detection in Vietnamese job listings](https://arxiv.org/abs/2210.14607) (Tran et al., 2022) — argues that skill detection in Vietnamese job listings is better framed as **ranking** than as NER, and beats NER in scarce-data regimes. That finding is what motivates the hybrid direction in [Next steps](#next-steps).
+- [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) — the monolingual Vietnamese encoder this project fine-tunes.
