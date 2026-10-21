@@ -2,7 +2,7 @@
 
 Fine-tune [vinai/phobert-base](https://huggingface.co/vinai/phobert-base) to extract **SKILL** entities from Vietnamese job-description and CV text (BIO tagging).
 
-> **Status:** v1.0.0 — PhoBERT test F1 **0.6711**. CPU inference: PyTorch **35.39 ms** → ONNX Runtime **12.55 ms** (**2.82×**).
+> **Status:** v1.0.0 — PhoBERT test F1 **0.6711** (54 sentences / 74 skill entities). CPU inference: PyTorch **35.39 ms** → ONNX Runtime **12.55 ms** (**2.82×**).
 > **Weights:** [v1.0.0 release](https://github.com/phamthaic4/vietnamese-job-skill-ner/releases/tag/v1.0.0) — `model.onnx` · `model.safetensors` · `tokenizer.zip`.
 
 ## Problem
@@ -34,7 +34,7 @@ Label:   O       B-SKILL O          O   O           B-SKILL
 
 ## Results
 
-Training runs are logged on [Weights & Biases](https://wandb.ai). Decision metric is **test F1** (52-sentence val set is noisy).
+Training runs are logged on [Weights & Biases](https://wandb.ai). All numbers below are **entity-level** metrics (`seqeval`) on the frozen test split — **54 sentences / 74 skill entities**. Decision metric is **test F1**: the 52-sentence val set is too noisy to rank models reliably.
 
 | Experiment | Model | LR | Epochs | Batch | P | R | **Test F1** | Notes |
 |---|---|---|---|---|---|---|---|---|
@@ -44,6 +44,16 @@ Training runs are logged on [Weights & Biases](https://wandb.ai). Decision metri
 | exp_004 | `vinai/phobert-base` | 4e-5 | 5 | 16 | 0.5556 | 0.6757 | 0.6098 | Too-high LR: worse than 3e-5 |
 
 **Locked config:** PhoBERT-base, LR `3e-5`, batch 16, 5 epochs.
+
+### Training curves
+
+PhoBERT (exp_001) — loss falls steadily and val F1 is still rising at the last epoch:
+
+![exp_001 PhoBERT — train/loss and eval/f1](docs/images/wandb_exp001.png)
+
+XLM-R (exp_002) — val F1 peaks around epoch 4 then drifts down (over-fitting), while its test F1 still lands below PhoBERT's:
+
+![exp_002 XLM-R — train/loss and eval/f1](docs/images/wandb_exp002.png)
 
 ### CPU latency (batch 1, local)
 
@@ -90,8 +100,25 @@ unzip tokenizer.zip -d model/best/
 Then run:
 
 ```bash
-python src/predict.py --text "Tuyển Backend Engineer thành thạo Python, Docker, PostgreSQL và Redis."
+python src/predict.py --text "Thành thạo ít nhất 1 ngôn ngữ Backend: Ưu tiên Python, Go, C/C++ hoặc Java (Spring Boot). Có kinh nghiệm làm việc với hệ quản trị cơ sở dữ liệu PostgreSQL, MySQL, Redis và triển khai Docker, Kubernetes, CI/CD."
 ```
+
+```
+KỸ NĂNG TRÍCH XUẤT ĐƯỢC (11 skills):
+  1. Python
+  2. Go
+  3. C/C++
+  4. Java
+  5. Spring Boot
+  6. PostgreSQL
+  7. MySQL
+  8. Redis
+  9. Docker
+  10. Kubernetes
+  11. CI/CD
+```
+
+11/11, including the compound and symbol-heavy skills (`C/C++`, `Spring Boot`, `CI/CD`) that a naive tokenizer splits apart.
 
 Full guide: [docs/reproduce.md](docs/reproduce.md).
 

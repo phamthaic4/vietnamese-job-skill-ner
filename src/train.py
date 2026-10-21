@@ -5,8 +5,11 @@ Cách dùng:
       python src/train.py --smoke
   Train thật (trên Colab GPU):
       python src/train.py
+  Train + log lên Weights & Biases:
+      python src/train.py --wandb
 
-TODO: điền code vào các chỗ [TODO]. Đọc docs/week3_training_guide.md trước khi bắt đầu.
+Config đã chốt (exp_001): LR 3e-5, batch 16, 5 epochs, max_length 128.
+Kết quả kỳ vọng trên test set: P 0.6538 / R 0.6892 / F1 0.6711.
 """
 
 import argparse
@@ -47,32 +50,18 @@ MODEL_NAME = "vinai/phobert-base"
 MAX_LENGTH = 128
 
 
-# [TODO 1] label map
-# Viết 2 dict: label2id ({nhãn: số}) và id2label ({số: nhãn}) từ LABEL_LIST.
-# Gợi ý: enumerate(LABEL_LIST)
+# Label map
 label2id = {label: i for i, label in enumerate(LABEL_LIST)}
 id2label = {i: label for i, label in enumerate(LABEL_LIST)}
 
 
-# [TODO 2] load tokenizer + model
-# Load AutoTokenizer (use_fast=True!) và AutoModelForTokenClassification
-#   - tokenizer: from MODEL_NAME, use_fast=True
-#   - model: from MODEL_NAME, truyền num_labels=len(LABEL_LIST),
-#     id2label=..., label2id=... (để checkpoint lưu được tên nhãn)
-# Gợi ý: from transformers import AutoTokenizer, AutoModelForTokenClassification
+# Tokenizer + model
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
 model = AutoModelForTokenClassification.from_pretrained(MODEL_NAME, num_labels=len(LABEL_LIST), id2label=id2label, label2id=label2id)
 
 
-# [TODO 3] tokenize + align labels
-# Viết hàm tokenize_and_align(examples):
-#   - gọi tokenizer(examples["tokens"], is_split_into_words=True,
-#     truncation=True, max_length=MAX_LENGTH)
-#   - với mỗi câu i trong batch: lấy word_ids = tokenized.word_ids(i)
-#     với mỗi subword: nếu word_id là None -> -100; nếu là subword ĐẦU của từ
-#     (word_id != word_id_trước đó) -> label2id[examples["labels"][i][word_id]];
-#     ngược lại -> -100
-#   - trả về dict chứa tokenized + "labels"
+# Tokenize + align labels
+# Subword đầu tiên của mỗi từ giữ nhãn thật, các subword sau gán -100 (bị ignore trong loss).
 def tokenize_and_align(examples):
     batch_input_ids = []
     batch_labels = []
@@ -127,14 +116,7 @@ def tokenize_and_align(examples):
     }
 
 
-# [TODO 4] PyTorch Dataset
-# Class SkillNERDataset(torch.utils.data.Dataset):
-#   __init__(self, data, tokenizer): lưu data (list {"tokens","labels"}) + tokenizer
-#   __len__: số câu
-#   __getitem__(self, idx):
-#       tokenized = tokenize_and_align({"tokens": [tokens_câu], "labels": [labels_câu]})
-#       trả về dict các tensor (hoặc list -> collator sẽ lo)
-# Gợi ý: lấy item đầu của từng key trong tokenized: {k: v[0] for k, v in tokenized.items()}
+# PyTorch Dataset
 class SkillNERDataset(Dataset):
     def __init__(self, data, tokenizer=None):
         self.data = data
@@ -157,13 +139,7 @@ class SkillNERDataset(Dataset):
         }
 
 
-# [TODO 5] compute_metrics với seqeval
-# Viết hàm compute_metrics(eval_pred):
-#   - eval_pred.predictions shape (n, seq, num_labels) -> argmax axis=-1
-#   - LỌC bỏ chỗ labels == -100 (cả predictions lẫn labels), trả về list các list nhãn CHỮ
-#     qua id2label
-#   - seqeval.metrics.f1_score / precision_score / recall_score trên 2 list đó
-# Gợi ý: from seqeval.metrics import f1_score, precision_score, recall_score
+# compute_metrics với seqeval — đánh giá theo entity, không phải theo token
 def compute_metrics(eval_pred):
     predictions, labels = eval_pred
 
@@ -223,31 +199,13 @@ def run_smoke():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--smoke", action="store_true", help="chỉ kiểm tra alignment rồi thoát")
+    parser.add_argument("--wandb", action="store_true", help="log metrics lên Weights & Biases")
     args = parser.parse_args()
-
-    if label2id is None or tokenizer is None or model is None:
-        sys.exit("Chưa điền TODO 1-2!")
 
     if args.smoke:
         run_smoke()
         return
 
-    # [TODO 7] train loop
-    # 1. load train/val: load_split("train"), load_split("val") -> SkillNERDataset
-    # 2. from transformers import TrainingArguments, Trainer, DataCollatorForTokenClassification
-    #    collator = DataCollatorForTokenClassification(tokenizer)
-    # 3. TrainingArguments với hyperparams đã chốt trong guide:
-    #       output_dir="runs/exp_001", learning_rate=3e-5, num_train_epochs=5,
-    #       per_device_train_batch_size=16, weight_decay=0.01,
-    #       eval_strategy="epoch", save_strategy="epoch",
-    #       load_best_model_at_end=True, metric_for_best_model="f1",
-    #       report_to="none"
-    # 4. Trainer(model=..., args=..., train_dataset=..., eval_dataset=...,
-    #             data_collator=collator, compute_metrics=compute_metrics)
-    # 5. trainer.train()
-    # 6. Đánh giá TRÊN TEST: load test -> SkillNERDataset -> trainer.predict(test_ds)
-    #    in ra metrics (đây là con số ghi vào results/experiments.csv)
-    # 7. Save: trainer.save_model("model/best") + tokenizer.save_pretrained("model/best")
     print(">>> Đang nạp dữ liệu train / val / test...")
     raw_train = load_split("train")
     raw_val = load_split("val")
@@ -271,7 +229,7 @@ def main():
         metric_for_best_model="f1",
         greater_is_better=True,
         logging_steps=10,
-        report_to="none",  # Tắt wandb tạm thời ở local, khi lên Colab có thể bật
+        report_to="wandb" if args.wandb else "none",
     )
     trainer = Trainer(
         model=model,
