@@ -94,6 +94,7 @@
   - `scripts/make_demo_gif.py` — sinh `docs/images/demo_predict.gif` (48 frame, 0.48 MB) bằng PIL thay vì quay màn hình → reproducible.
   - Sửa 15 lỗi ruff: import sorting, unused imports, `l` → `lbl`, `Optional[str]`, `startswith(tuple)`, nested if.
   - Verify không regression: `error_analysis.py` vẫn ra đúng 71.2% / 54.5% / −16.6%; `predict.py` vẫn 11/11.
+  - **CI xanh**: run [39601696594](https://github.com/phamthaic4/vietnamese-job-skill-ner/actions/runs/39601696594) — Lint ✓ · Unit tests ✓ · End-to-end (tải weights từ release) ✓.
 
 ### Bài học mới
 - **DejaVu Sans Mono thiếu 5 glyph tiếng Việt** (`Ả ả Ấ ỗ Ế`) → render ra ô vuông. Consolas phủ đủ. Script demo giờ tự dò font có đủ coverage (so mask với `.notdef`).
